@@ -1,0 +1,15 @@
+{
+    "name": "11late",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "eleventy --serve"
+    },
+    "author": "Simon McManus",
+    "license": "ISC",
+    "dependencies": {
+        "clean-css": "^5.2.1",
+        "sizlate": "^4.0.2"
+    }
+}

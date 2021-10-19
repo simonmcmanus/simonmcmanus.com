@@ -1,0 +1,14 @@
+nav a {
+    margin: .3em;
+    padding: .3em;
+}
+
+nav a.active {
+    text-decoration: none;
+    color: default;
+}
+
+nav.posts a {
+    border: 1px solid blue;
+    display: block;
+}

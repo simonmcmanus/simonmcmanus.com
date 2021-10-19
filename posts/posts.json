@@ -1,0 +1,9 @@
+{
+    "layout": "layouts/post.sizlate.11ty.js",
+    "mappers": ["nextPost"],
+    "sizlate": {
+        "a[href='/posts/']": {
+            "className": "active"
+        }
+    }
+}
