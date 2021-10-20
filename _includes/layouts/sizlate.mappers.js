@@ -2,7 +2,7 @@ const mappers = {
     // takes the post array and produces a linked list
     listPosts: (data) => {
 
-        console.log('data', data.collections.links)
+
 
         return {
             '.posts a': data.collections.post.map((post) => {
@@ -24,7 +24,11 @@ const mappers = {
             })
         }
     },
-    nextPost: (data) => {
+    post: (data) => {
+        return {
+            '#post': data.content,
+            "h1.title": data.title,
+        }
 
     }
 }
