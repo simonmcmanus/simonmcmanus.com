@@ -1,6 +1,6 @@
 {
     "layout": "layouts/post.sizlate.11ty.js",
-    "mappers": ["post"],
+
     "sizlate": {
         "a[href='/posts/']": {
             "className": "active"

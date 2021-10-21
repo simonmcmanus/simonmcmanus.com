@@ -24,13 +24,7 @@ const mappers = {
             })
         }
     },
-    post: (data) => {
-        return {
-            '#post': data.content,
-            "h1.title": data.title,
-        }
 
-    }
 }
 
 
