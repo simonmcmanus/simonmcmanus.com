@@ -6,7 +6,7 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addCollection("links", () => {
         return links.map((link) => {
-            link.tags = link.tags ? link.tags.split(',') : []
+            link.tags = link.tags.split ? link.tags.split(',') : []
             return link
         })
     });

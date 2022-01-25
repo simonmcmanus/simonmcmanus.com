@@ -10,6 +10,6 @@
     "license": "ISC",
     "dependencies": {
         "clean-css": "^5.2.1",
-        "sizlate": "^4.0.2"
+        "sizlate": "^4.1.0"
     }
 }

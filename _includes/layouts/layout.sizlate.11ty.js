@@ -1,6 +1,5 @@
 const sizlate = require('sizlate')
 const CleanCSS = require("clean-css");
-
 const fs = require('fs')
 const { buildSelectors } = require('./sizlate.11ty')
 
