@@ -59,10 +59,10 @@ const mappers = {
         }
     },
     listLinks: (data) => {
-        const linksReversed = data.collections.links
+
 
         return {
-            '.recent-links li': linksReversed.map((link) => {
+            '.recent-links li': data.collections.links.reverse().slice(0, 10).map((link) => {
                 const title = link.title
                 return {
                     selectors: {
@@ -81,7 +81,7 @@ const mappers = {
 
                     }
                 }
-            }).reverse().slice(0, 10)
+            })
         }
     },
 
