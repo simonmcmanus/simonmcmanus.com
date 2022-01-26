@@ -14,7 +14,7 @@ permalink: "/about.html"
 <section class="contained">
 
     
-Simon McManus is a delivery obsessed tech lead with extensive Node.js, web and Mobile experience. This site contains links and blog posts written and collected by Simon over the years.
+Simon McManus is a tech lead with extensive Node.js, web and Mobile experience. This site contains links and blog posts written and collected by Simon over the years.
 
 
 
