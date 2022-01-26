@@ -6409,5 +6409,68 @@
         "title": "The Time Travel Debugger for Web Development",
         "summary": "",
         "tags": "dev,web,developer,development"
+    },
+    {
+        "created": "2021-09-16T18:13:54.234Z",
+        "url": "https://www.11ty.dev/docs/languages/javascript/",
+        "title": "Template Language—JavaScript—Eleventy, a simpler static site generator.",
+        "summary": "Eleventy supports many different types of JavaScript content that will be parsed as Eleventy templates:",
+        "tags": "eleventy"
+    },
+    {
+        "created": "2021-09-18T20:29:13.016Z",
+        "url": "https://shedbasekits.com/?gclid=EAIaIQobChMI0Mq-7faH7wIV0MLtCh2d1wXgEAAYASAAEgJB3vD_BwE&fbclid=IwAR3M5Z1LR8Kw1k-kqNB5EmSD691INuMBfimb5dQ1uEU3qzyWpM-SkMLO4Go ",
+        "title": "Shed Base Kits - Plastic Shed Bases | Foundation Solutions",
+        "summary": "",
+        "tags": "summerhouse"
+    },
+    {
+        "created": "2021-10-03T08:15:50.583Z",
+        "url": "https://codeclimate.com/velocity/cycle-time-ebook/ ",
+        "title": "Engineering Leader's Guide to Cycle Time",
+        "summary": "",
+        "tags": "cycle-time"
+    },
+    {
+        "created": "2021-10-09T03:20:26.517Z",
+        "url": "https://www.simplethread.com/20-things-ive-learned-in-my-20-years-as-a-software-engineer/ ",
+        "title": "20 Things I've Learned in my 20 Years as a Software Engineer - Simple Thread",
+        "summary": "",
+        "tags": "engineering"
+    },
+    {
+        "created": "2021-10-14T12:16:47.599Z",
+        "url": "https://www.nature-and-garden.com/gardening/amelanchier.html ",
+        "title": "Amelanchier - planting, pruning, and advice on caring for it",
+        "summary": "",
+        "tags": "tree,garden"
+    },
+    {
+        "created": "2021-10-16T00:19:22.768Z",
+        "url": "https://www.fishkeepingworld.com/amano-shrimp/ ",
+        "title": "Amano Shrimp: Breeding, Care, and Lifespan - Fishkeeping World",
+        "summary": "",
+        "tags": "shrimp"
+    },
+    {
+        "created": "2021-10-16T00:24:40.224Z",
+        "url": "http://freshwaterfishfanatics.weebly.com/african-giant-fan-shrimp.html ",
+        "title": "African Giant Fan Shrimp - Freshwater Fish Fanatics",
+        "summary": "",
+        "tags": "shrimp"
+    },
+    {
+        "created": "2021-10-19T20:09:31.881Z",
+        "url": "https://www.thesprucepets.com/kribensis-1378289 ",
+        "title": "Kribensis Cichlid Fish Species Profile",
+        "summary": "",
+        "tags": "fish"
+    },
+    {
+        "created": "2021-10-20T19:30:08.741Z",
+        "url": "https://giters.com/11ty/eleventy/issues/1523",
+        "title": "Pug templates need better filter support - Giters",
+        "summary": "",
+        "tags": "eleventy, filters"
     }
 ]
