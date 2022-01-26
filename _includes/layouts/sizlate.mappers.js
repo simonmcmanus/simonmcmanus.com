@@ -62,7 +62,7 @@ const mappers = {
 
 
         return {
-            '.recent-links li': data.collections.links.reverse().slice(0, 10).map((link) => {
+            '.recent-links li': data.collections.links.slice(-10).reverse().map((link) => {
                 const title = link.title
                 return {
                     selectors: {
