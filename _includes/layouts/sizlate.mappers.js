@@ -3,14 +3,15 @@ const mappers = {
     listPosts: (data) => {
         const rev = data.collections.post.reverse()
         return {
-            '.recent-posts li': data.collections.post.map((post) => {
+            '.recent-posts li': rev.map((post) => {
+
                 return {
                     selectors: {
                         'a.link': {
                             innerHTML: post.data.title,
                             href: post.url
                         },
-                        '.created': post.data.created,
+                        '.created': post.date + ' ',
                         '.tag': post.data.tags.map((tag) => {
                             return {
                                 innerHTML: tag,
@@ -72,7 +73,7 @@ const mappers = {
 
                     }
                 }
-            }).reverse().slice(0, 2)
+            }).reverse().slice(0, 10)
         }
     },
 
