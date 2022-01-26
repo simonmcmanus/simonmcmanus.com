@@ -1,9 +1,14 @@
 ---
 layout: layouts/layout.sizlate.11ty.js
-sizlate: { 'a[href="/about.html"]': {
-    className: 'active'
-}}
 permalink: "/about.html"
+"sizlate": {
+    html: {
+        data-speclate-page: 'about'
+    },
+    "a[href='/about.html']": {
+        "className": "active"
+    }
+}
 
 ---
 <section class="contained">
