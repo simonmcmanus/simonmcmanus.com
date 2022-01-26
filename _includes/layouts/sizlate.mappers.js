@@ -1,17 +1,26 @@
 const mappers = {
     // takes the post array and produces a linked list
     listPosts: (data) => {
+        const rev = data.collections.post.reverse()
         return {
             '.recent-posts li': data.collections.post.map((post) => {
                 return {
                     selectors: {
-                        a: {
+                        'a.link': {
                             innerHTML: post.data.title,
                             href: post.url
-                        }
+                        },
+                        '.created': post.data.created,
+                        '.tag': post.data.tags.map((tag) => {
+                            return {
+                                innerHTML: tag,
+                                href: `/tags/${tag}`
+                            }
+                        })
+
                     }
                 }
-            }).slice(0, 3),
+            }),
 
         }
     },
@@ -20,7 +29,11 @@ const mappers = {
             '.posts a': data.collections[data.tag].map((post) => {
                 return {
                     innerHTML: post.data.title,
-                    href: post.url
+                    href: post.url,
+                    selectors: {
+                        '.tag': [false]
+
+                    }
                 }
             }),
 
@@ -37,19 +50,29 @@ const mappers = {
         }
     },
     listLinks: (data) => {
+        const linksReversed = data.collections.links
+
         return {
-            '.recent-links li': data.collections.links.map((link) => {
+            '.recent-links li': linksReversed.map((link) => {
+                const title = link.title
                 return {
                     selectors: {
-                        a: {
-                            innerHTML: link.title,
+                        'a.link': {
+                            innerHTML: title,
                             href: link.url
-
-                        }
+                        },
+                        '.title': title,
+                        '.created': link.created,
+                        '.tag': link.tags.map((tag) => {
+                            return {
+                                innerHTML: tag,
+                                href: `/tags/${tag}`
+                            }
+                        })
 
                     }
                 }
-            }).reverse().slice(0, 30)
+            }).reverse().slice(0, 2)
         }
     },
 

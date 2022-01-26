@@ -1,9 +1,3 @@
 {
-    "layout": "layouts/post.sizlate.11ty.js",
-
-    "sizlate": {
-        "a[href='/posts/']": {
-            "className": "active"
-        }
-    }
+    "layout": "layouts/post.sizlate.11ty.js"
 }
