@@ -1,9 +1,17 @@
+const { formatDistance, format, parse, parseISO } = require('date-fns')
+
+const dateLink = (date) => {
+    return {
+        href: '/' + format(date, 'dd-MM-yyyy') + '/index.html',
+        innerHTML: formatDistance(date, new Date(), { addSuffix: true }),
+    }
+}
 const mappers = {
     // takes the post array and produces a linked list
     listPosts: (data) => {
-        const rev = data.collections.post.reverse()
+
         return {
-            '.recent-posts li': rev.map((post) => {
+            '.recent-posts li': data.collections.post.slice(-10).reverse().map((post) => {
 
                 return {
                     selectors: {
@@ -11,7 +19,7 @@ const mappers = {
                             innerHTML: post.data.title,
                             href: post.url
                         },
-                        '.created': post.date + ' ',
+                        '.created': dateLink(post.date),
                         '.tag': post.data.tags.map((tag) => {
                             return {
                                 innerHTML: tag,
@@ -63,7 +71,7 @@ const mappers = {
                             href: link.url
                         },
                         '.title': title,
-                        '.created': link.created,
+                        '.created': dateLink(parseISO(link.created)),
                         '.tag': link.tags.map((tag) => {
                             return {
                                 innerHTML: tag,
