@@ -35,13 +35,19 @@ const mappers = {
     },
     pagination: (data) => {
         return {
-            '.posts a': data.collections[data.tag].map((post) => {
+            ".title": data.title,
+            '.post-list li': data.collections[data.tag].map((post) => {
                 return {
-                    innerHTML: post.data.title,
-                    href: post.url,
                     selectors: {
-                        '.tag': [false]
+                        a: {
+                            innerHTML: post.data.title,
+                            href: post.url,
+                            // selectors: {
+                            //     '.tag': [false]
 
+                            // }
+
+                        }
                     }
                 }
             }),
@@ -72,7 +78,7 @@ const mappers = {
                         },
                         '.title': title,
                         '.created': dateLink(parseISO(link.created)),
-                        '.tag': link.tags.map((tag) => {
+                        '.tag': link.data.tags.map((tag) => {
                             return {
                                 innerHTML: tag,
                                 href: `/tags/${tag}`

@@ -16,7 +16,9 @@ eleventyComputed:
 permalink: /tags/{{ tag  }}/
 mappers: ["pagination"]
 ---
-list of tags  fff
+<h1 class="title"></h1>
 
 
-<nav class="posts"><a href=""></a></nav>
+<ul class="post-list">
+  <li><a href=""></a></li>
+</ul>
