@@ -2,6 +2,7 @@
 layout: layouts/layout.sizlate.11ty.js
 title: "blog"
 mappers: ["tagList"]
+permalink: /tags
 "sizlate": {
     "a[href='/tag-list/']": {
         "className": "active"
@@ -12,4 +13,6 @@ mappers: ["tagList"]
 list of tags
 
 
-<nav class="tags"><a href=""></a></nav>
+<div class="contained">
+    <ul class="tags items holder container"><li><a href=""></a></li></ul>
+</div>

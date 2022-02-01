@@ -20,7 +20,7 @@ const mappers = {
                             href: post.url
                         },
                         '.created': dateLink(post.date),
-                        '.tag': post.data.tags.map((tag) => {
+                        '.tag': post.data.tags.filter(tag => tag != 'post').map((tag) => {
                             return {
                                 innerHTML: tag,
                                 href: `/tags/${tag}`
@@ -36,13 +36,31 @@ const mappers = {
     pagination: (data) => {
         return {
             ".title": data.title,
-            '.post-list li': data.collections.byTag[data.tag].map((post) => {
+            '.links_holder li': data.collections.byTag[data.tag].links.map((post) => {
 
                 return {
                     selectors: {
+                        "h5 span.title": post.title,
                         a: {
-                            innerHTML: post.title,
-                            //href: post.url,
+
+                            href: post.url,
+                            target: '_blank'
+                                // selectors: {
+                                //     '.tag': [false]
+
+                            // }
+
+                        }
+                    }
+                }
+            }),
+            '.posts_holder li': data.collections.byTag[data.tag].posts.map((post) => {
+                return {
+                    selectors: {
+                        "h5 span.title": post.title,
+                        '.created': post.created,
+                        a: {
+                            href: post.url,
                             // selectors: {
                             //     '.tag': [false]
 
@@ -57,7 +75,7 @@ const mappers = {
     },
     tagList: (data) => {
         return {
-            '.tags a': data.collections.tagList.map((tag) => {
+            '.tags li': data.collections.tagList.map((tag) => {
                 return {
                     innerHTML: tag,
                     href: `/tags/${tag}`

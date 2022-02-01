@@ -12,19 +12,21 @@ links = links.map((link) => {
 })
 
 module.exports = function(eleventyConfig) {
-
-
     const byTags = {};
     const addTag = (tag, type, detail) => {
         if (!byTags[tag]) {
-            byTags[tag] = []
+            byTags[tag] = {
+                links: [],
+                posts: []
+            }
         }
-        byTags[tag].push(detail)
+        byTags[tag][type].push(detail)
     }
 
     links.forEach((link) => {
         link.data.tags.forEach((tag) => addTag(tag, 'links', {
-            title: link.title
+            title: link.title,
+            url: link.url
         }))
     })
 
@@ -33,7 +35,8 @@ module.exports = function(eleventyConfig) {
             const tags = item.data.tags
             if (tags) {
                 tags.forEach((tag) => addTag(tag, 'posts', {
-                    title: item.data.title
+                    title: item.data.title,
+                    url: item.url
                 }))
             }
         })
@@ -47,7 +50,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addCollection("tagList", function(collection) {
         let tagSet = new Set();
         collection.getAll().forEach(item => {
-            //return (item.data.tags || []).forEach(tag => tagSet.add(tag));
+            return (item.data.tags || []).forEach(tag => tagSet.add(tag));
         });
 
         return [...tagSet];
