@@ -14,7 +14,7 @@ class SizlatePost {
 
         const selectors = {
             '#post': data.content,
-            "h1.title": data.title,
+            "h4.title": data.title,
         }
         const nextPost = this.getNextCollectionItem(data.collections.post, data.page, 1)
         const previousPost = this.getPreviousCollectionItem(data.collections.post, data.page, 1)
