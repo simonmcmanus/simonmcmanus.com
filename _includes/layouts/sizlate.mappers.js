@@ -36,12 +36,13 @@ const mappers = {
     pagination: (data) => {
         return {
             ".title": data.title,
-            '.post-list li': data.collections[data.tag].map((post) => {
+            '.post-list li': data.collections.byTag[data.tag].map((post) => {
+
                 return {
                     selectors: {
                         a: {
-                            innerHTML: post.data.title,
-                            href: post.url,
+                            innerHTML: post.title,
+                            //href: post.url,
                             // selectors: {
                             //     '.tag': [false]
 
