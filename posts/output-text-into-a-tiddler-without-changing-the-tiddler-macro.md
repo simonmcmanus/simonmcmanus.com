@@ -52,11 +52,6 @@ The aim here is to be able to manage users and your config for ccTiddly from Tid
 \*\*\*/
 ```
   
-```js
-  
-//{{{
-```
-  
 
   
 ```js
@@ -106,9 +101,3 @@ The aim here is to be able to manage users and your config for ccTiddly from Tid
 }
 ```
   
-```js
-  
-//}}}
-```
-
-        

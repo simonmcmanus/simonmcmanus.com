@@ -50,10 +50,6 @@ This code provides a template for creating Macros. When tagged systemConfig this
 \*\*\*/
 ```
   
-```js
-  
-//{{{
-```
   
 
   
@@ -77,9 +73,3 @@ alert('here');
 }
 ```
   
-```js
-  
-//}}}
-```
-
-        
