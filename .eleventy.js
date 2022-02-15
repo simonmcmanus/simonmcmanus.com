@@ -12,6 +12,11 @@ links = links.map((link) => {
 })
 
 module.exports = function(eleventyConfig) {
+
+
+    eleventyConfig.addPassthroughCopy({ static: "/" });
+
+
     const byTags = {};
     const addTag = (tag, type, detail) => {
         if (!byTags[tag]) {
