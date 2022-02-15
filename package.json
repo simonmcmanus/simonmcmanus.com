@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "test": "rm -Rf _site &&  eleventy --serve",
-        "eleventy": "eleventy"
+        "eleventy": "npx @11ty/eleventy"
     },
     "author": "Simon McManus",
     "license": "ISC",
@@ -15,6 +15,7 @@
         "sizlate": "^4.1.0"
     },
     "devDependencies": {
+        "@11ty/eleventy": "^1.0.0",
         "date-fns": "^2.28.0"
     }
 }
