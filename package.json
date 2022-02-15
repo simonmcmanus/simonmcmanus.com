@@ -4,12 +4,16 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "eleventy --serve"
+        "test": "rm -Rf _site &&  eleventy --serve"
     },
     "author": "Simon McManus",
     "license": "ISC",
     "dependencies": {
         "clean-css": "^5.2.1",
+        "eleventy": "^1.0.6",
         "sizlate": "^4.1.0"
+    },
+    "devDependencies": {
+        "date-fns": "^2.28.0"
     }
 }
