@@ -2,7 +2,7 @@
 layout: layouts/layout.sizlate.11ty.js
 title: "blog"
 mappers: ["tagList"]
-permalink: /tags
+permalink: /tag-list/
 "sizlate": {
     "a[href='/tag-list/']": {
         "className": "active"
