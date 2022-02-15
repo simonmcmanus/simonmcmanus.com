@@ -61,7 +61,6 @@ const mappers = {
                 }
             }),
             '.posts_holder li': data.collections.byTag[data.tag].posts.map((post) => {
-                console.log('pdc', post.created)
                 return {
                     selectors: {
                         "h5 span.title": post.title,

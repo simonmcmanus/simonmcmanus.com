@@ -33,9 +33,7 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addCollection('byTag', (collection) => {
         collection.getAll().forEach(item => {
-
             const tags = item.data.tags
-            console.log('->', item.data.date)
             if (tags) {
                 tags.forEach((tag) => addTag(tag, 'posts', {
                     title: item.data.title,
