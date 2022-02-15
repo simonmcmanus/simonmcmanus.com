@@ -1,6 +1,11 @@
 const { formatDistance, format, parse, parseISO } = require('date-fns')
 
 const dateLink = (date) => {
+    if (!date) {
+        return false
+    }
+
+
     return {
         href: '/' + format(date, 'dd-MM-yyyy') + '/index.html',
         innerHTML: formatDistance(date, new Date(), { addSuffix: true }),
@@ -41,7 +46,8 @@ const mappers = {
                 return {
                     selectors: {
                         "h5 span.title": post.title,
-                        a: {
+                        '.created': dateLink(parseISO(post.created)),
+                        'a.link': {
 
                             href: post.url,
                             target: '_blank'
@@ -55,11 +61,12 @@ const mappers = {
                 }
             }),
             '.posts_holder li': data.collections.byTag[data.tag].posts.map((post) => {
+                console.log('pdc', post.created)
                 return {
                     selectors: {
                         "h5 span.title": post.title,
-                        '.created': post.created,
-                        a: {
+                        //'a.created': post.created,
+                        'a.link': {
                             href: post.url,
                             // selectors: {
                             //     '.tag': [false]

@@ -26,17 +26,21 @@ module.exports = function(eleventyConfig) {
     links.forEach((link) => {
         link.data.tags.forEach((tag) => addTag(tag, 'links', {
             title: link.title,
-            url: link.url
+            url: link.url,
+            created: link.created
         }))
     })
 
     eleventyConfig.addCollection('byTag', (collection) => {
         collection.getAll().forEach(item => {
+
             const tags = item.data.tags
+            console.log('->', item.data.date)
             if (tags) {
                 tags.forEach((tag) => addTag(tag, 'posts', {
                     title: item.data.title,
-                    url: item.url
+                    url: item.url,
+                    created: item.data.date
                 }))
             }
         })

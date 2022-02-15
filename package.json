@@ -4,7 +4,8 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "rm -Rf _site &&  eleventy --serve"
+        "test": "rm -Rf _site &&  eleventy --serve",
+        "eleventy": "eleventy"
     },
     "author": "Simon McManus",
     "license": "ISC",
