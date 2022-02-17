@@ -7,8 +7,9 @@ const dateLink = (date) => {
 
 
     return {
-        href: '/' + format(date, 'dd-MM-yyyy') + '/index.html',
-        innerHTML: formatDistance(date, new Date(), { addSuffix: true }),
+        // href: '/' + format(date, 'dd-MM-yyyy') + '/index.html',
+        //innerHTML: formatDistance(date, new Date(), { addSuffix: true }),
+        innerHTML: format(date, 'dd-MM-yyyy'),
     }
 }
 const mappers = {
@@ -106,7 +107,7 @@ const mappers = {
                         '.tag': link.data.tags.map((tag) => {
                             return {
                                 innerHTML: tag,
-                                href: `/tags/${tag}`
+                                //href: `/tags/${tag}`
                             }
                         })
 
