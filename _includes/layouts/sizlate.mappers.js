@@ -1,17 +1,7 @@
-const { formatDistance, format, parse, parseISO } = require('date-fns')
-
-const dateLink = (date) => {
-    if (!date) {
-        return false
-    }
+const { parseISO } = require('date-fns')
+const { dateLink, tagLink } = require('../../lib/links')
 
 
-    return {
-        // href: '/' + format(date, 'dd-MM-yyyy') + '/index.html',
-        //innerHTML: formatDistance(date, new Date(), { addSuffix: true }),
-        innerHTML: format(date, 'dd-MM-yyyy'),
-    }
-}
 const mappers = {
     // takes the post array and produces a linked list
     listPosts: (data) => {
@@ -26,12 +16,7 @@ const mappers = {
                             href: post.url
                         },
                         '.created': dateLink(post.date),
-                        '.tag': post.data.tags.filter(tag => tag != 'post').map((tag) => {
-                            return {
-                                innerHTML: tag,
-                                href: `/tags/${tag}/`
-                            }
-                        })
+                        '.tag': post.data.tags.filter(tag => tag != 'post').map(tagLink)
 
                     }
                 }
@@ -82,12 +67,7 @@ const mappers = {
     },
     tagList: (data) => {
         return {
-            '.tags li': data.collections.tagList.map((tag) => {
-                return {
-                    innerHTML: tag,
-                    href: `/tags/${tag}/`
-                }
-            })
+            '.tags li': data.collections.tagList.map(tagLink)
         }
     },
     listLinks: (data) => {
@@ -104,12 +84,7 @@ const mappers = {
                         },
                         '.title': title,
                         '.created': dateLink(parseISO(link.created)),
-                        '.tag': link.data.tags.map((tag) => {
-                            return {
-                                innerHTML: tag,
-                                href: `/tags/${tag}/` // make link url safe
-                            }
-                        })
+                        '.tag': link.data.tags.map(tagLink)
 
                     }
                 }
@@ -120,4 +95,4 @@ const mappers = {
 }
 
 
-module.exports = mappers;
+module.exports = mappers
