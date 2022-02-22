@@ -29,11 +29,11 @@ This site is my personal playground where you will find experiments, <a href="/p
 
 
 </ul>
-
+<!-- 
 <h2 class="contained">Recent Links from Simon</h2>
 <ul class="links_holder items contained">
-</ul>
-
+</ul> -->
+<!-- 
 
 <nav class="recent-posts"><a href=""></a></nav>
-<nav class="recent-links"><a href=""></a></nav>
+<nav class="recent-links"><a href=""></a></nav> -->

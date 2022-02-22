@@ -1438,6 +1438,8 @@ html.loading footer {
     left: 0;
 }
 
+
+/* 
 .panels li.dog::after {
     background-image: url("https://streamline-production-bucket.cellar-c2.services.clever-cloud.com/icons/low/subc_M9YctUtkRjxCKjqzQEpRnr9w/blind-disability-2-jxqks5xu8bmzv6d99dn2za.png");
     background-size: 100%;
@@ -1449,10 +1451,10 @@ html.loading footer {
     height: 5em;
     position: absolute;
     animation: pop 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 0.5s;
-}
+} */
 
 .panels li.garden::after {
-    background-image: url("https://streamline-production-bucket.cellar-c2.services.clever-cloud.com/icons/low/subc_M9YctUtkRriMKjqjhkBvG85s/lawnmover-xptg4s7pre805moktw65k9w.png");
+    background-image: url("./icons/gardener.png");
     background-size: 100%;
     background-repeat: no-repeat;
     display: block;
@@ -1464,7 +1466,8 @@ html.loading footer {
     animation: pop 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 0.5s;
 }
 
-.panels li.director::after {
+
+/* .panels li.director::after {
     background-image: url("https://streamline-production-bucket.cellar-c2.services.clever-cloud.com/icons/low/subc_M9YctUtkRgUWKjqqYR4nY3GH/movie-production-epoyk5x2lu4pway7totjl.png");
     background-size: 100%;
     background-repeat: no-repeat;
@@ -1475,10 +1478,10 @@ html.loading footer {
     height: 5em;
     position: absolute;
     animation: pop 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 0.5s;
-}
+} */
 
 .panels li.resident::after {
-    background-image: url("https://streamline-production-bucket.cellar-c2.services.clever-cloud.com/icons/low/subc_M9YctUtkRbY3Kjq1buGYAp6g/house-8-ctuhr8nzyawwax1tlquxok.png");
+    background-image: url("./icons/loughton.png");
     background-size: 100%;
     background-repeat: no-repeat;
     display: block;
@@ -1491,7 +1494,7 @@ html.loading footer {
 }
 
 .panels li.web::after {
-    background-image: url("https://streamline-production-bucket.cellar-c2.services.clever-cloud.com/icons/low/subc_M9YctUtkReNfKjquQFhrereX/ux-ui-layout-2-kfy9prfxesgiv46404kyv.png");
+    background-image: url("./icons/web.png");
     background-size: 100%;
     background-repeat: no-repeat;
     display: block;
@@ -1503,6 +1506,8 @@ html.loading footer {
     animation: pop 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 0.5s;
 }
 
+
+/* 
 .panels li.javascript::after {
     background-image: url("https://streamline-production-bucket.cellar-c2.services.clever-cloud.com/icons/low/subc_M9YctUtkRJEkfyZ4aB2ooQrh/laptop-coding-2te16zxktqnojz3gvjgus.png");
     background-size: 100%;
@@ -1514,10 +1519,10 @@ html.loading footer {
     height: 5em;
     position: absolute;
     animation: pop 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 0.5s;
-}
+} */
 
 .panels li.organiser::after {
-    background-image: url("https://streamline-production-bucket.cellar-c2.services.clever-cloud.com/icons/low/subc_M9YctUtkRJEkfyZ4aB2ooQrh/coding-learning-1-kv1026smh1j7ravcg3jsp4.png");
+    background-image: url("./icons/events.png");
     background-size: 100%;
     background-repeat: no-repeat;
     display: block;
@@ -1529,6 +1534,8 @@ html.loading footer {
     animation: pop 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 0.5s;
 }
 
+
+/* 
 .panels li.host::after {
     background-image: url("https://streamline-production-bucket.cellar-c2.services.clever-cloud.com/icons/low/subc_M9YctUtkRRT6KjqpRnUmxJew/podcast-1-ob004svgdnm9otgzcniff.png");
     background-size: 100%;
@@ -1553,10 +1560,10 @@ html.loading footer {
     height: 5em;
     position: absolute;
     animation: pop 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 0.5s;
-}
+} */
 
 .panels li.lead::after {
-    background-image: url("https://streamline-production-bucket.cellar-c2.services.clever-cloud.com/icons/low/subc_M9YctUtkRjt2fyZTjolqFPhC/team-hierarchy-3-2-f81txuz4sycynx7ireenw.png");
+    background-image: url("./icons/lead.png");
     background-size: 100%;
     background-repeat: no-repeat;
     display: block;
@@ -1568,6 +1575,8 @@ html.loading footer {
     animation: pop 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 0.5s;
 }
 
+
+/* 
 .panels li.speaker::after {
     background-image: url("https://streamline-production-bucket.cellar-c2.services.clever-cloud.com/icons/low/subc_M9YctUtkRJEkfyZ4aB2ooQrh/coding-projector-wqxzbgqsz8e6i4pkvwohqn.png");
     background-size: 100%;
@@ -1579,7 +1588,7 @@ html.loading footer {
     height: 5em;
     position: absolute;
     animation: pop 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 0.5s;
-}
+} */
 
 .panels li a {
     padding-top: 4em;
