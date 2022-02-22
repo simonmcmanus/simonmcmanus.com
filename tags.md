@@ -27,7 +27,7 @@ mappers: ["pagination"]
             <img class="favIcon"><span class="title"></span>
         </h5>
     </a>
-    <a class="created" href="">aaa</a>
+    <span class="created"></span>
 </li></ul>
 </div>
 
@@ -41,7 +41,7 @@ mappers: ["pagination"]
             <img class="favIcon"><span class="title"></span>
         </h5>
     </a>
-    <a class="created" href=""></a>
+    <span class="created"></span>
 </li>
 
 

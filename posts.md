@@ -26,7 +26,7 @@ mappers: ["listPosts"]
                     <span>tagged:</span>
                     <a class="button tag" href="/tags/eleventy/index.html">eleventy</a>
                 </ul>
-                <a class="created" href="/2021-10-20/index.html">2021-10-20</a>
+                <span class="created" >2021-10-20</span>
             </li>
         </ul>
     </nav>
