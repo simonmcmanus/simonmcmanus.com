@@ -107,7 +107,7 @@ const mappers = {
                         '.tag': link.data.tags.map((tag) => {
                             return {
                                 innerHTML: tag,
-                                //href: `/tags/${tag}`
+                                href: `/tags/${tag}` // make link url safe
                             }
                         })
 

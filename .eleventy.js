@@ -3,20 +3,12 @@ let links = require('./_data/links.json')
 
 links = links.map((link) => {
     link.data = {}
-    link.data.tags = []
-    if (typeof link.tags === 'string') {
-        link.data.tags = link.tags.split(',') || []
-
-    }
+    link.data.tags = link.tags
     return link
 })
 
 module.exports = function(eleventyConfig) {
-
-
     eleventyConfig.addPassthroughCopy({ static: "/" });
-
-
     const byTags = {};
     const addTag = (tag, type, detail) => {
         if (!byTags[tag]) {
