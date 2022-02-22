@@ -1,5 +1,5 @@
 let links = require('./_data/links.json')
-var urlSafe = require("./url-safe");
+var urlSafe = require("./lib/url-safe");
 
 links = links.map((link) => {
     link.data = {}
