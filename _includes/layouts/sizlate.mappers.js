@@ -29,7 +29,7 @@ const mappers = {
                         '.tag': post.data.tags.filter(tag => tag != 'post').map((tag) => {
                             return {
                                 innerHTML: tag,
-                                href: `/tags/${tag}`
+                                href: `/tags/${tag}/`
                             }
                         })
 
@@ -85,7 +85,7 @@ const mappers = {
             '.tags li': data.collections.tagList.map((tag) => {
                 return {
                     innerHTML: tag,
-                    href: `/tags/${tag}`
+                    href: `/tags/${tag}/`
                 }
             })
         }
@@ -107,7 +107,7 @@ const mappers = {
                         '.tag': link.data.tags.map((tag) => {
                             return {
                                 innerHTML: tag,
-                                href: `/tags/${tag}` // make link url safe
+                                href: `/tags/${tag}/` // make link url safe
                             }
                         })
 
