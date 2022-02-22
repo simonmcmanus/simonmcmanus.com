@@ -33,17 +33,12 @@ mappers: ["pagination"]
 
 <div class="category-summary contained">
 <h4>Links</h4>
-<ul class="links_holder">
-
-<li class="section link">
+<ul class="links_holder"><li class="section link">
     <a class="link" target="_blank" href=" ">
         <h5>
             <img class="favIcon"><span class="title"></span>
         </h5>
     </a>
     <span class="created"></span>
-</li>
-
-
-</ul>
+</li></ul>
 </div>

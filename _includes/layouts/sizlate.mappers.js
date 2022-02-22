@@ -1,7 +1,58 @@
 const { parseISO } = require('date-fns')
 const { dateLink, tagLink } = require('../../lib/links')
 
+const linksList = () => {
+    return [false]
 
+}
+const postList = (posts) => {
+
+    if (posts.length === 0) {
+        return false
+    }
+    return posts.map((post) => {
+        return {
+            selectors: {
+                "h5 span.title": post.title,
+                //'a.created': post.created,
+                'a.link': {
+                    href: post.url,
+                    // selectors: {
+                    //     '.tag': [false]
+
+                    // }
+
+                }
+            }
+        }
+    })
+}
+
+const linkList = (links) => {
+    if (links.length === 0) {
+        return false
+    }
+
+    return links.map((post) => {
+
+        return {
+            selectors: {
+                "h5 span.title": post.title,
+                '.created': dateLink(parseISO(post.created)),
+                'a.link': {
+
+                    href: post.url,
+                    target: '_blank'
+                        // selectors: {
+                        //     '.tag': [false]
+
+                    // }
+
+                }
+            }
+        }
+    })
+}
 const mappers = {
     // takes the post array and produces a linked list
     listPosts: (data) => {
@@ -27,41 +78,8 @@ const mappers = {
     pagination: (data) => {
         return {
             ".title": data.title,
-            '.links_holder li': data.collections.byTag[data.tag].links.map((post) => {
-
-                return {
-                    selectors: {
-                        "h5 span.title": post.title,
-                        '.created': dateLink(parseISO(post.created)),
-                        'a.link': {
-
-                            href: post.url,
-                            target: '_blank'
-                                // selectors: {
-                                //     '.tag': [false]
-
-                            // }
-
-                        }
-                    }
-                }
-            }),
-            '.posts_holder li': data.collections.byTag[data.tag].posts.map((post) => {
-                return {
-                    selectors: {
-                        "h5 span.title": post.title,
-                        //'a.created': post.created,
-                        'a.link': {
-                            href: post.url,
-                            // selectors: {
-                            //     '.tag': [false]
-
-                            // }
-
-                        }
-                    }
-                }
-            }),
+            '.links_holder li': linkList(data.collections.byTag[data.tag].links),
+            '.posts_holder li': postList(data.collections.byTag[data.tag].posts),
 
         }
     },
