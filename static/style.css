@@ -177,6 +177,11 @@ h1 {
     line-height: 0.9em;
 }
 
+h1.title {
+    text-align: center;
+    margin: 1em;
+}
+
 h2 {
     line-height: 1.5em;
     padding: 0;
