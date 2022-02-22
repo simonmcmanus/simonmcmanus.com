@@ -1,5 +1,6 @@
 ---
 layout: layouts/layout.sizlate.11ty.js
+permalink: /talks.html
 ---
 
 <div class="contained talks">
