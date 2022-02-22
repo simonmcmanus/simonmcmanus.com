@@ -2,7 +2,7 @@ var superagent = require("superagent");
 var fs = require("fs");
 var moment = require("moment");
 var chalk = require("chalk");
-var urlSafe = require("./url-safe");
+var urlSafe = require("../lib/url-safe");
 var url = require("url");
 
 var Encoder = require("node-html-encoder").Encoder;
