@@ -10661,5 +10661,98 @@
             "street design"
         ],
         "date": "2022-02-11"
+    },
+    {
+        "created": "2022-02-22T09:26:18.581Z",
+        "url": "https://www.screamingfrog.co.uk/seo-spider/",
+        "title": "Screaming Frog SEO Spider Website Crawler",
+        "summary": "The Screaming Frog SEO Spider is a website crawler that helps you improve onsite SEO, by extracting data & auditing for common SEO issues. Download & crawl 500 URLs for free, or buy a licence to remove the limit & access advanced features.",
+        "tags": [
+            "seo",
+            " crawler",
+            " web"
+        ],
+        "date": "2022-02-22"
+    },
+    {
+        "created": "2022-02-22T10:50:45.569Z",
+        "url": "https://sli.dev/",
+        "title": "Home | Slidev",
+        "summary": "Presentation Slides for Developers ",
+        "tags": [
+            "sides",
+            " developers"
+        ],
+        "date": "2022-02-22"
+    },
+    {
+        "created": "2022-02-22T11:00:17.575Z",
+        "url": "https://www.infoq.com/news/2017/06/paved-paas-netflix/",
+        "title": "The \"Paved Road\" PaaS for Microservices at Netflix: Yunong Xiao at QCon NY",
+        "summary": "At QCon New York 2017, Yunong Xiao presented \"The Paved PaaS to Microservices at Netflix\" which discussed how the Netflix Platform as a Service (PaaS) assists with maintaining the balance between the culture of freedom and responsibility and the overall organisational goals of velocity and reliability. The Netflix PaaS team attempts to provide a sensibly configured but customisable \"paved road\" platform for developers by offering standardised and compatible components, pre-assembling the platform, and by providing extensive automation and tooling.",
+        "tags": [
+            "paas",
+            " platform-engineering"
+        ],
+        "date": "2022-02-22"
+    },
+    {
+        "created": "2022-02-22T11:03:15.972Z",
+        "url": "https://netflixtechblog.com/full-cycle-developers-at-netflix-a08c31f83249",
+        "title": "Full Cycle Developers at Netflix — Operate What You Build | by Netflix Technology Blog | Netflix TechBlog",
+        "summary": "The year was 2012 and operating a critical service at Netflix was laborious. Deployments felt like walking through wet sand. Canarying was devolving into verifying endurance (“nothing broke after one week of canarying, let’s push it”) rather than correct functionality. Researching issues felt like bouncing a rubber ball between teams, hard to catch the root cause and harder yet to stop from bouncing between one another. All of these were signs that changes were needed.",
+        "tags": [
+            "netflix",
+            " canary",
+            " value",
+            " devops",
+            " scaling",
+            " platform-engineering"
+        ],
+        "date": "2022-02-22"
+    },
+    {
+        "created": "2022-02-22T11:04:20.739Z",
+        "url": "https://blog.getambassador.io/the-rise-of-cloud-native-engineering-organizations-1a244581bda5",
+        "title": "SRE vs Platform Engineering. DevOps, GitOps, and the Rise of… | by Ambassador Labs | Ambassador Labs",
+        "summary": "Over the past decade, engineering and technology organizations have converged on a common set of best practices for building and deploying cloud-native applications. These best practices include continuous delivery, containerization, and building observable systems.",
+        "tags": [
+            "platform-engineering",
+            " devops",
+            " continuous-delivery",
+            " observability"
+        ],
+        "date": "2022-02-22"
+    },
+    {
+        "created": "2022-02-22T11:06:08.504Z",
+        "url": "https://www.youtube.com/watch?v=KGbw2c40q9Q",
+        "title": "Keynote: Creating a Holistic Developer Experience - Jasmine James, Engineering Manager, Twitter - YouTube",
+        "summary": "Keynote: Creating a Holistic Developer Experience - Jasmine James, Engineering Manager, Twitter",
+        "tags": [
+            "developer-experience",
+            " platform-engineering"
+        ],
+        "date": "2022-02-22"
+    },
+    {
+        "created": "2022-02-22T11:06:33.163Z",
+        "url": "https://softwareengineeringdaily.com/2020/02/13/setting-the-stage-for-platform-engineering/",
+        "title": "The Rise of Platform Engineering - Software Engineering Daily",
+        "summary": "The rise of microservices, container orchestration, and the like have introduced novel engineering challenges. Platform engineering teams have formed at a number of organizations to shoulder these responsibilities. In some respects, the role of a platform engineer hasn’t drastically changed from that of other DevOps related roles. There is truth in noting that the title, “Platform Engineer” is nothing but a new title. However, a number of factors are, and continue to, cause the traditional responsibilities of a Site Reliability Engineer (SRE) to shift.",
+        "tags": [
+            "platform-engineering"
+        ],
+        "date": "2022-02-22"
+    },
+    {
+        "created": "2022-02-22T11:07:11.617Z",
+        "url": "https://humanitec.com/blog/top-10-fallacies-in-platform-engineering",
+        "title": "The top 10 fallacies in platform engineering | Humanitec",
+        "summary": "According to Puppet’s State of DevOps Reports from 2020 and 2021 and our own DevOps Benchmarking Study, adopting these trends is what sets top performing engineering organizations apart from low performing teams. Internal Developer Platforms and developer self-service are generally seen as the best way to cross the chasm in an organization’s DevOps transformation. ",
+        "tags": [
+            "platform-engineering"
+        ],
+        "date": "2022-02-22"
     }
 ]
