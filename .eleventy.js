@@ -32,7 +32,7 @@ module.exports = function(eleventyConfig) {
         collection.getAll().forEach(item => {
             const tags = item.data.tags
             if (tags) {
-                tags.forEach((tag) => addTag(tag, 'posts', {
+                tags.forEach((tag) => addTag(urlSafe(tag), 'posts', {
                     title: item.data.title,
                     url: item.url,
                     created: item.data.date
