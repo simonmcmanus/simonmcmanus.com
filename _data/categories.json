@@ -1,0 +1,74 @@
+[{
+        "tags": ["node"],
+        "image": "http://localhost:84/client/assets/categories/js.png",
+        "summary": "Ideas, thoughts and links about Node.js developement and the London community. If you would like some help with a Node.js project, please <a href='/hire/index.html'>get in contact</a>. ",
+        "title": "Node.js"
+    },
+    {
+        "tags": ["js"],
+        "summary": "Ideas, thoughts and links about Javascript developement and the London community.",
+        "title": "Javascript"
+    },
+    {
+        "tags": ["lnug"],
+        "image": "https://live.staticflickr.com/5779/23025597740_9ab7da49e7_b.jpg",
+        "summary": "London Node User Group (LNUG) is a friendly monthly meetup for people using Node.js for fun or profit. Here you will find a number of links related to the website and podcast.",
+        "title": "London Node User Group"
+    },
+    {
+        "tags": ["enhanceconf", "EnhanceConf", "enhance-conf"],
+        "image": "https://live.staticflickr.com/5779/23025597740_9ab7da49e7_b.jpg",
+        "summary": "A 2016 conference dedicated to Progressive Enhancement",
+        "title": "EnhanceConf"
+    },
+    {
+        "title": "London",
+        "image": "https://www.dalaric.com/wp-content/uploads/AdobeStock_203994937x1-1000x675.jpg",
+        "summary": "❤ London",
+        "tags": ["London"]
+    },
+    {
+        "title": "Loughton",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Loughton%2C_Lopping_Hall_-_geograph.org.uk_-_548944.jpg",
+        "summary": "A loughton local, Essex is where I call home. ❤️ Loughton",
+        "tags": ["loughton"]
+    },
+    {
+        "title": "Pond",
+        "summary": "My little pond, a work in progress...",
+        "tags": ["pond"]
+    },
+    {
+        "title": "Garden",
+        "image": "https://live.staticflickr.com/5634/23212931412_9e49ad2e38_4k.jpg",
+        "summary": "Various gardening links",
+        "tags": []
+    },
+    {
+        "title": "Sizlate",
+        "summary": "insert data into html files using just css selectors using <a href='https://www.npmjs.com/package/sizlate'>sizlate</a>",
+        "tags": ["sizlate"]
+    },
+    {
+        "title": "Speclate",
+        "summary": "Define websites using a spec.js file. Render each page at build time, in the browser and offline.<br />Ensure the best rendering experience is always available to the widest possible audience.",
+        "tags": ["speclate"]
+    },
+    {
+        "title": "DotJS Ltd",
+        "summary": "London based Node.js consultancy services",
+        "tags": ["dotjs"]
+    },
+    {
+        "title": "Generative Adversarial Networks",
+        "summary": "GANs are a clever way of training a generative model by framing the problem as a supervised learning problem with two sub-models: the generator model that we train to generate new examples, and the discriminator model that tries to classify examples as either real (from the domain) or fake (generated).",
+        "tags": ["GAN"]
+    },
+    {
+        "title": "Guide Dogs",
+        "image": "https://www.rnib.org.uk/sites/default/files/Ryan_guide-dog.jpg",
+
+        "summary": "Guide Dogs for the Blind",
+        "tags": ["guide-dogs", "guide-dogs-for-the-blind", "guide dogs"]
+    }
+]

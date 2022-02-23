@@ -1,5 +1,16 @@
 let links = require('./_data/links.json')
+const categories = require('./_data/categories.json')
 var urlSafe = require("./lib/url-safe");
+
+const categoriesByTag = {}
+
+
+categories.forEach((category) => {
+    category.tags.forEach((tag) => {
+        categoriesByTag[urlSafe(tag)] = category
+    })
+
+})
 
 links = links.map((link) => {
     link.data = {}
@@ -11,8 +22,10 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy({ static: "/" });
     const byTags = {};
     const addTag = (tag, type, detail) => {
+        const categoryInfo = categoriesByTag[urlSafe(tag)]
         if (!byTags[tag]) {
             byTags[tag] = {
+                ...categoriesByTag[tag],
                 links: [],
                 posts: []
             }

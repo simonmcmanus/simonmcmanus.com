@@ -12,11 +12,23 @@ pagination:
     - tagList
   addAllPagesToCollections: true
 eleventyComputed:
-  title: Tag “{{ tag }}”
+  title: “{{ tag }}”
 permalink: /tags/{{ tag  }}/
 mappers: ["pagination"]
+"sizlate": {
+    html: {
+        data-speclate-page: 'tag'
+    },
+}
+
 ---
-<h1 class="title"></h1>
+<div class="category"><header class="category">
+    <h2 class="title contained"></h2>
+</header>
+<div class=" contained honey-teir1">
+    <p class="summary"></p>
+</div>
+<div class="category contained"></div></div>
 
 
 <div class="category-summary contained">

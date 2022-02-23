@@ -1809,7 +1809,7 @@ html[data-speclate-page="tag"] header.category {
     z-index: 1;
 }
 
-html[data-speclate-page="tag"] .category .summary {
+.category .summary {
     padding: 1em;
 }
 

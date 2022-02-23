@@ -76,10 +76,16 @@ const mappers = {
         }
     },
     pagination: (data) => {
+        const tagInfo = data.collections.byTag[data.tag]
+        const noImgStyle = ``
+        const imgStyle = `min-height:15em;background-image: radial-gradient(circle, rgba(.6,.6,.6,.4) 0%, rgba(1, 1, 1,.9) 100%), url(${tagInfo.image});`
+        const categoryHeader = { style: tagInfo.image ? imgStyle : noImgStyle };
         return {
             ".title": data.title,
-            '.links_holder li': linkList(data.collections.byTag[data.tag].links),
-            '.posts_holder li': postList(data.collections.byTag[data.tag].posts),
+            ".category .summary": tagInfo.summary || false,
+            "header.category": categoryHeader,
+            '.links_holder li': linkList(tagInfo.links),
+            '.posts_holder li': postList(tagInfo.posts),
 
         }
     },
