@@ -2,7 +2,7 @@
 layout: layouts/layout.sizlate.11ty.js
 title: "blog"
 permalink: "/posts.html"
-mappers: ["listPosts"]
+mappers: ["recentPosts"]
 "sizlate": {
     html: {
         data-speclate-page: 'posts'
