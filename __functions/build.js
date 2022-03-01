@@ -1,7 +1,7 @@
 const request = require('superagent');
 
 
-const url = 'https://api.netlify.com/build_hooks/58dfcfd171e20a219a52e5a1'
+const url = 'https://api.netlify.com/build_hooks/621e8787b0a5891c22c67e9b'
 const build = async() => {
 
     return await
