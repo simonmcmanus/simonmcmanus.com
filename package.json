@@ -13,6 +13,7 @@
     "dependencies": {
         "clean-css": "^5.2.1",
         "eleventy": "^1.0.6",
+        "lodash": "^4.17.21",
         "sizlate": "^4.1.0",
         "twitter": "^1.7.1"
     },
