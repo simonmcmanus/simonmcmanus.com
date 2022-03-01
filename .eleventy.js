@@ -1,3 +1,5 @@
+const pluginRss = require("@11ty/eleventy-plugin-rss");
+
 let links = require('./_data/links.json')
 const categories = require('./_data/categories.json')
 var urlSafe = require("./lib/url-safe");
@@ -19,6 +21,7 @@ links = links.map((link) => {
 })
 
 module.exports = function(eleventyConfig) {
+    eleventyConfig.addPlugin(pluginRss);
     eleventyConfig.addPassthroughCopy({ static: "/" });
     const byTags = {};
     const addTag = (tag, type, detail) => {
