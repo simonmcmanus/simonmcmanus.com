@@ -24,7 +24,6 @@ exports.handler = async(event) => {
             return { statusCode: 400, body: 'no-url' }
         }
 
-
         var params = {
             Key: "links.json",
             Bucket: 'netlify-files',
