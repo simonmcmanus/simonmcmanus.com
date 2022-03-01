@@ -1,3 +1,4 @@
 {
-    "layout": "layouts/post.sizlate.11ty.js"
+    "layout": "layouts/post.sizlate.11ty.js",
+    "mappers": ["post"]
 }

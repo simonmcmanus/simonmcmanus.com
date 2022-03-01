@@ -9,7 +9,7 @@ const mappers = require('./sizlate.mappers')
 
 class Sizlate {
     data = {
-        template
+        template,
     };
 
     render(data) {

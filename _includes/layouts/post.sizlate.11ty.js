@@ -3,11 +3,9 @@ const sizlate = require('sizlate')
 const fs = require('fs')
 const template = fs.readFileSync('./_includes/layouts/post.html', 'utf8')
 
-const { buildSelectorsM } = require('./sizlate.11ty')
-
 class SizlatePost {
     data = {
-        layout: 'layouts/layout.sizlate.11ty.js',
+        layout: 'layouts/layout.sizlate.11ty.js'
     }
 
     postSelectors(data) {
