@@ -4,13 +4,10 @@ const tagList = require('./tagList')
 const recentPosts = require('./recentPosts')
 const recentLinks = require('./recentLinks')
 
-const mappers = {
+module.exports = {
     post,
     pagination,
     tagList,
     recentPosts,
     recentLinks,
 }
-
-
-module.exports = mappers

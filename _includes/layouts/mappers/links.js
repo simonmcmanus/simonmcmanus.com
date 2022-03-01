@@ -1,5 +1,5 @@
 const { formatDistance, format, parse, parseISO } = require('date-fns')
-var urlSafe = require("./url-safe");
+var urlSafe = require("../../../lib/url-safe");
 
 const dateLink = (date) => {
     if (!date) {

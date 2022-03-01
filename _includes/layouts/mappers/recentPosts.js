@@ -1,4 +1,4 @@
-const { dateLink, tagLink } = require('../../../lib/links')
+const { dateLink, tagLink } = require('./links')
 
 module.exports = (data) => ({
     '.recent-posts li': data.collections.post.slice(-10).reverse().map((post) => ({

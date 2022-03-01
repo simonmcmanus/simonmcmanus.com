@@ -1,5 +1,5 @@
 const { parseISO } = require('date-fns')
-const { dateLink, tagLink } = require('../../../lib/links')
+const { dateLink, tagLink } = require('./links')
 
 module.exports = (data) => ({
     '.recent-links li': data.collections.links.slice(-10).reverse().map((link) => ({

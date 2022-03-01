@@ -1,5 +1,5 @@
 const { parseISO } = require('date-fns')
-const { dateLink, tagLink } = require('../../../lib/links')
+const { dateLink } = require('./links')
 
 module.exports = (links) => {
     if (links.length === 0) {
