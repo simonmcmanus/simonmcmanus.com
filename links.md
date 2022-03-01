@@ -1,6 +1,6 @@
 ---
 layout: layouts/layout.sizlate.11ty.js
-mappers: ["listLinks"]
+mappers: ["recentLinks"]
 permalink: "/links.html"
 "sizlate": {
     html: {
