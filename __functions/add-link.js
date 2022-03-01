@@ -5,7 +5,6 @@ const build = require('./build')
 const { extractUniqueTags } = require('../lib/get-tags.js')
 exports.handler = async(event) => {
 
-
     if (event.headers['x-api-key'] !== process.env.API_KEY) {
         return { statusCode: 404 }
     }
