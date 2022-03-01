@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Simon McManus</title>
+    <style type="text/css">
+        body {
+            color: #444;
+            font-family: Georgia;
+            background: #e6e6e659;
+        }
+        
+        a {
+            color: #04044a;
+        }
+        
+        h3 {
+            font-size: 1em;
+            margin-top: 0em;
+        }
+        
+        .profile {
+            display: inline-block;
+        }
+        
+        .item {
+            margin: 0.2em 4em 1.5em;
+            border-bottom: 1px solid #ddd;
+            height: auto;
+        }
+        
+        .box {
+            display: inline-block;
+            padding: 0.2em 0em 0em 0em;
+            margin-bottom: 1em;
+            font-size: 1.1em;
+        }
+        
+        .dates {
+            font-size: 0.9em;
+            display: inline-block;
+            margin-bottom: 1.5em;
+        }
+        
+        .experience,
+        .education {
+            list-style-image: none;
+            list-style-position: inside;
+            list-style-type: none;
+            margin-left: -2.6em;
+            margin-bottom: 1em;
+        }
+        
+        .description li,
+        .courses li {
+            font-size: 1em;
+            padding-bottom: 0.8em;
+            list-style-position: outside;
+            list-style: disc;
+            margin-left: -1.4em;
+            line-height: 1.4em;
+        }
+        
+        .courses li {
+            padding: 0.2em;
+            list-style: none;
+        }
+        
+        .last {
+            border-bottom: 0em;
+        }
+        
+        #container {
+            width: 70%;
+            border: 1px solid #c2c2c2;
+            background: #fff;
+            margin: auto;
+        }
+        
+        #top-item {
+            padding: 0em;
+        }
+        
+        #main-title {
+            font-size: 2.4em;
+        }
+        
+        #contactDetails {
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+        
+        .skill-description {
+            font-size: 1em;
+            padding: 0.5em 0em 0em 0.5em;
+            line-height: 1.4em;
+            font-weight: 1;
+        }
+        
+        @media (min-width: 800px) {
+            .section.tools {
+                display: inline-block;
+            }
+            .box {
+                vertical-align: top;
+                width: 49%;
+                font-weight: bold;
+                font-size: 1em;
+            }
+            h3.summary,
+            div.dates {
+                display: inline-block;
+            }
+            .dates {
+                top: 0.4em;
+                float: right;
+                position: relative;
+            }
+            .item-title {
+                font-size: 1em;
+                font-style: italic;
+                position: relative;
+                text-align: right;
+                top: 0.62em;
+                width: 7em;
+            }
+            .section {
+                padding-left: 8.5em;
+                position: relative;
+                top: -1.5em;
+            }
+            #contactDetails {
+                float: right;
+                position: relative;
+                text-align: right;
+                top: -6em;
+            }
+        }
+        
+        @media (max-width: 1100px) {
+            #container {
+                width: 99%;
+                border: 1px solid #c2c2c2;
+                background: #fff;
+                margin: auto;
+            }
+        }
+        
+        @media print {
+            body {
+                font-size: 0.8em;
+            }
+            a {
+                text-decoration: none;
+            }
+            .box {
+                width: 48%;
+                display: inline-block;
+            }
+            .section.tools {
+                display: inline-block;
+            }
+            .box {
+                vertical-align: top;
+                width: 49%;
+                font-weight: bold;
+                font-size: 1em;
+            }
+            #contactDetails {
+                float: right;
+                position: relative;
+                text-align: right;
+                top: -6em;
+            }
+            h3.summary,
+            div.dates {
+                display: inline-block;
+            }
+            .dates {
+                top: 0.4em;
+                float: right;
+                position: relative;
+            }
+            .experience,
+            .education {
+                margin-left: -3.5em;
+            }
+            #container {
+                width: 100%;
+                border: 0px;
+                margin: auto;
+            }
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+    <div id="container">
+        <div id="top-item" class="item">
+            <div class="title">
+                <h1 id="main-title">
+                    Simon<br /> McManus
+                </h1>
+            </div>
+            <div id="contactDetails">
+                +44 (0) 781 454 5689<br />
+                <a href="http://www.simonmcmanus.com">simonmcmanus.com</a><br />
+                <a href="mailto:mcmanus.simon@gmail.com">mcmanus.simon@gmail.com</a
+          ><br />
+        </div>
+      </div>
+      <div class="item">
+        <div class="section">
+          <p class="summary profile">
+            Node.js specialist with a passion for producing world-class web
+            experiences.
+          </p>
+        </div>
+      </div>
+
+      <div class="item">
+        <h2 class="item-title">
+          Experience
+        </h2>
+        <div class="section">
+          <ol class="vcalendar">
+            <li class="experience vevent">
+              <h3 class="summary">
+                <a href="https://drest.com/">Tech Lead at DREST</a>
+                </h3>
+                <div class="dates">
+                    <abbr class="dtstart" title="2019-06-01">May 2020</abbr> -
+                    <abbr>Present</abbr>
+                </div>
+
+                <ul class="description">
+                    <li>
+                        <strong>DREST Core Loop  </strong>
+                        <p>Rebuilt the DREST core loop using React Native and X-State. Worked with senior stakeholder, architecture and delivery. </p>
+                    </li>
+                    <li>
+                        <strong>Selfie Avatar</strong>
+                        <p>Led team of iOS/Android and <a href="https://nodejs.org/en/">Node</a>/<a href="https://graphql.org/">GraphQL</a> developers to build a pipeline transforming 2d selfies into a full-body model that can be used in game. Worked with
+                            AI and face recognition software to validate the output quality.
+                        </p>
+                    </li>
+                    <li>
+                        <strong>Gucci Wardrobe </strong>
+                        <p> Led a team of 4 developers with tight deadlines to build a custom <a href="https://reactjs.org/">React</a>/<a href="https://xstate.js.org/">X-State</a> web solution that let <a href="https://www.gucci.com/uk/en_gb/">Gucci</a> VIPs
+                            try on Gucci clothes and buy them using <a href="https://www.farfetch.com/uk/">FarFetch</a>. Intended audience was around 3000 but after the Gucci CEO tried it out it was sent to all of Gucci’s 30,000 VIPs</p>
+                    </li>
+                </ul>
+                </li>
+                <li class="experience vevent">
+                    <h3 class="summary">
+                        <a href="https://limescan.net/">Limescan</a>
+                    </h3>
+                    <div class="dates">
+                        <abbr class="dtstart" title="2019-06-01">June 2019</abbr> -
+                        <abbr>March 2020</abbr>
+                    </div>
+
+                    <ul class="description">
+                        <li>
+                            <a href="https://nuxtjs.org/">Nuxt</a>/<a href="https://vuejs.org/">Vue.js</a
+                  >
+                  application to manage and visualise data from software-defined
+                  wireless probes.
+                </li>
+              </ul>
+            </li>
+            <li class="experience vevent">
+              <h3 class="summary">
+                <a href="http://dominos.co.uk">Dominos Pizza Group</a>
+                            </h3>
+                            <div class="dates">
+                                <abbr class="dtstart" title="2019-05-01">July 2019</abbr> -
+                                <abbr class="dtstart" title="2020-01-31">January 2020</abbr>
+                            </div>
+
+                            <ul class="description">
+                                <li>
+                                    Developing <a href="https://vuejs.org/">Vue.js</a>
+                                    <a href="https://martinfowler.com/articles/micro-frontends.html">Micro Frontends</a
+                  >
+                  architecture for new
+                  <a href="http://dominos.co.uk/">Domino's</a> site.
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        <li class="experience vevent">
+                            <h3 class="summary">
+                                <a href="http://nearform.com/">NearForm</a>
+                            </h3>
+                            <div class="dates">
+                                <abbr class="dtstart" title="2016-05-01">May 2016</abbr> -
+                                <abbr class="dtstart" title="2019-03-01">March 2019</abbr>
+                            </div>
+
+                            <ul class="description">
+                                <li>
+                                    Redeveloped ticketing platform as part of a digital transformation project with
+                                    <a href="https://www.atgtickets.com/">ATG tickets</a> using <a href="https://preactjs.com/">Preact</a>/<a href="https://reactjs.org/">React</a> <a href="https://redux.js.org/introduction/getting-started">Redux</a>/
+                                    <a href="https://graphql.org/">GraphQL</a>.
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="experience vevent">
+                            <h3 class="summary">
+                                <a href="https://www.seaofthieves.com/">Rare/Microsoft</a>
+                            </h3>
+                            <div class="dates">
+                                <abbr class="dtstart" title="2015-06-01">June 2015</abbr> -
+                                <abbr>April 2016</abbr>
+                            </div>
+                            <ul class="description">
+                                <li>
+                                    Developed
+                                    <a href="https://www.seaofthieves.com/">Sea of Thieves</a> site for E3 launch and Reddit style community system using React/Fluxible and provided Devops support on Azure platform.
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="experience vevent">
+                            <h3 class="summary">
+                                <a href="http://www.tesco.com">Tesco</a>
+                            </h3>
+                            <div class="dates">
+                                <abbr class="dtstart" title="2014-06-01">June 2014</abbr> -
+                                <abbr>May 2015</abbr>
+                            </div>
+                            <ul class="description">
+                                <li>
+                                    Trained front end JS developers to build isomorphic components in a custom Node.js framework for
+                                    <a href="www.tesco.com/groceries/">Tesco Groceries</a>,
+                                    <a href="http://tesco.com/direct">Tesco Direct</a> and
+                                    <a href="http://www.clothingattesco.com/">F&amp;F</a>.
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                </ol>
+                <p>
+                    I've also worked with
+                    <a href="http://clock.co.uk">Clock</a>
+                    <a href="http://news.co.uk">News UK</a>,
+                    <a href="http://www.thesun.co.uk/sol/homepage/">The Sun</a>,
+                    <a href="https://www.gosquared.com/">GoSquared</a>,
+                    <a href="http://configurator.vw.com/ihdcc/configurator.html">Volkswagen</a
+          >,
+          <a href="http://www.nike.com/nikefootball/academy/about?locale=en_GB"
+            >Nike</a
+          >
+          and <a href="https://www.bt.com">BT</a>.
+                </p>
+            </div>
+        </div>
+        <div style="page-break-after:always"></div>
+        <div class="item">
+            <h2 class="item-title">
+                Education
+            </h2>
+            <div class="section">
+                <ol class="education last">
+                    <li class="school">
+                        <a href="http://www.staffs.ac.uk/" class="institution">Staffordshire University</a
+              >
+              <ul class="courses">
+                <li>BSc(Hons) Internet Technology</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="item">
+        <h2 class="item-title">
+          Tools
+        </h2>
+        <div class="section tools">
+          <div class="box">
+            Content (HTML)
+            <div class="skill-description">
+              Clean,
+              <a href="http://www.w3.org/TR/WCAG10/" class="skill" rel="tag"
+                >accessible</a
+              >,
+              <a
+                href="http://en.wikipedia.org/wiki/Semantic_HTML"
+                class="skill"
+                rel="tag"
+                >semantic</a
+              >,
+              <a href="http://seleniumhq.org/" class="skill" rel="tag"
+                >cross-browser</a
+              >,
+              <a href="http://en.wikipedia.org/wiki/Cross-platform"
+                >cross-platform</a
+              >,
+              <a
+                href="http://en.wikipedia.org/wiki/Search_engine_optimization"
+                class="skill"
+                rel="tag"
+                >search engine friendly</a
+              >
+              <a
+                class="skill"
+                href="https://en.wikipedia.org/wiki/HTML"
+                rel="tag"
+                >Markup</a
+              > that will work on the widest range of devices.
+            </div>
+          </div>
+
+          <div class="box">
+            Presentation (CSS)
+            <div class="skill-description">
+              Cross-browser, simple, clean, elegant mobile-first designs with
+              <a class="skill" href="http://www.w3.org/Style/CSS/" rel="tag"
+                >CSS</a
+              >. Experience with CSS-in-JS.
+            </div>
+          </div>
+          <div class="box">
+            Interactivity (Javascript)
+
+            <div class="skill-description">
+              <a href="http://unobtrusify.com/" class="skill" rel="tag"
+                >Unobtrusive</a
+> cross-browser techniques. Experience with most bundlers, compilers frameworks and transpilers.
+            </div>
+        </div>
+        <div class="box">
+            Offline
+            <div class="skill-description">
+                App-cache and Service-workers. Developed
+                <a href="https://github.com/simonmcmanus/speclate-service-worker">speclate-service-worker</a
+              >
+              to provide offline functionality.
+            </div>
+          </div>    
+          <div class="box">
+            Node.js
+            <div class="skill-description">
+              Node specialist with extensive commercial and open source
+              experience since
+              <a href="http://nodejs.org/" class="skill" rel="tag">Node.js</a> 0.4. (2011). Enterprise experience with <a href="https://www.typescriptlang.org/">TypeScript</a>.
+            </div>
+        </div>
+
+        <div class="box">
+            Performance
+            <div class="skill-description">
+                Slick, fast, app like experience. Experience with using tools (<a href="https://github.com/GoogleChrome/lighthouse">Lighthouse</a>, <a href="https://speedtracker.org/">Speedtracker</a> and <a href="https://calibreapp.com/">Calibre</a>)
+                to monitor performance changes over time.
+            </div>
+        </div>
+
+        <div class="box">
+            Testing
+
+            <div class="skill-description">
+                A testing advocate,
+                <a href="http://en.wikipedia.org/wiki/Test-driven_development" class="skill">TDD</a
+              >/
+              <a
+                href="http://en.wikipedia.org/wiki/Test-driven_development"
+                class="skill"
+                >BDD</a
+              >
+              experience with most Javascript unit testing frameworks. Extensive
+              end to end testing experience with Selenium,
+              <a href="http://nightwatchjs.org/">Nightwatch</a> and
+                <a href="http://cypress.io">Cypress</a>.
+            </div>
+        </div>
+
+        <div class="box">
+            Delivery
+            <div class="skill-description">
+                Continuous and lean. Short iterations and tight feedback loops. An advocate of
+                <a href="http://en.wikipedia.org/wiki/Agile_software_development" class="skill">agile</a
+              >
+              methodologies, experience using Scrum, Kanban and less formal
+              implementations.
+            </div>
+          </div>
+          <div class="box">
+            Storage
+            <div class="skill-description">
+              Expereince with a wide variety of storage solutions, including Postgres, Redis, MongoDB, GraphQL, Service workers, IndexDB, and localStorage. 
+            </div>
+          </div>
+          <div class="box">
+            Devops
+            <div class="skill-description">
+              Experience using and configuring <a href="https://aws.amazon.com/">AWS</a>, <a href="https://azure.microsoft.com/">Azure</a>, <a href="https://www.heroku.com/">Heroku</a>, <a href="https://netlify.com/">Netlify</a> and various
+                other hosting offering. Serverless where possible.
+            </div>
+        </div>
+
+    </div>
+    <div style="clear: both;"></div>
+    </div>
+    <div class="item">
+        <h2 class="item-title">
+            Interests
+        </h2>
+        <div class="section">
+            <p class="summary">
+                In my spare time, I volunteer with
+                <a href="https://www.guidedogs.org.uk/">Guide Dogs for the Blind</a
+            >. I also enjoy photography and keeping up to date with politics.
+          </p>
+
+
+          <p>
+            I host the <a href="http://podcast.lnug.org/">London Node User Group (LNUG) Podcast</a>, take care of the <a href="http://lnug.org">LNUG Website</a> and have also helped to run and mentor at
+                <a href="http://nodeschool.io/london/">London Node School events</a
+            >.
+       
+            In 2016 I organised, funded, branded, and curated a schedule of 14
+            speakers from around the world in the first conference dedicated to
+            <a href="https://enhanceconf.com">Progressive Enhancement</a>.
+            </p>
+
+
+            <p>
+                I have written an article for
+                <a href="http://www.creativebloq.com/net-magazine">Net magazine</a> on 'Writing Maintainable Express applications' and have previously contributed evidence to the
+                <a href="http://www.parliament.uk/business/committees/committees-archive/hlinformationcommittee/hlinfocom/">House of Lords Information Committee</a
+            >
+            explaining the best ways to publish data on the web.
+            <a
+              href="http://simonmcmanus.wordpress.com/2009/06/24/my-recent-contribution-to-the-house-of-lords-information-committee/"
+              >My contribution</a
+            >
+            was
+            <a
+              href="http://www.publications.parliament.uk/pa/ld200809/ldselect/ldinformation/138/138we26.htm"
+              >published</a
+            >
+            and referenced several times in the
+            <a
+              href="http://www.publications.parliament.uk/pa/ld200809/ldselect/ldinformation/138/13807.htm"
+              >committee report</a
+            >.
+          </p>
+          <p>I also like <a href="http://www.marmite.com/">Marmite</a>.</p>
+        </div>
+    </div>
+    <div class="item last">
+        <h2 class="item-title">
+            References
+        </h2>
+        <div class="section">
+            <p class="summary">
+                Available on request.
+            </p>
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
