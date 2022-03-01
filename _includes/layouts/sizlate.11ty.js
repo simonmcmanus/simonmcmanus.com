@@ -1,4 +1,4 @@
-const mappers = require('./sizlate.mappers')
+const mappers = require('./mappers/sizlate.mappers')
 
 const buildSelectors = (data, layoutSelectors) => {
 

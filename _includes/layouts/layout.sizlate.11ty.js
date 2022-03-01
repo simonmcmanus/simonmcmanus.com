@@ -5,7 +5,7 @@ const { buildSelectors } = require('./sizlate.11ty')
 
 const template = fs.readFileSync('./_includes/layouts/layout.html', 'utf8')
     //const css = fs.readFileSync('./_includes/layouts/style.css', 'utf8')
-const mappers = require('./sizlate.mappers')
+const mappers = require('./mappers/sizlate.mappers')
 
 class Sizlate {
     data = {

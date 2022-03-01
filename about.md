@@ -5,6 +5,7 @@ permalink: "/about.html"
     html: {
         data-speclate-page: 'about'
     },
+    title: "About Simon McManus",
     "a[href='/about.html']": {
         "className": "active"
     }
