@@ -54,7 +54,6 @@ const linkList = (links) => {
     })
 }
 const mappers = {
-    // takes the post array and produces a linked list
     listPosts: (data) => {
 
         return {
@@ -80,7 +79,10 @@ const mappers = {
         const noImgStyle = ``
         const imgStyle = `min-height:15em;background-image: radial-gradient(circle, rgba(.6,.6,.6,.4) 0%, rgba(1, 1, 1,.9) 100%), url(${tagInfo.image});`
         const categoryHeader = { style: tagInfo.image ? imgStyle : noImgStyle };
-        return {
+
+        const selectors = {
+            "title": `${data.title} | Simon McManus`,
+            "meta[name=description]": { content: tagInfo.summary },
             ".title": data.title,
             ".category .summary": tagInfo.summary || false,
             "header.category": categoryHeader,
@@ -88,6 +90,12 @@ const mappers = {
             '.posts_holder li': postList(tagInfo.posts),
 
         }
+
+        if (tagInfo.tags) {
+            selectors["meta[name=keywords]"] = { content: tagInfo.tags.join(', ') }
+
+        }
+        return selectors
     },
     tagList: (data) => {
         return {
