@@ -1,7 +1,7 @@
 ---
 date: 2016-01-26
 title: EnhanceConf line-up
-tags: ["EnhanceConf","progressive enhancement","post"]
+tags: ["EnhanceConf", "enhance-conf", "progressive enhancement","post"]
 ---
 Over the last 6 months, with the help of some trusted advisors, I’ve been putting together the line-up for [EnhanceConf](http://enhanceconf.com).  
   
