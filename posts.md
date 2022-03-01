@@ -7,6 +7,7 @@ mappers: ["listPosts"]
     html: {
         data-speclate-page: 'posts'
     },
+    "title": "Posts from Simon McManus",
     "a[href='/posts.html']": {
         "className": "active"
     }

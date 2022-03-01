@@ -6,6 +6,7 @@ permalink: "/links.html"
     html: {
         data-speclate-page: 'links'
     },
+    "title": "Links from Simon McManus",
     "a[href='/links/']": {
         "className": "active"
     }
