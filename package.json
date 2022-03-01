@@ -13,7 +13,8 @@
     "dependencies": {
         "clean-css": "^5.2.1",
         "eleventy": "^1.0.6",
-        "sizlate": "^4.1.0"
+        "sizlate": "^4.1.0",
+        "twitter": "^1.7.1"
     },
     "devDependencies": {
         "@11ty/eleventy": "^1.0.0",
