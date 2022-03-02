@@ -1,7 +1,7 @@
 ---
 date: 2009-06-24
 title: My Recent Contribution to the House of Lords Information Committee
-tags: ["data","osmososft","post"]
+tags: ["data","osmososft","post", "web"]
 ---
 My name is Simon McManus. I work as a web developer. After recently attending a UKGovBarCamp I noticed that it was difficult to reuse parliament's publications. I made a comment on a parliamentary blog post  
 which resulted in Richard contacting me via e-mail. The fact that I was able to comment in the first place has made it possible for me to speak to you now. Thank you for this opportunity.  

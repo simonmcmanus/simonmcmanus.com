@@ -1,7 +1,7 @@
 ---
 date: 2019-07-04
 title: Blog Migration
-tags: ["blog"," simonmcmanus"," netlify"," wordpress"," WIP","post"]
+tags: ["blog"," simonmcmanus"," netlify"," wordpress"," WIP","post", "web"]
 ---
 
 I'm in the process of moving this blog from [Wordpress.com](https://wordpress.com/) over to [simonmcmanus.com](https://simonmcmanus.com) hosted on [netlify.com](https://netlify.com). 

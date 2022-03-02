@@ -1,7 +1,7 @@
 ---
 date: 2019-08-27
 title: Speclate@19
-tags: ["speclate","  sizlate"," sizzle"," pagejs"," routing"," router"," offline","post"]
+tags: ["speclate","  sizlate"," sizzle"," pagejs"," routing"," router"," offline","post", "web"]
 ---
 
 I've made some big changes to speclate and sizlate recently. The API stays the same, but under the hood things are much leaner.

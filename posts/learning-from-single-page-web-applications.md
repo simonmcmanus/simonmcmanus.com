@@ -1,7 +1,7 @@
 ---
 date: 2012-01-05
 title: Learning from Single Page Web Applications
-tags: ["application architecture","application templates","javascript application","javascript applications","page applications","Image","post"]
+tags: ["application architecture","application templates","javascript application","javascript applications","page applications","Image","post", "web"]
 ---
   
 I've spent the last three years working on single page applications of various shapes and sizes. I don't like em,  this post isn't about why but I will just say I like data to be exposed at the lowest level (HTTP) and not require Javascript to turn it into something useful.   All that being said I've been lucky enough to work with some clever folks and the end results have all been very interesting and pushed boundaries in their own way.  

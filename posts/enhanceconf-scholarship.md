@@ -1,7 +1,7 @@
 ---
 date: 2016-02-14
 title: EnhanceConf Scholarship
-tags: ["EnhanceConf","enhance-conf","progressive enhancement","post"]
+tags: ["EnhanceConf","enhance-conf","progressive enhancement","post", "web"]
 ---
    
   

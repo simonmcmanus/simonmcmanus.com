@@ -1,7 +1,7 @@
 const { dateLink, tagLink } = require('./links')
 
 module.exports = (data) => ({
-    '.recent-posts li': data.collections.post.slice(-10).reverse().map((post) => ({
+    '.recent-posts li': data.collections.post.slice(-20).reverse().map((post) => ({
         selectors: {
             'a.link': {
                 innerHTML: post.data.title,

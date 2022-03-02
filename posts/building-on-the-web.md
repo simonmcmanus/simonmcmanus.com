@@ -1,7 +1,7 @@
 ---
 date: 2011-02-11
 title: Building on the Web
-tags: ["hashbang","javascript apps","osmososft","progressive enhancement","pushState","web apps","post"]
+tags: ["hashbang","javascript apps","osmososft","progressive enhancement","pushState","web apps","post", "web"]
 ---
 **Foundations**  
   

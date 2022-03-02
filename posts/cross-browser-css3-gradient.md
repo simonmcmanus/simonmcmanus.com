@@ -1,7 +1,7 @@
 ---
 date: 2011-04-05
 title: Cross Browser CSS3 Gradient
-tags: ["osmososft","post"]
+tags: ["osmososft","post", "web"]
 ---
 Publishing this here for my own convenience.  
 ```js
