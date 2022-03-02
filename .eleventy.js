@@ -40,6 +40,7 @@ module.exports = function(eleventyConfig) {
         link.data.tags.forEach((tag) => addTag(tag, 'links', {
             title: link.title,
             url: link.url,
+            tags: link.data.tags,
             created: link.created
         }))
     })
@@ -51,6 +52,7 @@ module.exports = function(eleventyConfig) {
                 tags.forEach((tag) => addTag(urlSafe(tag), 'posts', {
                     title: item.data.title,
                     url: item.url,
+                    tags: item.data.tags,
                     created: item.data.date
                 }))
             }

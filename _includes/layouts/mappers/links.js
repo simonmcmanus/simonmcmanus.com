@@ -18,4 +18,9 @@ const tagLink = (tag) => {
         href: `/tags/${urlSafe(tag)}/`
     }
 }
-module.exports = { dateLink, tagLink }
+
+const tagList = (tags) => {
+    return tags.filter(tag => tag != 'post').map(tagLink)
+}
+
+module.exports = { dateLink, tagLink, tagList }

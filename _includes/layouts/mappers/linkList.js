@@ -1,5 +1,5 @@
+const { dateLink, tagList } = require('./links')
 const { parseISO } = require('date-fns')
-const { dateLink } = require('./links')
 
 module.exports = (links) => {
     if (links.length === 0) {
@@ -15,7 +15,8 @@ module.exports = (links) => {
                 'a.link': {
                     href: post.url,
                     target: '_blank'
-                }
+                },
+                ".tag": tagList(post.tags)
             }
         }
     })

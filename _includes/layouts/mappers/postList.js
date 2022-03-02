@@ -1,4 +1,8 @@
+const { tagList } = require('./links')
+
+
 module.exports = (posts) => {
+
 
     if (posts.length === 0) {
         return false
@@ -9,7 +13,8 @@ module.exports = (posts) => {
                 "h5 span.title": post.title,
                 'a.link': {
                     href: post.url,
-                }
+                },
+                ".tag": tagList(post.tags)
             }
         }
     })

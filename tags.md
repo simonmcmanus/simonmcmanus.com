@@ -39,6 +39,10 @@ mappers: ["pagination"]
             <img class="favIcon"><span class="title"></span>
         </h5>
     </a>
+     <ul class="tags">
+        <span>tagged:</span>
+        <a class="button tag" href="/tags/eleventy/index.html">eleventy</a>
+    </ul>
     <span class="created"></span>
 </li></ul>
 </div>
@@ -51,6 +55,10 @@ mappers: ["pagination"]
             <img class="favIcon"><span class="title"></span>
         </h5>
     </a>
+     <ul class="tags">
+        <span>tagged:</span>
+        <a class="button tag" href="/tags/eleventy/index.html">eleventy</a>
+    </ul>
     <span class="created"></span>
 </li></ul>
 </div>

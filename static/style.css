@@ -1773,10 +1773,6 @@ html[data-speclate-page="hire"] #container li {
     margin: 0 .5em 0 0;
 }
 
-html[data-speclate-page="tag"] ul.tags {
-    display: none !important;
-}
-
 html[data-speclate-page="tag"] #container {
     transform: translateY(-9em);
 }
