@@ -1,7 +1,7 @@
 ---
 date: 2016-08-13
 title: Speclate
-tags: ["progressive enhancement","sizlate","speclate","static sites","post"]
+tags: ["progressive enhancement","sizlate","speclate","static sites","post", "web"]
 ---
 The [London Node User group website](http://lnug.org) is a static site hosted on [github pages,](https://pages.github.com/) it renders at build time, in the browser and works offline using [Speclate](http://github.com/simonmcmanus/speclate).  
   

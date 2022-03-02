@@ -1,7 +1,7 @@
 ---
 date: 2011-11-22
 title: Sizlate
-tags: ["osmososft","post"]
+tags: ["osmososft","post", "web"]
 ---
 Over the past year I have been experimenting with [Node.js](http://nodejs.org/). Its been a pretty interesting journey and I have learned a great deal.  
   
