@@ -1,7 +1,7 @@
 ---
 date: 2021-05-08
 title: Engineering Principles
-tags: ["engineering","js","tech-lead","post"]
+tags: ["engineering","js","tech-lead", "lead", "post"]
 ---
    
 Over the last year, I've been referring to my engineering principles quite regularly. I thought it would be worth writing them down here. 
