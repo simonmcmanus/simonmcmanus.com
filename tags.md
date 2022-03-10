@@ -12,7 +12,7 @@ pagination:
     - tagList
   addAllPagesToCollections: true
 eleventyComputed:
-  title: “{{ tag }}”
+  title: "{{ tag }}"
 permalink: /tags/{{ tag  }}/
 mappers: ["pagination"]
 "sizlate": {
