@@ -66,6 +66,11 @@
         "tags": ["dotjs"]
     },
     {
+        "title": "Lead",
+        "summary": "Tech leadership",
+        "tags": ["tech-lead", "lead"]
+    },
+    {
         "title": "Generative Adversarial Networks",
         "summary": "GANs are a clever way of training a generative model by framing the problem as a supervised learning problem with two sub-models: the generator model that we train to generate new examples, and the discriminator model that tries to classify examples as either real (from the domain) or fake (generated).",
         "tags": ["GAN"]

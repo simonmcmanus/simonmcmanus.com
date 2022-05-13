@@ -161,7 +161,8 @@ header {
     padding-top: 4.5em;
 }
 
-header h1 {
+header a.title {
+    font-size: 2em;
     font-family: 'Slabo 13px', Serif;
 }
 
@@ -179,7 +180,6 @@ h1 {
 
 h1.title {
     text-align: center;
-    margin: 1em;
 }
 
 h2 {
@@ -195,9 +195,10 @@ h3 {
     padding: 0;
 }
 
-h4 {
+h4,
+.post-full h1.title {
     color: #de6b48;
-    font-size: 1.3em;
+    font-size: 1.5em;
     overflow: hidden;
 }
 
@@ -984,8 +985,8 @@ ul.nav.internal {
     position: relative;
     display: inline-flex;
     justify-content: center;
-    padding-top: 1.9em;
     margin: 0;
+    top: 2.2em;
     flex-wrap: wrap;
     z-index: 400;
     width: 100%;
@@ -1105,7 +1106,7 @@ html body li.links a {
 
 html[data-speclate-page=links] section,
 html[data-speclate-page=links] li.section.link {
-    border: 1px solid rgba(146, 181, 88, 0.3);
+    border: 2px solid rgba(146, 181, 88, 0.3);
 }
 
 html[data-speclate-page=links] .tags {
@@ -1130,7 +1131,7 @@ html body li.hire a {
 
 html[data-speclate-page=hire] section,
 html[data-speclate-page=hire] li.section.link {
-    border: 1px solid rgba(142, 68, 173, 0.3);
+    border: 2px solid rgba(142, 68, 173, 0.3);
 }
 
 html[data-speclate-page=hire] .tags {
@@ -1155,7 +1156,7 @@ html body li.about a {
 
 html[data-speclate-page=about] section,
 html[data-speclate-page=about] li.section.link {
-    border: 1px solid rgba(142, 68, 173, 0.3);
+    border: 2px solid rgba(142, 68, 173, 0.3);
 }
 
 html[data-speclate-page=about] .tags {
@@ -1230,7 +1231,7 @@ html body li.posts a {
 
 html[data-speclate-page=posts] section,
 html[data-speclate-page=posts] li.section.link {
-    border: 1px solid rgba(196, 143, 101, 0.3);
+    border: 2px solid rgba(196, 143, 101, 0.3);
 }
 
 html[data-speclate-page=posts] .tags {
@@ -1603,7 +1604,7 @@ html.loading footer {
     position: relative;
     display: block;
     background-color: #222831f2;
-    border: 1px solid black;
+    border: 2px solid black;
 }
 
 li.link.section {
@@ -1727,6 +1728,18 @@ html[data-speclate-page="hire"] section {
 html[data-speclate-page="hire"] #container li {
     list-style: circle;
     margin-left: 2.5em;
+}
+
+html[data-speclate-page=posts] section.post-full {
+    border: 3px solid #222;
+    margin: 3em 1em;
+    padding-top: 1em;
+    border-radius: 1em;
+}
+
+.post-full hr {
+    border: 1px solid #273849;
+    margin: 2em;
 }
 
 .post-full pre {

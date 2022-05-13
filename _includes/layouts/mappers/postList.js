@@ -1,4 +1,4 @@
-const { tagList } = require('./links')
+const { dateLink, tagLink, tagList } = require('./links')
 
 
 module.exports = (posts) => {

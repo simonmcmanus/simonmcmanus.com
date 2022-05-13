@@ -14,6 +14,7 @@ class Sizlate {
 
     render(data) {
         const layoutSelectors = {
+            'h1.title': data.title,
             '#container': data.content,
             //style: new CleanCSS({}).minify(css).styles,
         }

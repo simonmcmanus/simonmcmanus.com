@@ -23,7 +23,7 @@ mappers: ["pagination"]
 
 ---
 <div class="category"><header class="category">
-    <h2 class="title contained"></h2>
+    
 </header>
 <div class=" contained honey-teir1">
     <p class="summary"></p>

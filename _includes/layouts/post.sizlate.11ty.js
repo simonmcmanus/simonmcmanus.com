@@ -5,14 +5,15 @@ const template = fs.readFileSync('./_includes/layouts/post.html', 'utf8')
 
 class SizlatePost {
     data = {
-        layout: 'layouts/layout.sizlate.11ty.js'
+        layout: 'layouts/layout.sizlate.11ty.js',
+        style: 'h1{color: red; !important}'
     }
 
     postSelectors(data) {
 
         const selectors = {
             '#post': data.content,
-            "h4.title": data.title,
+            '.title': data.title,
         }
         const nextPost = this.getNextCollectionItem(data.collections.post, data.page, 1)
         const previousPost = this.getPreviousCollectionItem(data.collections.post, data.page, 1)

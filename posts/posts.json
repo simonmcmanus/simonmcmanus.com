@@ -1,4 +1,10 @@
 {
     "layout": "layouts/post.sizlate.11ty.js",
-    "mappers": ["post"]
+    "mappers": ["post"],
+    "sizlate": {
+        "html": {
+            "data-speclate-page": "posts"
+        }
+
+    }
 }

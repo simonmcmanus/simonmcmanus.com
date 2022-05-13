@@ -1,6 +1,6 @@
 ---
 layout: layouts/layout.sizlate.11ty.js
-title: "blog"
+
 permalink: "/posts.html"
 mappers: ["recentPosts"]
 "sizlate": {

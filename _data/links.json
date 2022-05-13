@@ -9314,7 +9314,8 @@
             "systems",
             "design systems",
             "medical",
-            "BEST-OF-2020"
+            "BEST-OF-2020",
+            "lead"
         ],
         "date": "2020-12-27"
     },
@@ -9922,7 +9923,8 @@
             "business",
             "engineering",
             "games",
-            "drest"
+            "drest",
+            "lead"
         ],
         "date": "2021-02-13"
     },
@@ -9935,7 +9937,8 @@
             "engineering",
             "product",
             "games",
-            "drest"
+            "drest",
+            "lead"
         ],
         "date": "2021-03-31"
     },
@@ -10573,7 +10576,8 @@
         "title": "Engineering Leader's Guide to Cycle Time",
         "summary": "",
         "tags": [
-            "cycle-time"
+            "cycle-time",
+            "lead"
         ],
         "date": "2021-10-03"
     },
@@ -10772,8 +10776,311 @@
         "summary": "state machine ui generator\n",
         "tags": [
             "x-state",
-            " stately"
+            " stately",
+            " state-machines"
         ],
         "date": "2022-02-23"
+    },
+    {
+        "created": "2022-03-01T20:45:51.546Z",
+        "url": "https://www.oncrawl.com/",
+        "title": "Oncrawl | Enterprise Technical & Data SEO Platform for Smarter SEO",
+        "summary": "Enterprise SEO platform powered by the industry-leading SEO Crawler and Log Analyzer. Combine the power of technical SEO, machine learning and data science for increased revenues from search engines.",
+        "tags": [
+            "seo"
+        ],
+        "date": "2022-03-01"
+    },
+    {
+        "created": "2022-03-01T20:56:42.682Z",
+        "url": "https://developers.google.com/search/blog/2021/11/bringing-page-experience-to-desktop ",
+        "title": "Timeline for bringing page experience ranking to desktop  |  Google Search Central Blog  |  Google Developers",
+        "summary": "",
+        "tags": [
+            "seo"
+        ],
+        "date": "2022-03-01"
+    },
+    {
+        "created": "2022-03-01T21:07:01.256Z",
+        "url": "https://www.destinationinns.co.uk/pubs/queenvictoria/ ",
+        "title": "Queen Victoria | Destination Inns Dining & Pub in Theydon Bois, Essex",
+        "summary": "",
+        "tags": [
+            "pubs"
+        ],
+        "date": "2022-03-01"
+    },
+    {
+        "created": "2022-03-02T09:13:04.236Z",
+        "url": "https://searchengineland.com/how-google-uses-artificial-intelligence-in-google-search-379746",
+        "title": "How Google uses artificial intelligence In Google Search",
+        "summary": "From RankBrain, Neural Matching, BERT and MUM - here is how Google uses AI for understanding language for query, content and ranking purposes.",
+        "tags": [
+            "seo",
+            " ai",
+            " google "
+        ],
+        "date": "2022-03-02"
+    },
+    {
+        "created": "2022-03-02T09:15:52.831Z",
+        "url": "https://learningseo.io/",
+        "title": "A Roadmap to Learn SEO w/ Free Guides & Tools | #LearningSEO",
+        "summary": "Start learning SEO or expand your SEO education to become or grow further as an SEO specialist with Learning SEO. From keyword research, link building,  to SEO strategy and more, you have a roadmap to learn SEO with free reliable comprehensive guides, resources and tools. ",
+        "tags": [
+            "seo",
+            " training"
+        ],
+        "date": "2022-03-02"
+    },
+    {
+        "created": "2022-03-02T09:16:37.628Z",
+        "url": "https://docs.google.com/spreadsheets/d/1ZSVAsyxOcpzX0LYhukfVfnhkMO1tcndWt6DRqDpU8vs/edit#gid=0",
+        "title": "Learning SEO with Free Resources - Google Sheets",
+        "summary": "Learning SEO with Free Resources",
+        "tags": [
+            "seo",
+            " learning"
+        ],
+        "date": "2022-03-02"
+    },
+    {
+        "created": "2022-03-02T09:17:42.858Z",
+        "url": "https://medium.com/@nick_eubanks/tf-idf-and-how-it-works-with-seo-79b76d9db5c0",
+        "title": "TF*IDF and How it Works with SEO. Since you’re reading this post, you may… | by Nick Eubanks | Medium",
+        "summary": "TF*IDF",
+        "tags": [
+            "seo",
+            " TF*IDF"
+        ],
+        "date": "2022-03-02"
+    },
+    {
+        "created": "2022-03-02T09:18:35.203Z",
+        "url": "https://www.siegemedia.com/marketing/google-search-operators",
+        "title": "39 Google Search Operators Every Content Marketer Should Know - Siege Media",
+        "summary": "Simply put, Google search operators consist of one or more characters used in search that add more specificity and focus to a query.",
+        "tags": [
+            "seo",
+            " google",
+            " operators"
+        ],
+        "date": "2022-03-02"
+    },
+    {
+        "created": "2022-03-02T09:19:40.627Z",
+        "url": "https://www.kevin-indig.com/semantic-content-optimization-with-entities/",
+        "title": "Semantic content optimization with entities",
+        "summary": "This article seeks to answer the question of how we can use entities to optimize content today and how we, as SEOs, should look at them.",
+        "tags": [
+            "seo",
+            " entries"
+        ],
+        "date": "2022-03-02"
+    },
+    {
+        "created": "2022-03-02T09:21:37.555Z",
+        "url": "https://www.kevin-indig.com/internal-link-optimization-with-tipr/",
+        "title": "Internal Link Optimization with TIPR",
+        "summary": "Internal link optimization is incomplete without factoring in backlinks. In this article, I introduce a model called TIPR that helps you to optimize the internal link graph of your site.",
+        "tags": [
+            "google",
+            " seo",
+            " TIPR",
+            " internal-links"
+        ],
+        "date": "2022-03-02"
+    },
+    {
+        "created": "2022-03-02T09:22:46.828Z",
+        "url": "https://www.kevin-indig.com/internal-linking-the-full-guide-to-internal-link-axioms/",
+        "title": "Internal Linking for SEO: best practices, strategies, axioms",
+        "summary": "This guide to internal linking shows what really works and busts the myths. It comes with lots of best practices, strategies, and examples",
+        "tags": [
+            "seo",
+            " internal-links"
+        ],
+        "date": "2022-03-02"
+    },
+    {
+        "created": "2022-03-02T09:24:00.851Z",
+        "url": "https://www.samunderwood.co.uk/resources/visualising-seo/",
+        "title": "Visualising SEO - SEO Illustrations - Sam Underwood",
+        "summary": "A collection of illustrations explaining SEO terminology and concepts.",
+        "tags": [
+            "learning",
+            " seo",
+            " visualisation "
+        ],
+        "date": "2022-03-02"
+    },
+    {
+        "created": "2022-03-02T09:25:43.737Z",
+        "url": "https://moz.com/blog/title-tags-seo",
+        "title": "Title Tags SEO: When to Include Your Brand and/or Boilerplate - Moz",
+        "summary": "If your websites are like most, they include a fair amount of extra \"stuff\" in the title tags: things like your brand name or repeating boilerplate text that appears across multiple pages.Should you include these elements in your titles automatically?",
+        "tags": [
+            "seo",
+            " titles",
+            " "
+        ],
+        "date": "2022-03-02"
+    },
+    {
+        "created": "2022-03-02T09:27:14.369Z",
+        "url": "https://www.briggsby.com/on-page-seo-for-nlp",
+        "title": "On-page SEO for Natural Language Processing (NLP) - Briggsby",
+        "summary": "Traditional on-page SEO guidance is to target a primary phrase, its near-related terms, and its longtail variants by using them in the text and placing them in strategic locations on the page (i.e., title, headings, early in content, throughout content). However, writing for Natural Language Processing, or NLP, requires some additional steps and considerations.",
+        "tags": [
+            "seo",
+            " nlp"
+        ],
+        "date": "2022-03-02"
+    },
+    {
+        "created": "2022-03-03T08:52:56.256Z",
+        "url": "https://www.linkedin.com/posts/jonnylongden_cro-experimentation-ecommerce-activity-6904713487864733696-CJMq",
+        "title": "Jonny Longden on LinkedIn: #cro #experimentation #ecommerce",
+        "summary": "Jonny LongdenConversion Director @ Journey Further | Helping you put experimentation at the heart of your digital business24hIn almost 14 years of running A/B tests on websites, I have only once ever run a test which (legitimately statistically) more than doubled the conversion rate of the control experience",
+        "tags": [
+            "CRO",
+            " testing",
+            " abtesting",
+            " conversion"
+        ],
+        "date": "2022-03-03"
+    },
+    {
+        "created": "2022-03-08T09:38:13.587Z",
+        "url": "https://cacoo.com/blog/user-path-analysis-tips-and-tricks-to-take-you-to-the-next-level/",
+        "title": "User path analysis: tips and tricks to take you to the next level | Cacoo",
+        "summary": "User path analysis: tips and tricks to take you to the next level",
+        "tags": [
+            "analysis",
+            " user-path-analysis",
+            " lead"
+        ],
+        "date": "2022-03-08"
+    },
+    {
+        "created": "2022-03-10T07:44:09.700Z",
+        "url": "https://www.seopowersuite.com/",
+        "title": "SEO software tools for results-driven site owners",
+        "summary": "Tested by 500,000 seo experts and site owners. Used and trusted by every 3rd seo in the world.",
+        "tags": [
+            "seo",
+            " tools"
+        ],
+        "date": "2022-03-10"
+    },
+    {
+        "created": "2022-03-10T07:44:40.480Z",
+        "url": "https://www.deepcrawl.com/",
+        "title": "Deepcrawl | The #1 Technical SEO Platform",
+        "summary": "Deepcrawl’s technical SEO platform helps you detect opportunities for growth and protects your site from revenue-sapping code errors — so that you can realize your website’s true search potential.",
+        "tags": [
+            "seo",
+            "tools"
+        ],
+        "date": "2022-03-10"
+    },
+    {
+        "created": "2022-03-10T07:45:05.418Z",
+        "url": "https://sitebulb.com/",
+        "title": "Sitebulb Website Crawler - Award-winning Software for SEOs",
+        "summary": "Sitebulb isn't just a website crawler.It analyses data from an SEO perspective, guiding you through the process of delivering actionable website audits to your clients",
+        "tags": [
+            "seo",
+            "tools"
+        ],
+        "date": "2022-03-10"
+    },
+    {
+        "created": "2022-03-10T08:04:59.432Z",
+        "url": "https://www.11ty.dev/docs/data-computed/",
+        "title": "Computed Data — Eleventy",
+        "summary": "At the end of the Data Cascade you may want to inject Data properties into your data object that are based on other data values. To do that you can use the new eleventyComputed feature.",
+        "tags": [
+            "computed"
+        ],
+        "date": "2022-03-10"
+    },
+    {
+        "created": "2022-03-16T08:50:05.434Z",
+        "url": "https://www.botify.com/platform/botify-activation/speedworkers",
+        "title": "SpeedWorkers by Botify | Dynamic Rendering Solution for SEO",
+        "summary": "JavaScript-heavy websites can cause pages to load slowly. The slower your pages load, the fewer pages search engine bots will be able to crawl, which means fewer pages indexed, ranking, and driving traffic and revenue for your business. JavaScript loaded content and links can also be missed by search engines, since bots have trouble processing JavaScript successfully or immediately. But solutions to these problems can take time and resources you don’t have and may not be reliable. Enter our dynamic rendering solution SpeedWorkers, the easier way to serve your complete pages to bots, faster.",
+        "tags": [
+            "botify",
+            " speedworks",
+            " server-side-rendering"
+        ],
+        "date": "2022-03-16"
+    },
+    {
+        "created": "2022-03-25T21:43:26.327Z",
+        "url": "https://misc.oomap.co.uk/misc/tubemap/ ",
+        "title": "Smart Tube Map",
+        "summary": "",
+        "tags": [
+            "tube",
+            "maps",
+            "tfl",
+            "css"
+        ],
+        "date": "2022-03-25"
+    },
+    {
+        "created": "2022-04-12T18:30:26.324Z",
+        "url": "http://www.metadyne.co.uk/n-milestones.html?fbclid=IwAR0EfZ_nN6TQi8EqpUM7fmlR7rdbk9hcM4_EyiNcrJbpmbEkR275uANXhkA ",
+        "title": "London Milestones and Mileposts",
+        "summary": "",
+        "tags": [
+            "london",
+            "loughton"
+        ],
+        "date": "2022-04-12"
+    },
+    {
+        "created": "2022-04-14T19:43:31.899Z",
+        "url": "https://help.tableau.com/current/pro/desktop/en-us/multiple_connections.htm ",
+        "title": "Blend Your Data - Tableau",
+        "summary": "",
+        "tags": [
+            "tableau"
+        ],
+        "date": "2022-04-14"
+    },
+    {
+        "created": "2022-04-23T17:25:38.321Z",
+        "url": "https://www.cobrafastener.com/deck-structures/foundation-ground-screws/ ",
+        "title": "Foundation ground screws - CobraFastener",
+        "summary": "",
+        "tags": [
+            "decking",
+            "garden"
+        ],
+        "date": "2022-04-23"
+    },
+    {
+        "created": "2022-04-27T18:45:44.591Z",
+        "url": "https://zagjs.com/ ",
+        "title": "Zag - Rapidly build UI components without sweating over the logic. - Zag",
+        "summary": "",
+        "tags": [
+            "searches.map is not a function"
+        ],
+        "date": "2022-04-27"
+    },
+    {
+        "created": "2022-04-27T19:29:21.853Z",
+        "url": "https://jsonvisio.com/ ",
+        "title": "JSON Visio - Directly onto graphs",
+        "summary": "",
+        "tags": [
+            "json"
+        ],
+        "date": "2022-04-27"
     }
 ]
