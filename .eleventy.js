@@ -30,9 +30,11 @@ module.exports = function(eleventyConfig) {
             byTags[tag] = {
                 ...categoriesByTag[tag],
                 links: [],
-                posts: []
+                posts: [],
+                tags: []
             }
         }
+        byTags[tag]['tags'].push(detail.tags)
         byTags[tag][type].push(detail)
     }
 

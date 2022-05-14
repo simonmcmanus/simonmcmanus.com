@@ -9,7 +9,7 @@ module.exports = (data) => {
 
     const selectors = {
         "title": `${data.title} | Simon McManus`,
-        "meta[name=description]": { content: tagInfo.summary },
+        "meta[name=description]": { content: tagInfo.summary || `Tag: ${data.title} by Simon McManus` },
         ".title": data.title,
         ".category .summary": tagInfo.summary || false,
         "header.category": categoryHeader,
