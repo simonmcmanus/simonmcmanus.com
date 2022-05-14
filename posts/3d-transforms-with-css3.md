@@ -3,13 +3,13 @@ date: 2011-01-05
 title: 3D Transforms with CSS3
 tags: ["3d","CSS3","css3","post"]
 ---
-Over Christmas I started moving [simonmcmanus.com](http://simonmcmanus.com "Simon McManus homepage") over to [node.js](http://nodejs.org/) making some tweaks to the CSS as I went. I wanted to examine the z-index of my page so decided to investigate CSS3 3D transformations. I won't be launching the new [simonmcmanus.com](http://simonmcmanus.com) for a while but here is what I found out about 3D CSS transformations.  
+Over Christmas I started moving [simonmcmanus.com](https://www.simonmcmanus.com "Simon McManus homepage") over to [node.js](http://nodejs.org/) making some tweaks to the CSS as I went. I wanted to examine the z-index of my page so decided to investigate CSS3 3D transformations. I won't be launching the new [simonmcmanus.com](https://www.simonmcmanus.com) for a while but here is what I found out about 3D CSS transformations.  
   
 The following examples only work on the latest webkit browsers (Chrome and Safari). In Chrome you will need to enable "GPU Accelerated Compositing". Goto [about:flags](flags) turn on "GPU Accelerated Compositing" and then restart Chrome.  
   
 I started off with one of [Paul Hayes early experiments](http://www.paulrhayes.com/experiments/perspective/) which later progressed into his [animated cube demo.](http://www.paulrhayes.com/2009-07/animated-css3-cube-interface-using-3d-transforms/)  
   
-[Here is what I came up with.](http://simonmcmanus.com/stuff/css3/rotate/standalone/index.html)  
+[Here is what I came up with.](https://www.simonmcmanus.com/stuff/css3/rotate/standalone/index.html)  
   
 Screenshots:  
   
@@ -100,7 +100,7 @@ And then specify the steps of the animation:
 }
 ```
   
-[demo here.](http://simonmcmanus.com/stuff/css3/rotate/standalone/1.html "rotate demo")  
+[demo here.](https://www.simonmcmanus.com/stuff/css3/rotate/standalone/1.html "rotate demo")  
 
 ### Step 4 ..  Perspective
 

@@ -3,14 +3,14 @@ date: 2008-01-07
 title: Product Streaming for ccTiddly???
 tags: ["ccTiddly","lifestreaming","mediawiki","wiki","post"]
 ---
-My recent play/ [blog post](http://simonmcmanus.com/2008/01/04/life-streaming-in-cctiddly/ "Life streaming blog post") with [life streaming](http://adactio.com/journal/1202/ "Life Streaming explained ") script got me thinking. Today I've been looking at the various online resources for ccTiddly. Currently we have :  
+My recent play/ [blog post](https://www.simonmcmanus.com/2008/01/04/life-streaming-in-cctiddly/ "Life streaming blog post") with [life streaming](http://adactio.com/journal/1202/ "Life Streaming explained ") script got me thinking. Today I've been looking at the various online resources for ccTiddly. Currently we have :  
 
 
 [http://cctiddly.sourceforge.net -](http://sourceforge.net/project/showfiles.php?group_id=156016&package_id=173962 "http://sourceforge.net/project/showfiles.php?group_id=156016&package_id=173962") ccTiddly on Sourceforge
   
 [http://groups.google.com/group/ccTiddly](http://groups.google.com/group/ccTiddly "ccTiddly Google Groups") - Google Groups on ccTiddly [http://coolcold.wordpress.com](http://coolcold.wordpress.com/ "CoolColds Blog") \- Cool Colds blog   [
   
-http://simonmcmanus.com](http://simonmcmanus.wordpress.com/wp-admin/My%20Blog) - My Blog   
+https://www.simonmcmanus.com](http://simonmcmanus.wordpress.com/wp-admin/My%20Blog) - My Blog   
   
 [http://www.tiddlywiki.org/wiki/CcTiddly](http://www.tiddlywiki.org/wiki/CcTiddly "ccTiddly User Wiki") \- Wiki for ccTiddly   
   
