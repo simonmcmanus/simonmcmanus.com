@@ -37,7 +37,9 @@ Transforms this HTML:
 
 <ul id="list-two">
     <li>list two</li>
-    <li class="welcome">Hello <span class="name">John</span></li>
+    <li class="welcome">
+      Hello <span class="name">John</span>
+      </li>
 </ul>
 ```
 
@@ -51,7 +53,9 @@ Into this HTML:
 
 <ul id="list-two">
     <li>list two</li>
-    <li class="welcome highlight">Hello <span class="name">Simon</span></li>
+    <li class="welcome highlight">
+      Hello <span class="name">Simon</span>
+    </li>
 </ul>
 ```
 
@@ -59,7 +63,7 @@ I've create an example on
 [CodeSandbox](https://codesandbox.io/s/sizlate-nested-cix0y7) where you can try it out and easily fork the code. 
 
 
-This was only a minor relaese because it just fixes issues and doesn't change the interface. In a future (major) release I will attempt to remove the need for the word selectors so much by making the default object behaviour be selectors, if that happens attributes would need to be explictly declared in the way selectors are in the example above. 
+This was only a minor release because it just fixes issues and doesn't change the interface. In a future (major) release I will attempt to remove the need for the word selectors so much by making the default object behaviour be selectors, if that happens attributes would need to be explictly declared in the way selectors are in the example above. 
 
 
 This came up when I was porting [simonmcmanus.com](http://simonmcmanus.com) over to using eleventy with sizlate for the templating, it makes sizlate much more capable of handling complex templating requirements.
