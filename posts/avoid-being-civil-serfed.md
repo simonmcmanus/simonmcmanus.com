@@ -42,7 +42,7 @@ Is/Was 'She' really an Asset?
   
 Well she started an inevitable conversation which is never a bad thing. Looking back over the Civil Serf posts I don't see any comments. I'm not sure if that's because they were never enabled or they have not been cached. I would like to have read over peoples reactions to the blog. If there was no ability to add comments the blog was effectively just a scratching post.  
   
-As for setting back Government 2.0...[I'm no fan of terminology 2.0](http://simonmcmanus.com/2007/12/12/bullshit-20/) [](https://www.simonmcmanus.com/2007/12/12/bullshit-20/)mainly because people seem to use such terms to describe things they don't understand or can't explain. I suspect we can learn a great deal about Government 2.0 and the issues that need to be tackled in order to make it a reality. Whatever that reality may be.  
+As for setting back Government 2.0...[I'm no fan of terminology 2.0](https://www.simonmcmanus.com/posts/bullshit-20/) [](https://www.simonmcmanus.com/posts/bullshit-20/)mainly because people seem to use such terms to describe things they don't understand or can't explain. I suspect we can learn a great deal about Government 2.0 and the issues that need to be tackled in order to make it a reality. Whatever that reality may be.  
   
 If you want to learn more about blogging in Corporates I can recommend reading [Naked Conversation](http://www.amazon.com/Naked-Conversations-Changing-Businesses-Customers/dp/047174719X) from [Robert Scoble](http://scobleizer.com/) and [Shel Israel.](http://en.wikipedia.org/wiki/Shel_Israel) Its a good read.
 

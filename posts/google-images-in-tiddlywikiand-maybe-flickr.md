@@ -3,7 +3,7 @@ date: 2008-01-21
 title: Google Images in TiddlyWiki...and maybe flickr?
 tags: ["API","ctiddly","flickr","google ajax search","googleimages","mashup","Osmosoft","osmososft","SimonMcManus","tiddlywiki","post"]
 ---
-After playing with the [server side search](https://www.simonmcmanus.com/2008/01/15/server-side-search-for-cctiddly/ "ccTiddly server side search") for [ccTiddly](http://www.tiddlywiki.org/wiki/CcTiddly "ccTiddly") and knowing there were some project on the horizon that wanted to integrate google search into tiddlywiki results I decided to add google search into [TiddlyWiki](http://tiddlywiki.com "tiddlywiki"). An example of which can be found [here.](http://wikidev.osmosoft.com/searchgoogle "google search tiddlywiki example")  
+After playing with the [server side search](https://www.simonmcmanus.com/posts/server-side-search-for-cctiddly/ "ccTiddly server side search") for [ccTiddly](http://www.tiddlywiki.org/wiki/CcTiddly "ccTiddly") and knowing there were some project on the horizon that wanted to integrate google search into tiddlywiki results I decided to add google search into [TiddlyWiki](http://tiddlywiki.com "tiddlywiki"). An example of which can be found [here.](http://wikidev.osmosoft.com/searchgoogle "google search tiddlywiki example")  
   
 As an extension to that I decided to add a google images search.  
   
