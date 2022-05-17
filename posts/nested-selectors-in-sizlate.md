@@ -39,7 +39,7 @@ Transforms this HTML:
     <li>list two</li>
     <li class="welcome">
       Hello <span class="name">John</span>
-      </li>
+    </li>
 </ul>
 ```
 
