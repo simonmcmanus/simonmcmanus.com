@@ -5,7 +5,7 @@ tags: ["sizlate", "nested", "recursion", "blog", "js", "post"]
 ---
 
 
-Previously nested selectors in (sizlate)[https://github.com/simonmcmanus/sizlate] were limited to one level and didn’t provide all the functionality available to top level selector. 
+Previously nested selectors in [sizlate](https://github.com/simonmcmanus/sizlate) were limited to one level and didn’t provide all the functionality available to top level selector. 
 
 In [sizlate@4.1.0](https://www.npmjs.com/package/sizlate) nested selectors now work exactly the same as top level selectors and there is no limit on nesting depths. 
 
