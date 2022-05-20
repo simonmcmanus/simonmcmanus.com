@@ -1,26 +1,25 @@
 @charset "UTF-8";
-html.debug #container>* {
-    border: 1px solid blue;
-}
-
-html.debug ul.nav.internal {
-    border: 1px solid blue;
-}
-
 html {
     background: #222831f2;
+    &.debug {
+        #container>* {
+            border: 1px solid blue;
+        }
+        ul.nav.internal {
+            border: 1px solid blue;
+        }
+    }
+    body {
+        margin: 0;
+        margin: 0;
+        background: #1b2533;
+        color: #ECECEC;
+        background: radial-gradient(circle at top, #30475E 5em, #000000 100vh);
+        height: 100%;
+    }
 }
 
-html body {
-    margin: 0;
-    margin: 0;
-    background: #1b2533;
-    color: #ECECEC;
-    background: radial-gradient(circle at top, #30475E 5em, #000000 100vh);
-    height: 100%;
-}
-
-#container {
+html #container {
     position: relative;
     z-index: 100;
     padding-bottom: 10em;
@@ -1315,9 +1314,6 @@ html.loading .loader {
     background: -webkit-linear-gradient(top, #f5f7f4 0%, #ffffff 100%);
     /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, #f5f7f4 0%, #ffffff 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f5f7f4', endColorstr='#ffffff', GradientType=0);
-    /* IE6-9 */
 }
 
 html.loading .loader:before {
@@ -1335,9 +1331,6 @@ html.loading .loader:before {
     background: -webkit-linear-gradient(left, #dddddd 0%, #2989d8 50%, #207cca 67%, #dddddd 100%);
     /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to right, #dddddd 0%, #2989d8 50%, #207cca 67%, #dddddd 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#dddddd', GradientType=1);
-    /* IE6-9 */
 }
 
 @keyframes loading {
@@ -1464,7 +1457,7 @@ html.loading footer {
 } */
 
 .panels li.garden::after {
-    background-image: url("./icons/gardener.png");
+    background-image: url("/icons/gardener.png");
     background-size: 100%;
     background-repeat: no-repeat;
     display: block;
@@ -1491,7 +1484,7 @@ html.loading footer {
 } */
 
 .panels li.resident::after {
-    background-image: url("./icons/loughton.png");
+    background-image: url("/icons/loughton.png");
     background-size: 100%;
     background-repeat: no-repeat;
     display: block;
@@ -1504,7 +1497,7 @@ html.loading footer {
 }
 
 .panels li.web::after {
-    background-image: url("./icons/web.png");
+    background-image: url("/icons/web.png");
     background-size: 100%;
     background-repeat: no-repeat;
     display: block;
@@ -1532,7 +1525,7 @@ html.loading footer {
 } */
 
 .panels li.organiser::after {
-    background-image: url("./icons/events.png");
+    background-image: url("/icons/events.png");
     background-size: 100%;
     background-repeat: no-repeat;
     display: block;
@@ -1573,7 +1566,7 @@ html.loading footer {
 } */
 
 .panels li.lead::after {
-    background-image: url("./icons/lead.png");
+    background-image: url("/icons/lead.png");
     background-size: 100%;
     background-repeat: no-repeat;
     display: block;
