@@ -18,7 +18,7 @@ mappers: ["recentPosts"]
     <nav class="recent-posts">
         <ul class="holder container items">
             <li class="section link">
-                <a class="link" target="_blank" href="https://giters.com/11ty/eleventy/issues/1523">
+                <a class="link" href="https://giters.com/11ty/eleventy/issues/1523">
                     <h5>
                         <img class="favIcon"><span class="title">Pug templates need better filter support - Giters</span>
                     </h5>
