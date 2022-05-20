@@ -178,6 +178,10 @@ h1 {
     line-height: 0.9em;
 }
 
+h1.author-title {
+    font-size: 0.6em;
+}
+
 h1.title {
     text-align: center;
 }
@@ -1768,7 +1772,7 @@ html[data-speclate-page=posts] section.post-full {
     max-width: 80%;
 }
 
-.post-full .tags {
+.post-full a.tags {
     margin-top: 1em;
     margin-bottom: 1em;
 }
@@ -1778,7 +1782,7 @@ html[data-speclate-page=posts] section.post-full {
     display: inline-block;
 }
 
-.post-full .tag {
+.post-full a.tag {
     color: white;
     border-radius: 7px;
     line-height: 2em;
