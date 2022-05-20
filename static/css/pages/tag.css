@@ -1,0 +1,33 @@
+html[data-speclate-page=tag] #container {
+  transform: translateY(-9em);
+}
+
+html[data-speclate-page=tag] .posts_holder {
+  text-align: center;
+}
+
+html[data-speclate-page=tag] header h2 {
+  margin: 0;
+  padding-top: 2em;
+  padding-left: 0.5em;
+}
+
+html[data-speclate-page=tag] header .title {
+  font-size: 2em;
+  z-index: 100;
+}
+
+html[data-speclate-page=tag] header.category {
+  background-size: cover;
+  min-height: 6em;
+  max-width: 100%;
+  height: auto;
+  background-position: bottom;
+  object-fit: cover;
+  padding: 0;
+  font-family: "Headland One", serif;
+  position: sticky;
+  z-index: 1;
+}
+
+/*# sourceMappingURL=tag.css.map */

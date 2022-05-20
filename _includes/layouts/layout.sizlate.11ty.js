@@ -1,10 +1,15 @@
 const sizlate = require('sizlate')
 const CleanCSS = require("clean-css");
 const fs = require('fs')
+const path = require('path')
 const { buildSelectors } = require('./sizlate.11ty')
 
 const template = fs.readFileSync('./_includes/layouts/layout.html', 'utf8')
-    //const css = fs.readFileSync('./_includes/layouts/style.css', 'utf8')
+    // const cssFile = path.join(__dirname, '../../static/style.css')
+    // console.log('css', cssFile)
+    // const css = fs.readFileSync(cssFile, 'utf8')
+    // const style = new CleanCSS({}).minify(css).styles;
+
 const mappers = require('./mappers/sizlate.mappers')
 
 class Sizlate {
@@ -16,7 +21,7 @@ class Sizlate {
         const layoutSelectors = {
             'h1.title': data.title,
             '#container': data.content,
-            //style: new CleanCSS({}).minify(css).styles,
+            //style,
         }
         const selectors = buildSelectors(data, layoutSelectors, mappers)
         return sizlate.render(data.template, selectors)

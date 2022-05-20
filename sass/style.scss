@@ -1,1 +1,9 @@
-@use './layout.scss'
+@use './layout.scss';
+@use './animations.scss';
+@use './footer.scss';
+@use './pages/about.scss';
+@use './pages/talks.scss';
+@use './pages/tag.scss';
+@use './pages/contact.scss';
+@use './pages/links.scss';
+@use './pages/posts.scss';

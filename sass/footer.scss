@@ -1,0 +1,92 @@
+html.loading {
+    footer {
+        opacity: 1;
+    }
+}
+
+html {
+    body {
+        footer {
+            border-top: 1px solid #1b2533;
+            overflow-y: hidden;
+            position: relative;
+            transition: transform .3s ease-in-out;
+            margin: 0;
+            padding-bottom: 3em;
+            padding-top: 1em;
+            background-color: 191a1c;
+            display: flex;
+            bottom: 0;
+            transform: translateY(0);
+            justify-content: center;
+            ul {
+                display: inline-flex;
+                width: 100%;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                max-width: 18em;
+                li {
+                    z-index: 100 !important;
+                    animation: popout .3s ease;
+                    border-radius: 1.5em;
+                    height: 1.5em;
+                    width: 1.5em;
+                    min-width: 1.5em;
+                    transition: transform .2s ease-in-out;
+                    svg {
+                        stroke: white;
+                        transform: scale(0.7);
+                        position: relative;
+                        top: -.4em;
+                        left: -.4em;
+                        transition: transform .2s ease-in-out;
+                    }
+                    a {
+                        height: 1.5em;
+                        align-items: center;
+                        &:hover {
+                            svg {
+                                transform: scale(1);
+                            }
+                        }
+                        h3 {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            li.twitter {
+                border-color: #1da1f2;
+                background: #1da1f2;
+            }
+            li.github {
+                border-color: #c6cbd1;
+                background: #c6cbd1;
+            }
+            li.vimeo {
+                border-color: #F2552C;
+                background: #F2552C;
+            }
+            li.flickr {
+                border-color: #ff0084;
+                background: #ff0084;
+            }
+            li.youtube {
+                border-color: #ff0000;
+                background: #ff0000;
+            }
+            li.facebook {
+                border-color: #29487d;
+                background: #29487d;
+            }
+            li.codepen {
+                border-color: #000000;
+                background: #000000;
+            }
+            li.codesandbox {
+                border-color: #000000;
+                background: #000000;
+            }
+        }
+    }
+}

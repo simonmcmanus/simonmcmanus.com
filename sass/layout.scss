@@ -9,6 +9,9 @@ html {
             border: 1px solid blue;
         }
     }
+    &.loading {
+        background-color: #202020;
+    }
     body {
         margin: 0;
         margin: 0;
@@ -16,24 +19,64 @@ html {
         color: #ECECEC;
         background: radial-gradient(circle at top, #30475E 5em, #000000 100vh);
         height: 100%;
+        .honey {
+            background: top url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(25,25,25)' viewBox='0 0 100 169.5'%3E%3Cpolygon points='50,34.75 93.5,59.75 93.5,109.75 50,134.75 6.5,109.75 6.5,59.75'%3E%3C/polygon%3E%3Cpolygon points='0,-50 43.5,-25 43.5,25 0,50 -43.5,25 -43.5,-25'%3E%3C/polygon%3E%3Cpolygon points='100,-50 143.5,-25 143.5,25 100,50 56.5,25 56.5,-25'%3E%3C/polygon%3E%3Cpolygon points='0,119.5 43.5,144.5 43.5,194.5 0,219.5 -43.5,194.5 -43.5,144.5'%3E%3C/polygon%3E%3Cpolygon points='100,119.5 143.5,144.5 143.5,194.5 100,219.5 56.5,194.5 56.5,144.5'%3E%3C/polygon%3E%3C/svg%3E");
+            background-size: 10px;
+            display: block;
+            overflow: hidden;
+        }
+        #container {
+            position: relative;
+            z-index: 100;
+            padding-bottom: 10em;
+            transition: transform 2s;
+            &>section {
+                animation: slide-in-blurred-bottom 0.25s ease-in-out both;
+                animation-delay: 300ms;
+            }
+            ul.items {
+                li.section {
+                    animation: swoosh-in 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+                    &>* {
+                        animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+                    }
+                    &:nth-child(1n) {
+                        animation-delay: 430ms;
+                    }
+                    &:nth-child(2n) {
+                        animation-delay: 570ms;
+                    }
+                    &:nth-child(3n) {
+                        animation-delay: 710ms;
+                    }
+                    &:nth-child(4n) {
+                        animation-delay: 850ms;
+                    }
+                    &:nth-child(5n) {
+                        animation-delay: 990ms;
+                    }
+                    &:nth-child(6n) {
+                        animation-delay: 1130ms;
+                    }
+                    &:nth-child(7n) {
+                        animation-delay: 1270ms;
+                    }
+                    &:nth-child(8n) {
+                        animation-delay: 1410ms;
+                    }
+                    &:nth-child(9n) {
+                        animation-delay: 1550ms;
+                    }
+                    &:nth-child(10n) {
+                        animation-delay: 1690ms;
+                    }
+                }
+            }
+        }
     }
 }
 
-html #container {
-    position: relative;
-    z-index: 100;
-    padding-bottom: 10em;
-    transition: transform 2s;
-}
-
-.honey {
-    background: top url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(25,25,25)' viewBox='0 0 100 169.5'%3E%3Cpolygon points='50,34.75 93.5,59.75 93.5,109.75 50,134.75 6.5,109.75 6.5,59.75'%3E%3C/polygon%3E%3Cpolygon points='0,-50 43.5,-25 43.5,25 0,50 -43.5,25 -43.5,-25'%3E%3C/polygon%3E%3Cpolygon points='100,-50 143.5,-25 143.5,25 100,50 56.5,25 56.5,-25'%3E%3C/polygon%3E%3Cpolygon points='0,119.5 43.5,144.5 43.5,194.5 0,219.5 -43.5,194.5 -43.5,144.5'%3E%3C/polygon%3E%3Cpolygon points='100,119.5 143.5,144.5 143.5,194.5 100,219.5 56.5,194.5 56.5,144.5'%3E%3C/polygon%3E%3C/svg%3E");
-    background-size: 10px;
-    display: block;
-    overflow: hidden;
-}
-
-.honey-teir1 {
+html .honey-teir1 {
     border-top: 1px solid #1b2533;
     border-bottom: 1px solid #1b2533;
     background: center url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='$background' viewBox='0 0 100 169.5'%3E%3Cpolygon points='50,34.75 93.5,59.75 93.5,109.75 50,134.75 6.5,109.75 6.5,59.75'%3E%3C/polygon%3E%3Cpolygon points='0,-50 43.5,-25 43.5,25 0,50 -43.5,25 -43.5,-25'%3E%3C/polygon%3E%3Cpolygon points='100,-50 143.5,-25 143.5,25 100,50 56.5,25 56.5,-25'%3E%3C/polygon%3E%3Cpolygon points='0,119.5 43.5,144.5 43.5,194.5 0,219.5 -43.5,194.5 -43.5,144.5'%3E%3C/polygon%3E%3Cpolygon points='100,119.5 143.5,144.5 143.5,194.5 100,219.5 56.5,194.5 56.5,144.5'%3E%3C/polygon%3E%3C/svg%3E");
@@ -42,11 +85,7 @@ html #container {
     overflow: auto;
 }
 
-html.loading {
-    background-color: #202020;
-}
-
-section,
+html section,
 .section,
 footer {
     min-height: 30vh;
@@ -58,59 +97,6 @@ footer {
     margin-bottom: 1em;
     margin: 2em;
     background: #222831f2;
-}
-
-#container>section {
-    animation: slide-in-blurred-bottom 0.25s ease-in-out both;
-    animation-delay: 300ms;
-}
-
-#container .items li.section {
-    animation: swoosh-in 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-
-#container .items li.section>* {
-    animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-}
-
-html body #container ul.items li.section:nth-child(1n) {
-    animation-delay: 430ms;
-}
-
-html body #container ul.items li.section:nth-child(2n) {
-    animation-delay: 570ms;
-}
-
-html body #container ul.items li.section:nth-child(3n) {
-    animation-delay: 710ms;
-}
-
-html body #container ul.items li.section:nth-child(4n) {
-    animation-delay: 850ms;
-}
-
-html body #container ul.items li.section:nth-child(5n) {
-    animation-delay: 990ms;
-}
-
-html body #container ul.items li.section:nth-child(6n) {
-    animation-delay: 1130ms;
-}
-
-html body #container ul.items li.section:nth-child(7n) {
-    animation-delay: 1270ms;
-}
-
-html body #container ul.items li.section:nth-child(8n) {
-    animation-delay: 1410ms;
-}
-
-html body #container ul.items li.section:nth-child(9n) {
-    animation-delay: 1550ms;
-}
-
-html body #container ul.items li.section:nth-child(10n) {
-    animation-delay: 1690ms;
 }
 
 hr {
@@ -253,637 +239,9 @@ a {
     animation: 0.6s ease-in 0s 1 alternate slideDown;
 }
 
-@-webkit-keyframes slideDown {
-    from {
-        transform: translateY(-100px);
-    }
-    to {
-        transform: translateY(0);
-    }
-}
-
-@keyframes slideDown {
-    from {
-        transform: translateY(-100px);
-    }
-    to {
-        transform: translateY(0);
-    }
-}
-
 html[data-speclate-url="/tags/index.html"] a.tag {
     display: block;
     margin: 1em;
-}
-
-@keyframes pop {
-    from {
-        transform: scale(0.7);
-    }
-    to {
-        transform: scale(1);
-    }
-}
-
-@keyframes swoosh-in {
-    from {
-        opacity: 0;
-    }
-    10% {
-        transform: scale(0.8);
-        filter: blur(15px);
-        opacity: .6;
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-        filter: blur(0);
-    }
-}
-
-@keyframes popout {
-    from {
-        transform: scale(0);
-    }
-    80% {
-        transform: scale(1.2);
-    }
-    to {
-        transform: scale(1);
-    }
-}
-
-@-webkit-keyframes popout {
-    from {
-        -webkit-transform: scale(0);
-    }
-    80% {
-        -webkit-transform: scale(1.2);
-    }
-    to {
-        -webkit-transform: scale(1);
-    }
-}
-
-@keyframes hide-then-show {
-    from {
-        opacity: 0;
-    }
-    90% {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes fade-out {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
-}
-
-@keyframes switch-on {
-    from {
-        transform: rotate(10deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes spin {
-    from {
-        -ms-transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -webkit-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    to {
-        -ms-transform: rotate(360deg);
-        -moz-transform: rotate(360deg);
-        -webkit-transform: rotate(360deg);
-        -o-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes twitch {
-    from {
-        transform: rotate(0deg);
-    }
-    30% {
-        transform: rotate(0deg);
-    }
-    45% {
-        transform: rotate(6deg);
-    }
-    50% {
-        transform: rotate(0deg);
-    }
-    70% {
-        transform: rotate(0deg);
-    }
-    80% {
-        transform: rotate(-4deg);
-    }
-    85% {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(0deg);
-    }
-}
-
-@keyframes twitch-rev {
-    from {
-        transform: rotate(0deg);
-    }
-    30% {
-        transform: rotate(0deg);
-    }
-    45% {
-        transform: rotate(-6deg);
-    }
-    50% {
-        transform: rotate(0deg);
-    }
-    70% {
-        transform: rotate(0deg);
-    }
-    80% {
-        transform: rotate(4deg);
-    }
-    90% {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(0deg);
-    }
-}
-
-@keyframes pop-in {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-
-/* ----------------------------------------------
- * Generated by Animista on 2021-1-9 8:25:20
- * Licensed under FreeBSD License.
- * See http://animista.net/license for more info. 
- * w: http://animista.net, t: @cssanimista
- * ---------------------------------------------- */
-
-
-/**
- * ----------------------------------------
- * animation bounce-in-bottom
- * ----------------------------------------
- */
-
-@-webkit-keyframes bounce-in-bottom {
-    0% {
-        -webkit-transform: translateY(500px);
-        transform: translateY(500px);
-        -webkit-animation-timing-function: ease-in;
-        animation-timing-function: ease-in;
-        opacity: 0;
-    }
-    38% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-        -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out;
-        opacity: 1;
-    }
-    55% {
-        -webkit-transform: translateY(65px);
-        transform: translateY(65px);
-        -webkit-animation-timing-function: ease-in;
-        animation-timing-function: ease-in;
-    }
-    72% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-        -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out;
-    }
-    81% {
-        -webkit-transform: translateY(28px);
-        transform: translateY(28px);
-        -webkit-animation-timing-function: ease-in;
-        animation-timing-function: ease-in;
-    }
-    90% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-        -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out;
-    }
-    95% {
-        -webkit-transform: translateY(8px);
-        transform: translateY(8px);
-        -webkit-animation-timing-function: ease-in;
-        animation-timing-function: ease-in;
-    }
-    100% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-        -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out;
-    }
-}
-
-@keyframes bounce-in-bottom {
-    0% {
-        -webkit-transform: translateY(500px);
-        transform: translateY(500px);
-        -webkit-animation-timing-function: ease-in;
-        animation-timing-function: ease-in;
-        opacity: 0;
-    }
-    38% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-        -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out;
-        opacity: 1;
-    }
-    55% {
-        -webkit-transform: translateY(65px);
-        transform: translateY(65px);
-        -webkit-animation-timing-function: ease-in;
-        animation-timing-function: ease-in;
-    }
-    72% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-        -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out;
-    }
-    81% {
-        -webkit-transform: translateY(28px);
-        transform: translateY(28px);
-        -webkit-animation-timing-function: ease-in;
-        animation-timing-function: ease-in;
-    }
-    90% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-        -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out;
-    }
-    95% {
-        -webkit-transform: translateY(8px);
-        transform: translateY(8px);
-        -webkit-animation-timing-function: ease-in;
-        animation-timing-function: ease-in;
-    }
-    100% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-        -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out;
-    }
-}
-
-
-/* ----------------------------------------------
- * Generated by Animista on 2021-1-9 8:31:0
- * Licensed under FreeBSD License.
- * See http://animista.net/license for more info. 
- * w: http://animista.net, t: @cssanimista
- * ---------------------------------------------- */
-
-
-/**
- * ----------------------------------------
- * animation bounce-in-top
- * ----------------------------------------
- */
-
-@-webkit-keyframes bounce-in-top {
-    0% {
-        -webkit-transform: translateY(-500px);
-        transform: translateY(-500px);
-        -webkit-animation-timing-function: ease-in;
-        animation-timing-function: ease-in;
-        opacity: 0;
-    }
-    38% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-        -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out;
-        opacity: 1;
-    }
-    55% {
-        -webkit-transform: translateY(-65px);
-        transform: translateY(-65px);
-        -webkit-animation-timing-function: ease-in;
-        animation-timing-function: ease-in;
-    }
-    72% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-        -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out;
-    }
-    81% {
-        -webkit-transform: translateY(-28px);
-        transform: translateY(-28px);
-        -webkit-animation-timing-function: ease-in;
-        animation-timing-function: ease-in;
-    }
-    90% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-        -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out;
-    }
-    95% {
-        -webkit-transform: translateY(-8px);
-        transform: translateY(-8px);
-        -webkit-animation-timing-function: ease-in;
-        animation-timing-function: ease-in;
-    }
-    100% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-        -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out;
-    }
-}
-
-@keyframes bounce-in-top {
-    0% {
-        -webkit-transform: translateY(-500px);
-        transform: translateY(-500px);
-        -webkit-animation-timing-function: ease-in;
-        animation-timing-function: ease-in;
-        opacity: 0;
-    }
-    38% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-        -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out;
-        opacity: 1;
-    }
-    55% {
-        -webkit-transform: translateY(-65px);
-        transform: translateY(-65px);
-        -webkit-animation-timing-function: ease-in;
-        animation-timing-function: ease-in;
-    }
-    72% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-        -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out;
-    }
-    81% {
-        -webkit-transform: translateY(-28px);
-        transform: translateY(-28px);
-        -webkit-animation-timing-function: ease-in;
-        animation-timing-function: ease-in;
-    }
-    90% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-        -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out;
-    }
-    95% {
-        -webkit-transform: translateY(-8px);
-        transform: translateY(-8px);
-        -webkit-animation-timing-function: ease-in;
-        animation-timing-function: ease-in;
-    }
-    100% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-        -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out;
-    }
-}
-
-@-webkit-keyframes slide-in-blurred-bottom {
-    0% {
-        transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
-        transform-origin: 50% 100%;
-        filter: blur(40px);
-        opacity: 0;
-    }
-    100% {
-        -webkit-transform: translateY(0) scaleY(1) scaleX(1);
-        transform: translateY(0) scaleY(1) scaleX(1);
-        -webkit-transform-origin: 50% 50%;
-        transform-origin: 50% 50%;
-        -webkit-filter: blur(0);
-        filter: blur(0);
-        opacity: 1;
-    }
-}
-
-
-/* ----------------------------------------------
- * Generated by Animista on 2021-1-9 11:59:10
- * Licensed under FreeBSD License.
- * See http://animista.net/license for more info. 
- * w: http://animista.net, t: @cssanimista
- * ---------------------------------------------- */
-
-
-/**
- * ----------------------------------------
- * animation slide-in-blurred-bottom
- * ----------------------------------------
- */
-
-@keyframes slide-in-blurred-bottom {
-    0% {
-        transform: translateY(50px) scaleX(0.8);
-        filter: blur(5px);
-        opacity: 0;
-    }
-    70% {
-        transform: translateY(0) scaleY(1) scaleX(1);
-    }
-    100% {
-        opacity: 1;
-        filter: blur(0);
-    }
-}
-
-
-/* ----------------------------------------------
- * Generated by Animista on 2021-1-9 12:4:9
- * Licensed under FreeBSD License.
- * See http://animista.net/license for more info. 
- * w: http://animista.net, t: @cssanimista
- * ---------------------------------------------- */
-
-
-/**
- * ----------------------------------------
- * animation slide-in-left
- * ----------------------------------------
- */
-
-@-webkit-keyframes slide-in-left {
-    0% {
-        -webkit-transform: translateX(-200px);
-        transform: translateX(-200px);
-        opacity: 0;
-    }
-    100% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes slide-in-left {
-    0% {
-        -webkit-transform: translateX(-200px);
-        transform: translateX(-200px);
-        opacity: 0;
-    }
-    100% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-
-/* ----------------------------------------------
- * Generated by Animista on 2021-1-9 12:5:13
- * Licensed under FreeBSD License.
- * See http://animista.net/license for more info. 
- * w: http://animista.net, t: @cssanimista
- * ---------------------------------------------- */
-
-
-/**
- * ----------------------------------------
- * animation slide-in-right
- * ----------------------------------------
- */
-
-@-webkit-keyframes slide-in-right {
-    0% {
-        -webkit-transform: translateX(200px);
-        transform: translateX(200px);
-        opacity: 0;
-    }
-    100% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes slide-in-right {
-    0% {
-        -webkit-transform: translateX(200px);
-        transform: translateX(200px);
-        opacity: 0;
-    }
-    100% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes flip-in-hor-bottom {
-    0% {
-        -webkit-transform: rotateX(80deg);
-        transform: rotateX(80deg);
-        opacity: 0;
-    }
-    100% {
-        -webkit-transform: rotateX(0);
-        transform: rotateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes blink-1 {
-    0%,
-    50%,
-    100% {
-        opacity: 1;
-    }
-    25%,
-    75% {
-        opacity: 0;
-    }
-}
-
-@keyframes fade-in {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-
-/* ----------------------------------------------
- * Generated by Animista on 2021-1-10 10:27:29
- * Licensed under FreeBSD License.
- * See http://animista.net/license for more info. 
- * w: http://animista.net, t: @cssanimista
- * ---------------------------------------------- */
-
-
-/**
- * ----------------------------------------
- * animation swing-top-bck
- * ----------------------------------------
- */
-
-@-webkit-keyframes swing-top-bck {
-    0% {
-        -webkit-transform: rotateX(0);
-        transform: rotateX(0);
-        -webkit-transform-origin: top;
-        transform-origin: top;
-    }
-    100% {
-        -webkit-transform: rotateX(-180deg);
-        transform: rotateX(-180deg);
-        -webkit-transform-origin: top;
-        transform-origin: top;
-    }
-}
-
-@keyframes swing-top-bck {
-    0% {
-        -webkit-transform: rotateX(0);
-        transform: rotateX(0);
-        -webkit-transform-origin: top;
-        transform-origin: top;
-    }
-    100% {
-        -webkit-transform: rotateX(-180deg);
-        transform: rotateX(-180deg);
-        -webkit-transform-origin: top;
-        transform-origin: top;
-    }
 }
 
 html[data-speclate-page="home"]:not(.loading) ul.nav li {
@@ -923,65 +281,6 @@ html[data-speclate-page="home"]:not(.loading) ul.nav li:nth-child(4) {
 
 html[data-speclate-page="home"]:not(.loading) ul.nav li:nth-child(4) .spinner {
     animation-delay: 4s;
-}
-
-html.loading footer {
-    opacity: 1;
-}
-
-footer {
-    border-top: 1px solid #1b2533;
-    overflow-y: hidden;
-    position: relative;
-    transition: transform .3s ease-in-out;
-    margin: 0;
-    padding-bottom: 3em;
-    padding-top: 1em;
-    background-color: 191a1c;
-    display: flex;
-    bottom: 0;
-    transform: translateY(0);
-    justify-content: center;
-}
-
-footer ul {
-    display: inline-flex;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    max-width: 18em;
-}
-
-footer ul li {
-    z-index: 100 !important;
-    animation: popout .3s ease;
-    border-radius: 1.5em;
-    height: 1.5em;
-    width: 1.5em;
-    min-width: 1.5em;
-    transition: transform .2s ease-in-out;
-}
-
-footer ul li svg {
-    stroke: white;
-    transform: scale(0.7);
-    position: relative;
-    top: -.4em;
-    left: -.4em;
-    transition: transform .2s ease-in-out;
-}
-
-footer ul li a {
-    height: 1.5em;
-    align-items: center;
-}
-
-footer ul li a:hover svg {
-    transform: scale(1);
-}
-
-footer ul li a h3 {
-    display: none;
 }
 
 ul.nav.internal {
@@ -1107,26 +406,6 @@ html body li.links a {
     background: #92B558;
 }
 
-html[data-speclate-page=links] section,
-html[data-speclate-page=links] li.section.link {
-    border: 2px solid rgba(146, 181, 88, 0.3);
-}
-
-html[data-speclate-page=links] .tags {
-    display: inline-flex;
-}
-
-html[data-speclate-page=links] .tags .tag {
-    white-space: nowrap;
-    border: 1px solid #92B558;
-    color: white;
-    background: #5b7433;
-}
-
-html[data-speclate-page=links] ul.nav li.links a h3 {
-    color: #92B558;
-}
-
 html body li.hire a {
     border-color: #8e44ad;
     background: #8e44ad;
@@ -1152,54 +431,9 @@ html[data-speclate-page=hire] ul.nav li.hire a h3 {
     color: #8e44ad;
 }
 
-html body li.about a {
-    border-color: #8e44ad;
-    background: #8e44ad;
-}
-
-html[data-speclate-page=about] section,
-html[data-speclate-page=about] li.section.link {
-    border: 2px solid rgba(142, 68, 173, 0.3);
-}
-
-html[data-speclate-page=about] .tags {
-    display: inline-flex;
-}
-
-html[data-speclate-page=about] .tags .tag {
-    white-space: nowrap;
-    border: 1px solid #8e44ad;
-    color: white;
-    background: #522764;
-}
-
-html[data-speclate-page=about] ul.nav li.about a h3 {
-    color: #8e44ad;
-}
-
 html body li.contact a {
     border-color: #8e44ad;
     background: #8e44ad;
-}
-
-html[data-speclate-page=contact] section,
-html[data-speclate-page=contact] li.section.link {
-    border: 1px solid rgba(142, 68, 173, 0.3);
-}
-
-html[data-speclate-page=contact] .tags {
-    display: inline-flex;
-}
-
-html[data-speclate-page=contact] .tags .tag {
-    white-space: nowrap;
-    border: 1px solid #8e44ad;
-    color: white;
-    background: #522764;
-}
-
-html[data-speclate-page=contact] ul.nav li.contact a h3 {
-    color: #8e44ad;
 }
 
 html body li.talks a {
@@ -1207,89 +441,9 @@ html body li.talks a {
     background: #d35400;
 }
 
-html[data-speclate-page=talks] section,
-html[data-speclate-page=talks] li.section.link {
-    border: 1px solid rgba(211, 84, 0, 0.3);
-}
-
-html[data-speclate-page=talks] .tags {
-    display: inline-flex;
-}
-
-html[data-speclate-page=talks] .tags .tag {
-    white-space: nowrap;
-    border: 1px solid #d35400;
-    color: white;
-    background: #6d2b00;
-}
-
-html[data-speclate-page=talks] ul.nav li.talks a h3 {
-    color: #d35400;
-}
-
 html body li.posts a {
     border-color: #C48F65;
     background: #C48F65;
-}
-
-html[data-speclate-page=posts] section,
-html[data-speclate-page=posts] li.section.link {
-    border: 2px solid rgba(196, 143, 101, 0.3);
-}
-
-html[data-speclate-page=posts] .tags {
-    display: inline-flex;
-}
-
-html[data-speclate-page=posts] .tags .tag {
-    white-space: nowrap;
-    border: 1px solid #C48F65;
-    color: white;
-    background: #8d5c36;
-}
-
-html[data-speclate-page=posts] ul.nav li.posts a h3 {
-    color: #C48F65;
-}
-
-html body footer li.twitter {
-    border-color: #1da1f2;
-    background: #1da1f2;
-}
-
-html body footer li.github {
-    border-color: #c6cbd1;
-    background: #c6cbd1;
-}
-
-html body footer li.vimeo {
-    border-color: #F2552C;
-    background: #F2552C;
-}
-
-html body footer li.flickr {
-    border-color: #ff0084;
-    background: #ff0084;
-}
-
-html body footer li.youtube {
-    border-color: #ff0000;
-    background: #ff0000;
-}
-
-html body footer li.facebook {
-    border-color: #29487d;
-    background: #29487d;
-}
-
-html body footer li.codepen {
-    border-color: #000000;
-    background: #000000;
-}
-
-html body footer li.codesandbox {
-    border-color: #000000;
-    background: #000000;
 }
 
 
@@ -1333,28 +487,6 @@ html.loading .loader:before {
     background: linear-gradient(to right, #dddddd 0%, #2989d8 50%, #207cca 67%, #dddddd 100%);
 }
 
-@keyframes loading {
-    from {
-        left: -200px;
-        width: 30%;
-    }
-    50% {
-        width: 30%;
-    }
-    70% {
-        width: 70%;
-    }
-    80% {
-        left: 50%;
-    }
-    95% {
-        left: 120%;
-    }
-    to {
-        left: 100%;
-    }
-}
-
 html #container {
     opacity: 1;
     transition: opacity 1s ease-in 0s;
@@ -1385,14 +517,6 @@ html.loading[data-speclate-url="/"] .loader {
 
 .button:hover {
     color: #222831f2;
-}
-
-.cta {
-    text-align: center;
-    margin: 0 auto;
-    line-height: 5em;
-    padding: .3em .8em;
-    font-size: 2em;
 }
 
 html.loading footer {
@@ -1441,21 +565,6 @@ html.loading footer {
     left: 0;
 }
 
-
-/* 
-.panels li.dog::after {
-    background-image: url("https://streamline-production-bucket.cellar-c2.services.clever-cloud.com/icons/low/subc_M9YctUtkRjxCKjqzQEpRnr9w/blind-disability-2-jxqks5xu8bmzv6d99dn2za.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    display: block;
-    top: -1em;
-    content: ' ';
-    width: 5em;
-    height: 5em;
-    position: absolute;
-    animation: pop 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 0.5s;
-} */
-
 .panels li.garden::after {
     background-image: url("/icons/gardener.png");
     background-size: 100%;
@@ -1468,20 +577,6 @@ html.loading footer {
     position: absolute;
     animation: pop 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 0.5s;
 }
-
-
-/* .panels li.director::after {
-    background-image: url("https://streamline-production-bucket.cellar-c2.services.clever-cloud.com/icons/low/subc_M9YctUtkRgUWKjqqYR4nY3GH/movie-production-epoyk5x2lu4pway7totjl.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    display: block;
-    top: -1em;
-    content: ' ';
-    width: 5em;
-    height: 5em;
-    position: absolute;
-    animation: pop 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 0.5s;
-} */
 
 .panels li.resident::after {
     background-image: url("/icons/loughton.png");
@@ -1509,21 +604,6 @@ html.loading footer {
     animation: pop 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 0.5s;
 }
 
-
-/* 
-.panels li.javascript::after {
-    background-image: url("https://streamline-production-bucket.cellar-c2.services.clever-cloud.com/icons/low/subc_M9YctUtkRJEkfyZ4aB2ooQrh/laptop-coding-2te16zxktqnojz3gvjgus.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    display: block;
-    top: -1em;
-    content: ' ';
-    width: 5em;
-    height: 5em;
-    position: absolute;
-    animation: pop 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 0.5s;
-} */
-
 .panels li.organiser::after {
     background-image: url("/icons/events.png");
     background-size: 100%;
@@ -1537,34 +617,6 @@ html.loading footer {
     animation: pop 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 0.5s;
 }
 
-
-/* 
-.panels li.host::after {
-    background-image: url("https://streamline-production-bucket.cellar-c2.services.clever-cloud.com/icons/low/subc_M9YctUtkRRT6KjqpRnUmxJew/podcast-1-ob004svgdnm9otgzcniff.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    display: block;
-    top: -1em;
-    content: ' ';
-    width: 5em;
-    height: 5em;
-    position: absolute;
-    animation: pop 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 0.5s;
-}
-
-.panels li.best::after {
-    background-image: url("https://streamline-p3ouction-bucket.cellar-c2.services.clever-cloud.com/icons/low/subc_M9YctUtkRRT6KjqpRnUmxJew/podcast-1-ob004svgdnm9otgzcniff.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    display: block;
-    top: -1em;
-    content: ' ';
-    width: 5em;
-    height: 5em;
-    position: absolute;
-    animation: pop 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 0.5s;
-} */
-
 .panels li.lead::after {
     background-image: url("/icons/lead.png");
     background-size: 100%;
@@ -1577,21 +629,6 @@ html.loading footer {
     position: absolute;
     animation: pop 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 0.5s;
 }
-
-
-/* 
-.panels li.speaker::after {
-    background-image: url("https://streamline-production-bucket.cellar-c2.services.clever-cloud.com/icons/low/subc_M9YctUtkRJEkfyZ4aB2ooQrh/coding-projector-wqxzbgqsz8e6i4pkvwohqn.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    display: block;
-    top: -1em;
-    content: ' ';
-    width: 5em;
-    height: 5em;
-    position: absolute;
-    animation: pop 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 0.5s;
-} */
 
 .panels li a {
     padding-top: 4em;
@@ -1692,32 +729,6 @@ li.link.section .tag {
     margin: 5px;
 }
 
-[data-speclate-page="talks"] #container ul {
-    margin-left: 1em;
-}
-
-[data-speclate-page="talks"] #container li {
-    list-style-type: circle;
-    margin-left: 3em;
-}
-
-[data-speclate-page="talks"] #container .resources li {
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-position: 10px;
-    background-size: 1em;
-    padding-left: 2em;
-    margin-left: 1em;
-}
-
-[data-speclate-page="talks"] #container .resources li.video {
-    background-image: url(/client/icons/play.svg);
-}
-
-[data-speclate-page="talks"] #container .resources li.slides {
-    background-image: url(/client/icons/monitor.svg);
-}
-
 html[data-speclate-page="hire"] section {
     padding: 1em;
 }
@@ -1781,38 +792,6 @@ html[data-speclate-page=posts] section.post-full {
     line-height: 2em;
     padding: .3em .8em;
     margin: 0 .5em 0 0;
-}
-
-html[data-speclate-page="tag"] #container {
-    transform: translateY(-9em);
-}
-
-html[data-speclate-page="tag"] .posts_holder {
-    text-align: center;
-}
-
-html[data-speclate-page="tag"] header h2 {
-    margin: 0;
-    padding-top: 2em;
-    padding-left: .5em;
-}
-
-html[data-speclate-page="tag"] header .title {
-    font-size: 2em;
-    z-index: 100;
-}
-
-html[data-speclate-page="tag"] header.category {
-    background-size: cover;
-    min-height: 6em;
-    max-width: 100%;
-    height: auto;
-    background-position: bottom;
-    object-fit: cover;
-    padding: 0;
-    font-family: 'Headland One', serif;
-    position: sticky;
-    z-index: 1;
 }
 
 .category .summary {
