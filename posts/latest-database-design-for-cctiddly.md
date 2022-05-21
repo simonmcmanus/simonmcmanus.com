@@ -5,7 +5,9 @@ tags: ["BT","ccTiddly","database design","mysql","Osmosoft","phpmyadmin","SimonM
 ---
 [![erm2.jpg](https://simonmcmanus.files.wordpress.com/2007/11/erm2.jpg)](https://simonmcmanus.files.wordpress.com/2007/11/erm2.jpg "erm2.jpg")  
   
-and the sql :  
+and the sql : 
+
+```sql
 \[sourcecode language='sql'\]  
 \-- phpMyAdmin SQL Dump  
 \-- version 2.10.1  
@@ -204,3 +206,5 @@ PRIMARY KEY (\`id\`)
 \[/sourcecode\]
 
         
+
+```
