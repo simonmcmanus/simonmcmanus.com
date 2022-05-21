@@ -15,9 +15,9 @@ Send a short email to info@enhanceconf.com with a title of EnhanceConf Scholarsh
   
 **In your email please include:**  
   
-- Who are you?  
-- What do you do?  
-- Why would you like the scholarship?  
+* Who are you?  
+* What do you do?  
+* Why would you like the scholarship?  
 
 ### Who should apply:
 
@@ -27,14 +27,14 @@ The scholarships are available to anyone not normally able to attend a conferenc
 Some of the groups we are especially keen to support include:  
 
   
-*   Ethnic minorities 
-*   Women
-*   LGBTQIA+
-*   Disabled people
-*   Charity workers
-*   Education / students
-*   Open source projects
-*   Industry newcomers
+* Ethnic minorities 
+* Women
+* LGBTQIA+
+* Disabled people
+* Charity workers
+* Education / students
+* Open source projects
+* Industry newcomers
   
 If you have any questions, just send an email to info@enhanceconf.com  
   
