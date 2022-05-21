@@ -1,7 +1,7 @@
 ---
 date: 2011-11-22
 title: Sizlate
-tags: ["osmososft","post", "web"]
+tags: ["javascript","post", "web", "node", "templating", "sizlate"]
 ---
 Over the past year I have been experimenting with [Node.js](http://nodejs.org/). Its been a pretty interesting journey and I have learned a great deal.  
   
