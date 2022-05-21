@@ -6,9 +6,12 @@ tags: ["osmososft","TiddlyWiki ccTiddly","post"]
 This handy PHP function receives  a epoch time stamp and returns the a string using the TiddlyWiki date format.   Quite handy.  
   
 //  Returns time in TiddlyWiki format from Epoch time stamp.  
+
+```php
 function epochToTiddlyTime($timestamp)  
 {  
 return date('YmdHi', $timestamp);  
 }
+```
 
         
