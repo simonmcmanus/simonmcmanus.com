@@ -1,5 +1,4 @@
-[
-    {
+[{
         "title": "links json file ",
         "url": "https://5vu7ki44h5.execute-api.eu-west-2.amazonaws.com/dev/links",
         "summary": "links json file  on s3 that this site uses.",
@@ -3741,7 +3740,7 @@
     },
     {
         "title": "Google Search Console",
-        "url": "https://search.google.com/search-console?resource_id=https://www.simonmcmanus.com/",
+        "url": "https://search.google.com/search-console?resource_id=https://simonmcmanus.com/",
         "summary": "Google search console",
         "tags": [
             "seo",
