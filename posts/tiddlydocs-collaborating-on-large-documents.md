@@ -23,38 +23,38 @@ The online demo does not demonstrate the iGoogle integration of TiddlyDocs.   T
   
 **Drag and Drop your Table of Content**  
   
-![](http://farm4.static.flickr.com/3318/3253469780_55cedf9eea.jpg "TiddlyDocs - drag n drop ")  
+![](https://farm4.static.flickr.com/3318/3253469780_55cedf9eea.jpg "TiddlyDocs - drag n drop ")  
   
 Allows users to change the order and hierarchy of the document table of content  
   
 **Easily assign sections to Users**  
   
-![](http://farm4.static.flickr.com/3391/3252648993_18d90588aa.jpg "TiddlyDoc - Assign chunk")  
+![](https://farm4.static.flickr.com/3391/3252648993_18d90588aa.jpg "TiddlyDoc - Assign chunk")  
   
 Allows each section to be easily assigned to a pre-populated list of users.  
   
 **Full WYSIWYG text editing with FCKEditor**  
   
-![](http://farm4.static.flickr.com/3503/3253482874_bc934ce199.jpg "TiddlyDocs")  
+![](https://farm4.static.flickr.com/3503/3253482874_bc934ce199.jpg "TiddlyDocs")  
   
 Allows users to edit the document content in a familiar word style environment.  Also allows content including images to be pasted in the textarea from the clipboard.  
   
 **iGoogle Integration of Personalised Task Lists**  
   
-![](http://img.skitch.com/20090205-k7u7rpctmxsbmstudwr3mphiug.jpg "TiddlyDoc")  
+![](https://img.skitch.com/20090205-k7u7rpctmxsbmstudwr3mphiug.jpg "TiddlyDoc")  
   
 The iGoogle integration allows each users to have their own view of all the tasks assigned to them. This can be used in various portal frameworks.  
   
 **Easy view of the documents status**  
   
-![](http://farm4.static.flickr.com/3316/3253512996_30f9a0787c.jpg?v=0 "TiddlyDoc - Status")  
+![](https://farm4.static.flickr.com/3316/3253512996_30f9a0787c.jpg?v=0 "TiddlyDoc - Status")  
   
 The bar to the right of the table of content shows the status of each section. When the bar is completely green the document is complete.  This example demonstrates that only one of the sections has been completed.  
   
 **Each Section Allows for Comments  
 **  
   
-![](http://farm4.static.flickr.com/3302/3253503268_0b5bd3e38e.jpg "TiddlyDoc")  
+![](https://farm4.static.flickr.com/3302/3253503268_0b5bd3e38e.jpg "TiddlyDoc")  
   
 Each section allows multi-threaded comments which will not be printed in the final document.  This allows for conversations to take place around each section of content.  
   
@@ -83,7 +83,7 @@ This is the other plugin which I wrote specifically for the demo.  This plugin 
   
 Provided by Eric of [TiddlyTools,](http://tiddlytools.com) the singlePageModePlugin ensures only one tiddler is viewed at a time.  
   
-[http://tiddlytools.com/#SinglePageModePlugin](http://tiddlytools.com/#SinglePageModePlugin)  
+[https://tiddlytools.com/#SinglePageModePlugin](http://tiddlytools.com/#SinglePageModePlugin)  
   
 **Comments Plugin**  
   
@@ -96,7 +96,7 @@ Allows users to post comments against individual sections. These comments are pr
   
 Taken from [Phil Hawksworth](http://hawksworx.com/)'s TeamTasks, this allows the fields provided by TiddlyWiki to be used to store information about ownership and current status.  
   
-[http://svn.tiddlywiki.org/Trunk/contributors/PhilHawksworth/verticals/TeamTasks/core/plugins/ValueSwitcherPlugin.js](http://svn.tiddlywiki.org/Trunk/contributors/PhilHawksworth/verticals/TeamTasks/core/plugins/ValueSwitcherPlugin.js)  
+[https://svn.tiddlywiki.org/Trunk/contributors/PhilHawksworth/verticals/TeamTasks/core/plugins/ValueSwitcherPlugin.js](http://svn.tiddlywiki.org/Trunk/contributors/PhilHawksworth/verticals/TeamTasks/core/plugins/ValueSwitcherPlugin.js)  
   
 from:  [http://getteamtasks.com](http://getteamtasks.com)  
   

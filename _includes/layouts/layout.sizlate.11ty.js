@@ -19,6 +19,11 @@ class Sizlate {
 
     render(data) {
         const layoutSelectors = {
+            html: {
+                'data-speclate-url': data.page.url,
+                'data-speclate-page': data.page.fileSlug,
+            },
+
             'h1.title': data.title,
             '#container': data.content,
             //style,

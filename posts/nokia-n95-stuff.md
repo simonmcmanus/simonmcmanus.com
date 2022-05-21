@@ -49,20 +49,18 @@ I am really looking forward to this being released for the mac.
   
 drink beer from your n95.  
   
-![](http://www.symbian-freak.com/images/news/08/01/beer01.jpg)  
   
 **[pyPoziomica](http://www.symbian-freak.com/news/007/12/pypoziomica_freeware_level_tool.htm "pyPoziomica Spirit Level tool")**  
   
 Spirit level tool for the n95!  
-  
-![](http://www.symbian-freak.com/images/news/07/12/pypoziomica00.jpg)  
+   
 [](http://qrcode.kaywa.com/)  
   
 [**QR Code Generator**](http://qrcode.kaywa.com/)  
   
 You don't need to download any software, the n95 has a built in QR code reader, from this site you can generate QR codes to try on your phone.  
   
-![](http://qrcode.kaywa.com/img.php?s=8&d=http%3A%2F%2Fsimonmcmanus.com)  
+![](https://qrcode.kaywa.com/img.php?s=8&d=http%3A%2F%2Fsimonmcmanus.com)  
   
 [**Dr. Jukka’s Inclinometer**](http://mosh.nokia.com/content/3E1BD59369462687E040050AEE043609)  
   

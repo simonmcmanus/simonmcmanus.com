@@ -6,9 +6,7 @@ tags: ["BT","hack","hacking","Osmosoft","osmososft","tiddlywiki","wii","post"]
 Last Monday Osmosoft purchased its first games console, the Wii. One of the conditions of the office having a Wii was that we needed to do something cool (and not just play games) by the Friday.  
   
 What with TiddlyWiki's third year anniversary also being on the Friday it proved an interesting week.  
-  
-![a Wii](http://www.laternerdz.com/wp-content/uploads/2006/11/wii.jpg)  
-  
+
 So my first mission was to find some way of detecting movement from the Wii controllers, I have seen a number of demos showing the [wii controlling a Midi interfaces](http://mike.verdone.ca/wiitomidi/ "wii controlling midi interface") but my distinct lack of a midi interface proved a problem here.  
   
 I managed to find a number of apps which let me control my mac from the Wii controller [here](http://wiibrew.org/index.php?title=List_of_Wii_Applications "control aps from your wii controller"). Eventually I found a site which provides example javascript code demonstrating how to read the Wii controller coordinates as variables!  

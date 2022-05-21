@@ -15,11 +15,6 @@ eleventyComputed:
   title: "{{ tag }}"
 permalink: /tags/{{ tag  }}/
 mappers: ["pagination"]
-"sizlate": {
-    html: {
-        data-speclate-page: 'tag'
-    },
-}
 
 ---
 <div class="category"><header class="category">

@@ -28,8 +28,8 @@ I have currently not implemented any security with ccTiddly.  I am currently th
   
 Here are the screenshots showing the work so far..... feedback is welcomed.  
   
-![](http://farm3.static.flickr.com/2042/2347575468_de9c5a584e.jpg?v=0)  
-![](http://farm3.static.flickr.com/2130/2346744603_3a3697567b.jpg?v=0)  
+![](https://farm3.static.flickr.com/2042/2347575468_de9c5a584e.jpg?v=0)  
+![](https://farm3.static.flickr.com/2130/2346744603_3a3697567b.jpg?v=0)  
   
 You can either leave your comments against this blog post or leave them on the google groups page :  
   
@@ -37,7 +37,7 @@ You can either leave your comments against this blog post or leave them on the g
   
 We are also going to need an area where people can browse and manage their uploaded files. That will probably take the form of a separate macro (ccBrowse??) but I would be interested to hear from anyone who sees value in displaying the previously uploaded files underneath the upload functionality as the below sketch shows :  
   
-![](http://farm3.static.flickr.com/2275/2346781123_dc056653bd.jpg?v=1206012805)  
+![](https://farm3.static.flickr.com/2275/2346781123_dc056653bd.jpg?v=1206012805)  
   
 Does this sound useful to anyone?  
   

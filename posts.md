@@ -4,9 +4,6 @@ layout: layouts/layout.sizlate.11ty.js
 permalink: "/posts.html"
 mappers: ["recentPosts"]
 "sizlate": {
-    html: {
-        data-speclate-page: 'posts'
-    },
     "title": "Posts from Simon McManus",
     "a[href='/posts.html']": {
         "className": "active"

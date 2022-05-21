@@ -2,9 +2,6 @@
 layout: layouts/layout.sizlate.11ty.js
 permalink: "/about.html"
 "sizlate": {
-    html: {
-        data-speclate-page: 'about'
-    },
     title: "About Simon McManus",
     "a[href='/about.html']": {
         "className": "active"

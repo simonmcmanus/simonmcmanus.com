@@ -17,7 +17,7 @@ When the user has finished making changes offline, and when reconnected to the i
   
 Based on the changes, TiddlyWiki will show the following options before syncing:  
   
-![](http://farm4.static.flickr.com/3188/2731660267_fd75c77b85.jpg)  
+![](https://farm4.static.flickr.com/3188/2731660267_fd75c77b85.jpg)  
   
 This is very new functionality. It's working in Firefox nicely. Unfortunately, I now need to get it working in IE6. Given that IE6 is likely to be challenging, I don't want to make any promises about release dates. However I suspect it will be out in the next few weeks! If you can't wait to have a play the code is in the [TiddlyWiki subversion repository](http://svn.tiddlywiki.com)[.](http://svn.tiddlywiki.com)  
   
@@ -60,7 +60,7 @@ New Skins
   
 TiddlyWiki recently introduced the concept of single tiddler themes. These allow developers to pack many different tiddlers into a single tiddler which makes up a theme e.g. stylesheet, pageTemplate and viewTemplate. ccTiddly now makes full use of the theme mechanism. We will distribute ccTiddly 1.7 with three themes.  
   
-![](http://farm4.static.flickr.com/3024/2753077987_cd23bdd133.jpg)  
+![](https://farm4.static.flickr.com/3024/2753077987_cd23bdd133.jpg)  
 
 Improved Architecture
 ---------------------

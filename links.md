@@ -3,9 +3,6 @@ layout: layouts/layout.sizlate.11ty.js
 mappers: ["recentLinks"]
 permalink: "/links.html"
 "sizlate": {
-    html: {
-        data-speclate-page: 'links'
-    },
     "title": "Links from Simon McManus",
     "a[href='/links/']": {
         "className": "active"
