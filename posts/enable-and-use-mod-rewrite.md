@@ -67,16 +67,9 @@ osmosoft.com/BLAHNLASD
 Now you need to change /shared/index.php to display different things based on the URL, the simplist way I have found to do this is by breaking up the URL into variables and then proccessing them in index.php. eg:  
 ```js
 <?php
-```
-  
-```js
 $url = split('/', $\_SERVER\['PHP\_SELF'\]);
-  
-  
 $instance =  $url\[1\];
-```
-  
-```js
+
 ?>
 ```
 

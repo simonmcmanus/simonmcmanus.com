@@ -14,90 +14,25 @@ The aim here is to be able to manage users and your config for ccTiddly from Tid
   
 ```js
 /\*\*\*
-```
-  
-```js
 |''Name:''|ccConfig|
-```
-  
-```js
 |''Description:''|Lets you configure ccTiddly|
-```
-  
-```js
 |''Version:''|2.0.3|
-```
-  
-```js
 |''Date:''|Sep 22, 2006|
-```
-  
-```js
 |''Author:''|SimonMcManus|
-```
-  
-```js
 |''License:''|\[\[BSD open source license\]\]|
-```
-  
-```js
 |''~CoreVersion:''|2.1.0|
-```
-  
-```js
 |''Browser:''|Firefox 1.0.4+; Firefox 1.5; InternetExplorer 6.0|
-```
-  
-```js
 \*\*\*/
-```
-  
-
-  
-```js
     config.macros.ccConfig = {
-```
-  
-```js
-    handler: function(place,macroName,params,wikifier,paramString,tiddler) {
-```
-  
-```js
-  
-    function callback(status,params,responseText,xhr)
-```
-  
-```js
-    {
-```
-  
-```js
-            createTiddlyLink(place,responseText,true);
-```
-  
-```js
+        handler: function(place,macroName,params,wikifier,paramString,tiddler) {
+    
+            function callback(status,params,responseText,xhr) {
+                    createTiddlyLink(place,responseText,true);
+            }
+            params = {};
+            params.title =tiddler.title;
+            var a = doHttp('GET', 'http://127.0.0.1/cctw\_tw/cctiddly/handle/index.php',null,null,null,null,callback,params);
+        }
     }
-```
-  
-
-  
-```js
-    params = {};
-```
-  
-```js
-    params.title =tiddler.title;
-```
-  
-```js
-    var a = doHttp('GET', 'http://127.0.0.1/cctw\_tw/cctiddly/handle/index.php',null,null,null,null,callback,params);
-```
-  
-```js
-}
-```
-  
-```js
-}
 ```
   
