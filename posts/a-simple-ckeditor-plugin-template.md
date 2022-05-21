@@ -9,6 +9,6 @@ I have published a basic template which make it clear how to create a plugin tha
   
 The template can be found at :  
   
-[https://www.simonmcmanus.com/stuff/tw\_uploader/testPlugin.zip](http://simonmcmanus.com/stuff/tw_uploader/testPlugin.zip)
+[https://simonmcmanus.com/stuff/tw\_uploader/testPlugin.zip](http://simonmcmanus.com/stuff/tw_uploader/testPlugin.zip)
 
         
