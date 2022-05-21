@@ -7,7 +7,7 @@ This code provides a template for creating Macros. When tagged systemConfig this
 
   
 ```js
-/\*\*\*
+/***
 |''Name:''|ExamplePlugin|
 |''Description:''|To demonstrate how to write TiddlyWiki plugins|
 |''Version:''|2.0.3|
@@ -17,7 +17,7 @@ This code provides a template for creating Macros. When tagged systemConfig this
 |''License:''|\[\[BSD open source license\]\]|
 |''~CoreVersion:''|2.1.0|
 |''Browser:''|Firefox 1.0.4+; Firefox 1.5; InternetExplorer 6.0|
-\*\*\*/
+***/
 config.macros.exampleplugin = {
     handler: function() {
         alert('here');
