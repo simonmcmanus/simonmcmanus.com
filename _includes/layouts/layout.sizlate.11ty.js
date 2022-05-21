@@ -23,6 +23,10 @@ class Sizlate {
                 'data-speclate-url': data.page.url,
                 'data-speclate-page': data.page.fileSlug,
             },
+            'link#cannonical': {
+                rel: 'cannonical',
+                href: `https://simonmcmanus.com${data.page.url}`
+            },
 
             'h1.title': data.title,
             '#container': data.content,
