@@ -1,11 +1,11 @@
 ---
 layout: layouts/layout.sizlate.11ty.js
 
-permalink: "/posts.html"
+permalink: "/posts/"
 mappers: ["recentPosts"]
 "sizlate": {
     "title": "Posts from Simon McManus",
-    "a[href='/posts.html']": {
+    "a[href='/posts/']": {
         "className": "active"
     }
 }

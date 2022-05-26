@@ -1,7 +1,7 @@
 ---
 layout: layouts/layout.sizlate.11ty.js
 mappers: ["recentLinks"]
-permalink: "/links.html"
+permalink: "/links/"
 "sizlate": {
     "title": "Links from Simon McManus",
     "a[href='/links/']": {

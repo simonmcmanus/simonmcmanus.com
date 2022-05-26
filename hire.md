@@ -1,9 +1,5 @@
 ---
 layout: layouts/layout.sizlate.11ty.js
-sizlate: { 'link#cannonical': {
-    rel: 'cannonical',
-    href: 'https://simonmcmanus.com/hire/'
-}}
 
 ---
 

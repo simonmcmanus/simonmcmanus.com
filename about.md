@@ -1,9 +1,9 @@
 ---
 layout: layouts/layout.sizlate.11ty.js
-permalink: "/about.html"
+permalink: "/about/"
 "sizlate": {
     title: "About Simon McManus",
-    "a[href='/about.html']": {
+    "a[href='/about/']": {
         "className": "active"
     }
 }
