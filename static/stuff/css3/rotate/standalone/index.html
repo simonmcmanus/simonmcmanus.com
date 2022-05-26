@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <style>
+        .perspective {
+            -webkit-perspective: 2400;
+        }
+        
+        .three-d {
+            -webkit-transform-style: preserve-3d;
+        }
+        
+        h1,
+        .nav,
+        .twitter-bird.sign,
+        div#main-content.twitter-bird.sign,
+        .vcard {
+            -webkit-transform: translateZ(3em);
+        }
+        
+        @-webkit-keyframes rotate {
+            0% {
+                -webkit-transform: rotateY(0deg);
+            }
+            5% {
+                -webkit-transform: rotateY(0deg);
+            }
+            30% {
+                -webkit-transform: rotateY(-40deg);
+            }
+            50% {
+                -webkit-transform: rotateY(85deg);
+            }
+            55% {
+                -webkit-transform: rotateY(85deg);
+            }
+            90% {
+                -webkit-transform: rotateY(0deg);
+            }
+        }
+        
+        @-webkit-keyframes perspective {
+            0% {
+                -webkit-perspective: 2400;
+            }
+            5% {
+                -webkit-perspective: 2400;
+            }
+            30% {
+                -webkit-perspective: 650;
+            }
+            50% {
+                -webkit-perspective: 2000;
+            }
+            55% {
+                -webkit-perspective: 2000;
+            }
+            90% {
+                -webkit-perspective: 2400;
+            }
+        }
+        
+        #perspective {
+            -webkit-animation-name: perspective;
+            -webkit-animation-duration: 15s;
+            -webkit-animation-iteration-count: infinite;
+        }
+        
+        #rotator {
+            -webkit-animation-name: rotate;
+            -webkit-animation-duration: 15s;
+            -webkit-animation-iteration-count: infinite;
+        }
+    </style>
+    <title>Simon McManus - CSS 3D Rotation</title>
+</head>
+
+<body>
+    <div class="perspective" id="perspective">
+        <div class="three-d" id="rotator">
+
+            <div class="topGradient">
+                <h1>simonmcmanus.com</h1>
+
+            </div>
+            <div id="container">
+                <div class="nav">
+                    <a class="activity" href="/web/20120107041957/https://simonmcmanus.com/">Activity</a>
+                    <a class="contact selected" href="/web/20120107041957/https://simonmcmanus.com/contact.html">Contact</a>
+                    <a href="/web/20120107041957/https://simonmcmanus.com/about.html" class="about">About</a>
+                </div>
+                <div id="main-content">
+                    </script>
+                    <div class="twitter-bird bird">
+                    </div>
+                    <div class="twitter-bird sign">
+                        <a href="https://web.archive.org/web/20120107041957/http://twitter.com/simonmcmanus"><img src="https://web.archive.org/web/20120107041957im_/http://simonmcmanus.com/node_static/images/followme.png" class="sign"></a>
+                    </div>
+                    <div class="vcardHolder">
+                        <div id="hcard-Simon-McManus" class="vcard">
+                            <a class="url fn" href="https://web.archive.org/web/20120107041957/http://simonmcmanus.com/">Simon McManus</a>
+                            <div class="org">
+                                Web Developer
+                            </div>
+                            <div class="adr">
+                                <span class="locality">London</span>,<span class="region">UK</span>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="https://web.archive.org/web/20120107041957/tel:+44781 454 5689">+44781 454 5689</a>
+                                </li>
+                                <li>
+                                    <a class="email" href="https://web.archive.org/web/20120107041957/mailto:mcmanus.simon@gmail.com">mcmanus.simon@gmail.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottomGradient bottomGradientReflect">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
