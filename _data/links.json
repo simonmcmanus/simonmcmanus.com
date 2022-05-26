@@ -1,4 +1,5 @@
-[{
+[
+    {
         "title": "links json file ",
         "url": "https://5vu7ki44h5.execute-api.eu-west-2.amazonaws.com/dev/links",
         "summary": "links json file  on s3 that this site uses.",
@@ -3740,7 +3741,7 @@
     },
     {
         "title": "Google Search Console",
-        "url": "https://search.google.com/search-console?resource_id=https://simonmcmanus.com/",
+        "url": "https://search.google.com/search-console?resource_id=https://www.simonmcmanus.com/",
         "summary": "Google search console",
         "tags": [
             "seo",
@@ -11047,7 +11048,8 @@
         "title": "Blend Your Data - Tableau",
         "summary": "",
         "tags": [
-            "tableau"
+            "tableau",
+            "data"
         ],
         "date": "2022-04-14"
     },
@@ -11068,7 +11070,7 @@
         "title": "Zag - Rapidly build UI components without sweating over the logic. - Zag",
         "summary": "",
         "tags": [
-            "searches.map is not a function"
+            "state-machines"
         ],
         "date": "2022-04-27"
     },
@@ -11078,8 +11080,55 @@
         "title": "JSON Visio - Directly onto graphs",
         "summary": "",
         "tags": [
-            "json"
+            "json",
+            "ui",
+            "graphs"
         ],
         "date": "2022-04-27"
+    },
+    {
+        "created": "2022-05-11T12:57:31.352Z",
+        "url": "https://jobs-to-be-done.com/what-is-jobs-to-be-done-fea59c8e39eb",
+        "title": "What Is Jobs-to-be-Done?. Is Jobs-to-be-Done a theory? A lens? A… | by Tony Ulwick | JTBD + Outcome-Driven Innovation",
+        "summary": "",
+        "tags": [
+            "framework",
+            "outcome",
+            "design"
+        ],
+        "date": "2022-05-11"
+    },
+    {
+        "created": "2022-05-13T15:39:53.313Z",
+        "url": "https://webaim.org/resources/designers/",
+        "title": "WebAIM: Web Accessibility for Designers",
+        "summary": "The focus of web accessibility is often on web development – the things that happen in HTML, CSS, or JavaScript. Optimal accessibility should start much earlier, as part of the visual design process. This infographic highlights many important principles of accessible design",
+        "tags": [
+            "accessibility",
+            "designers"
+        ],
+        "date": "2022-05-13"
+    },
+    {
+        "created": "2022-05-16T06:45:11.517Z",
+        "url": "https://www.aleksandrhovhannisyan.com/blog/useful-11ty-filters/ ",
+        "title": "A Set of Useful 11ty Filters | Aleksandr Hovhannisyan",
+        "summary": "",
+        "tags": [
+            "filters",
+            "eleventy"
+        ],
+        "date": "2022-05-16"
+    },
+    {
+        "created": "2022-05-20T20:42:01.710Z",
+        "url": "https://jkc.codes/blog/using-sass-with-eleventy/",
+        "title": "Using SASS With Eleventy — John Kemp-Cruz",
+        "summary": "Eleventy (11ty) is a super customisable static site generator that at its core transforms template language into HTML. However, template languages like Liquid and Nunjucks are designed to output HTML rather than CSS so how does Eleventy handle styling?",
+        "tags": [
+            "eleventy",
+            " styling"
+        ],
+        "date": "2022-05-20"
     }
 ]

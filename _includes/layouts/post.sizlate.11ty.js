@@ -18,13 +18,18 @@ class SizlatePost {
         const nextPost = this.getNextCollectionItem(data.collections.post, data.page, 1)
         const previousPost = this.getPreviousCollectionItem(data.collections.post, data.page, 1)
 
-        nextPost ? selectors['.next'] = {
-            innerHTML: `Next: ${nextPost.data.title}`,
-            href: nextPost.url
+        selectors['.next'] = nextPost ? {
+
+            href: nextPost.url,
+            selectors: {
+                '.title': nextPost.data.title
+            }
         } : false
 
-        previousPost ? selectors['.previous'] = {
-            innerHTML: `Previous: ${previousPost.data.title}`,
+        selectors['.previous'] = previousPost ? {
+            selectors: {
+                '.title': previousPost.data.title,
+            },
             href: previousPost.url
         } : false
 
