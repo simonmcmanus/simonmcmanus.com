@@ -9,7 +9,7 @@ module.exports = (data) => ({
                 selectors: {
                     'span.title': link.title,
                     img: {
-                        alt: `fav icon for ${post.url}`,
+                        alt: `fav icon for ${link.title}`,
                         src: `https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=${link.url}&size=30`
                     },
                 }
