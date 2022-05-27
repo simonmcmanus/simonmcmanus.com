@@ -20,10 +20,8 @@ Simon McManus is an engineering team lead with extensive Node.js, web and Mobile
     
 You can contact Simon McManus on <a href="mailto:mcmanus.simon@gmail.com">mcmanus.simon@gmail.com</a>
 
-
-With thanks to <a href="http://flickr.com/">Flickr</a> for image hosting and <a href="https://streamlineicons.com/ux/">Streamline Icons</a> for the icons.
-
-
 The source code for this website can be found on <a href="https://github.com/simonmcmanus/links">github</a>.
-    
+
+
+If you would like to work with me please see the<a href="/hire/"> hire page </a>
 </section>
