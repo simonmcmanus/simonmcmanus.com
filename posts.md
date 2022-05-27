@@ -20,7 +20,7 @@ mappers: ["recentPosts"]
             <li class="section link">
                 <a class="link" href="https://giters.com/11ty/eleventy/issues/1523">
                     <h5>
-                        <img class="favIcon"><span class="title">Pug templates need better filter support - Giters</span>
+                        <img class="favIcon"  width="35px" height="35px"><span class="title">Pug templates need better filter support - Giters</span>
                     </h5>
                 </a>
                 <ul class="tags">
