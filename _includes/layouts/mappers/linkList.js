@@ -13,7 +13,17 @@ module.exports = (links) => {
                 "h5 span.title": post.title,
                 '.created': dateLink(parseISO(post.created)),
                 'a.link': {
-                    href: post.url,
+
+                    selectors: {
+                        'span.title': {
+                            innerHTML: post.title,
+                            href: post.url,
+
+                        },
+                        img: {
+                            src: `https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=${post.url}&size=38`
+                        },
+                    },
                     target: '_blank'
                 },
                 ".tag": tagList(post.tags)
