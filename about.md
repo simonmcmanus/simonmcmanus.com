@@ -1,8 +1,9 @@
 ---
 layout: layouts/layout.sizlate.11ty.js
 permalink: "/about/"
+title:  About
 "sizlate": {
-    title: "About Simon McManus",
+    title: "Simon McManus | About",
     "a[href='/about/']": {
         "className": "active"
     }

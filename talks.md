@@ -1,6 +1,7 @@
 ---
 layout: layouts/layout.sizlate.11ty.js
 permalink: /talks.html
+title: Simon McManus - Talks
 ---
 
 <div class="contained talks">

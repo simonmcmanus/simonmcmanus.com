@@ -3,7 +3,7 @@ layout: layouts/layout.sizlate.11ty.js
 mappers: ["recentLinks"]
 permalink: "/links/"
 "sizlate": {
-    "title": "Links from Simon McManus",
+    "title": "Simon McManus | Links",
     "a[href='/links/']": {
         "className": "active"
     }

@@ -29,6 +29,7 @@ class Sizlate {
             },
 
             'h1.title': data.title,
+            'title': data.title,
             '#container': data.content,
             //style,
         }
