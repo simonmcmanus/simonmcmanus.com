@@ -23,5 +23,5 @@ You can contact Simon McManus on <a href="mailto:mcmanus.simon@gmail.com">mcmanu
 The source code for this website can be found on <a href="https://github.com/simonmcmanus/links">github</a>.
 
 
-If you would like to work with me please see the<a href="/hire/"> hire page </a>
+If you would like to work with me please see the<a href="/hire/"> hire page </a>.
 </section>

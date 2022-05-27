@@ -1,7 +1,7 @@
 ---
 date: 2022-14-05
 title: Recursive selectors in Sizlate
-tags: ["sizlate", "nested", "recursion", "blog", "js", "post"]
+tags: ["sizlate", "nested", "recursion", "blog", "js", "post", "web"]
 ---
 
 
