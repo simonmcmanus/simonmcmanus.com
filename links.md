@@ -31,4 +31,5 @@ permalink: "/links/"
             </li>
         </ul>
     </nav>
+    <a href="/tag-list">Browse all tags</a>
 </div>

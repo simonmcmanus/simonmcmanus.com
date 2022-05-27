@@ -68,6 +68,12 @@ module.exports = function(eleventyConfig) {
     // Create an array of all tags
     eleventyConfig.addCollection("tagList", function(collection) {
         let tagSet = new Set();
+
+        links = links.forEach((link) => {
+
+            link.tags.forEach(tag => tagSet.add(tag))
+
+        })
         collection.getAll().forEach(item => {
             return (item.data.tags || []).forEach(tag => tagSet.add(tag));
         });

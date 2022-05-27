@@ -10,9 +10,8 @@ permalink: /tag-list/
 }
 
 ---
-list of tags
-
 
 <div class="contained">
+    <h2>All tags</h2>
     <ul class="tags items holder container"><li><a href=""></a></li></ul>
 </div>
