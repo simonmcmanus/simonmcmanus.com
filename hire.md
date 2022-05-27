@@ -1,7 +1,7 @@
 ---
 layout: layouts/layout.sizlate.11ty.js
 sizlate: {
-    title: 'Simon McManus | Hire
+    title: 'Simon McManus | Hire'
 }
 
 ---
