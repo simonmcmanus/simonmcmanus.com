@@ -5,6 +5,9 @@ permalink: "/posts/"
 mappers: ["recentPosts"]
 "sizlate": {
     "title": "Posts from Simon McManus",
+    'meta[name="description"]': {
+        content: 'A personal blog by Simon McManus'
+    },
     "a[href='/posts/']": {
         "className": "active"
     }

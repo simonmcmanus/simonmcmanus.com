@@ -4,6 +4,9 @@ mappers: ["recentLinks"]
 permalink: "/links/"
 "sizlate": {
     "title": "Simon McManus | Links",
+    'meta[name="description"]': {
+        content: 'A collection of links carefully collected by Simon McManus'
+    },
     "a[href='/links/']": {
         "className": "active"
     }
