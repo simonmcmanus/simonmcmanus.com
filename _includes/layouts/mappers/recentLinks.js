@@ -5,10 +5,10 @@ module.exports = (data) => ({
     '.recent-links li': data.collections.links.slice(-10).reverse().map((link) => ({
         selectors: {
             'a.link': {
+                href: link.url,
                 selectors: {
                     'span.title': {
                         innerHTML: link.title,
-                        href: link.url,
 
                     },
                     img: {
