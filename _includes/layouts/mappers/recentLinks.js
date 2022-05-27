@@ -7,10 +7,7 @@ module.exports = (data) => ({
             'a.link': {
                 href: link.url,
                 selectors: {
-                    'span.title': {
-                        innerHTML: link.title,
-
-                    },
+                    'span.title': link.title,
                     img: {
                         src: `https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=${link.url}&size=30`
                     },
