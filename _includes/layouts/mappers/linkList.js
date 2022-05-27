@@ -19,6 +19,7 @@ module.exports = (links) => {
                             innerHTML: post.title,
                         },
                         img: {
+                            alt: `fav icon for ${post.url}`,
                             src: `https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=${post.url}&size=38`
                         },
                     },
