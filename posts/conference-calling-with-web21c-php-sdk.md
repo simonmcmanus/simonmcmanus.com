@@ -10,23 +10,14 @@ Over the last few days I have been consuming my credits for the BT SDK by playin
  The page returns details of each person in the call.  You will notice that participantInfo does not return the phone number of the users connected.  I have requested that this functionality be added but for the time being you will have to store ids against phone numbers when the user is added in order to display the users phone number.  
   
 Keep an eye on the blog, my next example will attempt to combine this with the DHTML Phone example I made earlier.  
+
 ```js
  <? 
   
 require\_once(dirname(\_\_FILE\_\_) . '/../../lib/web21c.php'); 
-  
 require\_once(dirname(\_\_FILE\_\_) . '/../../config.php');
-```
-  
-```js
 $web21c = new Web21c($applicationName, $environment);
-```
-  
-```js
 $conf = $web21c->SessionConferencing();
-```
-  
-```js
 try 
   
 { 
@@ -90,9 +81,6 @@ try
   //var\_dump($par\_detail); 
   
  }
-```
-  
-```js
  ?>
 ```
 

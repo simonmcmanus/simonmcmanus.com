@@ -1,5 +1,5 @@
 const pluginRss = require("@11ty/eleventy-plugin-rss");
-
+const htmlmin = require("html-minifier");
 let links = require('./_data/links.json')
 const categories = require('./_data/categories.json')
 var urlSafe = require("./lib/url-safe");
@@ -73,6 +73,20 @@ module.exports = function(eleventyConfig) {
         });
 
         return [...tagSet];
+    });
+
+    eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
+        // Eleventy 1.0+: use this.inputPath and this.outputPath instead
+        if (outputPath && outputPath.endsWith(".html")) {
+            let minified = htmlmin.minify(content, {
+                useShortDoctype: true,
+                removeComments: true,
+                collapseWhitespace: true
+            });
+            return minified;
+        }
+
+        return content;
     });
 
 };

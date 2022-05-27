@@ -14,15 +14,11 @@ The code is below, please note you should only need to change the four variables
 require\_once(dirname(\_\_FILE\_\_) . '/../../web21c.php'); 
   
 require\_once(dirname(\_\_FILE\_\_) . '/../common.php');
-```
-  
-```js
+
 //  command to locate a mobile deviice 
   
 //  - set these to sensible values
-```
-  
-```js
+
 $deviceId = 'tel:+PHONENUMBER'; 
   
 $username = [USERNAME@MAIL.COM](mailto:USERNAME@MAIL.COM); 
@@ -30,29 +26,21 @@ $username = [USERNAME@MAIL.COM](mailto:USERNAME@MAIL.COM);
 $password = "YOUR PASSWORD"; 
   
 $googleAPIKey = "YOUR GOOGLE API KEY";
-```
-  
-```js
+
 $web21c = new Web21c($applicationName, $environment);
-```
-  
-```js
+
 // login as a user 
   
 $wla = $web21c->WhiteLabelAuthentication(); 
   
 $wla->login($username, $password);
-```
-  
-```js
+
  //  locate mobile 
   
 $location = $web21c->Location(); 
   
 $location->web21cUser = $wla->web21cUser;
-```
-  
-```js
+
 try 
   
 { 
@@ -76,13 +64,9 @@ catch (Web21cPermissionDeniedException $e)
  $access->requestPermission($deviceId); 
   
 }
-```
-  
-```js
+
 // var\_dump($r->geoLocation);
-```
-  
-```js
+
 echo 'Longitude : '.$r->geoLocation->longitude. '<br />'; 
   
 echo 'Latitude : '.$r->geoLocation->latitude. '<br />'; 
@@ -106,9 +90,7 @@ echo "<a href='http://maps.google.com?q=".$r->geoLocation->latitude.",%20".$r->g
     <script src="[http://maps.google.com/maps?file=api&v=2&key=<?=$googleAPIKey](http://maps.google.com/maps?file=api&v=2&key=<?=$googleAPIKey)?>" 
   
       type="text/javascript"></script>
-```
-  
-```js
+
 </head> 
   
   <body onload="load()" onunload="GUnload()"> 

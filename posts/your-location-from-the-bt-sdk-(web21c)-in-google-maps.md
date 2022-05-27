@@ -20,11 +20,11 @@ If you need to get the SDK set up you may find some help in [this post.](http://
   
 1 ..  Before you can view a phones location you must first register the user who you wish to track. This is done using the addUser.php page in the examples directory. I have added the code below:  
   
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
+
   
 addUser.php   
   
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
+```js
   
 <?php  
 require\_once(dirname(\_\_FILE\_\_) . '/../../web21c.php');  
@@ -38,7 +38,7 @@ require\_once(dirname(\_\_FILE\_\_) . '/../common.php');
     var\_dump($wla->getAllUsers());  
 ?>   
   
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
+```
   
 Please note that you will need to change "[your-email@mail.com](mailto:your-email@mail.com)" to the email address of the user that you wish to be added.  
   
@@ -50,15 +50,17 @@ Please note that you will need to change "[your-email@mail.com](mailto:your-emai
   
 The three variables you need to change are :  
   
+
+```js
 $deviceId = 'tel:+440000000000';  
 $username = [youremail@mail](mailto:youremail@mail.com)[.](mailto:simon.mcmanus@.com)com;  
 $password = "YOURPASS";  
   
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
+```
   
 locate.php  
   
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_   
+```js
   
 <?php  
 require\_once(dirname(\_\_FILE\_\_) . '/../../web21c.php');  
@@ -103,6 +105,6 @@ echo "<a href='http://maps.google.com?q=".$r->geoLocation->latitude.",%20".$r->g
 //echo 'start : '.$r->getGeoLocation()->getLongitude();  
 ?>  
   
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+```
 
         

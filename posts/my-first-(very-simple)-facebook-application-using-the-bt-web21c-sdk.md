@@ -10,10 +10,13 @@ Firstly I took the existing PHP example code for CallMe (from the BT SDK PHP Exa
 For more info on getting the PHP SDK set up please see [this post](http://simonmcmanus.wordpress.com/2007/07/16/php-sdk-for-dummies-using-windows-2/ "this post.").  It talk about setting up the SDK locally but its very similiar when FTPing up to a live web server.  
   
 Please note that should you want to use this code you will need to modify  the line :  
+
+
+```js
   
     $called = "tel:+44YOUR\_MOBILE\_NUMBER\_HERE";  
   
- \_\_\_\_\_\_  
+
   
  #!/usr/bin/env php  
 <?php  
@@ -41,7 +44,7 @@ exit;
   
 ?>  
   
-\_\_\_\_\_\_  
+``` 
   
 Putting this code up on the internet will expose your account to others so we suggest placing it somewhere that only you know about it.  
   
@@ -63,11 +66,10 @@ When you have got this far you can change the index.php file so it contains th
   
 Please note that you will need to change  the action value to the absolute URL where the BT SDK files are stored.  
   
-\_\_\_\_\_\_\_\_  
+```html 
 <form action="[http://YOURAPPLICATIONURL/phpWeb21C/examples/cmds/makeCall.php](http://yourapplicationurl/phpWeb21C/examples/cmds/makeCall.php)">  
 <input type="text" name="tel" />  
 <input type="SUBMIT" name="SUBMIT"  value="submitx\`"/>  
 </form>  
-\_\_\_\_\_\_
 
-        
+```

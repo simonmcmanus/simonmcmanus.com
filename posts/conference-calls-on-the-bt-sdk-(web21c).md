@@ -11,8 +11,8 @@ Please note that you will need to change the phone numbers, if you wish to add m
   
 $talker2 = $conf->inviteParticipant($confId, 'tel:+447000000000');  
   
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
-  
+```js
+
 <?php  
 require\_once(dirname(\_\_FILE\_\_) . '/../../web21c.php');  
 require\_once(dirname(\_\_FILE\_\_) . '/../common.php');  
@@ -32,6 +32,6 @@ var\_dump($confInfo);
 //$conf\_detail = $conf->getParticipants($confId);  
 //print $conf\_detail;  
 ?>  
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+```
 
         
