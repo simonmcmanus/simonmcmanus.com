@@ -4,6 +4,7 @@
     src: local('☺'), url('https://web.archive.org/web/20110827074217im_/http://simonmcmanus.com/node_static/fonts/Boycott-fontfacekit/BOYCOTT_-webfont.woff') format('woff'), url('https://web.archive.org/web/20110827074217im_/http://simonmcmanus.com/node_static/fonts/Boycott-fontfacekit/BOYCOTT_-webfont.ttf') format('truetype'), url('https://web.archive.org/web/20110827074217im_/http://simonmcmanus.com/node_static/fonts/Boycott-fontfacekit/BOYCOTT_-webfont.svg#webfont6HkRQgc7') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 html {}
