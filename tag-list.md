@@ -1,6 +1,6 @@
 ---
 layout: layouts/layout.sizlate.11ty.js
-title: "blog"
+title: "Tags from Simon McManus"
 mappers: ["tagList"]
 permalink: /tag-list/
 "sizlate": {
