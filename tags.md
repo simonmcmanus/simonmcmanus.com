@@ -31,7 +31,7 @@ mappers: ["pagination"]
 <ul class="posts_holder"><li class="section link">
     <a class="link" target="other_window" href="">
         <h5>
-            <img class="favIcon" alt=""  width="35px" height="35px"><span class="title"></span>
+            <img class="favIcon" alt=""  width="15px" height="15px"><span class="title"></span>
         </h5>
     </a>
      <ul class="tags">
@@ -47,7 +47,7 @@ mappers: ["pagination"]
 <ul class="links_holder"><li class="section link">
     <a class="link" target="_blank" href=" ">
         <h5>
-            <img class="favIcon" alt=""   width="35px" height="35px"><span class="title"></span>
+            <img class="favIcon" alt=""   width="15px" height="15px"><span class="title"></span>
         </h5>
     </a>
      <ul class="tags">

@@ -6,12 +6,10 @@ var urlSafe = require("./lib/url-safe");
 
 const categoriesByTag = {}
 
-
 categories.forEach((category) => {
     category.tags.forEach((tag) => {
         categoriesByTag[urlSafe(tag)] = category
     })
-
 })
 
 links = links.map((link) => {
@@ -69,7 +67,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addCollection("tagList", function(collection) {
         let tagSet = new Set();
 
-        links = links.forEach((link) => {
+        links.forEach((link) => {
 
             link.tags.forEach(tag => tagSet.add(tag))
 

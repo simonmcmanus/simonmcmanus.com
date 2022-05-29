@@ -11,8 +11,10 @@ module.exports = (data) => {
         "title": `${data.title} | Simon McManus`,
         "meta[name=description]": { content: tagInfo.summary || `A collection of posts and links tagged '${data.title}' by Simon McManus` },
         ".title": data.title,
-        ".category .summary": tagInfo.summary || false,
-        "header.category": categoryHeader,
+        ".category": tagInfo.summary ? {
+            selectors: { '.summary': tagInfo.summary }
+        } : false,
+        "header.category": categoryHeader || false,
         '.links_holder li': linkList(tagInfo.links),
         '.posts_holder li': postList(tagInfo.posts),
     }
