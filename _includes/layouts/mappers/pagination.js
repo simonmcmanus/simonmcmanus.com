@@ -11,7 +11,6 @@ module.exports = (data) => {
         'div#container': {
             style: tagInfo.image ? "top: -10em; position: relative;" : '',
         },
-
         "title": `${data.title} | Simon McManus`,
         "meta[name=description]": { content: tagInfo.summary || `A collection of posts and links tagged '${data.title}' by Simon McManus` },
         ".title": data.title,
