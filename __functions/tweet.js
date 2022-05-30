@@ -11,7 +11,7 @@ var client = new Twitter({
 
 const replies = (in_reply_to_status_id, tags) => {
     return tags.map(async(tag) => {
-        const url = `https://simonmcmanus.com/tags/${tag}/index.html`
+        const url = `https://simonmcmanus.com/tags/${tag.trim()}/`
         return await client.post('statuses/update', {
             status: `@smm_links More ${tag} links: ${url}`,
             in_reply_to_status_id,
