@@ -25,6 +25,7 @@ module.exports = (links) => {
                     },
                     target: '_blank'
                 },
+                '.summary': link.summary !== "" ? link.summary : { style: 'display: none;' },
                 ".tag": tagList(post.tags)
             }
         }

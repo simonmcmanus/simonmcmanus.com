@@ -684,30 +684,12 @@ li.link.section .created {
 }
 
 li.link.section blockquote {
-    margin: 1em 0;
+    margin: 0 1em;
     line-height: 1.5em;
     padding: 0.5em 10px;
     quotes: "“" "”" "‘" "’";
     overflow: hidden;
-}
-
-li.link.section blockquote:before,
-li.link.section blockquote:after {
-    color: #ccc;
-    font-size: 4em;
-    line-height: 0.1em;
-    vertical-align: -0.4em;
-}
-
-li.link.section blockquote:before {
-    content: open-quote;
-    margin-right: 0.25em;
-}
-
-li.link.section blockquote:after {
-    content: close-quote;
-    margin-left: 0.25em;
-    line-height: 1.2em;
+    font-size: 0.8em;
 }
 
 li.link.section blockquote p {
@@ -814,8 +796,8 @@ ul .post_item {
 }
 
 ul {
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 ul:empty::before {

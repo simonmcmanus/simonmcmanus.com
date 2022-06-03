@@ -23,6 +23,7 @@ permalink: "/links/"
                         <img class="favIcon"><span class="title"></span>
                     </h5>
                 </a>
+                <blockquote class="summary"></blockquote>
                 <ul class="tags">
                     <span>tagged:</span>    
                 <a class="button tag" href="/tags/eleventy/index.html">eleventy</a>

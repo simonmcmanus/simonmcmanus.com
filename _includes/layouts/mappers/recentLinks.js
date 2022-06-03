@@ -14,6 +14,7 @@ module.exports = (data) => ({
                     },
                 }
             },
+            '.summary': link.summary !== "" ? link.summary : { style: 'display: none;' },
             '.title': link.title,
             '.created': dateLink(parseISO(link.created)),
             '.tag': link.data.tags.map(tagLink)

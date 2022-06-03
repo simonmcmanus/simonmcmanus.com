@@ -50,6 +50,7 @@ mappers: ["pagination"]
             <img class="favIcon" alt=""   width="15px" height="15px"><span class="title"></span>
         </h5>
     </a>
+    <blockquote class="summary"></blockquote>
      <ul class="tags">
         <span>tagged:</span>
         <a class="button tag" href="/tags/eleventy/index.html">eleventy</a>
