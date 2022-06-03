@@ -81,7 +81,7 @@ This site is my personal playground where you will find experiments, <a href="/p
         </div>
     </div>
     <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-        <h3 itemprop="name">Have you ever played a part in Emerdale</h3>
+        <h3 itemprop="name">Have you ever played a part in Emmerdale</h3>
         <div  itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
             <div itemprop="text">
                 No
