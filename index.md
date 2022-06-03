@@ -33,7 +33,7 @@ This site is my personal playground where you will find experiments, <a href="/p
 </ul>
 
 
-<section class="contained"  itemtype="https://schema.org/FAQPage">
+<section class="contained" itemscope  itemtype="https://schema.org/FAQPage">
     <h2>Frequently Asked Questions</h2>
     <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
         <h3 itemprop="name">Where does the name McManus come from?</h3>
@@ -44,7 +44,7 @@ This site is my personal playground where you will find experiments, <a href="/p
         </div>
     </div>
     <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-        <h3 itemprop="name">Where can I finda CV for Simon McManus?</h3>
+        <h3 itemprop="name">Where can I find a CV for Simon McManus?</h3>
         <div  itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
             <div itemprop="text">
                 <p>My CV is available at <a href="https://simonmcmanus.com/cv">simonmcmanus.com/cv</a> </p>
@@ -80,5 +80,6 @@ This site is my personal playground where you will find experiments, <a href="/p
             </div>
         </div>
     </div>
+    
 <!-- <p class="notice">I'm currently making changes to the design of this site and pushing changes regularly so please ignore anything that does not look right.</p> -->
 </section>
