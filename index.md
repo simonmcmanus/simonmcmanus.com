@@ -80,6 +80,21 @@ This site is my personal playground where you will find experiments, <a href="/p
             </div>
         </div>
     </div>
-    
+    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <h3 itemprop="name">Have you ever played a part in Emerdale</h3>
+        <div  itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <div itemprop="text">
+                No
+            </div>
+        </div>
+    </div>
+    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <h3 itemprop="name">Do you play for Arsenal Football Club</h3>
+        <div  itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <div itemprop="text">
+                No
+            </div>
+        </div>
+    </div>
 <!-- <p class="notice">I'm currently making changes to the design of this site and pushing changes regularly so please ignore anything that does not look right.</p> -->
 </section>
