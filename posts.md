@@ -8,7 +8,7 @@ mappers: ["recentPosts"]
     'meta[name="description"]': {
         content: 'A personal blog by Simon McManus'
     },
-     'meta[name="og:description"]': {
+     'meta[property="og:description"]': {
         content: 'A personal blog by Simon McManus'
     },
     "a[href='/posts/']": {

@@ -24,7 +24,7 @@ class Sizlate {
                 'data-speclate-page': data.page.fileSlug,
             },
             "meta[name='description']": { content: meta.summary },
-            "meta[name='og:description']": { content: meta.summary },
+            "meta[property='og:description']": { content: meta.summary },
             "meta[name='keywords']": { content: meta.keywords },
             'link#cannonical': {
                 rel: 'cannonical',
