@@ -23,7 +23,7 @@
     },
     {
         "tags": ["enhanceconf", "EnhanceConf", "enhance-conf"],
-        "image": "https://live.staticflickr.com/5779/23025597740_9ab7da49e7_b.jpg",
+        "image": "/images/header/enhance-conf.jpeg",
         "summary": "A 2016 conference dedicated to Progressive Enhancement",
         "title": "EnhanceConf"
     },
@@ -36,6 +36,7 @@
     {
         "title": "Loughton",
         "image": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Loughton%2C_Lopping_Hall_-_geograph.org.uk_-_548944.jpg",
+        "imagePosition": "bottom",
         "summary": "A loughton local, Essex is where I call home. ❤️ Loughton",
         "tags": ["loughton"]
     },
@@ -46,9 +47,10 @@
     },
     {
         "title": "Garden",
-        "image": "https://live.staticflickr.com/5634/23212931412_9e49ad2e38_4k.jpg",
+        "image": "/images/header/garden.jpeg",
         "summary": "Various gardening links",
-        "tags": []
+        "imagePosition": "top",
+        "tags": ["garden"]
     },
     {
         "title": "Sizlate",

@@ -4,7 +4,10 @@ const postList = require('./postList')
 module.exports = (data) => {
     const tagInfo = data.collections.byTag[data.tag]
     const noImgStyle = ``
-    const imgStyle = `min-height:15em;background-image: radial-gradient(circle, rgba(.6,.6,.6,.4) 0%, rgba(1, 1, 1,.9) 100%), url(${tagInfo.image});`
+    const imgStyle = `background-position:${tagInfo.imagePosition || 'center'};
+        background-size: cover;
+        min-height:15em;
+        background-image: radial-gradient(circle, rgba(.6,.6,.6,.4) 0%, rgba(1, 1, 1,.9) 100%), url(${tagInfo.image});`
     const categoryHeader = { style: tagInfo.image ? imgStyle : noImgStyle };
 
     const selectors = {
