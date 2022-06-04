@@ -25,6 +25,7 @@ class Sizlate {
             },
             "meta[name='description']": { content: meta.summary },
             "meta[property='og:description']": { content: meta.summary },
+            "meta[property = 'og:url']": { content: `https://simonmcmanus.com${data.page.url}` },
             "meta[name='keywords']": { content: meta.keywords },
             'link#cannonical': {
                 rel: 'cannonical',
