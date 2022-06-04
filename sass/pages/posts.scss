@@ -24,6 +24,7 @@ html[data-speclate-page=posts] ul.posts.linear {
     a {
         list-style: none;
         width: 50%;
+        background-color: #222;
         display: flex;
         flex-direction: column;
         &.previous {
