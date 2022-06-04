@@ -698,7 +698,8 @@ li.link.section blockquote p {
     display: inline;
 }
 
-li.link.section .tags {
+li.link.section .tags,
+ul.tags {
     font-size: 0.8em;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -707,6 +708,8 @@ li.link.section .tags {
     flex-flow: row wrap;
     display: flex;
 }
+
+ul.tags {}
 
 li.link.section .tags span {
     line-height: 4em;
@@ -781,7 +784,7 @@ html[data-speclate-page=posts] section.post-full {
     border-radius: 7px;
     line-height: 2em;
     padding: .3em .8em;
-    margin: 0 .5em 0 0;
+    margin: .5em;
 }
 
 .category .summary {
