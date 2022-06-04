@@ -6,7 +6,7 @@ module.exports = (links) => {
         return false
     }
 
-    return links.map((post) => {
+    return links.reverse().map((post) => {
 
         return {
             selectors: {

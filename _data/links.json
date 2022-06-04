@@ -11130,5 +11130,255 @@
             " styling"
         ],
         "date": "2022-05-20"
+    },
+    {
+        "created": "2022-05-22T08:03:34.958Z",
+        "url": "https://www.eppingforestdc.gov.uk/community-access-plans-announced-for-ridelondon/?fbclid=IwAR1Me_GxM4I-5XJhN6sqe_O82WEh3s6vUvfspo-6QAynNblEBPIUtAlOsjI ",
+        "title": "Community Access Plans announced for RideLondon – Epping Forest District Council",
+        "summary": "",
+        "tags": [
+            "loughton"
+        ],
+        "date": "2022-05-22"
+    },
+    {
+        "created": "2022-05-22T08:05:25.732Z",
+        "url": "https://portal-gb.one.network/prd-portal-one-network/embed/?options=%7B%22googleAPIKey%22%3A%22AIzaSyCYpAI-2wuJ27WlPuuFKf9st2gV16_kSIQ%22%2C%22organisationID%22%3A76%2C%22embedded%22%3Atrue%2C%22data%22%3A%7B%22layersActive%22%3A%5B%22TM_LAYER_ROADCLOSURE_LIVE%22%2C%22TM_LAYER_DIVERSIONROUTE_LIVE%22%2C%22ROADWORKS_CURRENT%22%2C%22TM_LAYER_ENTITY_CYCLING_LIVE%22%2C%22TM_LAYER_ENTITY_FOOTBALL_LIVE%22%5D%7D%2C%22embedID%22%3A%22YTLN0GXX8Z%22%2C%22system%22%3A%7B%22delayedLoad%22%3Afalse%2C%22historicWorksEnabled%22%3Afalse%2C%22tileServer%22%3A%22%24%7Bregion%7D-prd-gs%24%7Brandomizer%7D.one.network%22%7D%2C%22layer%22%3A%7B%22hideLayers%22%3A%5B%22COVID_PROTECTED_ROUTE_LIVE%22%2C%22COVID_ROAD_CHANGE_LIVE%22%2C%22COVID_SCHOOL_STREET_LIVE%22%2C%22COVID_TESTING_STATION_LIVE%22%2C%22COVID_VACCINATION_CENTRE_LIVE%22%5D%7D%2C%22map%22%3A%7B%22zoom%22%3A10%2C%22lat%22%3A51.7525564%2C%22lng%22%3A0.6544405%7D%2C%22startDate%22%3A%2227%2F05%2F2022%22%2C%22endDate%22%3A%2227%2F05%2F2022%22%7D ",
+        "title": "one.network",
+        "summary": "",
+        "tags": [
+            "closures",
+            "roads",
+            "loughton"
+        ],
+        "date": "2022-05-22"
+    },
+    {
+        "created": "2022-05-26T19:34:13.290Z",
+        "url": "https://www.google.com/webmasters/markup-helper/u/0/?hl=en",
+        "title": "Structured Data Markup Helper",
+        "summary": "This tool will help you add structured-data markup to a sample web page",
+        "tags": [
+            "seo"
+        ],
+        "date": "2022-05-26"
+    },
+    {
+        "created": "2022-05-26T20:17:44.149Z",
+        "url": "https://schema.org/",
+        "title": "Schema.org - Schema.org",
+        "summary": "Schema.org is a collaborative, community activity with a mission to create, maintain, and promote schemas for structured data on the Internet, on web pages, in email messages, and beyond.",
+        "tags": [
+            "seo",
+            " structured-data"
+        ],
+        "date": "2022-05-26"
+    },
+    {
+        "created": "2022-05-27T07:55:26.876Z",
+        "url": "https://www.accessify.com/s/simonmcmanus.com",
+        "title": "Access simonmcmanus.com. Simon McManus",
+        "summary": "Perf report for simonmcmanus.com\n",
+        "tags": [
+            "accessify",
+            " report",
+            " seo",
+            " performance",
+            " accessibility"
+        ],
+        "date": "2022-05-27"
+    },
+    {
+        "created": "2022-05-27T21:28:48.003Z",
+        "url": "https://github.com/addyosmani/critical/blob/master/README.md",
+        "title": "critical/README.md at master · addyosmani/critical · GitHub",
+        "summary": "Critical extracts & inlines critical-path (above-the-fold) CSS from HTML",
+        "tags": [
+            "critical-path",
+            " css",
+            "performance"
+        ],
+        "date": "2022-05-27"
+    },
+    {
+        "created": "2022-05-28T06:56:01.782Z",
+        "url": "https://sia.codes/posts/making-google-fonts-faster/",
+        "title": "Making Google Fonts Faster in 2022",
+        "summary": "If you use Google Fonts, a few additional steps can lead to much faster load times. Learn about preconnect, optimal placement, font display, preload, and more in this post.",
+        "tags": [
+            "performace"
+        ],
+        "date": "2022-05-28"
+    },
+    {
+        "created": "2022-05-28T16:16:18.085Z",
+        "url": "https://s3.documentcloud.org/documents/22036831/adaptingtoenduremay2022.pdf ",
+        "title": "",
+        "summary": "",
+        "tags": [
+            "endure",
+            "adapt"
+        ],
+        "date": "2022-05-28"
+    },
+    {
+        "created": "2022-05-28T19:56:20.864Z",
+        "url": "http://linter.structured-data.org/?url=http:%2F%2Fsimonmcmanus.com",
+        "title": "Structured Data Linter",
+        "summary": "Enter a URL below to see what structured data your page contains. You can alternatively upload a local file or paste some markup",
+        "tags": [
+            "structured-data",
+            " linter"
+        ],
+        "date": "2022-05-28"
+    },
+    {
+        "created": "2022-05-30T14:24:03.119Z",
+        "url": "https://goodui.org/join/",
+        "title": "Join | GoodUI",
+        "summary": "",
+        "tags": [
+            "cro"
+        ],
+        "date": "2022-05-30"
+    },
+    {
+        "created": "2022-05-30T14:29:56.599Z",
+        "url": "https://spotify.design/article/from-gut-to-plan-the-thoughtful-execution-framework",
+        "title": "From Gut to Plan: The Thoughtful Execution Framework | Spotify Design",
+        "summary": "From Gut to Plan: The Thoughtful Execution Framework",
+        "tags": [
+            "cro",
+            " framework"
+        ],
+        "date": "2022-05-30"
+    },
+    {
+        "created": "2022-05-30T20:05:34.623Z",
+        "url": "https://web.dev/stick-to-compositor-only-properties-and-manage-layer-count/",
+        "title": "Stick to Compositor-Only Properties and Manage Layer Count",
+        "summary": "Stick to Compositor-Only Properties and Manage Layer Count",
+        "tags": [
+            "performance",
+            " animations"
+        ],
+        "date": "2022-05-30"
+    },
+    {
+        "created": "2022-05-30T20:06:44.563Z",
+        "url": "https://www.html5rocks.com/en/tutorials/speed/high-performance-animations/",
+        "title": "High Performance Animations - HTML5 Rocks",
+        "summary": "We’re going to cut straight to the chase. Modern browsers can animate four things really cheaply: position, scale, rotation and opacity. If you animate anything else, it’s at your own risk, and the chances are you’re not going to hit a silky smooth 60fps.",
+        "tags": [
+            "performance",
+            " animation",
+            " scale"
+        ],
+        "date": "2022-05-30"
+    },
+    {
+        "created": "2022-05-31T08:43:49.933Z",
+        "url": "https://engineering.atspotify.com/2022/02/search-journey-towards-better-experimentation-practices/",
+        "title": "Search Journey Towards Better Experimentation Practices  : Spotify Engineering",
+        "summary": "At Spotify, we aim to build and improve our product in a data-informed way. To do that, teams are encouraged to generate and test hypotheses by running experiments and gathering evidence for what works and what doesn’t. ",
+        "tags": [
+            "spotify",
+            " CRO",
+            " experimenation",
+            " hypothesis-driven-development"
+        ],
+        "date": "2022-05-31"
+    },
+    {
+        "created": "2022-06-01T04:53:37.500Z",
+        "url": "https://developers.google.com/search/docs/advanced/structured-data/search-gallery ",
+        "title": "Explore the Search Gallery and Rich Results  |  Documentation  |  Google Developers",
+        "summary": "Google uses structured data to understand the content on the page. You can help us by providing specific information about your site, which can help your site display in richer features in search results. If you're just getting started, visit Understand how structured data works.",
+        "tags": [
+            "meta",
+            "search",
+            "seo",
+            "metadata",
+            "vue-meta"
+        ],
+        "date": "2022-06-01"
+    },
+    {
+        "created": "2022-06-01T20:06:59.297Z",
+        "url": "https://lit.dev/ ",
+        "title": "Lit",
+        "summary": "Building on top of the Web Components standards, Lit adds just what you need to be happy and productive: reactivity, declarative templates and a handful of thoughtful features to reduce boilerplate and make your job easier. Every Lit feature is carefully designed with web platform evolution in mind.",
+        "tags": [
+            "web components",
+            " standards",
+            " Interoperable"
+        ],
+        "date": "2022-06-01"
+    },
+    {
+        "created": "2022-06-01T20:09:44.165Z",
+        "url": "https://webdirections.org/lazyload/ ",
+        "title": "Web Directions Lazy Load",
+        "summary": "A conference all about front end performance",
+        "tags": [
+            "performance",
+            "conferences",
+            "london"
+        ],
+        "date": "2022-06-01"
+    },
+    {
+        "created": "2022-06-01T20:14:11.250Z",
+        "url": "https://adactio.com/journal/19131 ",
+        "title": "Adactio: Journal—Declarative design systems",
+        "summary": "",
+        "tags": [
+            "design-systems",
+            " declarative-design",
+            " design"
+        ],
+        "date": "2022-06-01"
+    },
+    {
+        "created": "2022-06-03T19:56:40.119Z",
+        "url": "https://barryoreilly.com/explore/blog/how-to-implement-hypothesis-driven-development/",
+        "title": "How to Implement Hypothesis-Driven Development - Barry O'Reilly",
+        "summary": "Remember back to the time when we were in high school science class. Our teachers had a framework for helping us learn – an experimental approach based on the best available evidence at hand. We were asked to make observations about the world around us, then attempt to form an explanation or hypothesis to explain what we had observed. We then tested this hypothesis by predicting an outcome based on our theory that would be achieved in a controlled experiment – if the outcome was achieved, we had proven our theory to be correct.",
+        "tags": [
+            "hypothesis-driven-development",
+            " science"
+        ],
+        "date": "2022-06-03"
+    },
+    {
+        "created": "2022-06-03T19:57:35.150Z",
+        "url": "https://www.alexandercowan.com/hypothesis-driven-development-practitioners-guide/",
+        "title": "Hypothesis-Driven Development (Practitioner's Guide)",
+        "summary": "Like agile, hypothesis-driven development (HDD) is more a point of view with various associated practices than it is a single, particular practice or process. That said, my goal here for is you to leave with a solid understanding of how to do HDD and a specific set of steps that work for you to get started.",
+        "tags": [
+            "hypothesis-driven-development"
+        ],
+        "date": "2022-06-03"
+    },
+    {
+        "created": "2022-06-03T19:58:24.170Z",
+        "url": "https://www.ibm.com/garage/method/practices/learn/practice_hypothesis_driven_development/",
+        "title": "Hypothesis-driven development - IBM Garage Practices",
+        "summary": "Continuous delivery demands the use of hypotheses, not requirements, to deliver what customers want. Developers embrace continuous experimentation and adaption.",
+        "tags": [
+            "hypothesis-driven-development",
+            " continuous-delivery"
+        ],
+        "date": "2022-06-03"
+    },
+    {
+        "created": "2022-06-04T15:14:59.275Z",
+        "url": "https://ogp.me/",
+        "title": "The Open Graph protocol",
+        "summary": "The Open Graph protocol enables any web page to become a rich object in a social graph. For instance, this is used on Facebook to allow any web page to have the same functionality as any other object on Facebook.While many different technologies and schemas exist and could be combined together, there isn't a single technology which provides enough information to richly represent any web page within the social graph. The Open Graph protocol builds on these existing technologies and gives developers one thing to implement. Developer simplicity is a key goal of the Open Graph protocol which has informed many of the technical design decisions.",
+        "tags": [
+            "open-graph-protocol"
+        ],
+        "date": "2022-06-04"
     }
 ]
