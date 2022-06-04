@@ -8,6 +8,7 @@ const template = fs.readFileSync('./_includes/layouts/layout.html', 'utf8')
 const cssFile = path.join(__dirname, '../../static/css/style.css')
 const css = fs.readFileSync(cssFile, 'utf8')
 const style = new CleanCSS({}).minify(css).styles;
+const meta = require('../../meta.json')
 
 const mappers = require('./mappers/sizlate.mappers')
 
@@ -22,6 +23,9 @@ class Sizlate {
                 'data-speclate-url': data.page.url,
                 'data-speclate-page': data.page.fileSlug,
             },
+            "meta[name='description']": { content: meta.summary },
+            "meta[name='og:description']": { content: meta.summary },
+            "meta[name='keywords']": { content: meta.keywords },
             'link#cannonical': {
                 rel: 'cannonical',
                 href: `https://simonmcmanus.com${data.page.url}`

@@ -1,9 +1,11 @@
 const { dateLink, tagList } = require('./links')
 module.exports = (data) => {
+    const metaDescribe = { content: `${data.title} by Simon McManus` };
     return {
         title: `${data.title} by Simon McManus`,
         '.tag': tagList(data.tags),
-        "meta[name=description]": { content: `${data.title} by Simon McManus` },
+        "meta[name=description]": metaDescribe,
+        "meta[name=og:description]": metaDescribe,
         "meta[name=keywords]": { content: data.tags.join(', ') }
     }
 }

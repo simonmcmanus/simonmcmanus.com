@@ -7,6 +7,9 @@ permalink: "/links/"
     'meta[name="description"]': {
         content: 'A collection of links carefully collected by Simon McManus'
     },
+    'meta[name="og:description"]': {
+        content: 'A collection of links carefully collected by Simon McManus'
+    },
     "a[href='/links/']": {
         "className": "active"
     }
