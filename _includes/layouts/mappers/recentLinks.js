@@ -21,10 +21,10 @@ module.exports = (data) => ({
 
         }
     })),
-    '.next': {
-        href: `/links/${data.pagination.nextPageHref() + 1}/`
-    },
-    '.previous': {
-        href: `/links/${data.pagination.pageNumber-1}/`
-    }
+    '.next': data.pagination.hrefs.length - 1 > data.pagination.pageNumber ? {
+        href: data.pagination.nextPageHref
+    } : false,
+    '.previous': data.pagination.pageNumber > 0 ? {
+        href: data.pagination.previousPageHref
+    } : false
 })

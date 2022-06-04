@@ -4,7 +4,7 @@ mappers: ["recentLinks"]
 permalink: "/links/{{ pagination.pageNumber }}/"
 pagination:
   data: collections.links
-  size: 14
+  size: 15
 "sizlate": {
     "title": "Simon McManus | Links",
     'meta[name="description"]': {
@@ -43,4 +43,6 @@ pagination:
         <li><a class="next" href="">Next</a></li>
         <li><a href="/tag-list">Browse all tags</a></li>
     </ul>
+    <div id="debug"></div>
 </div>
+
