@@ -2,7 +2,7 @@ const { parseISO } = require('date-fns')
 const { dateLink, tagLink } = require('./links')
 
 module.exports = (data) => ({
-    '.recent-links li': data.collections.links.slice(-10).reverse().map((link) => ({
+    '.recent-links li': data.pagination.items.map((link) => ({
         selectors: {
             'a.link': {
                 href: link.url,
@@ -17,7 +17,14 @@ module.exports = (data) => ({
             '.summary': link.summary !== "" ? link.summary : { style: 'display: none;' },
             '.title': link.title,
             '.created': dateLink(parseISO(link.created)),
-            '.tag': link.data.tags.map(tagLink)
+            '.tag': link.data.tags.map(tagLink),
+
         }
-    }))
+    })),
+    '.next': {
+        href: `/links/${data.pagination.nextPageHref() + 1}/`
+    },
+    '.previous': {
+        href: `/links/${data.pagination.pageNumber-1}/`
+    }
 })

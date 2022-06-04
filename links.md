@@ -1,7 +1,10 @@
 ---
 layout: layouts/layout.sizlate.11ty.js
 mappers: ["recentLinks"]
-permalink: "/links/"
+permalink: "/links/{{ pagination.pageNumber }}/"
+pagination:
+  data: collections.links
+  size: 14
 "sizlate": {
     "title": "Simon McManus | Links",
     'meta[name="description"]': {
@@ -10,7 +13,7 @@ permalink: "/links/"
     'meta[property="og:description"]': {
         content: 'A collection of links carefully collected by Simon McManus'
     },
-    "a[href='/links/']": {
+    "a[href='/links/*']": {
         "className": "active"
     }
 }
@@ -35,5 +38,9 @@ permalink: "/links/"
             </li>
         </ul>
     </nav>
-    <a href="/tag-list">Browse all tags</a>
+    <ul>
+        <li><a class="previous" href="">Previous</a></li>
+        <li><a class="next" href="">Next</a></li>
+        <li><a href="/tag-list">Browse all tags</a></li>
+    </ul>
 </div>

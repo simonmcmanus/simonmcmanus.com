@@ -12,7 +12,7 @@ categories.forEach((category) => {
     })
 })
 
-links = links.map((link) => {
+links = links.reverse().map((link) => {
     link.data = {}
     link.data.tags = link.tags.map(tag => urlSafe(tag))
     return link
