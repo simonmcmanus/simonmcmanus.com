@@ -2,11 +2,11 @@
   from = "/tags/"
   to = "/tag-list/"
   status = 200
-  force = true # COMMENT: ensure that we always redirect
+  force = true 
   
 [[redirects]]
   from = "/links"
   to = "/links/0"
   status = 200
-  force = true # COMMENT: ensure that we always redirect
+  force = true 
   
