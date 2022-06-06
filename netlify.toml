@@ -1,0 +1,12 @@
+[[redirects]]
+  from = "/tags/"
+  to = "/tag-list/"
+  status = 200
+  force = true # COMMENT: ensure that we always redirect
+  
+[[redirects]]
+  from = "/links"
+  to = "/links/0"
+  status = 200
+  force = true # COMMENT: ensure that we always redirect
+  
