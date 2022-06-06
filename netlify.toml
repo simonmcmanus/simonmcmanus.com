@@ -3,10 +3,23 @@
   to = "/tag-list/"
   status = 200
   force = true 
+
+[[redirects]]
+  from = "/tag-list/"
+  to = "/tags/"
+  status = 301
+  force = true 
+  
   
 [[redirects]]
   from = "/links"
   to = "/links/0"
   status = 200
+  force = true 
+
+  [[redirects]]
+  from = "/links/0"
+  to = "/links"
+  status = 301
   force = true 
   
