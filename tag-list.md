@@ -13,5 +13,5 @@ permalink: /tag-list/
 
 <div class="contained">
     <h2>All tags</h2>
-    <ul class="tags items holder container"><li><a href=""></a></li></ul>
+    <ul class="tags items holder container all-tags"><li><a href=""></a></li></ul>
 </div>
