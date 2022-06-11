@@ -5,8 +5,7 @@ const template = fs.readFileSync('./_includes/layouts/post.html', 'utf8')
 
 class SizlatePost {
     data = {
-        layout: 'layouts/layout.sizlate.11ty.js',
-        style: 'h1{color: red; !important}'
+        layout: 'layouts/layout.sizlate.11ty.js'
     }
 
     postSelectors(data) {
