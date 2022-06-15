@@ -2,7 +2,7 @@ const sizlate = require('sizlate')
 const CleanCSS = require("clean-css");
 const fs = require('fs')
 const path = require('path')
-const { buildSelectors } = require('./sizlate.11ty')
+const { render } = require('eleventy-sizlate')
 
 const template = fs.readFileSync('./_includes/layouts/layout.html', 'utf8')
 const cssFile = path.join(__dirname, '../../static/css/style.css')
@@ -37,8 +37,7 @@ class Sizlate {
             '#container': data.content,
             style,
         }
-        const selectors = buildSelectors(data, layoutSelectors, mappers)
-        return sizlate.render(data.template, selectors)
+        return render(data, layoutSelectors, mappers)
     }
 }
 

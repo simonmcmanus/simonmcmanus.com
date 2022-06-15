@@ -17,7 +17,7 @@
         "eleventy": "^1.0.6",
         "html-minifier": "^4.0.0",
         "lodash": "^4.17.21",
-        "sizlate": "^4.1.0",
+        "eleventy-sizlate": "^1.0.1",
         "twitter": "^1.7.1"
     },
     "devDependencies": {

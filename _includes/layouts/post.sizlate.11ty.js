@@ -1,4 +1,4 @@
-const sizlate = require('sizlate')
+const { render } = require('eleventy-sizlate')
 
 const fs = require('fs')
 const template = fs.readFileSync('./_includes/layouts/post.html', 'utf8')
@@ -38,7 +38,7 @@ class SizlatePost {
     render(data) {
 
         const selectors = this.postSelectors(data)
-        return sizlate.render(template, selectors)
+        return render({ template }, selectors)
     }
 }
 
