@@ -2,7 +2,7 @@ const { parseISO } = require('date-fns')
 const { dateLink, tagLink } = require('./links')
 
 module.exports = (data) => ({
-    '.recent-links li': data.pagination.items.map((link) => ({
+    '.recent-links article': data.pagination.items.map((link) => ({
         selectors: {
             'a.link': {
                 href: link.url,

@@ -38,7 +38,7 @@ html {
                 animation-delay: 300ms;
             }
             ul.items {
-                li.section {
+                .section {
                     animation: swoosh-in 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
                     &>* {
                         animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
@@ -211,9 +211,15 @@ ul {
     padding: 0px 0px;
 }
 
-li {
-    list-style-type: none;
+.nav li,
+nav li,
+footer li {
     margin: 5px 0;
+    list-style-type: none;
+}
+
+ul.panels li {
+    list-style-type: none;
 }
 
 a {
@@ -648,7 +654,7 @@ html.loading footer {
     border: 2px solid black;
 }
 
-li.link.section {
+.link.section {
     margin: 2em 0;
     border-radius: 5px;
     min-height: 40px;
@@ -658,24 +664,24 @@ li.link.section {
     border: 1px solid #222831f2;
 }
 
-li.link.section a h5 {
+.link.section a h5 {
     color: #8e9297;
     margin: 0;
     font-size: 1.2em;
     margin-bottom: .5em;
 }
 
-li.link.section a h5 .favIcon {
+.link.section a h5 .favIcon {
     margin-right: 6px;
     top: 1px;
     position: relative;
 }
 
-li.link.section a h5 .title {
+.link.section a h5 .title {
     color: #d4d4d4;
 }
 
-li.link.section .created {
+.link.section .created {
     text-align: right;
     font-size: 0.7em;
     color: #cfccd2;
@@ -684,7 +690,7 @@ li.link.section .created {
     height: 2em;
 }
 
-li.link.section blockquote {
+.link.section blockquote {
     font-family: 'SLABO 13PX';
     margin: 0 1em;
     line-height: 1.5em;
@@ -694,11 +700,11 @@ li.link.section blockquote {
     font-size: 0.8em;
 }
 
-li.link.section blockquote p {
+.link.section blockquote p {
     display: inline;
 }
 
-li.link.section .tags,
+.link.section .tags,
 ul.tags {
     font-size: 0.8em;
     flex-wrap: wrap;
@@ -719,7 +725,7 @@ ul.tags {}
     line-height: 4em;
 }
 
-li.link.section .tag {
+.link.section .tag {
     border-radius: 3px;
     padding: 0 10px;
     -webkit-column-break-inside: avoid;
@@ -819,6 +825,16 @@ ul:empty::before {
 
 footer {
     text-align: center;
+}
+
+.recent-heading {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    a {
+        align-self: flex-end;
+        margin: 2em;
+    }
 }
 
 

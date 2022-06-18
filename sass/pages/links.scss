@@ -1,17 +1,18 @@
-html[data-speclate-page=links] section,
-html[data-speclate-page=links] li.section.link {
+.recent-links section,
+.recent-links article.section.link {
     border: 2px solid rgba(146, 181, 88, 0.3);
 }
 
-html[data-speclate-page=links] .tags {
-    display: inline-flex;
-}
-
-html[data-speclate-page=links] .tags .tag {
-    white-space: nowrap;
-    border: 1px solid #92B558;
-    color: white;
-    background: #5b7433;
+.recent-links {
+    .tags {
+        display: inline-flex;
+        .tag {
+            white-space: nowrap;
+            border: 1px solid #92B558;
+            color: white;
+            background: #5b7433;
+        }
+    }
 }
 
 html[data-speclate-page=links] ul.nav li.links a h3 {

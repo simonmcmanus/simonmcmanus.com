@@ -18,20 +18,6 @@ mappers: ["recentPosts"]
 
 ---
 <div class="contained">
-    <nav class="recent-posts">
-        <ul class="holder container items">
-            <li class="section link">
-                <a class="link" href="https://giters.com/11ty/eleventy/issues/1523">
-                    <h5>
-                        <img class="favIcon" alt=""   width="35px" height="35px"><span class="title">Pug templates need better filter support - Giters</span>
-                    </h5>
-                </a>
-                <ul class="tags">
-                    <span>tagged:</span>
-                    <a class="button tag" href="/tags/eleventy/index.html">eleventy</a>
-                </ul>
-                <span class="created" >2021-10-20</span>
-            </li>
-        </ul>
-    </nav>
+    <h2>Recent Posts</h2>
+    {% include _recentposts.html %}
 </div>
