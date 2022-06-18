@@ -1,5 +1,5 @@
 ---
-date: 2022-14-05
+date: 2022-05-14
 title: Recursive selectors in Sizlate
 tags: ["sizlate", "nested", "recursion", "blog", "js", "post", "web"]
 ---
