@@ -100,7 +100,7 @@ header {
     background-color: #222831f2;
     position: sticky;
     top: 0;
-    border-bottom: 1px solid #202020;
+    border-bottom: 1px solid #0a0a0a;
     z-index: 600;
     margin: 0;
     padding: 1em;
@@ -591,6 +591,9 @@ html.loading footer {
 }
 
 .link.section {
+    &:visible {
+        background-color: red;
+    }
     margin: 2em 0;
     border-radius: 5px;
     min-height: 40px;
@@ -687,6 +690,10 @@ html[data-speclate-page=posts] section.post-full {
 .post-full hr {
     border: 1px solid #273849;
     margin: 2em;
+}
+
+.post-full a {
+    text-decoration: underline;
 }
 
 .post-full pre {

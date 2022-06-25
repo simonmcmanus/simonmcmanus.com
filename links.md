@@ -24,8 +24,8 @@ pagination:
     {% include _recentlinks.html %}
 
 <ul>
-    <li><a class="previous" href="">Previous</a></li>
-    <li><a class="next" href="">Next</a></li>
+    <li class="previous"><a href="">Previous</a></li>
+    <li class="next"><a href="">Next</a></li>
     <li><a href="/tag-list">Browse all tags</a></li>
 </ul>
 <div id="debug"></div>
