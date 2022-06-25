@@ -1,7 +1,7 @@
 ---
 date: 2011-01-05
 title: 3D Transforms with CSS3
-tags: ["3d","CSS3","css3","post"]
+tags: ["3d","CSS3","css3","post", "css"]
 ---
 Over Christmas I started moving [simonmcmanus.com](https://simonmcmanus.com "Simon McManus homepage") over to [node.js](http://nodejs.org/) making some tweaks to the CSS as I went. I wanted to examine the z-index of my page so decided to investigate CSS3 3D transformations. I won't be launching the new [simonmcmanus.com](https://simonmcmanus.com) for a while but here is what I found out about 3D CSS transformations.  
   
