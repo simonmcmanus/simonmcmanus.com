@@ -33,48 +33,6 @@ html {
             padding-bottom: 10em;
             padding-top: 3em;
             transition: transform 2s;
-            &>section {
-                animation: slide-in-blurred-bottom 0.25s ease-in-out both;
-                animation-delay: 300ms;
-            }
-            ul.items {
-                .section {
-                    animation: swoosh-in 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-                    &>* {
-                        animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-                    }
-                    &:nth-child(1n) {
-                        animation-delay: 430ms;
-                    }
-                    &:nth-child(2n) {
-                        animation-delay: 570ms;
-                    }
-                    &:nth-child(3n) {
-                        animation-delay: 710ms;
-                    }
-                    &:nth-child(4n) {
-                        animation-delay: 850ms;
-                    }
-                    &:nth-child(5n) {
-                        animation-delay: 990ms;
-                    }
-                    &:nth-child(6n) {
-                        animation-delay: 1130ms;
-                    }
-                    &:nth-child(7n) {
-                        animation-delay: 1270ms;
-                    }
-                    &:nth-child(8n) {
-                        animation-delay: 1410ms;
-                    }
-                    &:nth-child(9n) {
-                        animation-delay: 1550ms;
-                    }
-                    &:nth-child(10n) {
-                        animation-delay: 1690ms;
-                    }
-                }
-            }
         }
     }
 }
@@ -839,6 +797,13 @@ footer {
 
 code {
     font-size: 0.8rem !important;
+}
+
+.overlay div {
+    width: var(--overlay-w);
+    height: var(--overlay-h);
+    border-radius: 1em;
+    box-shadow: 0 0 0 .5em var(--body-bg);
 }
 
 
