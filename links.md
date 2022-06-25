@@ -1,7 +1,7 @@
 ---
 layout: layouts/layout.sizlate.11ty.js
-mappers: ["recentLinks"]
-permalink: "/links/{{ pagination.pageNumber }}/"
+mappers: ["linksPaged"]
+permalink: "/links/{% if pagination.pageNumber>0 %}{{ pagination.pageNumber | plus: 1 }}{% endif %}/"
 pagination:
   data: collections.links
   size: 15

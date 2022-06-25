@@ -1,13 +1,17 @@
 const pagination = require('./pagination')
 const post = require('./post')
 const tagList = require('./tagList')
-const recentPosts = require('./recentPosts')
-const recentLinks = require('./recentLinks')
+const postsPaged = require('./postsPaged')
+const postsTop3 = require('./postsTop3')
+const linksPaged = require('./linksPaged')
+const linksTop3 = require('./linksTop3')
 
 module.exports = {
     post,
     pagination,
     tagList,
-    recentPosts,
-    recentLinks,
+    postsPaged,
+    postsTop3,
+    linksPaged,
+    linksTop3
 }

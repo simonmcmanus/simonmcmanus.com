@@ -1,10 +1,7 @@
 ---
 layout: layouts/layout.sizlate.11ty.js
-mappers: ["recentPosts", "recentLinks"]
+mappers: [ "linksTop3", "postsTop3"]
 showRecent: 3
-pagination:
-  data: collections.links
-  size: 3
 sizlate: { 'a[href="/"]': {
     className: 'active'
 }}
