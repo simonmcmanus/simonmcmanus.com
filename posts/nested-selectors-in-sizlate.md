@@ -66,4 +66,4 @@ I've create an example on
 This was only a minor release because it just fixes issues and doesn't change the interface. In a future (major) release I will attempt to remove the need for the word selectors so much by making the default object behaviour be selectors, if that happens attributes would need to be explictly declared in the way selectors are in the example above. 
 
 
-This came up when I was porting [simonmcmanus.com](http://simonmcmanus.com) over to using eleventy with sizlate for the templating, it makes sizlate much more capable of handling complex templating requirements.
+This came up when I was porting [simonmcmanus.com](https://simonmcmanus.com) over to using eleventy with sizlate for the templating, it makes sizlate much more capable of handling complex templating requirements.

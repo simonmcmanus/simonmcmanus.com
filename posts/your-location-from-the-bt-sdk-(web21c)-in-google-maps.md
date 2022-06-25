@@ -15,7 +15,7 @@ The steps to setting up a very  basic example of the BT Web21c location service
 
   
 
-If you need to get the SDK set up you may find some help in [this post.](http://simonmcmanus.wordpress.com/2007/07/16/php-sdk-for-dummies-using-windows-2/ "this post")  When the examples have  evolved I will publish a new step by step example of how to get set up in the first place.
+If you need to get the SDK set up you may find some help in [this post.](https://simonmcmanus.com/posts/php-sdk-for-dummies-using-windows/ "this post")  When the examples have  evolved I will publish a new step by step example of how to get set up in the first place.
 
   
 1 ..  Before you can view a phones location you must first register the user who you wish to track. This is done using the addUser.php page in the examples directory. I have added the code below:  

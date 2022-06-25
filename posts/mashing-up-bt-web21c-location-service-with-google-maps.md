@@ -3,7 +3,7 @@ date: 2007-07-20
 title: Mashing Up BT Web21c Location service with Google Maps
 tags: ["BT","Google Maps","location","location service","Mash Up","Web21C","post"]
 ---
-This example combines the  two post  ([Google Maps API](http://simonmcmanus.wordpress.com/2007/07/20/the-google-maps-api/ "google Maps API") and [your location from the sdk](http://simonmcmanus.wordpress.com/2007/07/20/your-location-from-the-bt-sdk-web21c-in-google-maps/ "your location from the sdk."))to automatically look up a phones location and then map it straight to a google map box.  
+This example combines the  two post  ([Google Maps API](https://simonmcmanus.wordpress.com/2007/07/20/the-google-maps-api/ "google Maps API") and [your location from the sdk](https://simonmcmanus.wordpress.com/2007/07/20/your-location-from-the-bt-sdk-web21c-in-google-maps/ "your location from the sdk."))to automatically look up a phones location and then map it straight to a google map box.  
 ```js
 The code is below, please note you should only need to change the four variables at the top of the code :
 ```

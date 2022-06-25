@@ -20,7 +20,7 @@ We're introducing three concepts for ccTiddly users; instances, workspaces and u
 The macro enabling file upload does not require the page to refresh in order to upload additional files; instead it posts the form to a hidden iFrame for processing. At present, we're giving users the choice to upload their file to either their workspace or their user area. I am probably going to remove the ability to upload a file to a user area for sake of simplicity (although the code will still exist and can be used if needed).  
   
 I am yet to decide what convention I will use when assigning a user area directory to OpenID users. The following structure is not an option:  
-wiki.osomsosft.com/uploads/users/http://simonmcmanus.com  
+wiki.osomsosft.com/uploads/users/https://simonmcmanus.com  
   
 I would be interested to hear any suggestions/examples.  
   

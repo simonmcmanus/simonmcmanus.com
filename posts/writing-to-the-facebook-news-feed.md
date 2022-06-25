@@ -3,7 +3,7 @@ date: 2007-09-15
 title: Writing to the Facebook News feed.
 tags: ["API","BT","Facebook","Osmosoft","SimonMcManus","post"]
 ---
-I have been modifying the mock [ajax example.](http://simonmcmanus.wordpress.com/2007/08/01/mock-ajax-in-facebook/ "mock ajax example") This code is used in response.php, it takes two variables which need to be posted in through forms. This code requires facebookid and viewer\_facefacebookid to be passed in from a form to look up the names and then the data is sent in from the data variable.  
+I have been modifying the mock [ajax example.](https://simonmcmanus.com/posts/mock-ajax-in-facebook/ "mock ajax example") This code is used in response.php, it takes two variables which need to be posted in through forms. This code requires facebookid and viewer\_facefacebookid to be passed in from a form to look up the names and then the data is sent in from the data variable.  
 ```js
 require\_once('appinclude.php');
 $name\_to = $facebook->api\_client->users\_getInfo($\_POST\['facebookid'\],'name, pic\_small');

@@ -136,7 +136,7 @@ To give a zoom effect I created a second animation:
 }
 ```
   
-[final demo](http://simonmcmanus.com/stuff/css3/rotate/standalone/index.html "final demo")  
+[final demo](https://simonmcmanus.com/stuff/css3/rotate/standalone/index.html "final demo")  
   
 That's what I've done so far. Comments and modifications welcomed.  
   

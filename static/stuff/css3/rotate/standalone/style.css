@@ -1,7 +1,7 @@
 @font-face {
     font-family: BoycottRegular;
-    src: url('https://web.archive.org/web/20110827074217im_/http://simonmcmanus.com/node_static/fonts/Boycott-fontfacekit/BOYCOTT_-webfont.eot');
-    src: local('☺'), url('https://web.archive.org/web/20110827074217im_/http://simonmcmanus.com/node_static/fonts/Boycott-fontfacekit/BOYCOTT_-webfont.woff') format('woff'), url('https://web.archive.org/web/20110827074217im_/http://simonmcmanus.com/node_static/fonts/Boycott-fontfacekit/BOYCOTT_-webfont.ttf') format('truetype'), url('https://web.archive.org/web/20110827074217im_/http://simonmcmanus.com/node_static/fonts/Boycott-fontfacekit/BOYCOTT_-webfont.svg#webfont6HkRQgc7') format('svg');
+    src: url('https://web.archive.org/web/20110827074217im_/https://simonmcmanus.com/node_static/fonts/Boycott-fontfacekit/BOYCOTT_-webfont.eot');
+    src: local('☺'), url('https://web.archive.org/web/20110827074217im_/https://simonmcmanus.com/node_static/fonts/Boycott-fontfacekit/BOYCOTT_-webfont.woff') format('woff'), url('https://web.archive.org/web/20110827074217im_/https://simonmcmanus.com/node_static/fonts/Boycott-fontfacekit/BOYCOTT_-webfont.ttf') format('truetype'), url('https://web.archive.org/web/20110827074217im_/https://simonmcmanus.com/node_static/fonts/Boycott-fontfacekit/BOYCOTT_-webfont.svg#webfont6HkRQgc7') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -135,15 +135,15 @@ h1 {
 }
 
 .nav a.activity {
-    background: url(https://web.archive.org/web/20110827074217im_/http://simonmcmanus.com/node_static/icons/nav/activity_small.png) no-repeat 5px 3px #222;
+    background: url(https://web.archive.org/web/20110827074217im_/https://simonmcmanus.com/node_static/icons/nav/activity_small.png) no-repeat 5px 3px #222;
 }
 
 .nav a.contact {
-    background: url(https://web.archive.org/web/20110827074217im_/http://simonmcmanus.com/node_static/icons/nav/cv_small.png) no-repeat 5px 3px #222;
+    background: url(https://web.archive.org/web/20110827074217im_/https://simonmcmanus.com/node_static/icons/nav/cv_small.png) no-repeat 5px 3px #222;
 }
 
 .nav a.about {
-    background: url(https://web.archive.org/web/20110827074217im_/http://simonmcmanus.com/node_static/icons/nav/about_small.png) no-repeat 5px 3px #222;
+    background: url(https://web.archive.org/web/20110827074217im_/https://simonmcmanus.com/node_static/icons/nav/about_small.png) no-repeat 5px 3px #222;
 }
 
 #container .nav a:hover {
@@ -273,23 +273,23 @@ div.item:hover,
 }
 
 .item.delicious {
-    background: url(https://web.archive.org/web/20110827074217im_/http://simonmcmanus.com/node_static/icons/16px/delicious.png) no-repeat 3px 2px #333;
+    background: url(https://web.archive.org/web/20110827074217im_/https://simonmcmanus.com/node_static/icons/16px/delicious.png) no-repeat 3px 2px #333;
 }
 
 .item.twitter {
-    background: url(https://web.archive.org/web/20110827074217im_/http://simonmcmanus.com/node_static/icons/16px/twitter.png) no-repeat 3px 2px #333;
+    background: url(https://web.archive.org/web/20110827074217im_/https://simonmcmanus.com/node_static/icons/16px/twitter.png) no-repeat 3px 2px #333;
 }
 
 .item.wordpress {
-    background: url(https://web.archive.org/web/20110827074217im_/http://simonmcmanus.com/node_static/icons/16px/wordpress-blue.png) no-repeat 3px 2px #333;
+    background: url(https://web.archive.org/web/20110827074217im_/https://simonmcmanus.com/node_static/icons/16px/wordpress-blue.png) no-repeat 3px 2px #333;
 }
 
 .item.youtube {
-    background: url(https://web.archive.org/web/20110827074217im_/http://simonmcmanus.com/node_static/icons/16px/youtube.png) no-repeat 3px 2px #333;
+    background: url(https://web.archive.org/web/20110827074217im_/https://simonmcmanus.com/node_static/icons/16px/youtube.png) no-repeat 3px 2px #333;
 }
 
 .item.flickr {
-    background: url(https://web.archive.org/web/20110827074217im_/http://simonmcmanus.com/node_static/icons/16px/flickr.png) no-repeat 3px 2px #333;
+    background: url(https://web.archive.org/web/20110827074217im_/https://simonmcmanus.com/node_static/icons/16px/flickr.png) no-repeat 3px 2px #333;
 }
 
 .date {

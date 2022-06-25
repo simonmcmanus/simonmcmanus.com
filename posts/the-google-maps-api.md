@@ -3,7 +3,7 @@ date: 2007-07-20
 title: The Google Maps API
 tags: ["API","BT","Google","Google Maps","post"]
 ---
-Now that we can find out the logitude and latitude of  a persons mobile number ([see this post](http://simonmcmanus.wordpress.com/2007/07/20/your-location-from-the-bt-sdk-web21c-in-google-maps/ "see this post")) the next step is to get the Google API set up.   This post talks you through setting up the Maps API (its very simple)  
+Now that we can find out the logitude and latitude of  a persons mobile number ([see this post](https://simonmcmanus.com/posts/your-location-from-the-bt-sdk-(web21c)-in-google-maps/ "see this post")) the next step is to get the Google API set up.   This post talks you through setting up the Maps API (its very simple)  
   
  1 .. First of all you need to register for a google maps api account. You can do that [here](http://www.google.com/apis/maps/signup.html "here")  
   
@@ -46,6 +46,6 @@ Now that we can find out the logitude and latitude of  a persons mobile number 
   
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
   
-On the above application the script is current hard coded to show my current location (51.5052680969, -0.102480553091).  Over the coming posts I will discuss how to integrate this fuctionality into the the [BT SDK location example](http://simonmcmanus.wordpress.com/2007/07/20/your-location-from-the-bt-sdk-web21c-in-google-maps/ "BT SDK location example")
+On the above application the script is current hard coded to show my current location (51.5052680969, -0.102480553091).  Over the coming posts I will discuss how to integrate this fuctionality into the the [BT SDK location example](https://simonmcmanus.com/posts/your-location-from-the-bt-sdk-(web21c)-in-google-maps/ "BT SDK location example")
 
         

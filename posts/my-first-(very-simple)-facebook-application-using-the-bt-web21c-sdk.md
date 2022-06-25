@@ -7,7 +7,7 @@ This is a simple proof of concept
   
 Firstly I took the existing PHP example code for CallMe (from the BT SDK PHP Examples) and modified it.  
   
-For more info on getting the PHP SDK set up please see [this post](http://simonmcmanus.wordpress.com/2007/07/16/php-sdk-for-dummies-using-windows-2/ "this post.").  It talk about setting up the SDK locally but its very similiar when FTPing up to a live web server.  
+For more info on getting the PHP SDK set up please see [this post](https://simonmcmanus.wordpress.com/2007/07/16/php-sdk-for-dummies-using-windows-2/ "this post.").  It talk about setting up the SDK locally but its very similiar when FTPing up to a live web server.  
   
 Please note that should you want to use this code you will need to modify  the line :  
 

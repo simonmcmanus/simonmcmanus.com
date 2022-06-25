@@ -16,7 +16,7 @@ An error occured during a request to a remote server .This failure may be tempor
   
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
   
-The app uses the [mock ajax](http://simonmcmanus.wordpress.com/2007/08/01/mock-ajax-in-facebook/ "mock ajax") facebook calls which allow you to do ajax type stuff within Facebook. A look around the developer forum shows that I am clearly the not the only person experiencing this issue:  
+The app uses the [mock ajax](https://simonmcmanus.com/posts/mock-ajax-in-facebook/ "mock ajax") facebook calls which allow you to do ajax type stuff within Facebook. A look around the developer forum shows that I am clearly the not the only person experiencing this issue:  
   
 http://www.facebook.com/topic.php?uid=2205007948&topic=12479  
   
@@ -28,6 +28,6 @@ Which adds to the confusion? Surely facebook is not changing their code on the p
   
 More worrying is the  fact that the api was changed with apparently no notice and we are yet to see any comments from facebook 12 hours in.   Those fuckers, lets hope its sorted soon.  
   
-I talk more about some of the issues with using the Facebook platform in [this post](http://simonmcmanus.wordpress.com/2007/08/08/is-facebook-the-answer-to-everything-facebook-for-the-enterprise/ "this post. ")
+I talk more about some of the issues with using the Facebook platform in [this post](https://simonmcmanus.com/posts/is-facebook-the-answer-to-everything-facebook-for-the-enterprise/ "this post. ")
 
         

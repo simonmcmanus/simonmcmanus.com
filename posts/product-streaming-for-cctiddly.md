@@ -10,7 +10,7 @@ My recent play/ [blog post](https://simonmcmanus.com/posts/life-streaming-in-cct
   
 [http://groups.google.com/group/ccTiddly](http://groups.google.com/group/ccTiddly "ccTiddly Google Groups") - Google Groups on ccTiddly [http://coolcold.wordpress.com](http://coolcold.wordpress.com/ "CoolColds Blog") \- Cool Colds blog   [
   
-https://simonmcmanus.com](http://simonmcmanus.wordpress.com/wp-admin/My%20Blog) - My Blog   
+https://simonmcmanus.com](https://simonmcmanus.wordpress.com/wp-admin/My%20Blog) - My Blog   
   
 [http://www.tiddlywiki.org/wiki/CcTiddly](http://www.tiddlywiki.org/wiki/CcTiddly "ccTiddly User Wiki") \- Wiki for ccTiddly   
   

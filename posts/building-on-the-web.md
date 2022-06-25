@@ -37,15 +37,15 @@ There would need to be a bit of JavaScript at the top of each page redirecting u
   
 So when pushState is not available:  
   
-http://simonmcmanus.com/page.html  
+https://simonmcmanus.com/page.html  
   
 might redirect to :  
   
-http://simonmcmanus.com#page.html  
+https://simonmcmanus.com#page.html  
   
 which would then go and fetch the contents from  
   
-http://simonmcmanus.com/page.html  
+https://simonmcmanus.com/page.html  
   
 If a page is loaded with the fragment identifier in a browser that supports pushState the hash should be removed and pushState used.  
   
