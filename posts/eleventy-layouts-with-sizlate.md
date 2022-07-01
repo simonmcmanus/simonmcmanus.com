@@ -128,7 +128,7 @@ But if you want to generate the selectors based on the front matter data you can
 
 ```js 
 const mappers = {
-    tags: (data) => '.tags': data.tags
+    tags: (data) => 'ul': data.tags
 }
 ```
 That data object that gets passed in should give you access to all the data from that page, layout of collections too.
@@ -149,7 +149,7 @@ tags: ['bacon', 'cheese']
 
 ## Example 4 - Nested Layouts
 
-Sometimes you need to go a step further and nest your layouts. For a blog post for example you might have a post layout that lives inside the main layout. This is where eleventy provides support for [layout chaining](https://www.11ty.dev/docs/layout-chaining/). Which you can also do with sizlate-eleventy: 
+Sometimes you need to go a step further and nest your layouts. For a blog post for example you might have a post layout that lives inside the main layout. This is where eleventy provides support for [layout chaining](https://www.11ty.dev/docs/layout-chaining/). Which you can also do with `eleventy-sizlate`: 
 
 
 ```js 
