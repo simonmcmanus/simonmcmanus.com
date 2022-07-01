@@ -5,7 +5,7 @@ tags: ["eleventy", "sizlate", "blog", "templating", "post", "web", "layouts"]
 ---
 In this post I'm going to describe the different ways I was able to use sizlate query selectors in [eleventy](https://www.11ty.dev/). 
 
-I created a very small wrapper called [sizlate-eleventy](https://www.npmjs.com/package/eleventy-sizlate). I mainly created this package to migrate this blog over to eleventy but I still find Sizlate my prefferred method for manipulating html.
+I created a very small wrapper called [eleventy-sizlate](https://www.npmjs.com/package/eleventy-sizlate). I mainly created this package to migrate this blog over to eleventy but I still find Sizlate my prefferred method for manipulating html.
 
 This was my first time using eleventy so if you can see any APIs missing or other improvements please let me know. 
 
