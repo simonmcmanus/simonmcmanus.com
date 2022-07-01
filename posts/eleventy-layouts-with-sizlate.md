@@ -123,7 +123,7 @@ sizlate: { 'ul': ['bacon', 'cheese']}
 * list item
 ```
 
-But if you want to generate the selectors based on the front matter data you can add a mapper function to the main template: 
+But if you want to generate the selectors based on the front matter data you can add a mapper function into  `layout.sizlate.11ty.js`: 
 
 
 ```js 
@@ -131,7 +131,7 @@ const mappers = {
     tags: (data) => 'ul': data.tags
 }
 ```
-That data object that gets passed in should give you access to all the data from that page, layout of collections too.
+That data object that gets passed in should give you access to all the data from that page, layout and collections too.
 
 Once your layout knows about the mapper functions you specify which mappers should be called when this page is rendered.
 
@@ -142,8 +142,7 @@ mappers: ["tags"]
 tags: ['bacon', 'cheese']
 ---
 
-<section class="contained">
-</section>
+* list item
 ```
 
 
