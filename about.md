@@ -20,7 +20,7 @@ Simon McManus is an engineering team lead with extensive Node.js, web and Mobile
     
 You can contact Simon McManus on <a href="mailto:mcmanus.simon@gmail.com">mcmanus.simon@gmail.com</a>
 
-The source code for this website can be found on <a href="https://github.com/simonmcmanus/links">github</a>.
+The source code for this website can be found on <a href="https://github.com/simonmcmanus/simonmcmanus.com">github</a>.
 
 
 If you would like to work with me please see the<a href="/hire/"> hire page </a>.
@@ -61,7 +61,7 @@ If you would like to work with me please see the<a href="/hire/"> hire page </a>
             <p>
                 All the source code for this site is available on github.
                 The main web app can be found at:
-                <a href="https://github.com/simonmcmanus/eleventy-sizlate">https://github.com/simonmcmanus/eleventy-sizlate</a>
+                <a href="https://github.com/simonmcmanus/simonmcmanus.com">https://github.com/simonmcmanus/simonmcmanus.com</a>
             </p>
             </div>
         </div>
