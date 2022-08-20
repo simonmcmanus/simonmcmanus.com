@@ -12,7 +12,7 @@ const fn = function() {
         });
     }
     let options = {
-        rootMargin: '-10% 0% -30% 0%',
+        rootMargin: '0% 0% -10% 0%',
         threshold: .4
     }
     const observer = new IntersectionObserver(handleIntersection, options);

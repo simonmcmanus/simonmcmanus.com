@@ -59,7 +59,10 @@ footer {
     margin-bottom: 1em;
     margin: 2em;
     background: #222831f2;
-    transition: .4s ease-in;
+}
+
+.section {
+    transition: border-color .4s .3s ease-in, transform .4s ease-in;
 }
 
 html body .section.visible {
@@ -601,8 +604,9 @@ html.loading footer {
 }
 
 .link.section {
-    &:visible {
-        background-color: red;
+    transform: scale(.96);
+    &.visible {
+        transform: scale(1);
     }
     margin: 2em 0;
     border-radius: 5px;
