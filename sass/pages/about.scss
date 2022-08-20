@@ -1,6 +1,9 @@
 html[data-speclate-page=about] section,
 html[data-speclate-page=about] li.section.link {
     border: 2px solid rgba(142, 68, 173, 0.3);
+    &.visible {
+        border: 2px solid rgba(142, 68, 173, 0.7);
+    }
 }
 
 html[data-speclate-page=about] .tags {

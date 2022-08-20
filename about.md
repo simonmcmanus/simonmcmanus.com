@@ -10,7 +10,7 @@ title:  About
 }
 
 ---
-<section class="contained">
+<section class="contained section">
 
     
 Simon McManus is an engineering team lead with extensive Node.js, web and Mobile experience. This site contains links and blog posts written and collected by Simon over the years.
@@ -28,7 +28,7 @@ If you would like to work with me please see the<a href="/hire/"> hire page </a>
 
 
 
-<section class="contained" itemscope  itemtype="https://schema.org/FAQPage">
+<section class="contained section" itemscope  itemtype="https://schema.org/FAQPage">
     <h2>Frequently Asked Questions</h2>
     <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
         <h3 itemprop="name">Where does the name McManus come from?</h3>

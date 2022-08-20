@@ -59,6 +59,12 @@ footer {
     margin-bottom: 1em;
     margin: 2em;
     background: #222831f2;
+    transition: .4s ease-in;
+}
+
+html body .section.visible {
+    //border-color: red !important;
+    // filter: saturate(1.9);
 }
 
 hr {
@@ -364,6 +370,9 @@ html body li.hire a {
 html[data-speclate-page=hire] section,
 html[data-speclate-page=hire] li.section.link {
     border: 2px solid rgba(142, 68, 173, 0.3);
+    &.visible {
+        border: 2px solid rgba(142, 68, 173, 0.7);
+    }
 }
 
 html[data-speclate-page=hire] .tags {
@@ -670,6 +679,15 @@ ul.tags {}
     padding: 0 10px;
     -webkit-column-break-inside: avoid;
     margin: 5px;
+}
+
+.section .tags .tag {
+    transition: opacity 0.5s .5s;
+    opacity: 0.7;
+}
+
+.section.visible .tags .tag {
+    opacity: 1;
 }
 
 html[data-speclate-page="hire"] section {
