@@ -9,7 +9,7 @@ sizlate: { 'a[href="/"]': {
 ---
 
 
-<section class="contained">
+<section class="contained section">
 
 Welcome to the home of Simon McManus 
 

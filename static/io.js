@@ -23,6 +23,12 @@ const fn = function() {
         observer.observe(target, options)
     )
 
+    var targets = document.querySelectorAll('.panels li')
+
+    targets.forEach(target =>
+        observer.observe(target, options)
+    )
+
 
 };
 

@@ -1,5 +1,5 @@
-.recent-links section,
-.recent-links article.section.link {
+.recent-links .section,
+.recent-links .section.link {
     border: 2px solid rgba(146, 181, 88, 0.3);
     &.visible {
         border: 2px solid rgba(146, 181, 88, 0.7);

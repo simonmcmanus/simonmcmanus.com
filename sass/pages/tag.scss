@@ -38,5 +38,8 @@ html[data-speclate-page=tags] .button {
 }
 
 html[data-speclate-page=tags] li.section {
-    border: 2px solid rgb(48 35 100);
+    border: 2px solid rgba(142, 68, 173, 0.3);
+    &.visible {
+        border: 2px solid rgba(142, 68, 173, 0.7);
+    }
 }

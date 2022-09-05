@@ -507,6 +507,12 @@ html.loading footer {
     margin: 1em 4em;
     text-align: center;
     width: 100%;
+    transition: all .4s;
+    &.visible {
+        &::after {
+            animation: pop-big 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 1s !important;
+        }
+    }
 }
 
 .panels li:nth-child(even) {
@@ -537,7 +543,6 @@ html.loading footer {
     width: 5em;
     height: 5em;
     position: absolute;
-    animation: pop 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 0.5s;
 }
 
 .panels li.resident::after {
@@ -550,7 +555,6 @@ html.loading footer {
     width: 5em;
     height: 5em;
     position: absolute;
-    animation: pop 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 0.5s;
 }
 
 .panels li.web::after {
@@ -563,7 +567,6 @@ html.loading footer {
     width: 5em;
     height: 5em;
     position: absolute;
-    animation: pop 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 0.5s;
 }
 
 .panels li.organiser::after {
@@ -576,7 +579,6 @@ html.loading footer {
     width: 5em;
     height: 5em;
     position: absolute;
-    animation: pop 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 0.5s;
 }
 
 .panels li.lead::after {
@@ -589,7 +591,6 @@ html.loading footer {
     width: 5em;
     height: 5em;
     position: absolute;
-    animation: pop 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 0.5s;
 }
 
 .panels li a {
