@@ -25,7 +25,9 @@
         "url": "https://medium.com/@ux_in_motion/creating-usability-with-motion-the-ux-in-motion-manifesto-a87a4584ddc",
         "summary": "",
         "tags": [
-            ""
+            "animation",
+            "usibility",
+            "motion"
         ],
         "created": "2017-04-05T12:14:22.765Z",
         "date": "2017-04-05"
@@ -11380,5 +11382,707 @@
             "open-graph-protocol"
         ],
         "date": "2022-06-04"
+    },
+    {
+        "created": "2022-06-04T15:44:54.217Z",
+        "url": "https://github.com/WICG/shared-element-transitions/blob/main/developer-guide.md ",
+        "title": "shared-element-transitions/developer-guide.md at main · WICG/shared-element-transitions · GitHub",
+        "summary": "This guide covers the page transition API as currently supported in Chrome Canary, for developers who want to try out the feature today. The explainer is a more in-depth overview of the feature, but it includes parts that aren't implemented yet.",
+        "tags": [
+            "shared-element-transitions"
+        ],
+        "date": "2022-06-04"
+    },
+    {
+        "created": "2022-06-05T04:35:58.005Z",
+        "url": "https://rphunt.github.io/eleventy-walkthrough/partials-and-include.html ",
+        "title": "Eleventy Walk Through - Partials and Include",
+        "summary": "Partials often refers to HTML that is not a complete web page, but is intended for re-use within multiple web pages. Common examples are the header and the footer of site pages. Some advantages of this are: not having to copy that code into every page of the site; and if a change has to be made, it only has to be done in one place.",
+        "tags": [
+            "eleventy"
+        ],
+        "date": "2022-06-05"
+    },
+    {
+        "created": "2022-06-05T05:12:36.064Z",
+        "url": "https://search.google.com/test/rich-results/result?id=pSMBiZUmu5NYboLFSM5_0Q ",
+        "title": "Rich Results Test – Google Search Console",
+        "summary": "",
+        "tags": [
+            "seo"
+        ],
+        "date": "2022-06-05"
+    },
+    {
+        "created": "2022-06-06T09:15:42.846Z",
+        "url": "https://docs.netlify.com/routing/redirects/ ",
+        "title": "Redirects and rewrites | Netlify Docs",
+        "summary": "You can configure redirect and rewrite rules for your Netlify site in two ways:",
+        "tags": [
+            "redirects",
+            "netlify"
+        ],
+        "date": "2022-06-06"
+    },
+    {
+        "created": "2022-06-12T05:03:01.763Z",
+        "url": "https://www.politico.eu/article/elon-musk-ukraine-starlink/ ",
+        "title": "UkraineX: How Elon Musk’s space satellites changed the war on the ground – POLITICO",
+        "summary": "",
+        "tags": [
+            "starlink"
+        ],
+        "date": "2022-06-12"
+    },
+    {
+        "created": "2022-06-13T20:31:34.203Z",
+        "url": "https://arxiv.org/pdf/2111.04302.pdf ",
+        "title": "",
+        "summary": "",
+        "tags": [
+            "lead",
+            "efficiency",
+            "developer",
+            "developers",
+            "developer-experience"
+        ],
+        "date": "2022-06-13"
+    },
+    {
+        "created": "2022-06-15T17:38:20.000Z",
+        "url": "https://www.netlify.com/blog/fun-parallax-scrolling-css-for-matterday/ ",
+        "title": "Fun Parallax Scrolling CSS for Matterday",
+        "summary": "",
+        "tags": [
+            "parallax",
+            "netlify",
+            "css",
+            "css-animation",
+            "css-selectors"
+        ],
+        "date": "2022-06-15"
+    },
+    {
+        "created": "2022-06-16T13:30:33.327Z",
+        "url": "https://help.hotjar.com/hc/en-us/articles/115009335727-Will-Hotjar-Slow-Down-My-Site-",
+        "title": "Will Hotjar Slow Down My Site? – Hotjar Documentation",
+        "summary": "We take all the necessary steps in ensuring fast deliverability of our service on your sites with as little impact as possible.",
+        "tags": [
+            "hotjar",
+            " performance"
+        ],
+        "date": "2022-06-16"
+    },
+    {
+        "created": "2022-06-17T20:19:53.503Z",
+        "url": "https://github.com/11ty/is-land ",
+        "title": "GitHub - 11ty/is-land: A new performance-focused way to add interactive client-side components to your web site.",
+        "summary": "",
+        "tags": [
+            "11ty",
+            "is-land"
+        ],
+        "date": "2022-06-17"
+    },
+    {
+        "created": "2022-06-19T06:06:59.499Z",
+        "url": "https://www.camofasteners.com/products/tools/pro-guide/",
+        "title": "MARKSMAN Pro® - CAMO Fasteners",
+        "summary": "CAMO has a tool for every installation. DRIVE delivers maximum jobsite versatility securing CAMO Collated Screws and Clips, ClipDRIVE is the ultimate tool for fastening CAMO Universal Deck Clips, MARKSMAN Pro tools were specifically designed for edge fastening, and the LEVER keeps any board locked in place, freeing you up to fasten.",
+        "tags": [
+            "camo",
+            " decking",
+            " drive"
+        ],
+        "date": "2022-06-19"
+    },
+    {
+        "created": "2022-06-22T06:57:05.769Z",
+        "url": "https://www.andiamo.co.uk/resources/iso-language-codes/",
+        "title": "ISO language codes | Andiamo! The Language Professionals",
+        "summary": "Here is a list of the most common ISO language codes, conforming to the ISO 639-1 standard, complete with two letter country codes where relevant.You can search by code or search by language.",
+        "tags": [
+            "iso",
+            " locale"
+        ],
+        "date": "2022-06-22"
+    },
+    {
+        "created": "2022-06-23T06:43:12.544Z",
+        "url": "https://www.phoenixframework.org/ ",
+        "title": "Phoenix Framework",
+        "summary": "Build rich, interactive web applications quickly, with less code and fewer moving parts. Join our growing community of developers using Phoenix to craft APIs, HTML5 apps and more, for fun or at scale.",
+        "tags": [
+            "web",
+            "framework",
+            "frameworks",
+            "website"
+        ],
+        "date": "2022-06-23"
+    },
+    {
+        "created": "2022-06-24T00:20:24.241Z",
+        "url": "https://nolanlawson.com/2022/06/22/style-scoping-versus-shadow-dom-which-is-fastest/ ",
+        "title": "Style scoping versus shadow DOM: which is fastest? | Read the Tea Leaves",
+        "summary": "",
+        "tags": [
+            "style",
+            "performance"
+        ],
+        "date": "2022-06-24"
+    },
+    {
+        "created": "2022-06-24T11:48:41.544Z",
+        "url": "https://support.speedcurve.com/docs/seo-and-web-performance ",
+        "title": "SEO and Web Performance",
+        "summary": "",
+        "tags": [
+            "seo",
+            "performance",
+            "web"
+        ],
+        "date": "2022-06-24"
+    },
+    {
+        "created": "2022-06-25T10:29:16.738Z",
+        "url": "https://keithclark.co.uk/articles/pure-css-parallax-websites/",
+        "title": "Pure CSS Parallax Websites",
+        "summary": "This article demonstrates how to use CSS transforms, perspective and some scaling trickery to create a pure CSS parallax scrolling website.",
+        "tags": [
+            "css",
+            " parallax"
+        ],
+        "date": "2022-06-25"
+    },
+    {
+        "created": "2022-06-25T12:38:54.577Z",
+        "url": "https://xsgames.co/animatiss/ ",
+        "title": "AnimatiSS - A nice, colorful collection of CSS animations for your projects",
+        "summary": "",
+        "tags": [
+            ""
+        ],
+        "date": "2022-06-25"
+    },
+    {
+        "created": "2022-06-25T17:56:21.817Z",
+        "url": "https://12ft.io/ ",
+        "title": "12ft Ladder",
+        "summary": "",
+        "tags": [
+            "paywall"
+        ],
+        "date": "2022-06-25"
+    },
+    {
+        "created": "2022-06-26T13:17:05.926Z",
+        "url": "https://www.jewson.co.uk/p/one-man-post-hole-borer-JTH06608 ",
+        "title": "One Man Post Hole Borer hire",
+        "summary": "",
+        "tags": [
+            "borer",
+            "post",
+            "garden"
+        ],
+        "date": "2022-06-26"
+    },
+    {
+        "created": "2022-06-26T16:45:15.118Z",
+        "url": "https://www.defendapack.com/concrete_footing_tubes ",
+        "title": "Cardboard Tubes for Concrete Footing | Tubular Column Forms | Concrete Footing Tubes | Concrete Piling Tubes",
+        "summary": "",
+        "tags": [
+            "footings",
+            "concret"
+        ],
+        "date": "2022-06-26"
+    },
+    {
+        "created": "2022-06-28T18:03:13.620Z",
+        "url": "https://split.traintimes.org.uk/ ",
+        "title": "Split Ticket - Accessible UK Train Timetables",
+        "summary": "",
+        "tags": [
+            "trains",
+            "split"
+        ],
+        "date": "2022-06-28"
+    },
+    {
+        "created": "2022-06-30T04:40:43.461Z",
+        "url": "https://www.estatesawmills.com/decking-calculator/ ",
+        "title": "Best Decking Calculator | Timber | Composite | Decking Planner | Yorkshire",
+        "summary": "",
+        "tags": [
+            "garden",
+            "decking"
+        ],
+        "date": "2022-06-30"
+    },
+    {
+        "created": "2022-07-02T17:29:35.333Z",
+        "url": "https://feathericons.com/ ",
+        "title": "Feather – Simply beautiful open source icons",
+        "summary": "",
+        "tags": [
+            "design",
+            "icons"
+        ],
+        "date": "2022-07-02"
+    },
+    {
+        "created": "2022-07-02T17:30:16.122Z",
+        "url": "http://remixicon.com/ ",
+        "title": "Remix Icon - Open source icon library",
+        "summary": "",
+        "tags": [
+            "design",
+            "icons"
+        ],
+        "date": "2022-07-02"
+    },
+    {
+        "created": "2022-07-02T17:30:48.872Z",
+        "url": "https://www.untitledui.com/icons ",
+        "title": "Untitled UI Icons — The ultimate Figma icon library",
+        "summary": "",
+        "tags": [
+            "design",
+            "icons"
+        ],
+        "date": "2022-07-02"
+    },
+    {
+        "created": "2022-07-02T17:32:37.594Z",
+        "url": "https://coolicons.cool/ ",
+        "title": "coolicons | Free Icons For Your Next Project",
+        "summary": "",
+        "tags": [
+            "design",
+            "icons"
+        ],
+        "date": "2022-07-02"
+    },
+    {
+        "created": "2022-07-02T17:33:17.632Z",
+        "url": "https://iconduck.com/ ",
+        "title": "Free open source icons, illustrations, emojis and graphics - Iconduck",
+        "summary": "",
+        "tags": [
+            "design",
+            "icons"
+        ],
+        "date": "2022-07-02"
+    },
+    {
+        "created": "2022-07-03T07:08:35.256Z",
+        "url": "https://www.fast.design/ ",
+        "title": "FAST",
+        "summary": "",
+        "tags": [
+            "components",
+            "web-components",
+            "web components"
+        ],
+        "date": "2022-07-03"
+    },
+    {
+        "created": "2022-07-05T04:58:15.853Z",
+        "url": "https://www.copy.ai/ ",
+        "title": "Copy.ai: Write better marketing copy and content with AI",
+        "summary": "",
+        "tags": [
+            "ai",
+            "copy",
+            "writing"
+        ],
+        "date": "2022-07-05"
+    },
+    {
+        "created": "2022-07-05T12:30:27.920Z",
+        "url": "https://www.npmjs.com/package/html-decision-tree ",
+        "title": "html-decision-tree - npm",
+        "summary": "",
+        "tags": [
+            "tree"
+        ],
+        "date": "2022-07-05"
+    },
+    {
+        "created": "2022-07-05T12:38:21.441Z",
+        "url": "https://live.yworks.com/demos/index.html ",
+        "title": "yFiles for HTML Programming Samples and Tutorials",
+        "summary": "",
+        "tags": [
+            "html",
+            "tree"
+        ],
+        "date": "2022-07-05"
+    },
+    {
+        "created": "2022-07-05T13:05:47.662Z",
+        "url": "https://gojs.net/latest/samples/localView.html ",
+        "title": "Local View",
+        "summary": "",
+        "tags": [
+            "tree"
+        ],
+        "date": "2022-07-05"
+    },
+    {
+        "created": "2022-07-05T13:14:05.961Z",
+        "url": "https://codepen.io/augbog/pen/LEXZKK ",
+        "title": "D3.js Tree Layout chart",
+        "summary": "",
+        "tags": [
+            "d3",
+            "tree"
+        ],
+        "date": "2022-07-05"
+    },
+    {
+        "created": "2022-07-05T13:17:16.993Z",
+        "url": "https://bkrem.github.io/react-d3-tree/docs/interfaces/_tree_types_.treeprops.html ",
+        "title": "TreeProps | react-d3-tree - v3.3.2",
+        "summary": "",
+        "tags": [
+            "tree"
+        ],
+        "date": "2022-07-05"
+    },
+    {
+        "created": "2022-07-06T14:36:49.317Z",
+        "url": "https://web.dev/inp/ ",
+        "title": "Interaction to Next Paint (INP)",
+        "summary": "",
+        "tags": [
+            "performance",
+            "inp"
+        ],
+        "date": "2022-07-06"
+    },
+    {
+        "created": "2022-07-10T15:27:15.646Z",
+        "url": "https://www.similarweb.com/ ",
+        "title": "Website Traffic - Check and Analyze Any Website | Similarweb",
+        "summary": "",
+        "tags": [
+            "competition"
+        ],
+        "date": "2022-07-10"
+    },
+    {
+        "created": "2022-07-12T05:09:06.116Z",
+        "url": "https://github.com/sdras/awesome-actions ",
+        "title": "sdras/awesome-actions: A curated list of awesome actions to use on GitHub",
+        "summary": "",
+        "tags": [
+            "actions",
+            "github"
+        ],
+        "date": "2022-07-12"
+    },
+    {
+        "created": "2022-07-13T05:22:58.106Z",
+        "url": "https://mermaid-js.github.io/mermaid/#/flowchart",
+        "title": "Flowchart",
+        "summary": "All Flowcharts are composed of nodes, the geometric shapes and edges, the arrows or lines. The mermaid code defines the way that these nodes and edges are made and interact.It can also accommodate different arrow types, multi directional arrows, and linking to and from subgraphs.",
+        "tags": [
+            "mermaid",
+            " flowchart"
+        ],
+        "date": "2022-07-13"
+    },
+    {
+        "created": "2022-07-16T14:35:52.377Z",
+        "url": "https://mymind.com/ ",
+        "title": "mymind is the extension for your mind.",
+        "summary": "",
+        "tags": [
+            "bookmarks"
+        ],
+        "date": "2022-07-16"
+    },
+    {
+        "created": "2022-07-20T06:02:24.797Z",
+        "url": "https://www.optimizely.com/insights/blog/feature-flags-vs-ab-testing/?utm_source=linkedin&utm_medium=cpc&utm_campaign=SO-UKI-2021-Evergreen-Full-Stack-TOFU-MOFU&utm_content=feature-flag-rollout-ab-test ",
+        "title": "Feature Flag, Rollout or A/B test? - Optimizely",
+        "summary": "",
+        "tags": [
+            "cro"
+        ],
+        "date": "2022-07-20"
+    },
+    {
+        "created": "2022-07-26T06:37:39.503Z",
+        "url": "https://fly.io/ ",
+        "title": "Deploy app servers close to your users · Fly",
+        "summary": "",
+        "tags": [
+            "hosting",
+            "node"
+        ],
+        "date": "2022-07-26"
+    },
+    {
+        "created": "2022-07-28T05:16:08.256Z",
+        "url": "https://sre.google/sre-book/eliminating-toil/ ",
+        "title": "Google - Site Reliability Engineering",
+        "summary": "",
+        "tags": [
+            ""
+        ],
+        "date": "2022-07-28"
+    },
+    {
+        "created": "2022-07-28T05:23:57.209Z",
+        "url": "https://blackboxofpm.com/ruthless-prioritization-e4256e3520a9 ",
+        "title": "Ruthless Prioritization. All high functioning teams must… | by Brandon Chu | The Black Box of Product Management",
+        "summary": "",
+        "tags": [
+            "priority"
+        ],
+        "date": "2022-07-28"
+    },
+    {
+        "created": "2022-07-28T05:27:55.384Z",
+        "url": "https://blog.gardeviance.org/2015/03/on-pioneers-settlers-town-planners-and.html?m=1 ",
+        "title": "Bits or pieces?: On Pioneers, Settlers, Town Planners and Theft.",
+        "summary": "",
+        "tags": [
+            "lead",
+            "planning"
+        ],
+        "date": "2022-07-28"
+    },
+    {
+        "created": "2022-07-28T06:14:04.867Z",
+        "url": "https://medium.com/@ElizAyer/dont-ask-forgiveness-radiate-intent-d36fd22393a3 ",
+        "title": "Don’t ask forgiveness, radiate intent | by Elizabeth Ayer | Medium",
+        "summary": "",
+        "tags": [
+            "searches.map is not a function"
+        ],
+        "date": "2022-07-28"
+    },
+    {
+        "created": "2022-07-28T06:51:04.225Z",
+        "url": "https://camhashemi.com/posts/focus-vs-coordination/ ",
+        "title": "Focus vs Coordination - Cam Hashemi",
+        "summary": "",
+        "tags": [
+            "balance",
+            "communication",
+            "focus"
+        ],
+        "date": "2022-07-28"
+    },
+    {
+        "created": "2022-07-28T06:57:42.437Z",
+        "url": "https://charity.wtf/2017/05/11/the-engineer-manager-pendulum/ ",
+        "title": "The Engineer/Manager Pendulum – charity.wtf",
+        "summary": "",
+        "tags": [
+            "management"
+        ],
+        "date": "2022-07-28"
+    },
+    {
+        "created": "2022-07-31T13:13:17.111Z",
+        "url": "https://itnext.io/everything-you-always-wanted-to-know-about-web-components-but-were-afraid-to-ask-d553a504a328#e62a-55ff11e04d80 ",
+        "title": "Everything You Always Wanted To Know About Web Components (But Were Afraid To Ask) | by Danny Moerkerke | Jul, 2022 | ITNEXT",
+        "summary": "",
+        "tags": [
+            "web-components"
+        ],
+        "date": "2022-07-31"
+    },
+    {
+        "created": "2022-08-06T14:17:13.784Z",
+        "url": "https://www.npmjs.com/package/chai-a11y-axe ",
+        "title": "chai-a11y-axe - npm",
+        "summary": "",
+        "tags": [
+            "accessibility"
+        ],
+        "date": "2022-08-06"
+    },
+    {
+        "created": "2022-08-07T06:24:41.594Z",
+        "url": "https://nx.dev/",
+        "title": "Nx: Smart, Fast and Extensible Build System",
+        "summary": "Next generation build system with first class monorepo support and powerful integrations.",
+        "tags": [
+            "monorepos"
+        ],
+        "date": "2022-08-07"
+    },
+    {
+        "created": "2022-08-08T20:11:32.810Z",
+        "url": "https://useanimations.com/ ",
+        "title": "A micro-animations library",
+        "summary": "",
+        "tags": [
+            "icons",
+            "animation",
+            "animations"
+        ],
+        "date": "2022-08-08"
+    },
+    {
+        "created": "2022-08-08T20:12:33.056Z",
+        "url": "https://lordicon.com/ ",
+        "title": "8,800+ Animated Icons - Lordicon",
+        "summary": "",
+        "tags": [
+            "icons",
+            "animation",
+            "animations"
+        ],
+        "date": "2022-08-08"
+    },
+    {
+        "created": "2022-08-09T20:00:03.143Z",
+        "url": "https://taxi.js.org/routing/ ",
+        "title": "Taxi.js - Routing",
+        "summary": "",
+        "tags": [
+            "animation",
+            "routing",
+            "css-animation",
+            "animations"
+        ],
+        "date": "2022-08-09"
+    },
+    {
+        "created": "2022-08-10T14:32:11.473Z",
+        "url": "https://phrasee.co/",
+        "title": "AI-powered SaaS platform for enhanced customer experience | Phrasee®",
+        "summary": "Phrasee brings you optimized brand language that turns clicks into loyal customers.",
+        "tags": [
+            "ai",
+            " language"
+        ],
+        "date": "2022-08-10"
+    },
+    {
+        "created": "2022-08-13T12:24:29.212Z",
+        "url": "https://chrome.google.com/webstore/detail/scribe-%E2%80%94-documentation-so/okfkdaglfjjjfefdcppliegebpoegaii?hl=en&utm_source=LinkedIn ",
+        "title": "Scribe — Documentation, SOPs & Screenshots",
+        "summary": "Auto-generate step-by-step guides, just by clicking record. Save your team 20+ hours/month vs. video and text tutorials.",
+        "tags": [
+            "screenshots",
+            "scribe"
+        ],
+        "date": "2022-08-13"
+    },
+    {
+        "created": "2022-08-14T15:37:57.077Z",
+        "url": "https://www.righttoroam.org.uk/ ",
+        "title": "HOME | Right to Roam",
+        "summary": "",
+        "tags": [
+            "right-to-roam"
+        ],
+        "date": "2022-08-14"
+    },
+    {
+        "created": "2022-08-22T09:19:26.026Z",
+        "url": "https://ui.mantine.dev/",
+        "title": "Mantine UI",
+        "summary": "",
+        "tags": [
+            "components"
+        ],
+        "date": "2022-08-22"
+    },
+    {
+        "created": "2022-08-22T19:31:28.236Z",
+        "url": "https://keepsimple.io/uxcore ",
+        "title": "UX Core",
+        "summary": "Here you can find 105 hands-on examples of using cognitive biases (thought patterns) in modern software product development.",
+        "tags": [
+            "thought",
+            "bias"
+        ],
+        "date": "2022-08-22"
+    },
+    {
+        "created": "2022-08-23T07:45:54.288Z",
+        "url": "https://codepen.io/hexagoncircle/pen/eYMrGwW",
+        "title": "CSS Marquee Examples",
+        "summary": "",
+        "tags": [
+            "css",
+            " marquee"
+        ],
+        "date": "2022-08-23"
+    },
+    {
+        "created": "2022-08-24T10:50:32.786Z",
+        "url": "https://developers.google.com/search/blog/2022/08/helpful-content-update",
+        "title": "What creators should know about Google's helpful content update  |  Google Search Central Blog  |  Google Developers",
+        "summary": "Google Search is always working to better connect people to helpful information. To this end, we're launching what we're calling the “helpful content update” that's part of a broader effort to ensure people see more original, helpful content written by people, for people, in search results. Below is more about the update and things creators should consider.",
+        "tags": [
+            "seo",
+            " helpful-content-update"
+        ],
+        "date": "2022-08-24"
+    },
+    {
+        "created": "2022-08-27T11:37:48.792Z",
+        "url": "https://www.dimensions.com/ ",
+        "title": "Dimensions | Database of Dimensioned Drawings",
+        "summary": "",
+        "tags": [
+            "dimensions"
+        ],
+        "date": "2022-08-27"
+    },
+    {
+        "created": "2022-08-27T18:06:12.354Z",
+        "url": "https://untools.co/ ",
+        "title": "Tools for better thinking | Untools",
+        "summary": "",
+        "tags": [
+            "tools",
+            "thinking"
+        ],
+        "date": "2022-08-27"
+    },
+    {
+        "created": "2022-08-30T08:40:53.685Z",
+        "url": "https://techbeacon.com/app-dev-testing/5-reasons-why-cicd-vital-your-organizations-value-stream ",
+        "title": "5 reasons why CI/CD is vital to your organization's value stream | TechBeacon",
+        "summary": "",
+        "tags": [
+            "ci"
+        ],
+        "date": "2022-08-30"
+    },
+    {
+        "created": "2022-09-02T04:25:20.516Z",
+        "url": "https://dropbox.github.io/dbx-career-framework/ic3_software_engineer.html ",
+        "title": "IC3 Software Engineer - Dropbox Engineering Career Framework",
+        "summary": "",
+        "tags": [
+            "dropbox",
+            "framework",
+            "career",
+            "frameworks"
+        ],
+        "date": "2022-09-02"
+    },
+    {
+        "created": "2022-09-05T11:28:14.321Z",
+        "url": "https://tobiasahlin.com/blog/meaningful-motion-w-action-driven-animation/",
+        "title": "Meaningful Motion with Action-Driven Animation | Tobias Ahlin",
+        "summary": "How do we animate interfaces in ways that are not just beautiful, but meaningful? When we add motion to interfaces, we want to in one way or another improve the user experience, be it through aiding the comprehension of a concept, setting the mood, enhancing the perception of speed, or directing attention. Regardless of the intent of the animation, when animations fail to be meaningful, a common cause is that they simply tween between their hidden and visible states, rather than visualizing the actions that triggered the change of state. A window rarely just closes or opens; a message is sent, a draft is discarded, an item is used.",
+        "tags": [
+            "motion",
+            "animation",
+            "ux"
+        ],
+        "date": "2022-09-05"
     }
 ]
