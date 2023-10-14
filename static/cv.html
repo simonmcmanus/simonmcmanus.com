@@ -26,7 +26,7 @@
         }
         
         .item {
-            margin: 0.2em 4em 1.5em;
+            margin: 0.2em 4em 0.5em;
             border-bottom: 1px solid #ddd;
             height: auto;
         }
@@ -41,16 +41,18 @@
         .dates {
             font-size: 0.9em;
             display: inline-block;
-            margin-bottom: 1.5em;
+            margin-bottom: 0.5em;
         }
         
         .experience,
         .education {
+            margin-top: 1em;
             list-style-image: none;
             list-style-position: inside;
             list-style-type: none;
             margin-left: -2.6em;
             margin-bottom: 1em;
+            margin-top: 2em;
         }
         
         .description li,
@@ -79,17 +81,13 @@
             margin: auto;
         }
         
-        #top-item {
-            padding: 0em;
-        }
-        
         #main-title {
             font-size: 2.4em;
+            margin: 0;
         }
         
         #contactDetails {
             font-size: 1em;
-            margin-bottom: 10px;
         }
         
         .skill-description {
@@ -104,7 +102,19 @@
             font-weight: normal;
         }
         
+        #top-item {
+            align-items: baseline;
+            padding: 1.8em 0;
+        }
+        
         @media (min-width: 800px) {
+            #top-item {
+                display: flex;
+                justify-content: space-between;
+            }
+            #contactDetails {
+                text-align: end;
+            }
             .section.tools {
                 display: inline-block;
             }
@@ -117,30 +127,11 @@
             h3.summary,
             div.dates {
                 display: inline-block;
+                margin-bottom: 0;
             }
             .dates {
-                top: 0.4em;
                 float: right;
                 position: relative;
-            }
-            .item-title {
-                font-size: 1em;
-                font-style: italic;
-                position: relative;
-                text-align: right;
-                top: 0.62em;
-                width: 7em;
-            }
-            .section {
-                padding-left: 8.5em;
-                position: relative;
-                top: -1.5em;
-            }
-            #contactDetails {
-                float: right;
-                position: relative;
-                text-align: right;
-                top: -6em;
             }
         }
         
@@ -156,6 +147,14 @@
         @media print {
             body {
                 font-size: 0.8em;
+            }
+            #top-item {
+                padding: 0em;
+                display: flex;
+                justify-content: space-between;
+            }
+            #contactDetails {
+                text-align: end;
             }
             a {
                 text-decoration: none;
@@ -173,18 +172,11 @@
                 font-weight: bold;
                 font-size: 1em;
             }
-            #contactDetails {
-                float: right;
-                position: relative;
-                text-align: right;
-                top: -6em;
-            }
             h3.summary,
             div.dates {
                 display: inline-block;
             }
             .dates {
-                top: 0.4em;
                 float: right;
                 position: relative;
             }
@@ -220,8 +212,7 @@
       <div class="item">
         <div class="section">
           <p class="summary profile">
-            Web enthusiast with a passion for leading high performing teams to produce world-class
-            experiences.
+            An experienced leader with a hands-on technical background, I excel at leveraging data-driven insights to guide high-performing teams towards organisational alignment, technical excellence, and broader strategic goals.
           </p>
         </div>
       </div>
@@ -234,32 +225,35 @@
           <ol class="vcalendar">
             <li class="experience vevent">
                 <h3 class="summary">
-                    <p><strong>Engineering Team Lead </strong> at <a href="https://trainline.com/">trainline.com</a>
+                      <a href="https://trainline.com/">Trainline.com</a> - <strong>Engineering Team Lead </strong>
                 </h3>
                 <div class="dates">
                     <abbr class="dtstart" title="2021-10-01">October 2021</abbr> -
                     <abbr>present</abbr>
                 </div>
 
-                <ul class="description">
-                    <li> <strong>Web Platform - Developer Experience.</strong> Rebuilt search widget to provide a single reusable/composable component that can be used throughout the trainline web estate, improving developer experience, increasing delivery
-                        speed and providing improved support for experimentation. Collaborated with cross functional teams across the company to ensure smooth rollout out of the companies most impactful component.
-                    </li>
-                    <li> <strong>Conversion Rate Optimisation.</strong> Worked alongside SEO, brand, data science, design, product and web platform to validate hypotheses and arrive at solutions that aligned with business roadmap, technical standards and best
-                        practices. Developed process around <a href="https://medium.com/trainline/lessons-from-hypothesis-driven-development-d0e339d4e91b">hypothesis driven development</a> resulting in running more experiments that any other area and
-                        a high win rate.
-                    </li>
+                <p>As an Engineering Team Lead, I've collaborated with product managers, SEO, brand, data science, design, product, and platform teams to define team strategy, roadmap, and goals (OKRs). My approach prioritises <a href="https://medium.com/trainline/lessons-from-hypothesis-driven-development-d0e339d4e91b">hypothesis-driven
+                    development</a>, leading to early validation and feedback. I delegate ownership to feature/experiment leads with regular follow ups through 121, check-ins and experiment review sessions. I've led the creation of custom dashboards to
+                    enhance experiment and system performance monitoring, resulting in more agile issue detection and process adaptation.
+                </p>
 
+                <p>
+                    Demonstrated proficiency in designing experiments, selecting primary and guardrail metrics, and analysing results to extract insights and understand behavioural changes.
+                </p>
                 </ul>
                 </li>
                 <li class="experience vevent">
                     <h3 class="summary">
-                        <a href="https://drest.com/">Tech Lead at DREST</a>
+
+                        <a href="https://drest.com/">DREST</a> - Tech Lead
                     </h3>
                     <div class="dates">
                         <abbr class="dtstart" title="2019-06-01">May 2020</abbr> -
                         <abbr>July 2021</abbr>
                     </div>
+
+                    <p>Lead diverse cross functional teams. Collaborated closely with product, design, fashion and data teams to ensure alignment and deliver products that engaged users.
+                    </p>
 
                     <ul class="description">
                         <li>
@@ -270,66 +264,40 @@
                         </li>
                         <li>
                             <strong>Gucci Wardrobe </strong>. Led build of <a href="https://reactjs.org/">React</a>/<a href="https://xstate.js.org/">X-State</a> solution that let <a href="https://www.gucci.com/uk/en_gb/">Gucci</a> VIPs try on clothes.
-                            Intended audience was around 3000 but after the Gucci CEO tried it out it was sent to all of Gucci’s 30,000 VIPs
+                            Intended audience was around 3000 but after the Gucci CEO tried it out it was sent to all of Gucci’s 30,000 VIPs.
                         </li>
                     </ul>
                 </li>
                 <li class="experience vevent">
                     <h3 class="summary">
-                        <a href="https://limescan.net/">Limescan</a> <span class="contract">(contract)</span>
+                        <a href="https://limescan.net/">Limescan</a> <span class="contract"> Senior Engineer (contract)</span>
                     </h3>
                     <div class="dates">
                         <abbr class="dtstart" title="2019-06-01">June 2019</abbr> -
                         <abbr>March 2020</abbr>
                     </div>
 
-                    <ul class="description">
-                        <li>
-                            <a href="https://nuxtjs.org/">Nuxt</a>/<a href="https://vuejs.org/">Vue.js</a
-                  > -
-                  Visualising data from software-defined wireless probes.
+
                 </li>
-              </ul>
-            </li>
-            <li class="experience vevent">
-              <h3 class="summary">
-                <a href="http://dominos.co.uk">Dominos Pizza Group</a><span class="contract"> (contract)</span>
-                            </h3>
-                            <div class="dates">
-                                <abbr class="dtstart" title="2019-05-01">July 2019</abbr> -
-                                <abbr class="dtstart" title="2020-01-31">January 2020</abbr>
-                            </div>
-
-                            <ul class="description">
-                                <li>
-                                    Developing <a href="https://vuejs.org/">Vue.js</a>
-                                    <a href="https://martinfowler.com/articles/micro-frontends.html">Micro Frontends</a
-                  >
-                  architecture for new
-                  <a href="http://dominos.co.uk/">Domino's</a> site.
-                                </li>
-                            </ul>
-                        </li>
-
-
-                        <li class="experience vevent">
-                            <h3 class="summary">
-                                <a href="http://nearform.com/">NearForm</a> <span class="contract">(contract)</span>
-                            </h3>
-                            <div class="dates">
-                                <abbr class="dtstart" title="2016-05-01">May 2016</abbr> -
-                                <abbr class="dtstart" title="2019-03-01">March 2019</abbr>
-                            </div>
-
-                            <ul class="description">
-                                <li>
-                                    Redeveloped ticketing platform as part of a digital transformation project with
-                                    <a href="https://www.atgtickets.com/">ATG tickets</a> using <a href="https://preactjs.com/">Preact</a>/<a href="https://reactjs.org/">React</a> <a href="https://redux.js.org/introduction/getting-started">Redux</a>/
-                                    <a href="https://graphql.org/">GraphQL</a>.
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
+                <li class="experience vevent">
+                    <h3 class="summary">
+                        <a href="http://dominos.co.uk">Domino's Pizza Group</a> <span class="contract">Senior EngineerSenior Engineer (contract)</span>
+                    </h3>
+                    <div class="dates">
+                        <abbr class="dtstart" title="2019-05-01">July 2019</abbr> -
+                        <abbr class="dtstart" title="2020-01-31">January 2020</abbr>
+                    </div>
+                </li>
+                <li class="experience vevent">
+                    <h3 class="summary">
+                        <a href="http://nearform.com/">NearForm</a> <span class="contract"> Senior Engineer (contract)</span>
+                    </h3>
+                    <div class="dates">
+                        <abbr class="dtstart" title="2016-05-01">May 2016</abbr> -
+                        <abbr class="dtstart" title="2019-03-01">March 2019</abbr>
+                    </div>
+                </li>
+                </ul>
                 </li>
                 </ol>
                 <p>
@@ -351,7 +319,6 @@
                 </p>
             </div>
         </div>
-        <div style="page-break-after:always"></div>
         <div class="item">
             <h2 class="item-title">
                 Education
@@ -369,68 +336,38 @@
         </div>
       </div>
 
+
+      <div style="page-break-after:always"></div>
       <div class="item">
         <h2 class="item-title">
-          Tools
+        Skills & Expertise
         </h2>
         <div class="section tools">
           <div class="box">
-            Content (HTML)
+            Leadership
             <div class="skill-description">
-              Clean,
-              <a href="http://www.w3.org/TR/WCAG10/" class="skill" rel="tag"
-                >accessible</a
-              >,
-              <a
-                href="http://en.wikipedia.org/wiki/Semantic_HTML"
-                class="skill"
-                rel="tag"
-                >semantic</a
-              >,
-              <a href="http://seleniumhq.org/" class="skill" rel="tag"
-                >cross-browser</a
-              >,
-              <a href="http://en.wikipedia.org/wiki/Cross-platform"
-                >cross-platform</a
-              >,
-              <a
-                href="http://en.wikipedia.org/wiki/Search_engine_optimization"
-                class="skill"
-                rel="tag"
-                >search engine friendly</a
-              >
-              <a
-                class="skill"
-                href="https://en.wikipedia.org/wiki/HTML"
-                rel="tag"
-                >Markup</a
-              > that will work on the widest range of devices.
+                Fostering an inclusive team culture centred on proactive decision-making, accountability, and strategic alignment with business goals. Leveraging hypothesis-driven methods and custom dashboards, Emphasising data-driven insights for informed team strategies.
             </div>
           </div>
 
           <div class="box">
-            Presentation (CSS)
+            Mentoring
             <div class="skill-description">
-              Cross-browser, simple, clean, elegant mobile-first designs with
-              <a class="skill" href="http://www.w3.org/Style/CSS/" rel="tag"
-                >CSS</a
-              >. Experience with CSS modules, CSS-in-JS, SASS, SCSS and CSS modules.
+                Actively coaching engineers to bolster their technical and professional growth. Skillfully navigating interpersonal challenges, ensuring team harmony. Aiding senior engineers in transitioning to leadership roles, always aligning individual growth with business objectives.
+            
             </div>
           </div>
           <div class="box">
-            Interactivity (Javascript)
-
+            Business Impact
             <div class="skill-description">
-              <a href="http://unobtrusify.com/" class="skill" rel="tag"
-                >Unobtrusive</a
-> cross-browser techniques. Experience with most bundlers, compilers frameworks and transpilers.
+                Worked with stakeholders from SEO to design and spearheaded initiatives like integrating <a href="https://www.hotjar.com/">Hotjar</a> into trainline for better user insights. In addition to making it easier to measure
+                        impact, my strategies have substantially increased annual ticket sales.
             </div>
         </div>
         <div class="box">
-            Node.js
+            Technical Excellence
             <div class="skill-description">
-                Node specialist with extensive commercial and open source experience since
-                <a href="http://nodejs.org/" class="skill" rel="tag">Node.js</a> 0.4. (2011). Enterprise experience with <a href="https://www.typescriptlang.org/">TypeScript</a>.
+                Establishing quality benchmarks, enhancing testing mechanisms through innovative URL parameter control for experiments, actively contributing to our development handbook, reinforcing a commitment to consistently high technical standards.
             </div>
         </div>
 
@@ -441,7 +378,7 @@
                 <a href="http://en.wikipedia.org/wiki/Agile_software_development" class="skill">agile</a
               >
               methodologies. Experience using Scrum, Kanban and less formal
-              implementations. Certified Product Owner by Scrum Aliance.
+              implementations. Certified Product Owner by Scrum Alliance.
             </div>
           </div>
           <div class="box">
@@ -457,17 +394,15 @@
                 >BDD</a
               >
               experience with most Javascript unit testing frameworks. Extensive
-              end-to-end testing with <a href="https://playwright.dev/">Playwright</a>, Selenium,
-                <a href="http://nightwatchjs.org/">Nightwatch</a> and
-                <a href="http://cypress.io">Cypress</a>.
+              end-to-end testing. Introduced Visual regression testing to reduce bugs around layout and reduce test coverage in other areas.
             </div>
         </div>
 
         <div class="box">
             Performance
             <div class="skill-description">
-                Slick, fast, app like. Experience with using tools (<a href="https://github.com/GoogleChrome/lighthouse">Lighthouse</a>, <a href="https://speedtracker.org/">Speedtracker</a> and <a href="https://calibreapp.com/">Calibre</a>) to monitor
-                performance changes over time.
+                Slick, fast, app like. Experience with using tools (<a href="https://github.com/GoogleChrome/lighthouse">Lighthouse</a>, <a href="https://speedtracker.org/">Speedtracker</a> and <a href="https://calibreapp.com/">Calibre</a>)
+                to monitor performance changes over time.
             </div>
         </div>
 
@@ -476,7 +411,10 @@
         <div class="box">
             Experimentation
             <div class="skill-description">
-                <a href="https://medium.com/trainline/lessons-from-hypothesis-driven-development-d0e339d4e91b" target="_new">Hypothesis driven development</a> to maximise business impact. Validation via AB and multi-variant testing.
+
+                Applied scientific methods to product development through <a href="https://medium.com/trainline/lessons-from-hypothesis-driven-development-d0e339d4e91b" target="_new">Hypothesis driven development</a>, emphasising early validation and
+                continuous learning.
+
 
             </div>
         </div>
@@ -489,21 +427,17 @@
             Interests
         </h2>
         <div class="section">
-            <p class="summary">
-                In my spare time, I volunteer with
-                <a href="https://www.guidedogs.org.uk/">Guide Dogs for the Blind</a
-            >. I also enjoy photography and keeping up to date with politics.
-          </p>
-          <p> I enjoy presenting at events, some of the talks covered: 
-            <ul>
-                <li>Accelerate - Secrets of high performing teams (DORA/Platform Edition)</li>
-                <li>Hypothesis Driven Development</li>
-                <li>Progressive Enhancement Stragegies</li>
-            </ul>
-          </p>
 
-          <p>
-            I've hosted the London Node User Group (LNUG) Podcast, take care of the <a href="http://lnug.org">LNUG Website</a> and have also helped to run and mentor at
+            <p> I enjoy presenting at events, particularly taking complex technical concepts and explaining them to diverse audiences. Some of my recent talks covered:
+                <ul>
+                    <li>Accelerate - Secrets of high performing teams (DORA/Platform Edition)</li>
+                    <li>Hypothesis Driven Development</li>
+                    <li>Progressive Enhancement Strategies</li>
+                </ul>
+            </p>
+
+            <p>
+                I've hosted the London Node User Group (LNUG) Podcast and have helped to run and mentor at
                 <a href="http://nodeschool.io/london/">London Node School events</a
             >.
        
