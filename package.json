@@ -17,7 +17,7 @@
         "aws-sdk": "^2.1415.0",
         "clean-css": "^5.3.1",
         "eleventy": "^1.0.6",
-        "eleventy-sizlate": "^1.0.2",
+        "eleventy-sizlate": "^1.0.3",
         "html-minifier": "^4.0.0",
         "lodash": "^4.17.21",
         "twitter": "^1.7.1"
