@@ -1,7 +1,6 @@
 var superagent = require("superagent");
 var fs = require("fs");
 var moment = require("moment");
-var chalk = require("chalk");
 var urlSafe = require("../lib/url-safe");
 var url = require("url");
 
@@ -40,8 +39,8 @@ superagent
             JSON.stringify(links, null, 4),
             function(e, d) {
                 if (e) throw e;
-                console.log(chalk.blue("Fetching latest links..."));
-                console.log(chalk.green("  ok"));
+                console.log(console.log("Fetching latest links..."));
+                console.log(console.log("  ok"));
             }
         );
     });
