@@ -1,4 +1,5 @@
 exports.handler = async(event) => {
+    console.log('incoming')
 
     if (event.headers['x-api-key'] !== process.env.API_KEY) {
         return { statusCode: 404 }
