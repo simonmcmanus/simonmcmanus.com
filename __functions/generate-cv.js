@@ -1,6 +1,6 @@
 const fs = require('fs');
 const sizlate = require('sizlate');
-const markup = fs.readFileSync(require.resolve('static/cv1.html'), { encoding: 'utf8' });
+const markup = fs.readFileSync(require.resolve('./static/cv1.html'), { encoding: 'utf8' });
 
 
 
