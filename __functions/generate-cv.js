@@ -1,6 +1,6 @@
 const fs = require('fs');
 const sizlate = require('sizlate');
-
+const markup = fs.readFileSync('../static/cv1.html', { encoding: 'utf8' });
 exports.handler = async(event) => {
     console.log('incoming')
 
@@ -8,12 +8,12 @@ exports.handler = async(event) => {
         return { statusCode: 404 }
     }
 
-    const markup = fs.readFileSync('../static/cv1.html', { encoding: 'utf8' });
-    sizlate.render(markup, {
+
+    const rendered = sizlate.render(markup, {
 
     })
 
-    console.log('ap8 ok')
+    console.log('ap8 ok', rendered)
     try {
 
         const { skills, strengths, summary } = JSON.parse(event.body)
