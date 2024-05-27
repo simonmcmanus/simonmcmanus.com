@@ -1,9 +1,12 @@
+const fs = require('fs');
 exports.handler = async(event) => {
     console.log('incoming')
 
     if (event.headers['x-api-key'] !== process.env.API_KEY) {
         return { statusCode: 404 }
     }
+
+    const markup = fs.readFileSync('../static/cv1.html', { encoding: 'utf8' });
 
     console.log('ap8 ok')
     try {
