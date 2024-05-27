@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+    <link rel="canonical" href="https://simonmcmanus.com/cv/" />
+    <title>Simon McManus</title>
+    <style type="text/css">
+        body {
+            color: #444;
+            line-height: 1.3em;
+            background: #e6e6e659;
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: <weight>;
+            font-style: normal;
+            font-variation-settings: "slnt" 0;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        .dates {
+            font-family: Georgia;
+        }
+        
+        a {
+            color: #c01ea8;
+            text-decoration: none;
+        }
+        
+        h3 {
+            margin-top: 2em;
+        }
+        
+        .item {
+            margin: 0.2em 1em 0.5em;
+            height: auto;
+        }
+        
+        .box {
+            display: inline-block;
+            padding: 0.2em 0em 0em 0em;
+            margin-bottom: 1em;
+            font-size: 1.1em;
+        }
+        
+        .description {
+            margin-left: .2em;
+        }
+        
+        .dates {
+            font-size: 0.9em;
+            display: inline-block;
+            margin-bottom: 0.5em;
+            abbr {
+                text-decoration: none;
+            }
+        }
+        
+        .dates::before {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24
+        }
+        
+        .experience,
+        .education {
+            margin-top: 1em;
+            list-style-image: none;
+            list-style-position: inside;
+            list-style-type: none;
+            margin-left: -2.6em;
+            margin-bottom: 1em;
+            margin-top: 2em;
+        }
+        
+        .description li,
+        .courses li {
+            font-size: 1em;
+            padding-bottom: 0.6em;
+            list-style-position: outside;
+            list-style: disc;
+            margin-left: -1.4em;
+            line-height: 1.4em;
+        }
+        
+        .material-symbols-outlined {
+            color: rgb(255, 0, 183);
+            font-size: 1em;
+            top: 4px;
+            position: relative;
+        }
+        
+        .dates {
+            .material-symbols-outlined {
+                top: 1px;
+            }
+        }
+        
+        h3 {
+            .material-symbols-outlined {
+                top: 4px;
+                font-size: 1.2em;
+                position: relative;
+                left: -2px;
+            }
+        }
+        
+        .columns {
+            display: flex;
+            width: 100%;
+            & .column-left {
+                width: 95%;
+            }
+            .column-right {
+                max-width: 35%;
+                li {
+                    margin: 1.2em 0;
+                }
+            }
+        }
+        
+        .courses li {
+            padding: 0.2em;
+            list-style: none;
+        }
+        
+        .last {
+            border-bottom: 0em;
+        }
+        
+        #container {
+            width: 70%;
+            border: 1px solid #c2c2c2;
+            background: #fff;
+            margin: auto;
+        }
+        
+        h2 {
+            margin: .8em 0;
+        }
+        
+        h3 {
+            border-bottom: 1px dashed rgb(205, 204, 204);
+            padding-bottom: .3em;
+        }
+        
+        #main-title {
+            font-size: 2.4em;
+            margin: 0;
+        }
+        
+        #contactDetails {
+            font-size: 1em;
+            margin: .5em 0 0;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            display: flex;
+            width: 100%;
+        }
+        
+        .skills {
+            display: flex;
+            list-style: none;
+            flex-wrap: wrap;
+            padding-left: 0.5em;
+        }
+        
+        .column-right .skills li {
+            border: 1px solid #eee;
+            padding: 0.2em 1em;
+            border-radius: 0.1em;
+            margin: 0.3em;
+        }
+        
+        .contract {
+            font-size: 0.7em;
+            font-weight: normal;
+        }
+        
+        #top-item {
+            align-items: baseline;
+            flex-direction: column;
+            padding: 3em 0em 0em;
+            a {
+                font-weight: normal;
+                padding-left: 4px;
+            }
+        }
+        
+        @media (min-width: 800px) {
+            #top-item {
+                display: flex;
+                justify-content: space-between;
+            }
+            /* #contactDetails {
+                text-align: end;
+            } */
+            .section.tools {
+                display: inline-block;
+            }
+            .box {
+                vertical-align: top;
+                width: 49%;
+                font-weight: bold;
+                font-size: 1em;
+            }
+            .profile {
+                margin: 0 1em;
+            }
+            h4.summary,
+            div.dates {
+                margin-bottom: .6em;
+            }
+            .dates {
+                display: block;
+            }
+        }
+        
+        @media (max-width: 1100px) {
+            #container {
+                width: 99%;
+                border: 1px solid #c2c2c2;
+                background: #fff;
+                margin: auto;
+            }
+        }
+        
+        @media print {
+            body {
+                font-size: 0.8em;
+            }
+            #top-item {
+                padding: 0em;
+                display: flex;
+                justify-content: space-between;
+            }
+            a {
+                text-decoration: none;
+            }
+            .box {
+                vertical-align: top;
+                width: 49%;
+                font-weight: bold;
+                font-size: 1em;
+            }
+            h4.summary,
+            div.dates {}
+            .dates {
+                position: relative;
+            }
+            .experience,
+            .education {
+                margin-left: -3.5em;
+            }
+            #container {
+                width: 100%;
+                border: 0px;
+                margin: auto;
+            }
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+    <div id="container">
+        <div id="top-item" class="item">
+            <div class="title">
+                <h1 id="main-title">
+                    Simon McManus
+                </h1>
+                <h2>Engineering Manager</h2>
+            </div>
+            <div id="contactDetails">
+                <div><span class="material-symbols-outlined">
+                home
+                </span><a href="https://simonmcmanus.com">simonmcmanus.com</a></div>
+                <div>
+                    <span class="material-symbols-outlined">
+                    smartphone
+                    </span> +44 (0) 781 454 5689
+                </div>
+
+                <div>
+                    <span class="material-symbols-outlined">
+                  mail
+                  </span><a href="mailto:mcmanus.simon@gmail.com">mcmanus.simon@gmail.com</a></div>
+                <div>
+                    <span class="material-symbols-outlined">
+                    location_on
+                    </span> London
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="section">
+
+            </div>
+        </div>
+
+        <div class="columns">
+            <div class="column-left item">
+                <h3 class="item-title">
+                    <span class="material-symbols-outlined">
+                    work_history
+                    </span> Experience
+                </h3>
+                <div class="section">
+                    <ol class="vcalendar">
+                        <li class="experience vevent">
+                            <h4 class="summary">
+                                <a href="https://trainline.com/">Trainline</a> - <strong>Engineering Manager</strong>
+                            </h4>
+
+                            <div class="dates ">
+                                <span class="material-symbols-outlined">
+                                date_range
+                                </span>
+                                <abbr class="dtstart" title="2021-10-01">October 2021</abbr> -
+                                <abbr>present</abbr>
+                            </div>
+
+                            <div class="description">
+                                <ul>
+                                    <li>
+                                        <strong>Web Platform</strong>.
+                                        <!-- <ul> -->
+                                        Leading a team of 7, formulating roadmaps, coordinating between 8 different teams to consolidate 9 different search widgets (the most impactful widget across entire web estate) into a single, composable shared component. Improving lead time and ability
+                                        to learn fast via experimentation.
+
+                                        <!-- <li>
+                                <strong>Repository Health Dashboard</strong>. Created a dashboard to show the health of ~50 repositories and drive improvement through the web community.
+                            </li> -->
+                                        <!-- </ul> -->
+                                    </li>
+                                    <li>
+
+
+                                        <strong>Conversion Rate Optimisation</strong>. Leading a team of 6, collaborated with product, design, SEO, data science and platform teams to define team strategy, roadmap, and goals (OKRs). Introduced <a href="https://medium.com/trainline/lessons-from-hypothesis-driven-development-d0e339d4e91b">Hypothesis-driven
+                      development</a> to ensure early validation and feedback. Improved experimentation capabilities and increased annual ticket sales by £12.6 million.
+
+                                    </li>
+                                </ul>
+                            </div>
+
+                            </ul>
+                        </li>
+                        <li class="experience vevent">
+                            <h4 class="summary">
+
+                                <a href="https://drest.com/">DREST</a> - Tech Lead
+                            </h4>
+
+                            <div class="dates">
+                                <span class="material-symbols-outlined">
+                                date_range
+                                </span>
+                                <abbr class="dtstart" title="2019-06-01">May 2020</abbr> -
+                                <abbr>July 2021</abbr>
+                            </div>
+
+                            <div class="description">
+
+                                <p>Led diverse cross functional, remote teams. Collaborated closely with product, design, fashion and data teams to ensure alignment and deliver products that engaged users.
+                                </p>
+                                <ul>
+                                    <li>
+                                        <strong>DREST Core Loop</strong>. Rebuilt the DREST core loop using React Native and X-State. Worked with senior stakeholder, architecture and delivery.
+                                    </li>
+                                    <li>
+                                        <strong>Selfie Avatar</strong>. Led team of iOS/Android and backend developers to build a pipeline transforming 2d selfies into a 3d full-body model.
+                                    </li>
+                                    <li>
+                                        <strong>Gucci Wardrobe </strong>. Led team of 4 to build web interface that let <a href="https://www.gucci.com/uk/en_gb/">Gucci</a> VIPs try out clothing combinations online. Intended audience was around 3000 but
+                                        after the Gucci CEO tried it out it was sent to all of Gucci’s 30,000 VIPs.
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+
+
+                        </ul>
+                        </li>
+                    </ol>
+                    <p>
+                        I've also worked as a senior individual contributor with
+                        <a href="http://dominos.co.uk">Domino's</a>,
+                        <a href="http://nearform.com/">NearForm</a>,
+                        <a href="https://www.rare.co.uk/games">Rare</a>/<a href="https://www.microsoft.com/en-gb">Microsoft</a>,
+                        <a href="https://www.sainsburys.co.uk/"> Sainsburys</a>,
+                        <a href="http://www.tesco.com">Tesco</a>,
+                        <a href="http://clock.co.uk">Clock</a>,
+                        <a href="http://news.co.uk">News UK</a>,
+                        <a href="http://www.thesun.co.uk/sol/homepage/">The Sun</a>,
+                        <a href="https://www.gosquared.com/">GoSquared</a>,
+                        <a href="http://configurator.vw.com/ihdcc/configurator.html">Volkswagen</a>,
+                        <a href="https://www.akqa.com/">AKQA</a>,
+                        <a href="http://www.nike.com/nikefootball/academy/about?locale=en_GB">Nike</a> and <a href="https://www.bt.com">BT</a>.
+                    </p>
+                </div>
+
+                <h3><span class="material-symbols-outlined">
+                  school
+                  </span> Education
+                </h3>
+                <div class="section">
+                    <ol class="education last">
+                        <li class="school">
+                            <a href="http://www.staffs.ac.uk/" class="institution">Staffordshire University</a>
+                            <ul class="courses">
+                                <li>BSc(Hons) Internet Technology</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+
+
+            </div>
+            <div class="column-right item">
+
+                <h3><span class="material-symbols-outlined">
+                  summarize
+                  </span>Summary</h3>
+
+                <p class="summary profile">
+                    A delivery focused leader, I excel at leveraging data-driven insights to guide high-performing teams towards organisational alignment and technical excellence.
+                </p>
+
+                <h3><span class="material-symbols-outlined">
+                  add
+                  </span>Strength</h3>
+                <ul class="skills">
+                    <li>Mentoring</li>
+
+                    <li>Experimentation</li>
+                    <li>Coaching</li>
+                    <li>Delivery</li>
+                    <li>Impact</li>
+                    <li>Leadership</li>
+                    <li>Testing</li>
+                </ul>
+
+                <h3><span class="material-symbols-outlined">
+                  add
+                  </span>Technology</h3>
+                <ul class="skills">
+                    <li>Web</li>
+                    <li>React Native</li>
+                    <li>Node</li>
+                    <li>Javascript</li>
+                    <li>Typescript</li>
+                    <li>React</li>
+                    <li>iOS</li>
+                    <li>Android</li>
+                </ul>
+
+                <h3><span class="material-symbols-outlined">
+                  mic
+                  </span>Talking</h3>
+                <ul>
+                    <li><a href="https://podbay.fm/p/london-node-user-group-lnug-podcast">Hosting London Node User Group Podcasts</a></li>
+                    <li>Accelerate - Secrets of high performing teams</li>
+                    <li><a href="https://www.youtube.com/watch?v=KPrC-udTDi8" target="_new">Progressive Enhancement Strategies</a></li>
+                </ul>
+
+                <h3><span class="material-symbols-outlined">
+                  edit
+                  </span>Writing</h3>
+                <ul>
+                    <li><a href="https://simonmcmanus.com/posts/engineering-principles/">Engineering Principles</a></li>
+                    <li><a href="https://medium.com/trainline/lessons-from-hypothesis-driven-development-d0e339d4e91b" target="_new">Hypothesis-Driven Development</a></li>
+                    <li><a href="https://publications.parliament.uk/pa/ld200809/ldselect/ldinformation/138/138we26.htm">House of Lords information Committee Memorandum </a></li>
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
