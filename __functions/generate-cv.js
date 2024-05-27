@@ -18,7 +18,9 @@ exports.handler = async(event) => {
             return { statusCode: 400, body: 'no-url' }
         }
 
-        console.log('..', skillsArr, strengthsArr, summary)
+        console.log('..', skillsArr)
+        console.log('..', strengthsArr)
+        console.log('..', summary)
         return { statusCode: 200, body: 'done' }
 
     } catch (e) {
