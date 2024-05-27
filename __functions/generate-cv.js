@@ -9,6 +9,8 @@ exports.handler = async(event) => {
     try {
 
         const { skills, strengths, summary } = JSON.parse(event.body)
+        const skillsArr = skills.split(',').map((a) => a.trim())
+        const strengthsArr = strengths.split(',').map((a) => a.trim())
 
 
         if (skills === '' || strengths === '' || summary === '') {
@@ -16,7 +18,7 @@ exports.handler = async(event) => {
             return { statusCode: 400, body: 'no-url' }
         }
 
-        console.log('..', skills, strengths, summary)
+        console.log('..', skillsArr, strengthsArr, summary)
         return { statusCode: 200, body: 'done' }
 
     } catch (e) {
