@@ -5,7 +5,7 @@ exports.handler = async(event) => {
         return { statusCode: 404 }
     }
 
-
+    console.log('ap8 ok')
     try {
 
         const { skills, strengths, summary } = JSON.parse(event.body)
