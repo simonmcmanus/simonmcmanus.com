@@ -1,4 +1,6 @@
 const fs = require('fs');
+const sizlate = require('sizlate');
+
 exports.handler = async(event) => {
     console.log('incoming')
 
@@ -7,6 +9,9 @@ exports.handler = async(event) => {
     }
 
     const markup = fs.readFileSync('../static/cv1.html', { encoding: 'utf8' });
+    sizlate.render(markup, {
+
+    })
 
     console.log('ap8 ok')
     try {
