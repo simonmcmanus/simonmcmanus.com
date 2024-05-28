@@ -26,7 +26,7 @@ exports.handler = async(event) => {
         //     return { statusCode: 400, body: 'no-url' }
         // }
 
-
+        return { statusCode: 200, body: 'aa' };
         const rendered = sizlate.render(markup, {
             '.profile': summary || '',
             '[data-strengths] li': [],
