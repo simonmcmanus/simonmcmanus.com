@@ -14,6 +14,8 @@ exports.handler = async(event) => {
 
 
     console.log('ap8 ok')
+
+    return { statusCode: 200, body: 'aa' };
     try {
 
         const { skills, strengths, summary } = JSON.parse(event.body)
@@ -26,7 +28,6 @@ exports.handler = async(event) => {
         //     return { statusCode: 400, body: 'no-url' }
         // }
 
-        return { statusCode: 200, body: 'aa' };
         const rendered = sizlate.render(markup, {
             '.profile': summary || '',
             '[data-strengths] li': [],
