@@ -15,7 +15,7 @@ exports.handler = async(event) => {
 
     console.log('ap8 ok')
 
-    return { statusCode: 200, body: markup };
+
     try {
 
         const { skills, strengths, summary } = JSON.parse(event.body)
