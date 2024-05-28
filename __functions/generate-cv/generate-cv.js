@@ -21,18 +21,18 @@ exports.handler = async(event) => {
         const strengthsArr = strengths.split(',').map((a) => a.trim())
 
 
-        if (skills === '' || strengths === '' || summary === '') {
-            console.log('error: not enough data')
-            return { statusCode: 400, body: 'no-url' }
-        }
+        // if (skills === '' || strengths === '' || summary === '') {
+        //     console.log('error: not enough data')
+        //     return { statusCode: 400, body: 'no-url' }
+        // }
 
 
         const rendered = sizlate.render(markup, {
-            '.profile': summary,
+            '.profile': summary || '',
             '[data-strengths] li': [],
-            '[data-strengths] li': skillsArr,
+            '[data-strengths] li': skillsArr || [],
             '[data-technology] li': [],
-            '[data-technology] li': strengthsArr,
+            '[data-technology] li': strengthsArr || [],
 
         })
         console.log('..', skillsArr)
