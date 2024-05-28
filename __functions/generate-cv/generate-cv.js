@@ -30,9 +30,9 @@ exports.handler = async(event) => {
 
         const rendered = sizlate.render(markup, {
             '.profile': summary || '',
-            '[data-strengths] li': [],
+            '[data-strengths]': '<li></li>',
             '[data-strengths] li': skillsArr || [],
-            '[data-technology] li': [],
+            '[data-technology]': '<li></li>',
             '[data-technology] li': strengthsArr || [],
 
         })
