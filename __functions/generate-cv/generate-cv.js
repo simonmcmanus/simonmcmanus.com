@@ -12,9 +12,6 @@ exports.handler = async(event) => {
     }
 
 
-    const rendered = sizlate.render(markup, {
-
-    })
 
     console.log('ap8 ok', rendered)
     try {
@@ -29,10 +26,14 @@ exports.handler = async(event) => {
             return { statusCode: 400, body: 'no-url' }
         }
 
+
+        const rendered = sizlate.render(markup, {
+            '.profile': summary,
+        })
         console.log('..', skillsArr)
         console.log('..', strengthsArr)
         console.log('..', summary)
-        return { statusCode: 200, body: 'done' }
+        return { statusCode: 200, body: rendered }
 
     } catch (e) {
         console.log(e)
