@@ -13,7 +13,7 @@ title:  About
 <section class="contained section">
 
     
-Simon McManus is an engineering team lead with extensive Node.js, web and Mobile experience. This site contains links and blog posts written and collected by Simon over the years.
+Simon McManus is an Engineering Manager with extensive experience building work class web and mobile experience. This site contains links and blog posts written and collected by Simon over the years.
 
 
 
@@ -23,7 +23,6 @@ You can contact Simon McManus on <a href="mailto:mcmanus.simon@gmail.com">mcmanu
 The source code for this website can be found on <a href="https://github.com/simonmcmanus/simonmcmanus.com">github</a>.
 
 
-If you would like to work with me please see the<a href="/hire/"> hire page </a>.
 </section>
 
 

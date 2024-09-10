@@ -87,6 +87,12 @@ html {
                 border-color: #000000;
                 background: #000000;
             }
+            li.linkedin {
+                background: #0b66c2;
+                svg {
+                    left: -.24em;
+                }
+            }
         }
     }
 }

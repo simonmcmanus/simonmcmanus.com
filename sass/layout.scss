@@ -1,6 +1,7 @@
 @charset "UTF-8";
 html {
     background: #222831f2;
+    font-weight: normal;
     &.debug {
         #container>* {
             border: 1px solid blue;
@@ -17,7 +18,8 @@ html {
         margin: 0;
         background: #1b2533;
         color: #ECECEC;
-        background: radial-gradient(circle at top, #30475E 5em, #000000 100vh);
+        
+        background: radial-gradient(circle at top, #0c447c, #470d0d);
         height: 100%;
         .honey {
             /* clean-css ignore:start */
@@ -39,7 +41,7 @@ html {
 
 html .honey-teir1 {
     border-top: 1px solid #1b2533;
-    border-bottom: 1px solid #1b2533;
+    border-bottom:  4px solid #470d0d;
     background: center url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='$background' viewBox='0 0 100 169.5'%3E%3Cpolygon points='50,34.75 93.5,59.75 93.5,109.75 50,134.75 6.5,109.75 6.5,59.75'%3E%3C/polygon%3E%3Cpolygon points='0,-50 43.5,-25 43.5,25 0,50 -43.5,25 -43.5,-25'%3E%3C/polygon%3E%3Cpolygon points='100,-50 143.5,-25 143.5,25 100,50 56.5,25 56.5,-25'%3E%3C/polygon%3E%3Cpolygon points='0,119.5 43.5,144.5 43.5,194.5 0,219.5 -43.5,194.5 -43.5,144.5'%3E%3C/polygon%3E%3Cpolygon points='100,119.5 143.5,144.5 143.5,194.5 100,219.5 56.5,194.5 56.5,144.5'%3E%3C/polygon%3E%3C/svg%3E");
     background-size: 9px;
     display: block;
@@ -63,6 +65,7 @@ footer {
 
 .section {
     transition: border-color .4s .3s ease-in, transform .4s ease-in;
+    border: 2px solid #0c447c;
 }
 
 html body .section.visible {
@@ -81,9 +84,11 @@ h4 {
 }
 
 #content {
-    font-family: "Source Serif Pro", serif;
-    letter-spacing: .4px;
+    font-family: "Slabo 13px", serif;
+    letter-spacing: .3px;
+    line-height: 1.3em;
     width: 100vw;
+    font-size: 1.2em;
     overflow-x: hidden;
 }
 
@@ -107,13 +112,13 @@ ul.items {
 }
 
 header {
-    background-color: #222831f2;
+    background-color: rgba(14, 25, 41, 0.95);
     position: sticky;
     top: 0;
-    border-bottom: 2px solid #0a0a0a;
+    border-bottom:  2px solid #1561ad;
     z-index: 600;
     margin: 0;
-    padding: 1em;
+    padding: 3em;
     padding-top: 4.5em;
     &.category {
         padding: 0;
@@ -122,7 +127,7 @@ header {
 
 header a.title {
     font-size: 2em;
-    font-family: 'Slabo 13px', Serif;
+    font-family: 'Source Serif Pro', Serif;
 }
 
 header.shared {
@@ -132,9 +137,9 @@ header.shared {
 h1 {
     font-size: 3em;
     margin: 0;
-    font-weight: lighter !important;
     color: #a7a5b1;
     line-height: 0.9em;
+    font-family: 'Slabo 13px';
 }
 
 h1.author-title {
@@ -157,6 +162,8 @@ h3 {
     color: white;
     line-height: 2em;
     padding: 0;
+    font-size: 1.2em;
+    font-weight: normal;
 }
 
 h4,
@@ -167,6 +174,7 @@ h4,
 }
 
 h1,
+
 h2,
 h3,
 h4,
@@ -492,7 +500,7 @@ html.loading footer {
     z-index: 20000;
     border-radius: 50%;
     top: 3em;
-    border: 1px solid WHITE;
+    border: 2px solid #1561ad;
 }
 
 .panels {
@@ -621,7 +629,8 @@ html.loading footer {
 .link.section a h5 {
     color: #8e9297;
     margin: 0;
-    font-size: 1.2em;
+    font-size: 1.3em;
+    font-weight: normal;
     margin-bottom: .5em;
 }
 
@@ -792,6 +801,7 @@ ul:empty::before {
 
 footer {
     text-align: center;
+    
 }
 
 .recent-heading {
