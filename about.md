@@ -13,7 +13,7 @@ title:  About
 <section class="contained section">
 
     
-Simon McManus is an Engineering Manager with extensive experience building work class web and mobile experience. This site contains links and blog posts written and collected by Simon over the years.
+Simon McManus is an Engineering Manager with extensive experience building world class web and mobile experience. This site contains links and blog posts written and collected by Simon over the years.
 
 
 
