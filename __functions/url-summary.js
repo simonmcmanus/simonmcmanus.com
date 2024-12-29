@@ -11,7 +11,7 @@ async function getMeta(url) {
             role: 'user',
 
             //content: `take the url ${url} and provide a set of tags that represent the contents in a json list and a summary in thats aproxiately 100 words`
-            content: `take the url ${url}  and provide a json response that gives a list of tags that represents the content. The tags shold use hyphons as a seperator and uk spelling.  also generate a short concise sentence or two which summarises the content and uk english in under 300 graphemes.`
+            content: `take the url ${url}  and provide a json response that gives a list of tags that represents the content. The tags shold use hyphons as a seperator and uk spelling.  also generate a short concise sentence or two which summarises the content and uk english in under 290 graphemes.`
         }],
 
         model: "gpt-4o-mini",
