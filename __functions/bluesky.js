@@ -4,7 +4,7 @@ const agent = new BskyAgent({
     service: 'https://bsky.social'
 })
 
-module.exports = async(url, text, tags) => {
+module.exports = async(url, message, tags) => {
 
 
 
@@ -15,7 +15,7 @@ module.exports = async(url, text, tags) => {
 
     // creating richtext
     const rt = await new RichText({
-        text: text + '' + url,
+        text: message + '' + url,
     })
     await rt.detectFacets(agent);
     const { text, facets } = rt;
