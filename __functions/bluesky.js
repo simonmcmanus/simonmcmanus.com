@@ -5,7 +5,7 @@ const agent = new BskyAgent({
 })
 
 module.exports = async({ title, url, summary, tags }) => {
-
+    console.info(title, url, summary, tags)
 
 
     await agent.login({
