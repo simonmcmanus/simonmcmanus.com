@@ -14,25 +14,25 @@ module.exports = async({ title, url, summary, tags }) => {
     })
 
     // creating richtext
-    // const rt = await new RichText({
-    //     text: summary + ' ' + url,
-    // })
-    // await rt.detectFacets(agent);
-    // const { text, facets } = rt;
+    const rt = await new RichText({
+        text: `${summary} [${title}](${url})`,
+    })
+    await rt.detectFacets(agent);
+    const { text, facets } = rt;
 
     const out = {
         $type: 'app.bsky.feed.post',
-        text: summary,
-        //facets,
-        embed: {
-            $type: 'app.bsky.embed.external',
-            external: {
-                uri: url,
-                title,
-                description: summary,
-                //thumb: data.blob
-            }
-        },
+        text,
+        facets,
+        // embed: {
+        //     $type: 'app.bsky.embed.external',
+        //     external: {
+        //         uri: url,
+        //         title,
+        //         description: summary,
+        //         //thumb: data.blob
+        //     }
+        // },
         createdAt: new Date().toISOString()
     }
     console.log('out', out)
