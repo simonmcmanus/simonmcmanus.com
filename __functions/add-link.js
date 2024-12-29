@@ -1,6 +1,7 @@
 const AWS = require("aws-sdk")
 
-const tweet = require('./tweet')
+//const tweet = require('./tweet')
+const bluesky = require('./bluesky')
 const build = require('./build')
 const { extractUniqueTags } = require('../lib/get-tags.js')
 exports.handler = async(event) => {
@@ -66,20 +67,14 @@ exports.handler = async(event) => {
 
         await build()
 
-        console.log('tweet', body.tweet)
-        if (body.tweet === 'tweet') {
-
-            const items = body.tags.split(',').map((item) => {
-
-                return item.toLowerCase()
-
-            })
-
-            await tweet(input.url, items)
 
 
 
-        }
+
+        await bluesky(body.url, body.summary)
+
+
+
         return { statusCode: 200, body: 'done' }
 
     } catch (e) {
