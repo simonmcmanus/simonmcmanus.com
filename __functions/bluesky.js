@@ -37,7 +37,6 @@ module.exports = async({ title, url, summary, tags }) => {
         // },
         createdAt: new Date().toISOString()
     }
-    console.log('out', out)
 
     await agent.post(out)
 
