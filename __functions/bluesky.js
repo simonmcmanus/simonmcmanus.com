@@ -20,8 +20,7 @@ module.exports = async({ title, url, summary, tags }) => {
     await rt.detectFacets(agent);
     const { text, facets } = rt;
 
-
-    await agent.post({
+    const out = {
         $type: 'app.bsky.feed.post',
         text,
         facets,
@@ -35,6 +34,9 @@ module.exports = async({ title, url, summary, tags }) => {
             }
         },
         createdAt: new Date().toISOString()
-    })
+    }
+    console.log('out', out)
+
+    await agent.post(out)
 
 }
