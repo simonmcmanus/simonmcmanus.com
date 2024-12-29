@@ -15,7 +15,7 @@ module.exports = async({ title, url, summary, tags }) => {
 
     // creating richtext
     const rt = await new RichText({
-        text: message + ' ' + url,
+        text: summary + ' ' + url,
     })
     await rt.detectFacets(agent);
     const { text, facets } = rt;
