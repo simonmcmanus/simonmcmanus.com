@@ -6,7 +6,10 @@ const build = async() => {
 
     //return await
     const response = await request.post(url)
-    console.log(response)
+
+    // /api/v1/sites/:site_id/deploys/:deploy_id 
+
+    console.log(response.body)
 
 }
 
