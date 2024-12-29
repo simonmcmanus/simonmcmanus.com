@@ -1,4 +1,4 @@
-const { BskyAgent } = require('@atproto/api')
+const { BskyAgent, RichText } = require('@atproto/api')
 
 const agent = new BskyAgent({
     service: 'https://bsky.social'
