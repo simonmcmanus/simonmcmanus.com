@@ -17,12 +17,14 @@ module.exports = async(url, text, tags) => {
     const rt = await new RichText({
         text: text + '' + url,
     })
-    console.log(rt)
+    await rt.detectFacets(agent);
+    const { text, facets } = rt;
+
 
     await agent.post({
         $type: 'app.bsky.feed.post',
-        text: rt.text,
-        facets: rt.facets,
+        text,
+        facets,
         createdAt: new Date().toISOString()
     })
 
