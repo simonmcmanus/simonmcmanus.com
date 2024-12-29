@@ -21,9 +21,9 @@ module.exports = async({ title, url, summary, tags }) => {
     const { text, facets } = rt;
 
     const out = {
-        $type: 'app.bsky.feed.post',
+
         text: summary,
-        facets,
+
         // embed: {
         //     $type: 'app.bsky.embed.external',
         //     external: {

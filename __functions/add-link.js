@@ -47,6 +47,7 @@ exports.handler = async(event) => {
             summary: body.summary,
             tags: body.tags
         }
+        console.log('in', input)
 
         links.push(input)
 
