@@ -36,7 +36,7 @@ exports.handler = async(event) => {
             console.log('error: no url')
             return { statusCode: 400, body: 'no-url' }
         }
-        return { statusCode: 200, body: response }
+        return { statusCode: 200, body: JSON.stringify(response) }
 
     } catch (e) {
         console.log(e)
