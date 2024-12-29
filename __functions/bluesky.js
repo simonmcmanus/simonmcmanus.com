@@ -13,8 +13,15 @@ module.exports = async(url, text, tags) => {
         password: process.env['BLUESKY_PASSWORD']
     })
 
+    // creating richtext
+    const rt = new RichText({
+        text: text + '' + url,
+    })
+
     await agent.post({
-        text: url + '' + text,
+        $type: 'app.bsky.feed.post',
+        text: rt.text,
+        facets: rt.facets,
         createdAt: new Date().toISOString()
     })
 
