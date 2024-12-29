@@ -14,7 +14,7 @@ module.exports = async({ title, url, summary, tags }) => {
     })
 
     // creating richtext 
-    const hashTags = tags.split(',').map((t) => `#${t} `);
+    const hashTags = tags.split(',').map((t) => `#${t} `).join(' ');
 
     const rt = await new RichText({
         text: `${title} ${url} ${hashTags}`,
