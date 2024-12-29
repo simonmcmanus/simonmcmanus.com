@@ -71,7 +71,7 @@ exports.handler = async(event) => {
 
 
 
-        await bluesky(body.url, body.summary)
+        await bluesky(input)
 
 
 
