@@ -14,8 +14,10 @@ module.exports = async({ title, url, summary, tags }) => {
     })
 
     // creating richtext
+    const hashTags = tags.map((t) => `#${t}`);
+
     const rt = await new RichText({
-        text: `${title} ${url}`,
+        text: `${title} ${url} ${hashTags}`,
     })
     await rt.detectFacets(agent);
     const { text, facets } = rt;
