@@ -14,16 +14,16 @@ module.exports = async({ title, url, summary, tags }) => {
     })
 
     // creating richtext
-    const rt = await new RichText({
-        text: summary + ' ' + url,
-    })
-    await rt.detectFacets(agent);
-    const { text, facets } = rt;
+    // const rt = await new RichText({
+    //     text: summary + ' ' + url,
+    // })
+    // await rt.detectFacets(agent);
+    // const { text, facets } = rt;
 
     const out = {
         $type: 'app.bsky.feed.post',
-        text,
-        facets,
+        text: summary,
+        //facets,
         embed: {
             $type: 'app.bsky.embed.external',
             external: {
