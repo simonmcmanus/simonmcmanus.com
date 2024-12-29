@@ -22,7 +22,7 @@ module.exports = async({ title, url, summary, tags }) => {
 
     const out = {
         $type: 'app.bsky.feed.post',
-        text,
+        text: summary,
         facets,
         // embed: {
         //     $type: 'app.bsky.embed.external',
