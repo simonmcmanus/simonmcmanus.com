@@ -17,6 +17,7 @@ module.exports = async(url, text, tags) => {
     const rt = await new RichText({
         text: text + '' + url,
     })
+    console.log(rt)
 
     await agent.post({
         $type: 'app.bsky.feed.post',
