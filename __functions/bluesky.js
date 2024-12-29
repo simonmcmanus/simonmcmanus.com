@@ -1,5 +1,4 @@
-import { BskyAgent } from '@atproto/api'
-
+const { BskyAgent } = require('@atproto/api')
 
 const agent = new BskyAgent({
     service: 'https://bsky.social'
