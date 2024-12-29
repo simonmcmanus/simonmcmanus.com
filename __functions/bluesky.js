@@ -13,8 +13,8 @@ module.exports = async({ title, url, summary, tags }) => {
         password: process.env['BLUESKY_PASSWORD']
     })
 
-    // creating richtext
-    const hashTags = tags.map((t) => `#${t}`);
+    // creating richtext 
+    const hashTags = tags.map((t) => `#${t} `);
 
     const rt = await new RichText({
         text: `${title} ${url} ${hashTags}`,
