@@ -14,7 +14,7 @@ module.exports = async(url, text, tags) => {
     })
 
     // creating richtext
-    const rt = new RichText({
+    const rt = await new RichText({
         text: text + '' + url,
     })
 
