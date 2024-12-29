@@ -4,7 +4,7 @@ const agent = new BskyAgent({
     service: 'https://bsky.social'
 })
 
-module.exports = async(url, message, tags) => {
+module.exports = async({ title, url, summary, tags }) => {
 
 
 
@@ -25,6 +25,15 @@ module.exports = async(url, message, tags) => {
         $type: 'app.bsky.feed.post',
         text,
         facets,
+        embed: {
+            $type: 'app.bsky.embed.external',
+            external: {
+                uri: url,
+                title,
+                description: summary,
+                //thumb: data.blob
+            }
+        },
         createdAt: new Date().toISOString()
     })
 
