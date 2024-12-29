@@ -29,6 +29,7 @@ exports.handler = async(event) => {
 
     try {
         const body = JSON.parse(event.body)
+        console.log('iurl', body.url)
         const response = await getMeta(body.url);
 
         if (body.url === '') {
