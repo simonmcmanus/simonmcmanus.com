@@ -1,6 +1,4 @@
-const AWS = require("aws-sdk")
-
-//const tweet = require('./tweet')
+const storage = require('./storage.js')
 const bluesky = require('./bluesky')
 const build = require('./build')
 const netlify = require('./netlify');
@@ -11,28 +9,16 @@ exports.handler = async(event) => {
         return { statusCode: 404 }
     }
 
-    const s3 = new AWS.S3({
-        accessKeyId: process.env.MY_AWS_ACCESS_KEY_ID,
-        secretAccessKey: process.env.MY_AWS_SECRET_ACCESS_KEY,
-    })
-
     try {
 
         const body = JSON.parse(event.body)
-
 
         if (body.url === '') {
             console.log('error: no url')
             return { statusCode: 400, body: 'no-url' }
         }
 
-        var params = {
-            Key: "links.json",
-            Bucket: 'netlify-files',
-        }
-        const s3Objects = await s3.getObject(params).promise();
-
-        const links = JSON.parse(s3Objects.Body.toString('utf-8'))
+        const links = storage.get('links.json')
 
         const alreadyAdded = links.some((link) => link.url === body.url)
 
@@ -55,23 +41,9 @@ exports.handler = async(event) => {
         links.push(input)
 
         const tags = extractUniqueTags(links)
-
-        await s3.putObject({
-            Bucket: params.Bucket,
-            Key: params.Key,
-            Body: JSON.stringify(links, null, 4)
-        }).promise()
-
-
-        await s3.putObject({
-            Bucket: params.Bucket,
-            Key: 'tags.json',
-            Body: JSON.stringify(tags, null, 4)
-        }).promise()
-
+        await storage.put('links.json', links)
+        await storage.put('tags.json', tags)
         await build()
-
-
         return { statusCode: 200, body: 'done' }
 
     } catch (e) {
