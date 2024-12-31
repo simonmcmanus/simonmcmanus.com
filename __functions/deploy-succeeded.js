@@ -15,15 +15,22 @@ export default async(req, context) => {
     const links = JSON.parse(s3Objects.Body.toString('utf-8'))
 
 
-    const updatedLinks = links.map(async(link) => {
+    const updates = [];
+    const updatedLinks = links.map((link) => {
         if (link && link.notify && link.notify.bluesky === 'pending') {
-            console.log('notify bluesky')
-            await bluesky(link);
+
+            updates.push(async() => {
+                console.log('notify bluesky')
+                    // this is prob not gonna do what we want.
+                await bluesky(link);
+            })
+
             link.notify.bluesky = 'done';
         }
         return link;
     })
 
+    await promoise.all(updates)
 
     await s3.putObject({
         Bucket: params.Bucket,
