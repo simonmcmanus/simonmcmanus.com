@@ -4,15 +4,18 @@ const client = new OpenAI({
     apiKey: process.env['OPENAI_API_KEY'],
 });
 
-async function getMeta(url) {
+async function getMeta(url, tags) {
 
     const chatCompletion = await client.chat.completions.create({
         messages: [{
-            role: 'user',
-
-            //content: `take the url ${url} and provide a set of tags that represent the contents in a json list and a summary in thats aproxiately 100 words`
-            content: `take the url ${url}  and provide a json response that gives a list of tags that represents the content. The tags shold use hyphons as a seperator and uk spelling.  also generate a short concise sentence or two which summarises the content and uk english in under 290 graphemes.`
-        }],
+                role: 'user',
+                content: `This is a list of tags already in use: ${tags.join(', ')}`
+            },
+            {
+                role: 'user',
+                content: `take the url ${url}  and provide a json response that gives a list of tags that represents the content, where appropriate use tags that are were provided in the previous input. The tags shold use hyphons as a seperator and uk spelling.  also generate a short concise  description which summarises the content in uk english`
+            }
+        ],
 
         model: "gpt-4o-mini",
 
@@ -24,12 +27,11 @@ async function getMeta(url) {
 }
 
 
-
 exports.handler = async(event) => {
 
     try {
         const body = JSON.parse(event.body)
-        console.log('iurl', body.url)
+        const tags = getS3('tags.json')
         const response = await getMeta(body.url);
 
         if (body.url === '') {

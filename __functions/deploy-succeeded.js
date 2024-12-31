@@ -7,6 +7,7 @@ const s3 = new AWS.S3({
 })
 
 export default async(req, context) => {
+
     var params = {
         Key: "links.json",
         Bucket: 'netlify-files',
@@ -17,10 +18,10 @@ export default async(req, context) => {
 
     const updates = [];
     const updatedLinks = links.map((link) => {
+        // could only update links which were added before the build was triggered to ensure they are published when tweeted
         if (link && link.notify && link.notify.bluesky === 'pending') {
 
             updates.push(link)
-
             link.notify.bluesky = 'done';
         }
         return link;
