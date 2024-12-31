@@ -15,8 +15,9 @@ export default async(req, context) => {
 
 
     links.map(async(link) => {
-        if (link.notify.bluesky === 'pending') {
-            await bluesky(input);
+        if (link & link.notify & link.notify.bluesky === 'pending') {
+            console.log('notify bluesky')
+            await bluesky(link);
             link.notify.bluesky = 'done';
         }
         return link;
