@@ -18,6 +18,7 @@ export default async(req, context) => {
     const updates = [];
     const updatedLinks = links.map((link) => {
         if (link && link.notify && link.notify.bluesky === 'pending') {
+            console.log('found one')
 
             updates.push(async() => {
                 console.log('notify bluesky')
