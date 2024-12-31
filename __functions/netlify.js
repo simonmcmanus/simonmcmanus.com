@@ -5,7 +5,7 @@ const triggerBuildUrl = `https://api.netlify.com/api/v1/sites/${siteId}/builds`;
 
 const checkDeployState = async(siteId, deployId) => {
     const getBuildUrl = `https://api.netlify.com/api/v1/sites/${siteId}/deploys/${deployId}`
-    const response = await request.get(getBuildUrl).set('Authorization', 'Bearer nfp_QVXNu6ZSDGKsrzSQPTwRoTQtE1LQJEhR0520');
+    const response = await request.get(getBuildUrl).set('Authorization', `Bearer ${process.env.NETLIFY_TOKEN}`);
     return response.body.state;
 }
 
@@ -13,7 +13,7 @@ function timer(ms) { return new Promise(res => setTimeout(res, ms)); }
 
 const build = async() => {
 
-    const response = await request.post(triggerBuildUrl).set('Authorization', 'Bearer nfp_QVXNu6ZSDGKsrzSQPTwRoTQtE1LQJEhR0520');
+    const response = await request.post(triggerBuildUrl).set('Authorization', `Bearer ${process.env.NETLIFY_TOKEN}`);
     const deployId = response.body.deploy_id;
     console.log('deploy id', deployId)
 

@@ -44,6 +44,9 @@ exports.handler = async(event) => {
         const input = {
             created: new Date(),
             url: body.url,
+            notify: {
+                bluesky: 'pending'
+            },
             title: body.title,
             summary: body.summary,
             tags: body.tags
@@ -67,15 +70,7 @@ exports.handler = async(event) => {
             Body: JSON.stringify(tags, null, 4)
         }).promise()
 
-        //await build()
-        await netlify()
-
-
-
-
-
-        await bluesky(input)
-
+        await build()
 
 
         return { statusCode: 200, body: 'done' }
