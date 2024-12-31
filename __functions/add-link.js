@@ -3,6 +3,7 @@ const AWS = require("aws-sdk")
 //const tweet = require('./tweet')
 const bluesky = require('./bluesky')
 const build = require('./build')
+const netlify = require('./netlify');
 const { extractUniqueTags } = require('../lib/get-tags.js')
 exports.handler = async(event) => {
 
@@ -66,7 +67,8 @@ exports.handler = async(event) => {
             Body: JSON.stringify(tags, null, 4)
         }).promise()
 
-        await build()
+        //await build()
+        await netlify()
 
 
 
