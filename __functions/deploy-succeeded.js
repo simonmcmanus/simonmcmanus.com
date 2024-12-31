@@ -20,24 +20,24 @@ export default async(req, context) => {
         if (link && link.notify && link.notify.bluesky === 'pending') {
             console.log('found one')
 
-            updates.push(async() => {
-                console.log('notify bluesky')
-                    // this is prob not gonna do what we want.
-                await bluesky(link);
-            })
+            updates.push(link)
 
             link.notify.bluesky = 'done';
         }
         return link;
     })
 
-    await Promise.all(updates)
+    for (const update of updates) {
+        console.log(update)
+        await bluesky(update);
+
+    }
+
 
     await s3.putObject({
         Bucket: params.Bucket,
         Key: params.Key,
         Body: JSON.stringify(updatedLinks, null, 4)
     }).promise()
-    console.log('context', context)
     return
 };
