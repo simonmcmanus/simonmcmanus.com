@@ -1,3 +1,4 @@
+const bluesky = require('./bluesky')
 const AWS = require("aws-sdk")
 
 const s3 = new AWS.S3({
@@ -14,7 +15,7 @@ export default async(req, context) => {
     const links = JSON.parse(s3Objects.Body.toString('utf-8'))
 
 
-    links.map(async(link) => {
+    const updatedLinks = links.map(async(link) => {
         if (link && link.notify && link.notify.bluesky === 'pending') {
             console.log('notify bluesky')
             await bluesky(link);
@@ -22,6 +23,13 @@ export default async(req, context) => {
         }
         return link;
     })
+
+
+    await s3.putObject({
+        Bucket: params.Bucket,
+        Key: params.Key,
+        Body: JSON.stringify(updatedLinks, null, 4)
+    }).promise()
     console.log('context', context)
     return
 };
