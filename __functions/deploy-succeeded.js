@@ -30,7 +30,7 @@ export default async(req, context) => {
         return link;
     })
 
-    await promoise.all(updates)
+    await Promoise.all(updates)
 
     await s3.putObject({
         Bucket: params.Bucket,
