@@ -26,15 +26,15 @@ module.exports = async({ title, url, summary, tags, image }) => {
         $type: 'app.bsky.feed.post',
         text,
         facets,
-        embed: {
-            $type: 'app.bsky.embed.external',
-            external: {
-                uri: url,
-                title,
-                description: summary,
-                thumb: image
-            }
-        },
+        // embed: {
+        //     $type: 'app.bsky.embed.external',
+        //     external: {
+        //         uri: url,
+        //         title,
+        //         description: summary,
+        //         thumb: image
+        //     }
+        // },
         createdAt: new Date().toISOString()
     }
 
