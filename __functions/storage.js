@@ -9,7 +9,7 @@ const s3 = new AWS.S3({
 })
 
 
-const get = async(filename) => {
+exports.get = async(filename) => {
     const s3Objects = await s3.getObject({
         Key: filename,
         Bucket,
@@ -18,7 +18,7 @@ const get = async(filename) => {
 }
 
 
-const put = async(filename, contents) => {
+exports.put = async(filename, contents) => {
 
     return await s3.putObject({
         Bucket,
@@ -26,5 +26,3 @@ const put = async(filename, contents) => {
         Body: JSON.stringify(contents, null, 4)
     }).promise()
 }
-
-module.exports = { put, get }
