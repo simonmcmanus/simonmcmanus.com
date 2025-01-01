@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "test": "rm -Rf _site &&   eleventy --serve ",
-        "eleventy": " npm run sass && npm run html ",
+        "eleventy": "npm run update:links && npm run sass && npm run html ",
         "html": "npx @11ty/eleventy",
         "sass": "npx sass sass:static/css",
         "watch:sass": "npx sass sass:_site/css --watch",
