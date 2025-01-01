@@ -18,7 +18,7 @@ exports.handler = async(event) => {
             return { statusCode: 400, body: 'no-url' }
         }
 
-        const links = storage.get('links.json')
+        const links = await storage.get('links.json')
 
         const alreadyAdded = links.some((link) => link.url === body.url)
 
