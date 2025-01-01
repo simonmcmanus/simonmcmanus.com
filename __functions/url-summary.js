@@ -32,6 +32,10 @@ exports.getMeta = async(url, tags) => {
                 role: 'user',
                 content: `Add a field with authors name from the content to the return json`
             },
+            {
+                role: 'user',
+                content: `Add a field contains an image which is suitable to share on social media to represent this page`
+            },
         ],
         model: "gpt-4o-mini",
         response_format: { type: "json_object" }
