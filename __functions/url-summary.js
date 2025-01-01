@@ -33,7 +33,7 @@ exports.handler = async(event) => {
     try {
         const body = JSON.parse(event.body)
         const tags = await storage.get('tags.json')
-        const response = await getMeta(body.url);
+        const response = await getMeta(body.url, tags);
 
         if (body.url === '') {
             console.log('error: no url')
