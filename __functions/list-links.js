@@ -6,7 +6,7 @@ exports.handler = async(event, context) => {
         console.log('links', links)
         return {
             statusCode: 200,
-            body: links,
+            body: JSON.stringify(links),
             headers: {
                 'Content-Type': 'application/json',
             },
