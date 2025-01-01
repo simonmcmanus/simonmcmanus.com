@@ -17,6 +17,7 @@ const get = async(filename) => {
     return JSON.parse(s3Objects.Body.toString('utf-8'))
 }
 
+
 const put = async(filename, contents) => {
 
     return await s3.putObject({
@@ -26,4 +27,4 @@ const put = async(filename, contents) => {
     }).promise()
 }
 
-exports = { put, get }
+module.exports = { put, get }
