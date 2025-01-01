@@ -1,5 +1,5 @@
 const OpenAI = require('openai')
-const storage = require('storage')
+const storage = require('./storage')
 
 const client = new OpenAI({
     apiKey: process.env['OPENAI_API_KEY'],
