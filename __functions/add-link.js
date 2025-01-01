@@ -33,6 +33,8 @@ exports.handler = async(event) => {
             notify: {
                 bluesky: 'pending'
             },
+            author: body.author,
+            image: body.image,
             title: body.title,
             summary: body.summary,
             tags: body.tags
