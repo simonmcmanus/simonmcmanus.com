@@ -26,4 +26,4 @@ const put = async(filename, contents) => {
     }).promise()
 }
 
-export { put, get }
+exports = { put, get }
