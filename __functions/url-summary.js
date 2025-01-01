@@ -1,4 +1,5 @@
 const OpenAI = require('openai')
+const storage = require('storage')
 
 const client = new OpenAI({
     apiKey: process.env['OPENAI_API_KEY'],
@@ -31,7 +32,7 @@ exports.handler = async(event) => {
 
     try {
         const body = JSON.parse(event.body)
-        const tags = getS3('tags.json')
+        const tags = await storage.get('tags.json')
         const response = await getMeta(body.url);
 
         if (body.url === '') {
