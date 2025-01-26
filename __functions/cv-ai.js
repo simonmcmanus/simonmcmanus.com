@@ -2,7 +2,7 @@
 const OpenAI = require('openai')
 const request = require('superagent');
 const fs = require('fs');
-const cv = fs.readFileSync(require.resolve('../../static/cv.html'), { encoding: 'utf8' });
+const cv = fs.readFileSync(require.resolve('../static/cv.html'), { encoding: 'utf8' });
 
 const client = new OpenAI({
     apiKey: process.env['OPENAI_API_KEY'],
