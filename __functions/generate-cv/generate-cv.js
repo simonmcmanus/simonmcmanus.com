@@ -12,9 +12,9 @@ exports.handler = async(event) => {
         const body = sizlate.render(markup, {
             '.profile': summary || '',
             '[data-strengths]': '<li></li>',
-            '[data-strengths] li': skills.split(',').map((a) => a.trim()) || [],
+            '[data-strengths] li': strengths.split(',').map((a) => a.trim()) || [],
             '[data-technology]': '<li></li>',
-            '[data-technology] li': strengths.split(',').map((a) => a.trim()) || [],
+            '[data-technology] li': skills.split(',').map((a) => a.trim()) || [],
         })
         return { statusCode: 200, body }
     } catch (e) {

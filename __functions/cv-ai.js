@@ -26,7 +26,7 @@ exports.getMeta = async({ url, markup }) => {
             },
             {
                 role: 'user',
-                content: `based on my cv generate 5 tags that hightlight skills relevant to the role, The skills shold use hyphons as a seperator and uk spelling.  return the list in the json using a  skills property`
+                content: `based on my cv generate 5 tags that hightlight technologies relevant to the role, return the list in the json using a  technologies property`
             },
             {
               role: 'user',
