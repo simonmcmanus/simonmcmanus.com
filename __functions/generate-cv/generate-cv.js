@@ -1,6 +1,8 @@
-const fs = require('fs');
+
 const sizlate = require('sizlate');
-const markup = fs.readFileSync(require.resolve('./cv1.html'), { encoding: 'utf8' });
+const request = require('superagent');
+
+
 exports.handler = async(event) => {
     if (event.headers['x-api-key'] !== process.env.API_KEY) {
         return { statusCode: 404 }
@@ -8,8 +10,9 @@ exports.handler = async(event) => {
     try {
         const { skills, strengths, summary } = JSON.parse(event.body)
 
-        console.log(JSON.parse(event.body))
-        const body = sizlate.render(markup, {
+        const cv = await request.get('https://simonmcmanus.com/cv')
+
+        const body = sizlate.render(cv.text, {
             '.profile': summary || '',
             '[data-strengths]': '<li></li>',
             '[data-strengths] li': strengths.split(',').map((a) => a.trim()) || [],

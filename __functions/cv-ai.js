@@ -9,8 +9,6 @@ const client = new OpenAI({
 
 exports.getMeta = async({ url, markup }) => {
     const cv = await request.get('https://simonmcmanus.com/cv')
-    console.log('cv', cv)
-  
     const messages = {
         messages: [
             {
