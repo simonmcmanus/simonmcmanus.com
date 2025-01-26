@@ -1,6 +1,8 @@
 
 const sizlate = require('sizlate');
+const fs = require('fs');
 const markup = fs.readFileSync(require.resolve('../../static/cv.html'), { encoding: 'utf8' });
+console.log('mark', markup)
 exports.handler = async(event) => {
     if (event.headers['x-api-key'] !== process.env.API_KEY) {
         return { statusCode: 404 }
