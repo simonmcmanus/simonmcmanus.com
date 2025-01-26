@@ -18,19 +18,23 @@ exports.getMeta = async({ url, markup }) => {
             },
             {
               role: 'system',
-              content: `This is the html markup of my cv:  ${cv}`
-          },
+              content: `This is the html markup of my cv: ${cv}`
+            },
+            {
+              role: 'system',
+              content: `When generating tags, generate an array, use hyphons when necesssary (ideally single words) as a seperator and uk spelling.`
+            },
             {
                 role: 'user',
-                content: `based on the job description generate a list of up to 5 most relevant skills based on my CV that are relevant to the role, The skills shold use hyphons as a seperator and uk spelling.  return the list in the json using a  skills property`
+                content: `based on my cv generate 5 tags that hightlight skills relevant to the role, The skills shold use hyphons as a seperator and uk spelling.  return the list in the json using a  skills property`
             },
             {
               role: 'user',
-              content: `based on the job description generate a list of up to 5 most relevant strengths based on my CV that are relevant to the role, The strengths shold use hyphons as a seperator and uk spelling.  return the list in the json using a  strengths property`
+              content: `based on my cv select generate up to 5 tags whcih are  most relevant strengths that are relevant to the role, The strengths should be  return the list in the json using a  strengths property`
           },
             {
                 role: 'user',
-                content: `create a consise summary (max 20 words) to demonstrate why I am a good candiate for the role to appear in the  opening lines of my CV when applying for this role`
+                content: `add a summary property (max 20 words) to that provides an opening and engaging sentence about why the skills in my cv are relevant to this role that would make  recrutier keep reading. but make it sound like its generic and not written specifically for this role`
             },
         ],
         model: "gpt-4o-mini",
@@ -42,6 +46,7 @@ exports.getMeta = async({ url, markup }) => {
     
     const response = JSON.parse(chatCompletion.choices[0].message.content)
 
+    
     return response;
 }
 
@@ -63,3 +68,4 @@ exports.handler = async(event) => {
         return { statusCode: 500, body: e.message }
     }
 }
+
