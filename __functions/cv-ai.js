@@ -34,7 +34,7 @@ exports.getMeta = async({ url, markup }) => {
             },
             {
               role: 'user',
-              content: `based on the job description, extract the name of the company I would be applying for in a format that can be used for creating folders and return in the json company property`
+              content: `based on the job description, extract the name of the company I would be applying for in a format that can be used for creating folders and return in the json company property, the second folder path should be the job title i am applying for`
             },
             {
               role: 'user',
