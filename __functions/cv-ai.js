@@ -10,7 +10,6 @@ const client = new OpenAI({
 
 
 exports.getMeta = async({ url, markup }) => {
-  console.log('cv is', cv)
     const messages = {
         messages: [
             {
@@ -27,7 +26,7 @@ exports.getMeta = async({ url, markup }) => {
             },
             {
                 role: 'user',
-                content: `based on my cv generate 5 tags that hightlight technologies relevant to the role, return the list in the json using a  technologies property`
+                content: `based on my cv generate 5 tags that hightlight technologies most relevant to the role, return the list in the json using a  technologies property, if there are any technolgies missing from my cv you can also suggest them`
             },
             {
               role: 'user',
@@ -40,7 +39,7 @@ exports.getMeta = async({ url, markup }) => {
             {
               role: 'user',
               content: `based on my cv select generate up to 5 tags whcih are  most relevant strengths that are relevant to the role, The strengths should be  return the list in the json using a  strengths property`
-          },
+            },
             {
                 role: 'user',
                 content: `add a summary property (max 20 words) to that provides an opening and engaging sentence about why the skills in my cv are relevant to this role that would make  recrutier keep reading. but make it sound like its generic and not written specifically for this role`
