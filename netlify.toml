@@ -11,3 +11,5 @@
   force = true 
   
 
+[functions]
+  included_files = ["static/cv.html"]
