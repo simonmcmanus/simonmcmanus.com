@@ -2,7 +2,6 @@
 const sizlate = require('sizlate');
 const fs = require('fs');
 const markup = fs.readFileSync(require.resolve('../../static/cv.html'), { encoding: 'utf8' });
-console.log('marka', markup)
 exports.handler = async(event) => {
 
     return { statusCode: 200, markup}

@@ -1,6 +1,8 @@
 
 const OpenAI = require('openai')
 const request = require('superagent');
+const fs = require('fs');
+const cv = fs.readFileSync(require.resolve('../../static/cv.html'), { encoding: 'utf8' });
 
 const client = new OpenAI({
     apiKey: process.env['OPENAI_API_KEY'],
@@ -8,7 +10,7 @@ const client = new OpenAI({
 
 
 exports.getMeta = async({ url, markup }) => {
-    const cv = await request.get('https://simonmcmanus.com/cv')
+  console.log('cv is', cv)
     const messages = {
         messages: [
             {
@@ -17,7 +19,7 @@ exports.getMeta = async({ url, markup }) => {
             },
             {
               role: 'system',
-              content: `This is the html markup of my cv: ${cv.text}`
+              content: `This is the html markup of my cv: ${cv}`
             },
             {
               role: 'system',
