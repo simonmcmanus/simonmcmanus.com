@@ -2,9 +2,9 @@
 const OpenAI = require('openai')
 const request = require('superagent');
 
-const client = new OpenAI({
-    apiKey: process.env['OPENAI_API_KEY'],
-});
+// const client = new OpenAI({
+//     apiKey: process.env['OPENAI_API_KEY'],
+// });
 
 
 exports.getMeta = async({ url, markup }) => {
@@ -19,7 +19,7 @@ exports.getMeta = async({ url, markup }) => {
             },
             {
               role: 'system',
-              content: `This is the html markup of my cv: ${cv}`
+              content: `This is the html markup of my cv: ${cv.text}`
             },
             {
               role: 'system',
@@ -78,3 +78,9 @@ exports.handler = async(event) => {
     }
 }
 
+
+// const a = async () => {
+//   const cv = await request.get('https://simonmcmanus.com/cv')
+//   console.log(cv.text)
+// }
+// a()
