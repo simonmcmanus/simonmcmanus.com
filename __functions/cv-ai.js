@@ -7,10 +7,7 @@ const client = new OpenAI({
 });
 
 
-exports.getMeta = async(url) => {
-  console.log('url', url)
-    const content = await request.get(url)
-    console.log('done', url)
+exports.getMeta = async({ url, markup }) => {
     const cv = await request.get('https://simonmcmanus.com/cv')
     const markup =content.text;
     const messages = {
@@ -53,7 +50,7 @@ exports.handler = async(event) => {
 
     try {
         const body = JSON.parse(event.body)
-        const response = await exports.getMeta(body.url);
+        const response = await exports.getMeta(body);
         
         if (body.url === '') {
             console.log('error: no url')
