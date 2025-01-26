@@ -30,6 +30,10 @@ exports.getMeta = async({ url, markup }) => {
             },
             {
               role: 'user',
+              content: `based on the job description, and the content of my CV generate a covering letter in the html format to the recruiter explaining why im the perfect application, return the markup in a cover property`
+            },
+            {
+              role: 'user',
               content: `based on the job description, extract the name of the company I would be applying for in a format that can be used for creating folders and return in the json company property`
             },
             {
