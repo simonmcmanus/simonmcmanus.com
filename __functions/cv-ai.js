@@ -2,9 +2,9 @@
 const OpenAI = require('openai')
 const request = require('superagent');
 
-// const client = new OpenAI({
-//     apiKey: process.env['OPENAI_API_KEY'],
-// });
+const client = new OpenAI({
+    apiKey: process.env['OPENAI_API_KEY'],
+});
 
 
 exports.getMeta = async({ url, markup }) => {
