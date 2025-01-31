@@ -4,7 +4,7 @@ title: KISS Keep it simple Simon - Complexity killed the cat.
 tags: ["trainline", "complexity"," simonmcmanus","talks", "post"]
 ---
 
-Sharing a talk I presented last year at the Trainline Tech summit. This talk explores complexity and where it comes from. I discuss some of the emergant behaviours we see in complex systems and how they can be avoided.
+Sharing a talk I presented last year at the Trainline Tech Summit. This talk explores complexity and where it comes from. I discuss some emergent behaviours we see in complex systems and how they can be avoided.
 
 
 Please excuse the fire alarm and tech issues at the start.
