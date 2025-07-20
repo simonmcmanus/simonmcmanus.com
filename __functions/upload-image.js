@@ -2,9 +2,8 @@ const AWS = require("aws-sdk");
 const { Buffer } = require("buffer");
 
 const s3 = new AWS.S3({
-  region: process.env.AWS_REGION,
-  accessKeyId: process.env.AWS_ACCESS_KEY_ID,
-  secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+  accessKeyId: process.env.MY_AWS_ACCESS_KEY_ID,
+  secretAccessKey: process.env.MY_AWS_SECRET_ACCESS_KEY,
 });
 
 exports.handler = async (event, context) => {
