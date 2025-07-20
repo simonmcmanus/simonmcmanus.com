@@ -26,9 +26,11 @@ exports.handler = async (event, context) => {
       Key: filename,
       Body: body,
       ContentType: contentType,
+      ACL: 'public-read', 
     };
 
-    await s3.upload(params).promise();
+    const response = await s3.upload(params).promise();
+    console.log('res', response)
 
     return {
       statusCode: 200,
