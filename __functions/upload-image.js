@@ -11,9 +11,12 @@ const s3 = new AWS.S3({
 
 exports.handler = async (event, context) => {
 console.log(1)
+
+console.log(event.headers['x-api-key'],event.httpMethod )
       if (event.headers['x-api-key'] !== process.env.API_KEY) {
         return { statusCode: 404 }
     }
+    console.log('1.2')
   if (event.httpMethod !== "POST") {
     return {
       statusCode: 405,
