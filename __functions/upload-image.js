@@ -10,21 +10,19 @@ const s3 = new AWS.S3({
 
 
 exports.handler = async (event, context) => {
-console.log(1)
 
-console.log(event.headers['x-api-key'],event.httpMethod )
-      if (event.headers['x-api-key'] !== process.env.API_KEY) {
-        console.log('no/invalid api key')
-        return { statusCode: 404 }
-    }
-    console.log('1.2')
+  if (event.headers['x-api-key'] !== process.env.API_KEY) {
+      console.log('no/invalid api key')
+      return { statusCode: 404 }
+  }
+
   if (event.httpMethod !== "POST") {
     return {
       statusCode: 405,
       body: JSON.stringify({ error: "Method not allowed" }),
     };
   }
-  console.log(2)
+
 
   const notes = await storage.get('notes.json')
 
@@ -45,16 +43,16 @@ console.log(event.headers['x-api-key'],event.httpMethod )
     };
 
     const response = await s3.upload(params).promise();
-    console.log(response, response.Location);
     //const url = `https://${process.env.S3_BUCKET_NAME}.s3.${process.env.AWS_REGION}.amazonaws.com/${filename}`
     const url = response.Location;
 
     const note = {
       created: new Date(),
       image: url,
-      ev: 'FFConf 2025',
-      speaker: 'Asim Hussain',
-      tags: 'idiot, ffconf',
+      title: event.headers["title"],
+      tags: event.headers["tags"],
+      ev: event.headers["event"],
+      speaker: event.headers["speaker"]
       
     }
     console.log('note', note)
