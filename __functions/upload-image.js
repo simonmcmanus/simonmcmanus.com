@@ -14,6 +14,7 @@ console.log(1)
 
 console.log(event.headers['x-api-key'],event.httpMethod )
       if (event.headers['x-api-key'] !== process.env.API_KEY) {
+        console.log('no api key')
         return { statusCode: 404 }
     }
     console.log('1.2')
