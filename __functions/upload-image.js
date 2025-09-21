@@ -39,7 +39,6 @@ exports.handler = async (event, context) => {
     };
 
     const response = await s3.upload(params).promise();
-    console.log('res', response)
     const url = `https://${process.env.S3_BUCKET_NAME}.s3.${process.env.AWS_REGION}.amazonaws.com/${filename}`
 
 
@@ -52,6 +51,7 @@ exports.handler = async (event, context) => {
       tags: 'idiot, ffconf',
       url
     }
+    console.log('note', note)
 
     notes.push(note)
     await storage.put('notes.json', notes)
