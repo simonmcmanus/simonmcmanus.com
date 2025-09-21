@@ -14,7 +14,7 @@ console.log(1)
 
 console.log(event.headers['x-api-key'],event.httpMethod )
       if (event.headers['x-api-key'] !== process.env.API_KEY) {
-        console.log('no api key')
+        console.log('no/invalid api key')
         return { statusCode: 404 }
     }
     console.log('1.2')
@@ -27,9 +27,7 @@ console.log(event.headers['x-api-key'],event.httpMethod )
   console.log(2)
 
   const notes = await storage.get('notes.json')
-  console.log(3)
-  console.log('notes', notes)
-  console.log(4)
+
   
   try {
     // Netlify passes the raw base64 body by default
@@ -47,6 +45,7 @@ console.log(event.headers['x-api-key'],event.httpMethod )
     };
 
     const response = await s3.upload(params).promise();
+    console.log(response);
     const url = `https://${process.env.S3_BUCKET_NAME}.s3.${process.env.AWS_REGION}.amazonaws.com/${filename}`
 
 
