@@ -53,7 +53,7 @@ exports.handler = async (event, context) => {
 
     const response = await s3.upload(params).promise();
     //const url = `https://${process.env.S3_BUCKET_NAME}.s3.${process.env.AWS_REGION}.amazonaws.com/${filename}`
-    const url = response.Location;
+    const url = `https://simonmcmanus.com/note/${filename}`;
 
     const note = {
       created: new Date(),
