@@ -7,6 +7,13 @@ const s3 = new AWS.S3({
   secretAccessKey: process.env.MY_AWS_SECRET_ACCESS_KEY,
 });
 
+const urlSafe = (string) => { // copied into the file as the original is not inthe functions folder 
+    const lowerCaseString = string.toLowerCase().trim()
+    const slug = slugify(lowerCaseString)
+        // do a trim
+    return slug.replace(/\./g, '')
+}
+
 
 
 exports.handler = async (event, context) => {
@@ -31,7 +38,7 @@ exports.handler = async (event, context) => {
     // Netlify passes the raw base64 body by default
     const body = Buffer.from(event.body, event.isBase64Encoded ? "base64" : "utf8");
     const contentType = event.headers["content-type"] || event.headers["Content-Type"] ||  "image/jpeg" ;
-    const filename = `upload-${Date.now()}.jpg`;
+    const filename = `${urlSafe(event.headers["speaker"] + '-' + event.headers["title"])}-${Date.now()}.jpg`;
 
     const Bucket = 'simonmcmanus-notes';
     const params = {
