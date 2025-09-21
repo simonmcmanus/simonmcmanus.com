@@ -32,7 +32,7 @@ console.log(event.headers['x-api-key'],event.httpMethod )
   try {
     // Netlify passes the raw base64 body by default
     const body = Buffer.from(event.body, event.isBase64Encoded ? "base64" : "utf8");
-    // const contentType = event.headers["content-type"] || event.headers["Content-Type"] ;
+    const contentType = event.headers["content-type"] || event.headers["Content-Type"] ||  "image/jpeg" ;
     const filename = `upload-${Date.now()}.jpg`;
 
     const Bucket = 'netlify-files';
@@ -40,7 +40,7 @@ console.log(event.headers['x-api-key'],event.httpMethod )
       Bucket,
       Key: filename,
       Body: body,
-      ContentType: "image/jpeg",
+      ContentType:contentType,
       ACL: 'public-read', 
     };
 
