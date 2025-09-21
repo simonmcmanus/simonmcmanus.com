@@ -22,6 +22,7 @@ exports.handler = async (event, context) => {
   }
 
   const notes = await storage.get('notes.json')
+  console.log('notes', notes)
   
   try {
     // Netlify passes the raw base64 body by default
