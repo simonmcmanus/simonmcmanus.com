@@ -33,7 +33,7 @@ exports.handler = async (event, context) => {
     const contentType = event.headers["content-type"] || event.headers["Content-Type"] ||  "image/jpeg" ;
     const filename = `upload-${Date.now()}.jpg`;
 
-    const Bucket = 'netlify-files';
+    const Bucket = 'simonmcmanus-notes';
     const params = {
       Bucket,
       Key: filename,
