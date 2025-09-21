@@ -5,7 +5,7 @@
   force = true 
 
 [[redirects]]
-  from = "/notes/*"
+  from = "/note/*"
   to = "https://simonmcmanus-notes.s3.amazonaws.com/:splat"
   status = 200
   force = true 
