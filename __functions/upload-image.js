@@ -20,9 +20,12 @@ console.log(1)
       body: JSON.stringify({ error: "Method not allowed" }),
     };
   }
+  console.log(2)
 
   const notes = await storage.get('notes.json')
+  console.log(3)
   console.log('notes', notes)
+  console.log(4)
   
   try {
     // Netlify passes the raw base64 body by default
