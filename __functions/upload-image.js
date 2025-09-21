@@ -45,7 +45,7 @@ console.log(event.headers['x-api-key'],event.httpMethod )
     };
 
     const response = await s3.upload(params).promise();
-    console.log(response);
+    console.log(response.location);
     const url = `https://${process.env.S3_BUCKET_NAME}.s3.${process.env.AWS_REGION}.amazonaws.com/${filename}`
 
 
