@@ -46,7 +46,6 @@ exports.handler = async (event, context) => {
     const note = {
       created: new Date(),
       image: 'https://netlify-files.s3.amazonaws.com/upload-1758437037577.jpg',
-      title: 'Don`t be an idiot'
       event: 'FFConf 2025',
       speaker: 'Asim Hussain',
       tags: 'idiot, ffconf',
