@@ -5,6 +5,12 @@
   force = true 
 
 [[redirects]]
+  from = "/notes/*"
+  to = "https://simonmcmanus-notes.s3.amazonaws.com/:splat"
+  status = 200
+  force = true 
+
+[[redirects]]
   from = "/tag-list/"
   to = "/tags/"
   status = 301
