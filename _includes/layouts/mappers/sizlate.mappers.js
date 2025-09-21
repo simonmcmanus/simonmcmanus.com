@@ -4,6 +4,7 @@ const tagList = require('./tagList')
 const postsPaged = require('./postsPaged')
 const postsTop3 = require('./postsTop3')
 const linksPaged = require('./linksPaged')
+const notesPaged = require('./notesPaged')
 const linksTop3 = require('./linksTop3')
 
 module.exports = {
@@ -13,5 +14,6 @@ module.exports = {
     postsPaged,
     postsTop3,
     linksPaged,
+    notesPaged,
     linksTop3
 }

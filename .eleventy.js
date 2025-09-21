@@ -1,6 +1,7 @@
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const htmlmin = require("html-minifier");
 let links = require('./_data/links.json')
+let notes = require('./_data/notes.json')
 const categories = require('./_data/categories.json')
 var urlSafe = require("./lib/url-safe");
 
@@ -16,6 +17,12 @@ links = links.reverse().map((link) => {
     link.data = {}
     link.data.tags = link.tags.map(tag => urlSafe(tag))
     return link
+})
+
+notes = notes.reverse().map((note) => {
+    note.data = {}
+    note.data.tags = note.tags.split(',').map(tag => urlSafe(tag))
+    return note
 })
 
 module.exports = function(eleventyConfig) {
@@ -67,6 +74,7 @@ module.exports = function(eleventyConfig) {
 
 
     eleventyConfig.addCollection('links', (collection) => links)
+    eleventyConfig.addCollection('notes', (collection) => notes)
 
     // Create an array of all tags
     eleventyConfig.addCollection("tagList", function(collection) {
