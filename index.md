@@ -13,7 +13,7 @@ sizlate: { 'a[href="/"]': {
 
 Welcome to the home of Simon McManus 
 
-This site is my personal playground where you will find experiments, <a href="/posts/">blog posts</a>, <a href="/talks.html">talks</a> and recently saved <a href="/links.html">links.</a> 
+This site is my personal playground where you will find experiments, <a href="/posts/">blog posts</a>, <a href="/notes.html">Sketch notes</a>,  <a href="/talks.html">talks</a> and recently saved <a href="/links.html">links.</a> 
 
 <!-- <p class="notice">I'm currently making changes to the design of this site and pushing changes regularly so please ignore anything that does not look right.</p> -->
 
