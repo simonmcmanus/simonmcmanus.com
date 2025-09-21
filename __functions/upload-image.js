@@ -2,6 +2,7 @@ const AWS = require("aws-sdk");
 const { Buffer } = require("buffer");
 const storage = require('./storage.js')
 var slugify = require('slugify')
+const build = require('./build')
 
 const s3 = new AWS.S3({
   accessKeyId: process.env.MY_AWS_ACCESS_KEY_ID,
@@ -67,7 +68,7 @@ exports.handler = async (event, context) => {
 
     notes.push(note)
     await storage.put('notes.json', notes)
-
+    await build()
     return {
       statusCode: 200,
       body: JSON.stringify({
@@ -78,6 +79,7 @@ exports.handler = async (event, context) => {
     };
   } catch (error) {
     console.error("Upload error:", error);
+
     return {
       statusCode: 500,
       body: JSON.stringify({ error: "Upload failed" }),
