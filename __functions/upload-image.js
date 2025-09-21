@@ -32,7 +32,7 @@ console.log(event.headers['x-api-key'],event.httpMethod )
   try {
     // Netlify passes the raw base64 body by default
     const body = Buffer.from(event.body, event.isBase64Encoded ? "base64" : "utf8");
-    const contentType = event.headers["content-type"] || event.headers["Content-Type"] || "image/jpeg";
+    // const contentType = event.headers["content-type"] || event.headers["Content-Type"] ;
     const filename = `upload-${Date.now()}.jpg`;
 
     const Bucket = 'netlify-files';
@@ -40,22 +40,22 @@ console.log(event.headers['x-api-key'],event.httpMethod )
       Bucket,
       Key: filename,
       Body: body,
-      ContentType: contentType,
+      ContentType: "image/jpeg",
       ACL: 'public-read', 
     };
 
     const response = await s3.upload(params).promise();
     console.log(response, response.Location);
-    const url = `https://${process.env.S3_BUCKET_NAME}.s3.${process.env.AWS_REGION}.amazonaws.com/${filename}`
-
+    //const url = `https://${process.env.S3_BUCKET_NAME}.s3.${process.env.AWS_REGION}.amazonaws.com/${filename}`
+    const url = response.Location;
 
     const note = {
       created: new Date(),
-      image: 'https://netlify-files.s3.amazonaws.com/upload-1758437037577.jpg',
+      image: url,
       ev: 'FFConf 2025',
       speaker: 'Asim Hussain',
       tags: 'idiot, ffconf',
-      url
+      
     }
     console.log('note', note)
 
