@@ -1,6 +1,7 @@
 const AWS = require("aws-sdk");
 const { Buffer } = require("buffer");
 const storage = require('./storage.js')
+var slugify = require('slugify')
 
 const s3 = new AWS.S3({
   accessKeyId: process.env.MY_AWS_ACCESS_KEY_ID,
