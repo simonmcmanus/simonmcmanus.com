@@ -35,12 +35,7 @@ exports.handler = async (event, context) => {
 
   const notes = await storage.get('notes.json')
 
-  
-  try {
-    // Netlify passes the raw base64 body by default
-    const body = Buffer.from(event.body, event.isBase64Encoded ? "base64" : "utf8");
-    const contentType = event.headers["content-type"] || event.headers["Content-Type"] ||  "image/jpeg" ;
-    const filename = `${urlSafe(event.headers["speaker"] + '-' + event.headers["title"])}-${Date.now()}.jpg`;
+  const upload = async(body, filename) => {
 
     const Bucket = 'simonmcmanus-notes';
     const params = {
@@ -50,15 +45,24 @@ exports.handler = async (event, context) => {
       ContentType:contentType,
       ACL: 'public-read', 
     };
+    return await s3.upload(params).promise();
 
-    const response = await s3.upload(params).promise();
-    //const url = `https://${process.env.S3_BUCKET_NAME}.s3.${process.env.AWS_REGION}.amazonaws.com/${filename}`
+  }
+  try {
+    // Netlify passes the raw base64 body by default
+    const body = Buffer.from(event.body, event.isBase64Encoded ? "base64" : "utf8");
+    const contentType = event.headers["content-type"] || event.headers["Content-Type"] ||  "image/jpeg" ;
+    console.log('ct', contentType);
+    const filename = `${urlSafe(event.headers["speaker"] + '-' + event.headers["title"])}-${Date.now()}.jpg`;
+
+    await upload(body, filename);
     const url = `https://simonmcmanus.com/note/${filename}`;
 
     const note = {
       created: new Date(),
       image: url,
       title: event.headers["title"],
+
       tags: event.headers["tags"],
       ev: event.headers["event"],
       speaker: event.headers["speaker"]
