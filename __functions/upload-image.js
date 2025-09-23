@@ -69,9 +69,9 @@ exports.handler = async (event, context) => {
 
     const filePath = (size) => {
       if(size) {
-        return `${fileKey}-${size}.jpg`;
+        return `${fileKey}/${size}.jpg`;
       }
-      return `${fileKey}.jpg`;
+      return `${fileKey}/original.jpg`;
 
     }
     await upload(body, filePath());
