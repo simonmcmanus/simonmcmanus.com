@@ -3,6 +3,7 @@ const { Buffer } = require("buffer");
 const storage = require('./storage.js')
 var slugify = require('slugify')
 const build = require('./build')
+const sharp = require('sharp');
 
 const s3 = new AWS.S3({
   accessKeyId: process.env.MY_AWS_ACCESS_KEY_ID,
@@ -35,6 +36,17 @@ exports.handler = async (event, context) => {
 
   const notes = await storage.get('notes.json')
 
+  
+  
+  
+  const resize = async function(width) {
+     return await sharp(__dirname+'/img.png')
+      .resize(width)
+      .toFormat('jpeg') // convert to JPEG
+      .jpeg({ quality: 80 }) // compress it with a quality level of 80 out of 100
+      .toBuffer();
+  }
+
   const upload = async(body, filename) => {
 
     const Bucket = 'simonmcmanus-notes';
@@ -53,21 +65,35 @@ exports.handler = async (event, context) => {
     const body = Buffer.from(event.body, event.isBase64Encoded ? "base64" : "utf8");
     const contentType = event.headers["content-type"] || event.headers["Content-Type"] ||  "image/jpeg" ;
     console.log('ct', contentType);
-    const filename = `${urlSafe(event.headers["speaker"] + '-' + event.headers["title"])}-${Date.now()}.jpg`;
 
-    await upload(body, filename);
-    const url = `https://simonmcmanus.com/note/${filename}`;
+
+    const fileKey = `${urlSafe(event.headers["speaker"] + '-' + event.headers["title"])}-${Date.now()}`;
+
+    const filePath = (size) => {
+      if(size) {
+        return `${fileKey}-${size}.jpg`;
+      }
+      return `${fileKey}.jpg`;
+
+    }
+    await upload(body, filePath());
+    await upload(await resize(200), filePath(200))
+    await upload(await resize(500), filePath(500))
+    const BASE_URL = 'https://simonmcmanus.com/note/';
+    const url = `${BASE_URL}${filename}`;
 
     const note = {
       created: new Date(),
-      image: url,
+      images: {
+        original: filePath(),
+        small: filePath(200),
+        medium: filePath(500),
+      },
       title: event.headers["title"],
-
       tags: event.headers["tags"],
       ev: event.headers["event"],
       speaker: event.headers["speaker"]
-      
-    }
+    };
     console.log('note', note)
 
     notes.push(note)
