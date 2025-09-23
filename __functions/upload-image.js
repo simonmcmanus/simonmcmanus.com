@@ -83,9 +83,9 @@ exports.handler = async (event, context) => {
     const note = {
       created: new Date(),
       images: {
-        original: `${url}${filePath()}`,
-        small: `${url}${filePath(200)}`,
-        medium: `${url}${filePath(500)}`
+        original: `${BASE_URL}${filePath()}`,
+        small: `${BASE_URL}${filePath(200)}`,
+        medium: `${BASE_URL}${filePath(500)}`
       },
       title: event.headers["title"],
       tags: event.headers["tags"],
