@@ -101,7 +101,7 @@ exports.handler = async (event, context) => {
       statusCode: 200,
       body: JSON.stringify({
         message: "Upload successful",
-        key: filename,
+        key: `${url}${filePath()}`,
         url,
       }),
     };
