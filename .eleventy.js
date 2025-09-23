@@ -21,7 +21,7 @@ links = links.reverse().map((link) => {
 
 notes = notes.reverse().map((note) => {
     note.data = {}
-    note.data.tags = note.tags.split(',').map(tag => urlSafe(tag))
+    note.data.tags = note.tags ? note.tags.split(',').map(tag => urlSafe(tag)) : []
     return note
 })
 
