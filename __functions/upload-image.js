@@ -39,8 +39,8 @@ exports.handler = async (event, context) => {
   
   
   
-  const resize = async function(width) {
-     return await sharp(__dirname+'/img.png')
+  const resize = async function(imgBuffer, width) {
+     return await sharp(imgBuffer)
       .resize(width)
       .toFormat('jpeg') // convert to JPEG
       .jpeg({ quality: 80 }) // compress it with a quality level of 80 out of 100
@@ -75,8 +75,8 @@ exports.handler = async (event, context) => {
 
     }
     await upload(body, filePath());
-    await upload(await resize(200), filePath(200))
-    await upload(await resize(500), filePath(500))
+    await upload(await resize(body, 200), filePath(200))
+    await upload(await resize(body, 500), filePath(500))
     const BASE_URL = 'https://simonmcmanus.com/note/';
     const url = `${BASE_URL}${filename}`;
 
