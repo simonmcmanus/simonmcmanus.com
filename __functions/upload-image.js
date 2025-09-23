@@ -78,14 +78,14 @@ exports.handler = async (event, context) => {
     await upload(await resize(body, 200), filePath(200))
     await upload(await resize(body, 500), filePath(500))
     const BASE_URL = 'https://simonmcmanus.com/note/';
-    const url = `${BASE_URL}${filename}`;
+    const url = `${BASE_URL}${fileKey}`;
 
     const note = {
       created: new Date(),
       images: {
-        original: filePath(),
-        small: filePath(200),
-        medium: filePath(500),
+        original: `${url}${filePath()}`,
+        small: `${url}${filePath(200)}`,
+        medium: `${url}${filePath(500)}`
       },
       title: event.headers["title"],
       tags: event.headers["tags"],
