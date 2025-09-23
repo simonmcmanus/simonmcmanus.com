@@ -54,7 +54,7 @@ exports.handler = async (event, context) => {
       Bucket,
       Key: filename,
       Body: body,
-      ContentType:contentType,
+      ContentType:'image/png',
       ACL: 'public-read', 
     };
     return await s3.upload(params).promise();
@@ -63,9 +63,7 @@ exports.handler = async (event, context) => {
   try {
     // Netlify passes the raw base64 body by default
     const body = Buffer.from(event.body, event.isBase64Encoded ? "base64" : "utf8");
-    const contentType = event.headers["content-type"] || event.headers["Content-Type"] ||  "image/jpeg" ;
-    console.log('ct', contentType);
-
+    
 
     const fileKey = `${urlSafe(event.headers["speaker"] + '-' + event.headers["title"])}-${Date.now()}`;
 
