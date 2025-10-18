@@ -4,7 +4,7 @@ mappers: ["notesPaged"]
 permalink: "/notes/{% if pagination.pageNumber>0 %}{{ pagination.pageNumber | plus: 1 }}{% endif %}/"
 pagination:
   data: collections.notes
-  size: 3
+  size: 8
 "sizlate": {
     "title": "Simon McManus | Notes",
     'meta[name="description"]': {
