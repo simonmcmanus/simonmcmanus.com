@@ -23,7 +23,7 @@ pagination:
 <div class="contained">
     {% include _recentlinks.html %}
 
-<ul>
+<ul class="pagination">
     <li class="previous"><a href="">Previous</a></li>
     <li class="next"><a href="">Next</a></li>
     <li><a href="/tag-list">Browse all tags</a></li>

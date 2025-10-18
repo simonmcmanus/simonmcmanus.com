@@ -25,7 +25,7 @@ mappers: ["postsPaged"]
     <h2>Recent Posts</h2>
     {% include _recentposts.html %}
 </div>
-<ul>
+<ul class="pagination">
     <li><a class="previous" href="">Previous</a></li>
     <li><a class="next" href="">Next</a></li>
     <li><a href="/tag-list">Browse all tags</a></li>

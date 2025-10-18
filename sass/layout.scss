@@ -825,3 +825,16 @@ code {
     border-radius: 1em;
     box-shadow: 0 0 0 .5em var(--body-bg);
 }
+
+ul.pagination {
+        display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    list-style: none;
+    
+}
+
+ul.pagination  li{
+margin: 0.5em;
+}
