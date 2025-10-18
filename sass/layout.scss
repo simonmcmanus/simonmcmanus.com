@@ -104,7 +104,7 @@ a {
 }
 
 a span {
-    text-decoration: none;
+    
 }
 
 ul.items {
@@ -199,7 +199,7 @@ ul.panels li {
 }
 
 a {
-    text-decoration: none;
+    
     color: #d4d4d4;
 }
 
@@ -273,6 +273,7 @@ ul.nav.internal li a {
     font-family: 'Slabo 13px', Serif;
     display: inline-block;
     position: relative;
+    text-decoration: none;
     border: 1px solid #ECECEC;
     margin-top: 0;
     margin-bottom: 0;
