@@ -835,6 +835,10 @@ ul.pagination {
     
 }
 
+ul.pagination:empty::before {
+    content: '';
+}
+
 ul.pagination  li{
 margin: 0.5em;
 }
