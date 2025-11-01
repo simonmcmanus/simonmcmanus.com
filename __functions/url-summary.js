@@ -55,6 +55,7 @@ exports.handler = async(event) => {
     try {
         const body = JSON.parse(event.body)
         const tags = await storage.get('tags.json')
+        console.log('url', body.url)
         const response = await exports.getMeta(body.url, tags);
 
         if (body.url === '') {
