@@ -1,8 +1,10 @@
 // Netlify Storage adapter with the same interface as the original S3 module
 // Requires Netlify's built-in storage API (@netlify/blobs)
 
+const { getStore } = require("@netlify/blobs")
+const mime = require("mime-types");
 
-import { getStore } from "@netlify/blobs";
+
 
 
 // Create a store (bucket equivalent). You can rename this if needed.
@@ -30,7 +32,7 @@ url: jsonStore.getPublicUrl(filename),
 
 // Upload binary images
 // Upload binary images with automatic MIME detection + public URL
-import mime from "mime-types";
+
 
 
 export const upload = async (body, filename, contentType) => {
