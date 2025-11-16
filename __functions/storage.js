@@ -1,28 +1,50 @@
-const AWS = require("aws-sdk")
+// Netlify Storage adapter with the same interface as the original S3 module
+// Requires Netlify's built-in storage API (@netlify/blobs)
 
 
-const Bucket = 'netlify-files';
-
-const s3 = new AWS.S3({
-    accessKeyId: process.env.MY_AWS_ACCESS_KEY_ID,
-    secretAccessKey: process.env.MY_AWS_SECRET_ACCESS_KEY,
-})
+import { getStore } from "@netlify/blobs";
 
 
-exports.get = async(filename) => {
-    const s3Objects = await s3.getObject({
-        Key: filename,
-        Bucket,
-    }).promise();
-    return JSON.parse(s3Objects.Body.toString('utf-8'))
-}
+// Create a store (bucket equivalent). You can rename this if needed.
+// Separate stores
+const jsonStore = getStore({ name: "netlify-json" });
+const imageStore = getStore({ name: "netlify-images" });
 
 
-exports.put = async(filename, contents) => {
+export const get = async (filename) => {
+const blob = await jsonStore.get(filename, { type: "json" });
+return blob; // already parsed JSON
+};
 
-    return await s3.putObject({
-        Bucket,
-        Key: filename,
-        Body: JSON.stringify(contents, null, 4)
-    }).promise()
-}
+
+export const put = async (filename, contents) => {
+await jsonStore.set(filename, JSON.stringify(contents, null, 4), {
+metadata: { contentType: "application/json" },
+});
+return {
+ok: true,
+url: jsonStore.getPublicUrl(filename),
+};
+};
+
+
+// Upload binary images
+// Upload binary images with automatic MIME detection + public URL
+import mime from "mime-types";
+
+
+export const upload = async (body, filename, contentType) => {
+const detected = contentType || mime.lookup(filename) || "application/octet-stream";
+
+
+await imageStore.set(filename, body, {
+metadata: { contentType: detected },
+});
+
+
+return {
+ok: true,
+url: imageStore.getPublicUrl(filename),
+contentType: detected,
+};
+};

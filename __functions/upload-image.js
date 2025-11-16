@@ -4,6 +4,7 @@ const storage = require('./storage.js')
 var slugify = require('slugify')
 const build = require('./build')
 const sharp = require('sharp');
+const upload = storage.upload
 
 const s3 = new AWS.S3({
   accessKeyId: process.env.MY_AWS_ACCESS_KEY_ID,
@@ -47,19 +48,7 @@ exports.handler = async (event, context) => {
       .toBuffer();
   }
 
-  const upload = async(body, filename) => {
-
-    const Bucket = 'simonmcmanus-notes';
-    const params = {
-      Bucket,
-      Key: filename,
-      Body: body,
-      ContentType:'image/png',
-      ACL: 'public-read', 
-    };
-    return await s3.upload(params).promise();
-
-  }
+ 
   try {
     // Netlify passes the raw base64 body by default
     const body = Buffer.from(event.body, event.isBase64Encoded ? "base64" : "utf8");
