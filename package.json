@@ -10,7 +10,7 @@
         "sass": "npx sass sass:static/css",
         "watch:sass": "npx sass sass:_site/css --watch",
         "update:links": "node scripts/update-links.js",
-        "update:notes": "curl -o ./_data/notes.json https://simonmcmanus.netlify.app/.netlify/functions/list-notes"
+        "update:notes": "curl -o ./_data/notes.json https://691a228016fe310008606428--simonmcmanus.netlify.app/.netlify/functions/list-notes"
     },
     "author": "Simon McManus",
     "license": "ISC",
