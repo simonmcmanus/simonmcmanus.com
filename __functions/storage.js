@@ -1,10 +1,8 @@
 // Netlify Storage adapter with the same interface as the original S3 module
 // Requires Netlify's built-in storage API (@netlify/blobs)
 
-const { getStore } = require("@netlify/blobs")
-const mime = require("mime-types");
-
-
+import { getStore } from "@netlify/blobs";
+import mime from "mime-types";
 
 
 // Create a store (bucket equivalent). You can rename this if needed.
