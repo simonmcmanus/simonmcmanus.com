@@ -12,19 +12,19 @@ const imageStore = getStore({ name: "netlify-images" });
 
 
 export const get = async (filename) => {
-const blob = await jsonStore.get(filename, { type: "json" });
-return blob; // already parsed JSON
+    const blob = await jsonStore.get(filename, { type: "json" });
+    return blob; // already parsed JSON
 };
 
 
 export const put = async (filename, contents) => {
-await jsonStore.set(filename, JSON.stringify(contents, null, 4), {
-metadata: { contentType: "application/json" },
-});
-return {
-ok: true,
-url: jsonStore.getPublicUrl(filename),
-};
+    await jsonStore.set(filename, JSON.stringify(contents, null, 4), {
+        metadata: { contentType: "application/json" },
+    });
+    return {
+        ok: true,
+        url: jsonStore.getPublicUrl(filename),
+    };
 };
 
 
@@ -34,17 +34,13 @@ url: jsonStore.getPublicUrl(filename),
 
 
 export const upload = async (body, filename, contentType) => {
-const detected = contentType || mime.lookup(filename) || "application/octet-stream";
-
-
-await imageStore.set(filename, body, {
-metadata: { contentType: detected },
-});
-
-
-return {
-ok: true,
-url: imageStore.getPublicUrl(filename),
-contentType: detected,
-};
+    const detected = contentType || mime.lookup(filename) || "application/octet-stream";
+    await imageStore.set(filename, body, {
+        metadata: { contentType: detected },
+    });
+    return {
+        ok: true,
+        url: imageStore.getPublicUrl(filename),
+        contentType: detected,
+    };
 };

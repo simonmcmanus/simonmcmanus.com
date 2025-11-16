@@ -1,17 +1,16 @@
-const { BskyAgent, RichText } = require('@atproto/api')
+import { BskyAgent, RichText } from '@atproto/api';
 
 const agent = new BskyAgent({
     service: 'https://bsky.social'
-})
+});
 
-module.exports = async({ title, url, summary, tags, image }) => {
-    console.error(title, url, summary, tags)
-
+export default async({ title, url, summary, tags, image }) => {
+    console.error(title, url, summary, tags);
 
     await agent.login({
         identifier: process.env['BLUESKY_HANDLE'],
         password: process.env['BLUESKY_PASSWORD']
-    })
+    });
 
     // creating richtext 
     const hashTags = tags.split(',').map((t) => `#${t} `).join(' ');
@@ -40,4 +39,5 @@ module.exports = async({ title, url, summary, tags, image }) => {
 
     
     await agent.post(out);
+    return new Response('Post successful', { status: 200 });
 }

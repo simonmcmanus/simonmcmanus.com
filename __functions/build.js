@@ -1,17 +1,10 @@
-const request = require('superagent');
+import request from 'superagent';
 
-
-const url = 'https://api.netlify.com/build_hooks/621e8787b0a5891c22c67e9b'
+const url = 'https://api.netlify.com/build_hooks/621e8787b0a5891c22c67e9b';
 const build = async() => {
-
-    //return await
-    const response = await request.post(url)
-
-    // /api/v1/sites/:site_id/deploys/:deploy_id 
-
-    console.log(response.body)
-
+    const response = await request.post(url);
+    console.log(response.body);
+    return new Response.json(response.body, { status: 200 });
 }
 
-
-module.exports = build
+export default build;

@@ -6,8 +6,8 @@ export default async(event, context) => {
     try {
         const notes = await storage.get('notes.json')
         console.log('m', notes)
-         return Response.json(notes);
+         return new Response.json(notes);
     } catch (e) {
-        return { statusCode: 500, body: e.message }
+        return new Response(e.message, { statusCode: 500});
     }
 }

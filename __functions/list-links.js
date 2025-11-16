@@ -1,17 +1,17 @@
-const storage = require('./storage');
+import storage from './storage.js';
 
-exports.handler = async(event, context) => {
+const handler = async (event, context) => {
     try {
-        const links = await storage.get('links.json')
-        console.log('links', links)
-        return {
-            statusCode: 200,
-            body: JSON.stringify(links),
+        const links = await storage.get('links.json');
+        console.log('links', links);
+        return new Response.json(links, {
             headers: {
                 'Content-Type': 'application/json',
             },
-        }
+        });
     } catch (e) {
-        return { statusCode: 500, body: e.message }
+        return new Response(String(e?.message ?? e), { status: 500 });
     }
-}
+};
+
+export default handler;
