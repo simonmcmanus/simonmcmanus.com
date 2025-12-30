@@ -1,9 +1,9 @@
-const AWS = require("aws-sdk");
-const { Buffer } = require("buffer");
-const storage = require('./storage.js')
-var slugify = require('slugify')
-const build = require('./build')
-const sharp = require('sharp');
+import AWS from "aws-sdk";
+import { Buffer } from "buffer";
+import storage from './storage.js';
+import slugify from 'slugify';
+import build from './build';
+import sharp from 'sharp';
 const upload = storage.upload
 
 const s3 = new AWS.S3({
@@ -24,14 +24,12 @@ exports.handler = async (event, context) => {
 
   if (event.headers['x-api-key'] !== process.env.API_KEY) {
       console.log('no/invalid api key')
-      return { statusCode: 404 }
+      return new Response('', { statusCode: 404 })
   }
 
   if (event.httpMethod !== "POST") {
-    return {
-      statusCode: 405,
-      body: JSON.stringify({ error: "Method not allowed" }),
-    };
+    return new Response.json({ error: "Method not allowed" }, { status: 405 });
+
   }
 
 
@@ -86,20 +84,11 @@ exports.handler = async (event, context) => {
     notes.push(note)
     await storage.put('notes.json', notes)
     await build()
-    return {
-      statusCode: 200,
-      body: JSON.stringify({
-        message: "Upload successful",
-        key: `${url}${filePath()}`,
-        url,
-      }),
-    };
+    return new Response.json({ message: "Upload successful", key: `${url}${filePath()}`, url }, { status: 200 });
+
   } catch (error) {
     console.error("Upload error:", error);
 
-    return {
-      statusCode: 500,
-      body: JSON.stringify({ error: "Upload failed" }),
-    };
+    return new Response.json({ error: "Upload failed" }, { status: 500 });
   }
 };

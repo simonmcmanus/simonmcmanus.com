@@ -1,14 +1,19 @@
 import OpenAI from 'openai';
-import storage from './storage';
+import * as storage from './storage';
 import request from 'superagent';
 
 const client = new OpenAI({
     apiKey: process.env['OPENAI_API_KEY'],
 });
 
-export const getMeta = async(url, tags) => {
-    const content = await request.get(url);
-    const markup = content.text;
+export const getMeta = async(url, markup, tags) => {
+    try {
+        const content = await request.get(url);
+        markup = content.text
+    } catch (e) {
+        console.log('could not fetch url content, using markup', e);
+    }   
+    
     const messages = {
         messages: [
             {
@@ -50,7 +55,7 @@ export default async(event) => {
         const body = JSON.parse(event.body);
         const tags = await storage.get('tags.json');
         console.log('url', body.url);
-        const response = await getMeta(body.url, tags);
+        const response = await getMeta(body.url, body.markup, tags);
 
         if (body.url === '') {
             console.log('error: no url');
