@@ -49,7 +49,7 @@ export const getMeta = async({ url, markup }) => {
 
     const chatCompletion = await client.chat.completions.create(messages);
     const response = JSON.parse(chatCompletion.choices[0].message.content);
-    return new Response.json(response);
+    return new Response(JSON.stringify(response), { status: 200 });
 }
 
 export default async(event) => {
@@ -61,7 +61,7 @@ export default async(event) => {
             console.log('error: no url');
             return new Response('no-url', { status: 400 });
         }
-        return new Response.json(response);
+        return new Response(JSON.stringify(response), { status: 200 });
     } catch (e) {
         console.log(e);
         return new Response(e.message, { status: 500 });
