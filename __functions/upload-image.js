@@ -1,5 +1,5 @@
 import { Buffer } from "buffer";
-import * as storage from './storage.js';;
+import * as storage from './storage.js';
 import slugify from 'slugify';
 import build from './build';
 import sharp from 'sharp';
