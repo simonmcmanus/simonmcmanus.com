@@ -3,7 +3,6 @@
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
-    "type":"module",
     "scripts": {
         "test": "rm -Rf _site &&   eleventy --serve ",
         "eleventy": "npm run update:links && npm run update:notes && npm run sass && npm run html ",
