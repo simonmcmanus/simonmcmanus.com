@@ -5,19 +5,20 @@ import { getStore } from "@netlify/blobs";
 import mime from "mime-types";
 
 
-// Create a store (bucket equivalent). You can rename this if needed.
-// Separate stores
-const jsonStore = getStore({ name: "netlify-json" });
-const imageStore = getStore({ name: "netlify-images" });
-
 
 export const get = async (filename) => {
+
+    const jsonStore = getStore({ name: "netlify-json" });
+
     const blob = await jsonStore.get(filename, { type: "json" });
     return blob; // already parsed JSON
 };
 
 
 export const put = async (filename, contents) => {
+
+    const jsonStore = getStore({ name: "netlify-json" });
+    
     await jsonStore.set(filename, JSON.stringify(contents, null, 4), {
         metadata: { contentType: "application/json" },
     });
@@ -34,6 +35,9 @@ export const put = async (filename, contents) => {
 
 
 export const upload = async (body, filename, contentType) => {
+    const imageStore = getStore({ name: "netlify-images" });
+
+
     const detected = contentType || mime.lookup(filename) || "application/octet-stream";
     await imageStore.set(filename, body, {
         metadata: { contentType: detected },
