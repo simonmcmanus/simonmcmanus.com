@@ -1,6 +1,6 @@
 import AWS from "aws-sdk";
 import { Buffer } from "buffer";
-import storage from './storage.js';
+import * as storage from './storage.js';;
 import slugify from 'slugify';
 import build from './build';
 import sharp from 'sharp';

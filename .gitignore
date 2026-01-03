@@ -10,3 +10,4 @@ static/css/*
 .netlify
 .DS_Store
 netlify-json
+.DS_Store

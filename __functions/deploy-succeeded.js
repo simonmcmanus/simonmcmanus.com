@@ -1,5 +1,5 @@
 import bluesky from './bluesky';
-import storage from './storage';
+import * as storage from './storage.js';
 
 export default async () => {
     const links = await storage.get('links.json');

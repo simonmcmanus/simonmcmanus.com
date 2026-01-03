@@ -1,4 +1,4 @@
-import storage from './storage.js';
+import * as storage from './storage.js';
 
 const handler = async (event, context) => {
     try {

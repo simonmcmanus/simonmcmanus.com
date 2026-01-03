@@ -1,4 +1,4 @@
-import storage from './storage';
+import * as storage from './storage.js';
 import { searchTags } from '../lib/get-tags.js';
 
 export const handler = async(event) => {
