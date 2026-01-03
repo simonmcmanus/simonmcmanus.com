@@ -28,7 +28,7 @@ const build = async() => {
     }
 
     console.log('finish');
-    return new Response('Build finished', { status: 200 });
+    return Response('Build finished', { status: 200 });
 }
 
 export default build;

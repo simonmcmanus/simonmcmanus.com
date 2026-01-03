@@ -39,5 +39,5 @@ export default async({ title, url, summary, tags, image }) => {
 
     
     await agent.post(out);
-    return new Response('Post successful', { status: 200 });
+    return Response('Post successful', { status: 200 });
 }

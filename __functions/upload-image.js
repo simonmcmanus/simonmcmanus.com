@@ -23,7 +23,7 @@ exports.handler = async (event, context) => {
 
   if (event.headers['x-api-key'] !== process.env.API_KEY) {
       console.log('no/invalid api key')
-      return new Response('', { status: 404 })
+      return Response('', { status: 404 })
   }
 
   if (event.httpMethod !== "POST") {

@@ -13,6 +13,6 @@ export const handler = async(event) => {
         return new Response.json(uniqueTags, { status: 200, headers: { 'Content-Type': 'application/json' } });
     } catch (e) {
         console.log(e);
-        return new Response(e.message, { status: 500 });
+        return Response(e.message, { status: 500 });
     }
 }

@@ -14,12 +14,10 @@ superagent
     .end(function(error, data) {
 
 
-return
 
         if (!data )
             return
 
-        console.log(data.body)
         var links = data.body
             .filter(link => {
                 return link.title, link.url;
