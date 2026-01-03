@@ -1,4 +1,3 @@
-import AWS from "aws-sdk";
 import { Buffer } from "buffer";
 import * as storage from './storage.js';;
 import slugify from 'slugify';
