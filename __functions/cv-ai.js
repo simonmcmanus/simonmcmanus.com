@@ -49,7 +49,7 @@ export const getMeta = async({ url, markup }) => {
 
     const chatCompletion = await client.chat.completions.create(messages);
     const response = JSON.parse(chatCompletion.choices[0].message.content);
-    return new Response(JSON.stringify(response), { status: 200 });
+    return response;
 }
 
 export default async(event) => {

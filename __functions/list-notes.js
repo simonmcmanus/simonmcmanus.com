@@ -8,6 +8,6 @@ export default async(event, context) => {
         console.log('m', notes)
          return new Response.json(notes);
     } catch (e) {
-        return new Response(e.message, { statusCode: 500});
+        return new Response(e.message, { status: 500 });
     }
 }
