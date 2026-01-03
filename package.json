@@ -17,7 +17,6 @@
     "dependencies": {
         "@atproto/api": "^0.13.23",
         "@netlify/blobs": "^10.3.3",
-        "aws-sdk": "^2.1415.0",
         "clean-css": "^5.3.1",
         "eleventy": "^1.0.6",
         "eleventy-sizlate": "^1.0.3",
