@@ -14,9 +14,9 @@ superagent
     .end(function(error, data) {
 
 
+return
 
-
-        if (!data || data.body == {})
+        if (!data )
             return
 
         console.log(data.body)
