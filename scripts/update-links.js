@@ -16,9 +16,10 @@ superagent
 
 
 
-        if (!data)
+        if (!data || data.body == {})
             return
 
+        console.log(data.body)
         var links = data.body
             .filter(link => {
                 return link.title, link.url;
