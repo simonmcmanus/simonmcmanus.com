@@ -1,7 +1,7 @@
 import * as storage from './storage.js'
 import * as bluesky from './bluesky.js'
 import build from './build.js'
-import * as netlify from './netlify.js'
+import netlify from './netlify.js'
 import { extractUniqueTags } from '../lib/get-tags.js'
 
 export default async function(event) {
