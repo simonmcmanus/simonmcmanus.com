@@ -1,2 +1,1 @@
-netlify blobs:get netlify-json notes.json > notes.j
-son
+netlify blobs:get netlify-json notes.json > notes.json
