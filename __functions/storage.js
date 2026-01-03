@@ -6,10 +6,9 @@ import mime from "mime-types";
 
 
 
-export const get = async (filename) => {
-
     const jsonStore = getStore({ name: "netlify-json" });
-
+    
+export const get = async (filename) => {
     const blob = await jsonStore.get(filename, { type: "json" });
     return blob; // already parsed JSON
 };
