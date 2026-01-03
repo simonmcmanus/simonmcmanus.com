@@ -1,12 +1,12 @@
-const storage = require('./storage.js')
-const bluesky = require('./bluesky')
-const build = require('./build')
-const netlify = require('./netlify');
-const { extractUniqueTags } = require('../lib/get-tags.js')
-exports.handler = async(event) => {
+import * as storage from './storage.js'
+import build from './build.js'
+import netlify from './netlify.js'
+import { extractUniqueTags } from '../lib/get-tags.js'
+
+export default async function(event) {
 
     if (event.headers['x-api-key'] !== process.env.API_KEY) {
-        return { statusCode: 404 }
+        return new Response('', { status: 404 })
     }
 
     try {
@@ -15,7 +15,10 @@ exports.handler = async(event) => {
 
         if (body.url === '') {
             console.log('error: no url')
-            return { statusCode: 400, body: 'no-url' }
+            return new Response.json({ error: 'no-url' }, {
+                status: 400,
+                headers: { 'Content-Type': 'application/json' }
+            })
         }
 
         const links = await storage.get('links.json')
@@ -24,7 +27,10 @@ exports.handler = async(event) => {
 
         if (alreadyAdded) { // link already exists
             console.log('error: url exist')
-            return { statusCode: 400, body: 'URL Already Saved' }
+            return new Response.json({ error: 'URL Already Saved' }, {
+                status: 400,
+                headers: { 'Content-Type': 'application/json' }
+            })
         }
 
         const input = {
@@ -46,10 +52,16 @@ exports.handler = async(event) => {
         await storage.put('links.json', links)
         await storage.put('tags.json', tags)
         await build()
-        return { statusCode: 200, body: 'done' }
+        return new Response('done', {
+            status: 200,
+            headers: { 'Content-Type': 'application/json' }
+        })
 
     } catch (e) {
         console.log(e)
-        return { statusCode: 500, body: e.message }
+        return new Response( e.message, {
+            status: 500,
+            headers: { 'Content-Type': 'application/json' }
+        })
     }
 }

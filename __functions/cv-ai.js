@@ -1,15 +1,13 @@
-
-const OpenAI = require('openai')
-const request = require('superagent');
-const fs = require('fs');
+import OpenAI from 'openai';
+import request from 'superagent';
+import fs from 'fs';
 const cv = fs.readFileSync(require.resolve('../static/cv.html'), { encoding: 'utf8' });
 
 const client = new OpenAI({
     apiKey: process.env['OPENAI_API_KEY'],
 });
 
-
-exports.getMeta = async({ url, markup }) => {
+export const getMeta = async({ url, markup }) => {
     const messages = {
         messages: [
             {
@@ -49,37 +47,23 @@ exports.getMeta = async({ url, markup }) => {
         response_format: { type: "json_object" }
     }
 
-    
     const chatCompletion = await client.chat.completions.create(messages);
-    
-    const response = JSON.parse(chatCompletion.choices[0].message.content)
-
-    
+    const response = JSON.parse(chatCompletion.choices[0].message.content);
     return response;
 }
 
-
-exports.handler = async(event) => {
-
+export default async(event) => {
     try {
-        const body = JSON.parse(event.body)
-        const response = await exports.getMeta(body);
+        const body = JSON.parse(event.body);
+        const response = await getMeta(body);
         
         if (body.url === '') {
-            console.log('error: no url')
-            return { statusCode: 400, body: 'no-url' }
+            console.log('error: no url');
+            return new Response('no-url', { status: 400 });
         }
-        return { statusCode: 200, body: JSON.stringify(response) }
-
+        return new Response(JSON.stringify(response), { status: 200 });
     } catch (e) {
-        console.log(e)
-        return { statusCode: 500, body: e.message }
+        console.log(e);
+        return new Response(e.message, { status: 500 });
     }
 }
-
-
-// const a = async () => {
-//   const cv = await request.get('https://simonmcmanus.com/cv')
-//   console.log(cv.text)
-// }
-// a()

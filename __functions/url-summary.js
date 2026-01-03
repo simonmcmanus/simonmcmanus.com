@@ -1,15 +1,19 @@
-const OpenAI = require('openai')
-const storage = require('./storage')
-const request = require('superagent');
+import OpenAI from 'openai';
+import * as storage from './storage';
+import request from 'superagent';
 
 const client = new OpenAI({
     apiKey: process.env['OPENAI_API_KEY'],
 });
 
-
-exports.getMeta = async(url, tags) => {
-    const content = await request.get(url)
-    const markup =content.text;
+export const getMeta = async(url, markup, tags) => {
+    try {
+        const content = await request.get(url);
+        markup = content.text
+    } catch (e) {
+        console.log('could not fetch url content, using markup', e);
+    }   
+    
     const messages = {
         messages: [
             {
@@ -41,31 +45,25 @@ exports.getMeta = async(url, tags) => {
         response_format: { type: "json_object" }
     }
 
-    
     const chatCompletion = await client.chat.completions.create(messages);
-    
-    const response = JSON.parse(chatCompletion.choices[0].message.content)
-
+    const response = JSON.parse(chatCompletion.choices[0].message.content);
     return response;
 }
 
-
-exports.handler = async(event) => {
-
+export default async(event) => {
     try {
-        const body = JSON.parse(event.body)
-        const tags = await storage.get('tags.json')
-        console.log('url', body.url)
-        const response = await exports.getMeta(body.url, tags);
+        const body = JSON.parse(event.body);
+        const tags = await storage.get('tags.json');
+        console.log('url', body.url);
+        const response = await getMeta(body.url, body.markup, tags);
 
         if (body.url === '') {
-            console.log('error: no url')
-            return { statusCode: 400, body: 'no-url' }
+            console.log('error: no url');
+            return new Response('no-url', { status: 400 });
         }
-        return { statusCode: 200, body: JSON.stringify(response) }
-
+        return new Response.json(response, { status: 200 });
     } catch (e) {
-        console.log(e)
-        return { statusCode: 500, body: e.message }
+        console.log(e);
+        return new Response(e.message, { status: 500 });
     }
 }

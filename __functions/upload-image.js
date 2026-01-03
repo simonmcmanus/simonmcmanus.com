@@ -1,9 +1,9 @@
-const AWS = require("aws-sdk");
-const { Buffer } = require("buffer");
-const storage = require('./storage.js')
-var slugify = require('slugify')
-const build = require('./build')
-const sharp = require('sharp');
+import { Buffer } from "buffer";
+import * as storage from './storage.js';
+import slugify from 'slugify';
+import build from './build';
+import sharp from 'sharp';
+const upload = storage.upload
 
 const s3 = new AWS.S3({
   accessKeyId: process.env.MY_AWS_ACCESS_KEY_ID,
@@ -23,14 +23,12 @@ exports.handler = async (event, context) => {
 
   if (event.headers['x-api-key'] !== process.env.API_KEY) {
       console.log('no/invalid api key')
-      return { statusCode: 404 }
+      return new Response('', { status: 404 })
   }
 
   if (event.httpMethod !== "POST") {
-    return {
-      statusCode: 405,
-      body: JSON.stringify({ error: "Method not allowed" }),
-    };
+    return new Response.json({ error: "Method not allowed" }, { status: 405 });
+
   }
 
 
@@ -47,19 +45,7 @@ exports.handler = async (event, context) => {
       .toBuffer();
   }
 
-  const upload = async(body, filename) => {
-
-    const Bucket = 'simonmcmanus-notes';
-    const params = {
-      Bucket,
-      Key: filename,
-      Body: body,
-      ContentType:'image/png',
-      ACL: 'public-read', 
-    };
-    return await s3.upload(params).promise();
-
-  }
+ 
   try {
     // Netlify passes the raw base64 body by default
     const body = Buffer.from(event.body, event.isBase64Encoded ? "base64" : "utf8");
@@ -97,20 +83,11 @@ exports.handler = async (event, context) => {
     notes.push(note)
     await storage.put('notes.json', notes)
     await build()
-    return {
-      statusCode: 200,
-      body: JSON.stringify({
-        message: "Upload successful",
-        key: `${url}${filePath()}`,
-        url,
-      }),
-    };
+    return new Response.json({ message: "Upload successful", key: `${url}${filePath()}`, url }, { status: 200 });
+
   } catch (error) {
     console.error("Upload error:", error);
 
-    return {
-      statusCode: 500,
-      body: JSON.stringify({ error: "Upload failed" }),
-    };
+    return new Response.json({ error: "Upload failed" }, { status: 500 });
   }
 };
