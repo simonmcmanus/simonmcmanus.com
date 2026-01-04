@@ -3,8 +3,14 @@ import { getStore } from "@netlify/blobs";
 const imageStore = getStore({ name: "netlify-images" });
 
 export default async (req, context) => {
-  // Get the path from the splat parameter
-  const path = context.params.splat || context.params['*'] || '';
+  // Extract path from the URL
+  const url = new URL(req.url);
+  const path = url.pathname.replace('/note/', '');
+  
+  console.log('Request URL:', req.url);
+  console.log('Pathname:', url.pathname);
+  console.log('Extracted path:', path);
+  console.log('Context params:', JSON.stringify(context.params));
   
   if (!path) {
     return new Response("Path not specified", { status: 400 });
