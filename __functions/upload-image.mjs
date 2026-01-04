@@ -46,9 +46,10 @@ console.log('0.1')
 console.log('0.3')
  
   try {
-    // Netlify passes the raw base64 body by default
+    // Get binary data from Request object
     console.log('0.4')
-    const body = Buffer.from(event.body, event.isBase64Encoded ? "base64" : "utf8");
+    const arrayBuffer = await event.arrayBuffer();
+    const body = Buffer.from(arrayBuffer);
     console.log('0.5')
 
     const fileKey = `${urlSafe(event.headers.get("speaker") + '-' + event.headers.get("title"))}-${Date.now()}`;
@@ -69,7 +70,7 @@ console.log('0.6')
     console.log(4)
     const BASE_URL = 'https://simonmcmanus.com/note/';
     const url = `${BASE_URL}${fileKey}`;
-console.log(urll)
+console.log(url)
     const note = {
       created: new Date(),
       images: {
@@ -87,11 +88,11 @@ console.log(urll)
     notes.push(note)
     await storage.put('notes.json', notes)
     await build()
-    return new Response.json({ message: "Upload successful", key: `${url}${filePath()}`, url }, { status: 200 });
+    return Response.json({ message: "Upload successful", key: `${url}${filePath()}`, url }, { status: 200 });
 
   } catch (error) {
     console.error("Upload error:", error);
 
-    return new Response.json({ error: "Upload failed" }, { status: 500 });
+    return Response.json({ error: "Upload failed" }, { status: 500 });
   }
 };
