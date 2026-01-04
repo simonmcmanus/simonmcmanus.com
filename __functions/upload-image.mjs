@@ -31,14 +31,7 @@ export default async function handler(event, context) {
     });
 
   }
-console.log('0.1')
-
   const notes = await storage.get('notes.json')
-  console.log('notes', notes);
-
-  
-  
-  console.log('0.2')
   const resize = async function(imgBuffer, width) {
      return await sharp(imgBuffer)
       .resize(width)
@@ -46,17 +39,13 @@ console.log('0.1')
       .jpeg({ quality: 80 }) // compress it with a quality level of 80 out of 100
       .toBuffer();
   }
-console.log('0.3')
  
   try {
     // Get binary data from Request object
-    console.log('0.4')
     const arrayBuffer = await event.arrayBuffer();
     const body = Buffer.from(arrayBuffer);
-    console.log('0.5')
 
     const fileKey = `${urlSafe(event.headers.get("speaker") + '-' + event.headers.get("title"))}-${Date.now()}`;
-console.log('0.6')
     const filePath = (size) => {
       if(size) {
         return `${fileKey}/${size}.jpg`;
@@ -64,16 +53,11 @@ console.log('0.6')
       return `${fileKey}/original.jpg`;
 
     }
-    console.log(1)
     await upload(body, filePath());
-    console.log(2)
     await upload(await resize(body, 200), filePath(200))
-    console.log(3)
     await upload(await resize(body, 500), filePath(500))
-    console.log(4)
     const BASE_URL = 'https://simonmcmanus.com/note/';
     const url = `${BASE_URL}${fileKey}`;
-console.log(url)
     const note = {
       created: new Date(),
       images: {
@@ -86,7 +70,6 @@ console.log(url)
       ev: event.headers.get("event"),
       speaker: event.headers.get("speaker")
     };
-    console.log('note', note)
 
     notes.push(note)
     await storage.put('notes.json', notes)

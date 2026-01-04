@@ -24,7 +24,7 @@
         "lodash": "^4.17.21",
         "mime-types": "^3.0.2",
         "netlify": "^23.11.0",
-        "netlify-cli": "^23.11.0",
+        "netlify-cli": "^23.13.0",
         "openai": "^4.77.0",
         "sharp": "^0.34.4",
         "twitter": "^1.7.1"
