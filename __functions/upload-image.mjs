@@ -51,7 +51,7 @@ console.log('0.3')
     const body = Buffer.from(event.body, event.isBase64Encoded ? "base64" : "utf8");
     console.log('0.5')
 
-    const fileKey = `${urlSafe(event.headers["speaker"] + '-' + event.headers["title"])}-${Date.now()}`;
+    const fileKey = `${urlSafe(event.headers.get("speaker") + '-' + event.headers.get("title"))}-${Date.now()}`;
 console.log('0.6')
     const filePath = (size) => {
       if(size) {
@@ -77,10 +77,10 @@ console.log(urll)
         small: `${BASE_URL}${filePath(200)}`,
         medium: `${BASE_URL}${filePath(500)}`
       },
-      title: event.headers["title"],
-      tags: event.headers["tags"],
-      ev: event.headers["event"],
-      speaker: event.headers["speaker"]
+      title: event.headers.get("title"),
+      tags: event.headers.get("tags"),
+      ev: event.headers.get("event"),
+      speaker: event.headers.get("speaker")
     };
     console.log('note', note)
 
