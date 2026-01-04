@@ -1,7 +1,7 @@
 import { Buffer } from "buffer";
 import * as storage from './storage.js';
 import slugify from 'slugify';
-import build from './build';
+import build from './build.js';
 import sharp from 'sharp';
 const upload = storage.upload
 
