@@ -28,7 +28,13 @@ title: Simon McManus - Talks
             background-image: url(/icons/monitor.svg);
         }
     </style>
-    <section>
+     <section>
+        <h4>Tracking repository health at scale</h4>
+        <ul class="resources">
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/m4TseaEX9iA?si=f1WuUJUpZT156ymN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </ul>
+    </section>[]
+1    <section>
         <h4>Keep it simple Simon - Complexity Killed th cat.</h4>
         <ul class="resources">
             <video width="300px"  controls>
