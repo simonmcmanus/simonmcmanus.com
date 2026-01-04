@@ -10,9 +10,9 @@ export const handler = async(event) => {
         const tags = await storage.get('tags.json');
         const uniqueTags = searchTags(tags, searchTerms);
 
-        return new Response.json(uniqueTags, { status: 200, headers: { 'Content-Type': 'application/json' } });
+        return Response.json(uniqueTags, { status: 200, headers: { 'Content-Type': 'application/json' } });
     } catch (e) {
         console.log(e);
-        return Response(e.message, { status: 500 });
+        return new Response(e.message, { status: 500 });
     }
 }

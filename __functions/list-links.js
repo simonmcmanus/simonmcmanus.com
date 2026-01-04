@@ -10,7 +10,7 @@ const handler = async (event, context) => {
             },
         });
     } catch (e) {
-        return Response(String(e?.message ?? e), { status: 500 });
+        return new Response(String(e?.message ?? e), { status: 500 });
     }
 };
 

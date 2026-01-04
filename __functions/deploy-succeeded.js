@@ -18,5 +18,5 @@ export default async () => {
         await bluesky(update);
     }
     await storage.put('links.json', updatedLinks);
-    return new Response.json(updatedLinks);
+    return Response.json(updatedLinks);
 };
