@@ -19,7 +19,7 @@ const urlSafe = (string) => { // copied into the file as the original is not int
 export default async function handler(event, context) {
   console.log('e', event)
 
-  if (event.headers['x-api-key'] !== process.env.API_KEY) {
+  if (event.headers.get('x-api-key') !== process.env.API_KEY) {
       console.log('no/invalid api key')
       return new Response('', { status: 404 })
   }
