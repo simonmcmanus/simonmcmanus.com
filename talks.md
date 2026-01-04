@@ -40,14 +40,6 @@ title: Simon McManus - Talks
         <h4>Progressive Enhancement Strategies</h4>
         <ul>
             <li>
-                Keep it simple Simon - Complexity Killed th cat. 
-                <ul class="resources">
-                    <video width="300px"  controls>
-                        <source src="/talks/Simon%20Mcmanus%20-%20KISS%20Keep%20it%20simple.mp4" type="video/mp4">
-                    </video>
-                </ul>
-            </li>
-            <li>
                 <a href="http://lnug.org">London Node User Group (LNUG)</a>
                 <ul class="resources">
                     <li class="video"><a href="https://www.youtube.com/watch?v=KPrC-udTDi8"> video </a></li>
