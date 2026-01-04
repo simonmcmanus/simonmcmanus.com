@@ -25,7 +25,7 @@ export default async function handler(event, context) {
   }
 
   if (event.httpMethod !== "POST") {
-    return new Response.json({ error: "Method not allowed" }, { status: 405 });
+    return Response.json({ error: "Method not allowed" }, { status: 405 });
 
   }
 
