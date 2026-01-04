@@ -29,6 +29,14 @@ title: Simon McManus - Talks
         }
     </style>
     <section>
+        <h4>Keep it simple Simon - Complexity Killed th cat.</h4>
+        <ul class="resources">
+            <video width="300px"  controls>
+                <source src="/talks/Simon%20Mcmanus%20-%20KISS%20Keep%20it%20simple.mp4" type="video/mp4">
+            </video>
+        </ul>
+    </section>
+    <section>
         <h4>Progressive Enhancement Strategies</h4>
         <ul>
             <li>
