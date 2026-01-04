@@ -5,10 +5,7 @@ import build from './build';
 import sharp from 'sharp';
 const upload = storage.upload
 
-const s3 = new AWS.S3({
-  accessKeyId: process.env.MY_AWS_ACCESS_KEY_ID,
-  secretAccessKey: process.env.MY_AWS_SECRET_ACCESS_KEY,
-});
+
 
 const urlSafe = (string) => { // copied into the file as the original is not inthe functions folder 
     const lowerCaseString = string.toLowerCase().trim()
