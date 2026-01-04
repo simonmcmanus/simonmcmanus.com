@@ -3,19 +3,19 @@ import build from './build.js'
 import netlify from './netlify.js'
 import { extractUniqueTags } from '../lib/get-tags.js'
 
-export default async function(event) {
+export default async function(req, context) {
 
-    if (event.headers['x-api-key'] !== process.env.API_KEY) {
-        return Response('', { status: 404 })
+    if (req.headers.get('x-api-key') !== process.env.API_KEY) {
+        return new Response('', { status: 404 })
     }
 
     try {
 
-        const body = JSON.parse(event.body)
+        const body = await req.json()
 
         if (body.url === '') {
             console.log('error: no url')
-            return Response.json({ error: 'no-url' }, {
+            return new Response(JSON.stringify({ error: 'no-url' }), {
                 status: 400,
                 headers: { 'Content-Type': 'application/json' }
             })
@@ -27,7 +27,7 @@ export default async function(event) {
 
         if (alreadyAdded) { // link already exists
             console.log('error: url exist')
-            return new Response.json({ error: 'URL Already Saved' }, {
+            return new Response(JSON.stringify({ error: 'URL Already Saved' }), {
                 status: 400,
                 headers: { 'Content-Type': 'application/json' }
             })
@@ -52,14 +52,14 @@ export default async function(event) {
         await storage.put('links.json', links)
         await storage.put('tags.json', tags)
         await build()
-        return Response('done', {
+        return new Response('done', {
             status: 200,
             headers: { 'Content-Type': 'application/json' }
         })
 
     } catch (e) {
         console.log(e)
-        return Response( e.message, {
+        return new Response(e.message, {
             status: 500,
             headers: { 'Content-Type': 'application/json' }
         })
