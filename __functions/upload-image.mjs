@@ -25,7 +25,10 @@ export default async function handler(event, context) {
 
   if (event.method !== "POST") {
 
-    return Response.json({ error: "Method not allowed" }, { status: 405 });
+    return new Response(JSON.stringify({ error: "Method not allowed" }), { 
+      status: 405,
+      headers: { 'Content-Type': 'application/json' }
+    });
 
   }
 console.log('0.1')
@@ -88,11 +91,17 @@ console.log(url)
     notes.push(note)
     await storage.put('notes.json', notes)
     await build()
-    return Response.json({ message: "Upload successful", key: `${url}${filePath()}`, url }, { status: 200 });
+    return new Response(JSON.stringify({ message: "Upload successful", key: `${url}${filePath()}`, url }), { 
+      status: 200,
+      headers: { 'Content-Type': 'application/json' }
+    });
 
   } catch (error) {
     console.error("Upload error:", error);
 
-    return Response.json({ error: "Upload failed" }, { status: 500 });
+    return new Response(JSON.stringify({ error: "Upload failed" }), { 
+      status: 500,
+      headers: { 'Content-Type': 'application/json' }
+    });
   }
 };
