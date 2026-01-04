@@ -15,7 +15,12 @@ export default async (req, context) => {
 
     for (const update of updates) {
         console.log(update.title);
+        try {
+            
         await bluesky(update);
+        } catch (error) {
+            
+        }
     }
     await storage.put('links.json', updatedLinks, context);
     return Response.json(updatedLinks);
