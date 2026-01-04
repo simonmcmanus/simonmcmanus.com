@@ -50,9 +50,12 @@ export const getMeta = async(url, markup, tags) => {
     return response;
 }
 
-export default async(event) => {
+export default async(req, context) => {
+    console.log(1)
     try {
-        const body = JSON.parse(event.body);
+        console.log(2)
+        const body = await req.json();
+        console.log(1)
         const tags = await storage.get('tags.json');
         console.log('url', body.url);
         const response = await getMeta(body.url, body.markup, tags);
