@@ -45,7 +45,9 @@ export default async function handler(event, context) {
     const arrayBuffer = await event.arrayBuffer();
     const body = Buffer.from(arrayBuffer);
 
-    const fileKey = `${urlSafe(event.headers.get("speaker") + '-' + event.headers.get("title"))}-${Date.now()}`;
+    const now = new Date();
+    const dateStr = `${String(now.getDate()).padStart(2, '0')}-${String(now.getMonth() + 1).padStart(2, '0')}-${now.getFullYear()}`;
+    const fileKey = `${urlSafe(event.headers.get("speaker") + '-' + event.headers.get("title"))}-${dateStr}`;
     const filePath = (size) => {
       if(size) {
         return `${fileKey}/${size}.jpg`;
