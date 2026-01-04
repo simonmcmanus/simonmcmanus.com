@@ -57,12 +57,16 @@ export default async function handler(event, context) {
       return `${fileKey}/original.jpg`;
 
     }
+    console.log(1)
     await upload(body, filePath());
+    console.log(2)
     await upload(await resize(body, 200), filePath(200))
+    console.log(3)
     await upload(await resize(body, 500), filePath(500))
+    console.log(4)
     const BASE_URL = 'https://simonmcmanus.com/note/';
     const url = `${BASE_URL}${fileKey}`;
-
+console.log(urll)
     const note = {
       created: new Date(),
       images: {
