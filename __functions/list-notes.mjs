@@ -2,7 +2,7 @@
 import * as storage from './storage.js'
 
 
-export default async(event, context) => {
+export default async function handler(event, context) {
     try {
         const notes = await storage.get('notes.json')
         console.log('m', notes)
