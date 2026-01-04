@@ -27,14 +27,14 @@ export default async function handler(event, context) {
     return Response.json({ error: "Method not allowed" }, { status: 405 });
 
   }
-
+console.log('0.1')
 
   const notes = await storage.get('notes.json')
   console.log('notes', notes);
 
   
   
-  
+  console.log('0.2')
   const resize = async function(imgBuffer, width) {
      return await sharp(imgBuffer)
       .resize(width)
@@ -42,15 +42,16 @@ export default async function handler(event, context) {
       .jpeg({ quality: 80 }) // compress it with a quality level of 80 out of 100
       .toBuffer();
   }
-
+console.log('0.3')
  
   try {
     // Netlify passes the raw base64 body by default
+    console.log('0.4')
     const body = Buffer.from(event.body, event.isBase64Encoded ? "base64" : "utf8");
-    
+    console.log('0.5')
 
     const fileKey = `${urlSafe(event.headers["speaker"] + '-' + event.headers["title"])}-${Date.now()}`;
-
+console.log('0.6')
     const filePath = (size) => {
       if(size) {
         return `${fileKey}/${size}.jpg`;
