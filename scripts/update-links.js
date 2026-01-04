@@ -13,22 +13,30 @@ superagent
     .set('Accept', 'application/json')
     .end(function(error, data) {
 
+        if (error) {
+            console.error("Error fetching links:", error.message);
+            return;
+        }
 
+        if (!data || !data.body) {
+            console.error("No data received from API");
+            return;
+        }
 
-        if (!data )
-            return
+        if (!Array.isArray(data.body)) {
+            console.error("Expected array but got:", typeof data.body, data.body);
+            return;
+        }
 
         var links = data.body
             .filter(link => {
-                return link.title, link.url;
+                return link && link.title && link.url;
             })
             .map(link => {
-                const tags = link.tags.split(",");
-                if (tags) {
-                    link.tags = tags;
-                }
+                const tags = link.tags ? link.tags.split(",") : [];
+                link.tags = tags;
+                
                 if (link.created) {
-
                     link.date = link.created.substring(0, 10) || new Date();
                 }
                 return link;
