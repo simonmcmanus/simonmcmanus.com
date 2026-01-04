@@ -2,6 +2,7 @@ import * as storage from './storage.js'
 import build from './build.js'
 import netlify from './netlify.js'
 import { extractUniqueTags } from '../lib/get-tags.js'
+import bluesky from './bluesky.js'
 
 export default async function(req, context) {
 
@@ -52,6 +53,7 @@ export default async function(req, context) {
         await storage.put('links.json', links)
         await storage.put('tags.json', tags)
         await build()
+        await bluesky({title: body.title, url: body.url, summary: body.summary, tags: body.tags})
         return new Response('done', {
             status: 200,
             headers: { 'Content-Type': 'application/json' }
