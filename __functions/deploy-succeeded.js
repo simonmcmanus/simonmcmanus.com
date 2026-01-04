@@ -1,8 +1,8 @@
 import bluesky from './bluesky';
 import * as storage from './storage.js';
 
-export default async () => {
-    const links = await storage.get('links.json');
+export default async (req, context) => {
+    const links = await storage.get('links.json', context);
     const updates = [];
     const updatedLinks = links.map((link) => {
         // todo: this could only update links which were added before the build was triggered to ensure they are published when tweeted
@@ -17,6 +17,6 @@ export default async () => {
         console.log(update.title);
         await bluesky(update);
     }
-    await storage.put('links.json', updatedLinks);
+    await storage.put('links.json', updatedLinks, context);
     return Response.json(updatedLinks);
 };

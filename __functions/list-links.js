@@ -2,7 +2,7 @@ import * as storage from './storage.js';
 
 const handler = async (event, context) => {
     try {
-        const links = await storage.get('links.json');
+        const links = await storage.get('links.json', context);
         console.log('links', links);
         return Response.json(links, {
             headers: {

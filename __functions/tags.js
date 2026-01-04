@@ -1,13 +1,13 @@
 import * as storage from './storage.js';
 import { searchTags } from '../lib/get-tags.js';
 
-export const handler = async(event) => {
+export const handler = async(req, context) => {
     try {
         let searchTerms = '';
-        if (event.headers && event.headers.search) {
-            searchTerms = event.headers.search.toLowerCase().split(',');
+        if (req.headers && req.headers.get('search')) {
+            searchTerms = req.headers.get('search').toLowerCase().split(',');
         }
-        const tags = await storage.get('tags.json');
+        const tags = await storage.get('tags.json', context);
         const uniqueTags = searchTags(tags, searchTerms);
 
         return Response.json(uniqueTags, { status: 200, headers: { 'Content-Type': 'application/json' } });

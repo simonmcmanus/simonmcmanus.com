@@ -31,7 +31,7 @@ export default async function handler(event, context) {
     });
 
   }
-  const notes = await storage.get('notes.json')
+  const notes = await storage.get('notes.json', context)
   const resize = async function(imgBuffer, width) {
      return await sharp(imgBuffer)
       .resize(width)
@@ -53,9 +53,9 @@ export default async function handler(event, context) {
       return `${fileKey}/original.jpg`;
 
     }
-    await upload(body, filePath());
-    await upload(await resize(body, 200), filePath(200))
-    await upload(await resize(body, 500), filePath(500))
+    await upload(body, filePath(), undefined, context);
+    await upload(await resize(body, 200), filePath(200), undefined, context)
+    await upload(await resize(body, 500), filePath(500), undefined, context)
     const BASE_URL = 'https://simonmcmanus.com/note/';
     const url = `${BASE_URL}${fileKey}`;
     const note = {
@@ -72,7 +72,7 @@ export default async function handler(event, context) {
     };
 
     notes.push(note)
-    await storage.put('notes.json', notes)
+    await storage.put('notes.json', notes, context)
     await build()
     return new Response(JSON.stringify({ message: "Upload successful", key: `${url}${filePath()}`, url }), { 
       status: 200,

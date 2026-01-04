@@ -5,20 +5,16 @@ import { getStore } from "@netlify/blobs";
 import mime from "mime-types";
 
 
-// Create a store (bucket equivalent). You can rename this if needed.
-// Separate stores
-const jsonStore = getStore({ name: "netlify-json" });
-const imageStore = getStore({ name: "netlify-images" });
-
-
-export const get = async (filename) => {
+export const get = async (filename, context) => {
+    const jsonStore = getStore({ name: "netlify-json", context });
     const blob = await jsonStore.get(filename, { type: "json" });
     console.log(blob)
     return blob; // already parsed JSON
 };
 
 
-export const put = async (filename, contents) => {
+export const put = async (filename, contents, context) => {
+    const jsonStore = getStore({ name: "netlify-json", context });
     await jsonStore.set(filename, JSON.stringify(contents, null, 4), {
         metadata: { contentType: "application/json" },
     });
@@ -29,12 +25,11 @@ export const put = async (filename, contents) => {
 };
 
 
-// Upload binary images
-// Upload binary images with automatic MIME detection + public URL
 
 
 
-export const upload = async (body, filename, contentType) => {
+export const upload = async (body, filename, contentType, context) => {
+    const imageStore = getStore({ name: "netlify-images", context });
     const detected = contentType || mime.lookup(filename) || "application/octet-stream";
     await imageStore.set(filename, body, {
         metadata: { contentType: detected },

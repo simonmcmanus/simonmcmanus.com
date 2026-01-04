@@ -22,7 +22,7 @@ export default async function(req, context) {
             })
         }
 
-        const links = await storage.get('links.json')
+        const links = await storage.get('links.json', context)
 
         const alreadyAdded = links.some((link) => link.url === body.url)
 
@@ -50,8 +50,8 @@ export default async function(req, context) {
         links.push(input)
 
         const tags = extractUniqueTags(links)
-        await storage.put('links.json', links)
-        await storage.put('tags.json', tags)
+        await storage.put('links.json', links, context)
+        await storage.put('tags.json', tags, context)
         await build()
         await bluesky({title: body.title, url: body.url, summary: body.summary, tags: body.tags})
         return new Response('done', {

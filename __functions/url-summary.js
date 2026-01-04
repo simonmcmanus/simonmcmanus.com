@@ -56,7 +56,7 @@ export default async(req, context) => {
         console.log(2)
         const body = await req.json();
         console.log(1)
-        const tags = await storage.get('tags.json');
+        const tags = await storage.get('tags.json', context);
         console.log('url', body.url);
         const response = await getMeta(body.url, body.markup, tags);
 
