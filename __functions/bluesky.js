@@ -13,21 +13,25 @@ export default async({ title, url, summary, tags, image }) => {
     });
 
     // creating richtext 
-    const hashTags = tags.split(',').map((t) => `#${t} `).join(' ');
+    const hashTags = tags.split(',').map((t) => `#${t}`).join(' ');
     
-    // Bluesky limit is 300 graphemes
-    const urlLength = url.length;
-    const hashTagsLength = hashTags.length;
-    const maxTitleLength = 300 - urlLength - hashTagsLength - 3; // 3 for spaces
+    // Bluesky limit is 300 graphemes - build the text and check length
+    let postText = `${title} ${url} ${hashTags}`;
     
-    const truncatedTitle = title.length > maxTitleLength 
-        ? title.substring(0, maxTitleLength - 1) + '…'
-        : title;
-
-    const rt = await new RichText({
-        text: `${truncatedTitle} ${url} ${hashTags}`,
-    })
+    // Create RichText to get actual grapheme count
+    let rt = new RichText({ text: postText });
     await rt.detectFacets(agent);
+    
+    // If too long, truncate the title
+    if (rt.graphemeLength > 300) {
+        const overhead = url.length + hashTags.length + 3; // spaces and ellipsis
+        const maxTitleLength = 300 - overhead;
+        const truncatedTitle = title.substring(0, Math.max(10, maxTitleLength)) + '…';
+        postText = `${truncatedTitle} ${url} ${hashTags}`;
+        rt = new RichText({ text: postText });
+        await rt.detectFacets(agent);
+    }
+    
     const { text, facets } = rt;
 
     const out = {
