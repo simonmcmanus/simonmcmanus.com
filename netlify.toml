@@ -6,6 +6,11 @@
 
 
 [[redirects]]
+  from = "/note/*"
+  to = "/.netlify/functions/note"
+  status = 200
+
+[[redirects]]
   from = "/tag-list/"
   to = "/tags/"
   status = 301
