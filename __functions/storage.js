@@ -24,7 +24,7 @@ export const put = async (filename, contents) => {
     });
     return {
         ok: true,
-        url: jsonStore.getPublicUrl(filename),
+        filename
     };
 };
 
@@ -41,7 +41,7 @@ export const upload = async (body, filename, contentType) => {
     });
     return {
         ok: true,
-        url: imageStore.getPublicUrl(filename),
+        filename,
         contentType: detected,
     };
 };
