@@ -17,7 +17,6 @@ const urlSafe = (string) => { // copied into the file as the original is not int
 
 
 export default async function handler(event, context) {
-  console.log('e', event)
 
   if (event.headers.get('x-api-key') !== process.env.API_KEY) {
       console.log('no/invalid api key')
@@ -31,6 +30,7 @@ export default async function handler(event, context) {
 
 
   const notes = await storage.get('notes.json')
+  console.log('notes', notes);
 
   
   
