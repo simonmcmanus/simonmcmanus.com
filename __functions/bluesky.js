@@ -14,9 +14,18 @@ export default async({ title, url, summary, tags, image }) => {
 
     // creating richtext 
     const hashTags = tags.split(',').map((t) => `#${t} `).join(' ');
+    
+    // Bluesky limit is 300 graphemes
+    const urlLength = url.length;
+    const hashTagsLength = hashTags.length;
+    const maxTitleLength = 300 - urlLength - hashTagsLength - 3; // 3 for spaces
+    
+    const truncatedTitle = title.length > maxTitleLength 
+        ? title.substring(0, maxTitleLength - 1) + '…'
+        : title;
 
     const rt = await new RichText({
-        text: `${title} ${url} ${hashTags}`,
+        text: `${truncatedTitle} ${url} ${hashTags}`,
     })
     await rt.detectFacets(agent);
     const { text, facets } = rt;
@@ -39,5 +48,5 @@ export default async({ title, url, summary, tags, image }) => {
 
     
     await agent.post(out);
-    return Response('Post successful', { status: 200 });
+    return new Response('Post successful', { status: 200 });
 }
