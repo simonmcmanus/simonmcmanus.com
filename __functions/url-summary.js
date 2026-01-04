@@ -59,11 +59,11 @@ export default async(event) => {
 
         if (body.url === '') {
             console.log('error: no url');
-            return Response('no-url', { status: 400 });
+            return new Response('no-url', { status: 400 });
         }
-        return Response.json(response, { status: 200 });
+        return new Response(JSON.stringify(response), { status: 200, headers: { 'Content-Type': 'application/json' } });
     } catch (e) {
         console.log(e);
-        return Response(e.message, { status: 500 });
+        return new Response(e.message, { status: 500 });
     }
 }
