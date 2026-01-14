@@ -679,8 +679,8 @@ ul.tags {
     display: flex;
 }
 
-.all-tags {
-    display: block;
+ul.all-tags {
+    display: block !important;
 }
 
 ul.tags {}
