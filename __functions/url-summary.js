@@ -26,7 +26,7 @@ export const getMeta = async(url, markup, tags) => {
             },
             {
                 role: 'user',
-                content: `based on the content of ${url} generate a list of up to 6 most relevant tags,  The tags shold use hyphons as a seperator and uk spelling.  return the list in the json using a  tag property`
+                content: `based on the content of ${url} generate a list of up to 6 most relevant tags,  The tags shold use hyphons as a seperator and uk spelling only when absoltely necessary and ideally try to use tags that are already used, preferring single words.  return the list in the json using a  tag property`
             },
             {
                 role: 'user',
