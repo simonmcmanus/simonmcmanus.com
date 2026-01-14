@@ -2,6 +2,16 @@
     margin-left: 1em;
 }
 
+[data-speclate-page="talks"] iframe,video {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+    
+
+    
 [data-speclate-page="talks"] #container li {
     list-style-type: circle;
     margin-left: 3em;
@@ -41,5 +51,11 @@ html[data-speclate-page=talks] .tags .tag {
 }
 
 html[data-speclate-page=talks] ul.nav li.talks a h3 {
-    color: #d35400;
+    color: #eebb98;
+}
+
+@media (max-width: 1200px) {
+    iframe,video {
+        width: 85%;
+    }
 }
