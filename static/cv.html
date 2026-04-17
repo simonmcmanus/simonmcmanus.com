@@ -12,7 +12,7 @@
     <style type="text/css">
         body {
             color: #444;
-            line-height: 1.3em;
+            line-height: 1.2em;
             background: #e6e6e659;
             font-family: "Inter", sans-serif;
             font-optical-sizing: auto;
@@ -33,12 +33,18 @@
             }
         }
         
+        .column {
+            width: 49%;
+             display: inline-block;
+             vertical-align: top;
+        }
         h1,
         h2,
         h3,
         h4,
         .dates {
             font-family: Georgia;
+            
         }
         
         a {
@@ -67,7 +73,7 @@
         }
         
         .dates {
-            
+            float: right;
               font-weight: 500;
             color: #666;
             display: inline-block;
@@ -95,7 +101,7 @@
         .description li,
         .courses li {
             font-size: 1em;
-            padding-bottom: 0.6em;
+            padding-bottom: 0.7em;
             list-style-position: outside;
             list-style: disc;
             margin-left: -1.2em;
@@ -124,24 +130,7 @@
             }
         }
         
-        .columns {
-            display: flex;
-            width: 100%;
-            & .column-left {
-                width: 95%;
-            }
-            .column-right {
-                max-width: 38%;
-                li {
-                    margin: .4em 0;
-                }
-            }
-            & .courses li {
-                padding: 0.2em;
-                margin: 0.1em;
-                list-style: none;
-            }
-        }
+  
         
         .last {
             border-bottom: 0em;
@@ -160,7 +149,7 @@
         
         h3 {
             border-bottom: 1px dashed rgb(205, 204, 204);
-            padding-bottom: .3em;
+            padding-bottom: .1em;
         }
         
         #main-title {
@@ -174,8 +163,18 @@
             justify-content: space-evenly;
             flex-wrap: wrap;
             display: flex;
-            width: 100%;
+            flex-direction: column;
+            width: 45%;
+                position: relative;
+    top: -10px;
+            
         }
+
+                #contactDetails > div {
+                    margin-left: auto;
+                }
+
+        
         
         .skills {
             display: flex;
@@ -184,12 +183,7 @@
             padding-left: 0.5em;
         }
         
-        .column-right .skills li {
-            border: 1px solid #eee;
-            padding: 0.2em 1em;
-            border-radius: 0.1em;
-            margin: 0.3em;
-        }
+  
         
         .contract {
             font-size: 0.7em;
@@ -198,7 +192,7 @@
         
         #top-item {
             align-items: baseline;
-            flex-direction: column;
+        display: flex;
             padding: 3em 0em 0em;
             a {
                 font-weight: normal;
@@ -225,6 +219,11 @@
             }
             .profile {
                 margin: 0 1em;
+            }
+
+            h4.summary {
+                    font-size: 1.05em;
+    font-weight: 600;
             }
             h4.summary,
             div.dates {
@@ -292,36 +291,50 @@
                     Simon McManus
                 </h1>
                 <h2>Senior Engineering Manager</h2>
+               
             </div>
-            <div id="contactDetails">
-                <div><span class="material-symbols-outlined">
+             <div id="contactDetails">
+                <div><a href="https://simonmcmanus.com">simonmcmanus.com</a>
+                <span class="material-symbols-outlined">
                 home
-                </span><a href="https://simonmcmanus.com">simonmcmanus.com</a></div>
+                </span></div>
                 <div>
-                    <span class="material-symbols-outlined">
+                   +44 (0) 781 454 5689  <span class="material-symbols-outlined">
                     smartphone
-                    </span> +44 (0) 781 454 5689
+                  </span>
                 </div>
 
                 <div>
+                    <a href="mailto:mcmanus.simon@gmail.com">mcmanus.simon@gmail.com</a>
                     <span class="material-symbols-outlined">
                   mail
-                  </span><a href="mailto:mcmanus.simon@gmail.com">mcmanus.simon@gmail.com</a></div>
+                  </span>
+                </div>
                 <div>
-                    <span class="material-symbols-outlined">
+                    London <span class="material-symbols-outlined">
                     location_on
-                    </span> London
+                    </span>
                 </div>
             </div>
         </div>
-        <div class="item">
-            <div class="section">
 
-            </div>
-        </div>
 
-        <div class="columns">
+        <div class="">
             <div class="column-left item">
+
+
+                     <h3><span class="material-symbols-outlined">
+                  summarize
+                  </span>Summary</h3>
+
+                <p class="summary profile">
+Senior Engineering Manager leading multi-team organisations,  developing Engineering Managers, and enabling autonomous teams to deliver high-impact product and platform outcomes.
+
+Proven track record of scaling teams and driving measurable business impact, including £12.6M+ revenue uplift and modernisation of platforms serving millions of users.
+
+                </p>
+
+
                 <h3 class="item-title">
                     <span class="material-symbols-outlined">
                     work_history
@@ -332,8 +345,6 @@
                         <li class="experience vevent">
                             <h4 class="summary">
                                 <a href="https://trainline.com/">Trainline</a> - <strong>Senior Engineering Manager</strong>
-                            </h4>
-
 
                             <div class="dates ">
                                 <span class="material-symbols-outlined">
@@ -342,164 +353,56 @@
                                 <abbr class="dtstart" title="2025-09-01">September 2025</abbr> -
                                 <abbr class="dtend">present</abbr> 
                             </div>
+                            </h4>
 
 
-                                                        <div class="description">
-                             
 
-            <ul>
-              <li>Owned strategy and delivery for Trainline’s search experience, leading 2–4 teams (including Engineering Managers) across web, mobile and backend and serving millions of users across multiple markets.</li>
-    <li>Introduced conversational interfaces through Trainline’s first ChatGPT-powered product, expanding platform capabilities and new user interaction models.</li>
-    <li>Leading modernisation of critical booking flows, rebuilding the ticket options experience to unlock faster iteration and improved performance.</li>
-    <li>Set direction during team consolidation, maintaining delivery while reducing long-term platform risk.</li>
 
-            </ul>
-            </div>
+ <div class="description">
+    <ul>
+        <li><strong>Owned mission, strategy and delivery</strong> for Trainline’s search experience, improving how millions of customers discover and plan journeys, increasing engagement and conversion through rapid iteration and continuous experimentation.</li>
+        <li><strong>Developed engineering leaders</strong>, coaching senior engineers into management roles and improving leadership across teams, including 4 promotions to Engineering Manager. Mentored and developed Engineering Managers to enable more autonomous delivery across teams.</li>
+        <li><strong>Led an organisation of 25+ engineers</strong> across 2–4 teams, structuring teams and roles to support delivery, directly managing Engineering Managers and 3 Staff Engineers.</li>
+        <li><strong>Managed performance across teams</strong>, addressing underperformance directly while maintaining a high bar for engineering and delivery excellence, and improving overall team effectiveness.</li>
+        <li>Introduced conversational interfaces through Trainline’s first ChatGPT-powered product, creating a new AI-powered surface for journey planning using Trainline data, working closely with legal, risk and compliance stakeholders to ensure safe and responsible use of customer data in a production environment.</li>
+    </ul>
+</div>
                                
 
                             
                             <h4 class="summary">
                                 <a href="https://trainline.com/">Trainline</a> - <strong>Engineering Manager</strong>
-                            </h4>
-
-                            <div class="dates ">
+                                          <div class="dates ">
                                 <span class="material-symbols-outlined">
                                 date_range
                                 </span>
                                 <abbr class="dtstart" title="2021-10-01">October 2021</abbr> -
                                 <abbr class="dtend" title="2025-09-01">September 2025</abbr>
                             </div>
+                            </h4>
 
-                          <div class="description">
+                  
+
+<div class="description">
     <ul>
-        <li>Delivered £12.6M+ annual revenue uplift through improved experimentation capabilities and data-driven product decisions.</li>
-        <li>Led a multi-year rebuild of Trainline’s core search platform (Shareable Search), replacing 9 legacy implementations with a single composable system used by millions daily.</li>
-        <li>Owned platform health across ~200 repositories, introducing automated health checks, dashboards, and governance controls to improve visibility and quality.</li>
-        <li>Defined strategy, OKRs, and roadmap for reusable web components supporting 8+ teams.</li>
+       <li><strong>Led a multi-year rebuild of Trainline’s core search platform</strong> (Shareable Search), replacing 9 legacy implementations with a single composable system used by millions daily, optimised for experimentation, introducing hypothesis driven development to help teams learn quickly from experiments and make better decisions.</li>
+      
+        <li><strong>Drove £12.6M+ annual revenue uplift</strong> by introducing experimentation capabilities and helping teams make decisions based on real user data.</li>
+        
+        <li>Defined strategy, OKRs and roadmap for reusable web components, enabling teams to ship consistent customer experiences faster and with greater autonomy.</li>
+        <li>Drove company-wide improvements to engineering quality across ~200 repositories through automated standards, governance, and clear ownership models. By sharing these approaches across the organisation, multiple teams went on to build similar dashboards and adopt the same practices.</li>
     </ul>
 </div>
                             </ul>
                         </li>
-                        <li class="experience vevent detailed">
-                            <h4 class="summary">
-
-                                <a href="https://drest.com/">DREST</a> - Tech Lead
-                            </h4>
-
-                            <div class="dates">
-                                <span class="material-symbols-outlined">
-                                date_range
-                                </span>
-                                <abbr class="dtstart" title="2019-06-01">May 2020</abbr> -
-                                <abbr>July 2021</abbr>
-                            </div>
-
-                            <div class="description">
-                                <ul>
-  <li>Led cross-functional teams delivering mobile-first product experiences across iOS, Android and backend, including major platform re-architecture and growth from 3k to 30k users.</li>
-</ul>
-</ul>
-                            </div>
-                        </li>
-
-                        <li class="experience vevent detailed">
-                            <h3 class="summary">
-                                <a href="https://limescan.net/">Limescan</a> <span class="contract"> Senior Engineer (contract)</span>
-                            </h3>
-                            <div class="dates">
-                                <span class="material-symbols-outlined">
-                                    date_range
-                                    </span>
-                                <abbr class="dtstart" title="2019-06-01">June 2019</abbr> -
-                                <abbr>March 2020</abbr>
-                            </div>
-
-                            <p>
-                                Creating new features with Nuxt/Vue.js application to manage and visualise data from software-defined wireless probes.
-                            </p>
-
-
-                        </li>
-                        <li class="experience vevent detailed">
-                            <h3 class="summary">
-                                <a href="http://dominos.co.uk">Domino's Pizza Group</a> <span class="contract">Senior Engineer (contract)</span>
-                            </h3>
-                            <div class="description">
-
-                                <div class="dates">
-                                    <span class="material-symbols-outlined">
-                                    date_range
-                                    </span>
-                                    <abbr class="dtstart" title="2019-05-01">July 2019</abbr> -
-                                    <abbr class="dtstart" title="2020-01-31">January 2020</abbr>
-                                </div>
-                                <p>Rebuilding <a href="https://www.dominos.co.uk/">dominos.co.uk</a> pizza ordering experience with microfront ends using Vue and Node.js.</p>
-                            </div>
-                        </li>
-                        <li class="experience vevent detailed">
-                            <h3 class="summary">
-                                <a href="http://nearform.com/">NearForm</a> <span class="contract"> Senior Developer (contract)</span>
-                            </h3>
-                            <div class="dates">
-                                <span class="material-symbols-outlined">
-                                    date_range
-                                    </span>
-                                <abbr class="dtstart" title="2016-05-01">May 2016</abbr> -
-                                <abbr class="dtstart" title="2019-03-01">March 2019</abbr>
-                            </div>
-                            <p>
-                                Redeveloped ticketing platform as part of a digital transformation project with
-                                <a href="https://www.atgtickets.com/">ATG tickets</a> using Preact/React/Redux/GraphQL.
-                            </p>
-                        </li>
-                        <li class="experience vevent detailed">
-                            <h3 class="summary">
-                                <a href="https://www.seaofthieves.com/">Rare</a>
-                            </h3>
-                            <div class="dates">
-                                <span class="material-symbols-outlined">
-                                    date_range
-                                    </span>
-                                <abbr class="dtstart" title="2015-06-01">June 2015</abbr> -
-                                <abbr>April 2016</abbr>
-                            </div>
-                            <p>
-                                Developed
-                                <a href="https://www.seaofthieves.com/">Sea of Thieves</a> site for E3 launch using React/Node.
-                            </p>
-
-                        </li>
-                        </ul>
-                        </li>
-
                         <li class="experience vevent">
                             <h3 class="summary">
-                                <a href="https://www.seaofthieves.com/">Earlier Career</a>
+                                <a href="#">Earlier Career</a>
                             </h3>
-                            <p>
-                                 Full career history available (expand to view additional roles across agencies and product teams).
+                            
+
+                                <p>Earlier career in senior and lead engineering roles across companies including NearForm, Domino’s, Sainsbury’s, Tesco, News UK, AKQA and BT.</p>
                                 
-                                
-                                <!-- <a href="https://drest.com/" class="detailed-hide">DREST,</a> -->
-                                <!-- <a href="https://limescan.net/" class="detailed-hide">Limescan,</a> -->
-                                
-                                <a href="http://nearform.com/" class="detailed-hide"> NearForm,</a>
-                                <a href="http://dominos.co.uk/" class="detailed-hide"> Dominos,</a>
-                                <!-- <a href="https://www.seaofthieves.com/" class="detailed-hide">Rare,</a> -->
-                                <a href="https://www.sainsburys.co.uk/"> Sainsburys</a>,
-                                <a href="http://www.tesco.com">Tesco</a>,
-                                <!-- <a href="http://clock.co.uk">Clock</a>, -->
-                                <a href="http://news.co.uk">News UK</a>,
-                                <!-- <a href="http://www.thesun.co.uk/sol/homepage/">The Sun</a>, -->
-                                <!-- <a href="https://www.gosquared.com/">GoSquared</a>, -->
-                                <!-- <a href="http://configurator.vw.com/ihdcc/configurator.html">Volkswagen</a>, -->
-                                <a href="https://www.akqa.com/">AKQA</a>,
-                                <!-- <a href="http://www.nike.com/nikefootball/academy/about?locale=en_GB">Nike</a> -->
-                                 and <a href="https://www.bt.com">BT</a>.
-                                <p class="detailed-hide">
-                                    More details about these roles can be found at https://simonmcmanus.com/cv#detailed.
-                                </p>
-                            </p>
                         </li>
                     </ol>
 
@@ -509,52 +412,34 @@
 
 
             </div>
-            <div class="column-right item">
+            <div class=" item columns">
 
-                <h3><span class="material-symbols-outlined">
-                  summarize
-                  </span>Summary</h3>
-
-                <p class="summary profile">
-                        Senior Engineering Manager leading multi-team organisations, platform strategy, and high-impact product delivery. Led modernisation of Trainline’s core search platform, serving millions of users and generating £12.6M+ annual revenue through experimentation and platform investment.
-
-
-                </p>
+           
 
         
 
-                <h3><span class="material-symbols-outlined">
-                    school
-                    </span> Education
-                </h3>
-                <div class="section">
-                    <ol class="education last">
-                        <li class="school">
-                            <a href="http://www.staffs.ac.uk/" class="institution">Staffordshire University</a>
-                            <ul class="courses">
-                                <li>BSc(Hons) Internet Technology</li>
-                            </ul>
-                        </li>
-                    </ol>
-                </div>
+         
+                <div class="section column">
                 <h3><span class="material-symbols-outlined">
                   mic
                   </span>Talking</h3>
                 <ul>
                     
                     <li><a href="https://www.youtube.com/watch?v=m4TseaEX9iA">LDX3 - Tracking Repository Health at Scale</a></li>
+
                     <li><a href="https://simonmcmanus.com/posts/kiss-complexity-killed-the-cat/">KISS - Complexity killed the cat</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=KPrC-udTDi8" target="_new">Progressive Enhancement Strategies</a></li>
                 </ul>
+                </div>
+                <div class="section column">
 
                 <h3><span class="material-symbols-outlined">
                   edit
                   </span>Writing</h3>
                 <ul>
-                    <li><a href="https://simonmcmanus.com/posts/engineering-principles/">Engineering Principles</a></li>
                     <li><a href="https://medium.com/trainline/repository-health-dashboard-342f6db3217b" target="_new">Repository Health Dashboard</a></li>
                     <li><a href="https://medium.com/trainline/lessons-from-hypothesis-driven-development-d0e339d4e91b" target="_new">Hypothesis-Driven Development</a></li>
                 </ul>
+                </div>  
 
             </div>
 
