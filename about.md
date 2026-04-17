@@ -38,14 +38,6 @@ The source code for this website can be found on <a href="https://github.com/sim
         </div>
     </div>
     <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-        <h3 itemprop="name">Where can I find a CV for Simon McManus?</h3>
-        <div  itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-            <div itemprop="text">
-                <p>My CV is available at <a href="https://simonmcmanus.com/cv">simonmcmanus.com/cv</a> </p>
-            </div>
-        </div>
-    </div>
-    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
         <h3  itemprop="name">Is Simon looking for new work at the moment?</h3>
         <div  itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
             <div itemprop="text">
