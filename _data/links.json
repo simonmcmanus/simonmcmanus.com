@@ -164,9 +164,7 @@
         "title": "How to Use the Screen Recorder on a Mac",
         "url": "http://osxdaily.com/2010/11/16/screen-recorder-mac/",
         "summary": "If you need to record screen activity on a Mac, you don’t need to download any additional software because the functionality is built directly into Mac OS X with the QuickTime app. Yes, the same QuickTime video player app that lets you watch videos also lets you record the screen of the Mac, and it’s remarkably simple to use.",
-        "tags": [
-            ""
-        ],
+        "tags": [],
         "created": "2017-04-18T08:48:39.506Z",
         "date": "2017-04-18"
     },
@@ -2008,18 +2006,6 @@
         "date": "2017-08-03"
     },
     {
-        "title": "",
-        "url": "http://www.mr-resistor.co.uk/uploads/WISEBOX_V2.pdf",
-        "summary": "instructions for wisebox light unit\n",
-        "tags": [
-            "wisebox",
-            "lights",
-            "sedley"
-        ],
-        "created": "2017-08-03T07:58:30.691Z",
-        "date": "2017-08-03"
-    },
-    {
         "title": "Netflix Is Reportedly $20 Billion in Debt | Moviefone",
         "url": "https://www.moviefone.com/2017/08/01/netflix-is-reportedly-20-billion-in-debt/",
         "summary": "Thanks to its growing emphasis on original content, streaming giant Netflix is now $20 billion debt, according to the L.A. Times.",
@@ -2087,9 +2073,7 @@
         "title": "TC39, ECMAScript, and the Future of JavaScript",
         "url": "https://ponyfoo.com/articles/tc39-ecmascript-proposals-future-of-javascript",
         "summary": "TC39 means Technical Committee number 39. It’s part of ECMA, the institution which standardizes the JavaScript language under the “ECMAScript” specification.\n\nThe ECMAScript specification defines how JavaScript works on a discrete step-by-step basis. Among other things, the specification explains:",
-        "tags": [
-            ""
-        ],
+        "tags": [],
         "created": "2017-08-11T12:52:34.792Z",
         "date": "2017-08-11"
     },
@@ -3662,9 +3646,7 @@
         "title": "Remove margin in Chrome browser action popup - Stack Overflow",
         "url": "https://stackoverflow.com/questions/8393227/remove-margin-in-chrome-browser-action-popup",
         "summary": "margin:0px !important;",
-        "tags": [
-            ""
-        ],
+        "tags": [],
         "created": "2019-02-11T14:20:51.432Z",
         "date": "2019-02-11"
     },
@@ -4170,9 +4152,7 @@
         "title": "CodeSandbox: Online Code Editor Tailored for Web Application Development",
         "url": "https://codesandbox.io/?from-app=1",
         "summary": "The online code editor for Web",
-        "tags": [
-            ""
-        ],
+        "tags": [],
         "created": "2019-03-13T15:11:20.381Z",
         "date": "2019-03-13"
     },
@@ -5254,9 +5234,7 @@
         "title": "Siemens Dryer Manual ",
         "url": "https://media3.bsh-group.com/Documents/9001300525_A.pdf",
         "summary": "",
-        "tags": [
-            ""
-        ],
+        "tags": [],
         "created": "2019-06-12T17:43:07.324Z",
         "date": "2019-06-12"
     },
@@ -6865,9 +6843,7 @@
         "title": "Drainage | DSC Civils",
         "url": "https://www.dsc-civils.co.uk/drainage?gclid=Cj0KCQiA89zvBRDoARIsAOIePbARQ0Mh7HAqtv219O-Pn_bSoiDYshO2lcYfMk5p6e-BC0yYy9CDfRkaAqeYEALw_wcB",
         "summary": "",
-        "tags": [
-            ""
-        ],
+        "tags": [],
         "created": "2019-12-16T15:46:29.776Z",
         "date": "2019-12-16"
     },
@@ -6965,9 +6941,7 @@
         "title": "Intro to Lando, Why Should I Use It? | Lando",
         "url": "https://docs.lando.dev/basics/#what-is-it-good-for",
         "summary": "Lando is for developers who want to:Quickly specify and painlessly spin up the services and tooling needed to develop all their projects.Ship these local development dependencies in a per-project, lives-in-git config fileAutomate complex build steps, testing setups, deployments or other repeated-more-than-once workflowsAvoid the built-in-masochism of directly using docker or docker-compose",
-        "tags": [
-            ""
-        ],
+        "tags": [],
         "created": "2020-01-08T16:10:38.557Z",
         "date": "2020-01-08"
     },
@@ -8160,9 +8134,7 @@
         "title": "node.js - How to set _auth for a scoped registry in .npmrc? - Stack Overflow",
         "url": "https://stackoverflow.com/questions/49404870/how-to-set-auth-for-a-scoped-registry-in-npmrc",
         "summary": "How to set _auth for a scoped registry in .npmrc?",
-        "tags": [
-            ""
-        ],
+        "tags": [],
         "created": "2020-07-22T07:38:13.546Z",
         "date": "2020-07-22"
     },
@@ -8268,9 +8240,7 @@
         "title": "musicForProgramming(\"60: TUNDRA\");",
         "url": "https://www.musicforprogramming.net/",
         "summary": "A series of mixes intended for listening while '+task+' to aid concentration and increase productivity (also compatible with other activities).",
-        "tags": [
-            ""
-        ],
+        "tags": [],
         "created": "2020-08-03T13:38:19.252Z",
         "date": "2020-08-03"
     },
@@ -8359,9 +8329,7 @@
         "title": "Authenticating to AWS with Instance Metadata | by Yevgeniy Brikman | Gruntwork",
         "url": "https://blog.gruntwork.io/authenticating-to-aws-with-instance-metadata-b6d812a86b40?gi=435efe19c6ed",
         "summary": "",
-        "tags": [
-            ""
-        ],
+        "tags": [],
         "created": "2020-08-20T09:53:33.391Z",
         "date": "2020-08-20"
     },
@@ -9133,9 +9101,7 @@
         "url": "https://www.gov.uk/guidance/tier-4-stay-at-home",
         "title": "Tier 4: Stay at Home - GOV.UK",
         "summary": "What you can and cannot do in areas with a very rapidly rising level of infections, where tighter restrictions are in place from 20 December.",
-        "tags": [
-            ""
-        ],
+        "tags": [],
         "date": "2020-12-20"
     },
     {
@@ -9319,18 +9285,6 @@
             "medical",
             "BEST-OF-2020",
             "lead"
-        ],
-        "date": "2020-12-27"
-    },
-    {
-        "created": "2020-12-27T07:11:43.219Z",
-        "url": "https://www.nifc.gov/PUBLICATIONS/acc_invest_march2010/speakers/Perspectives%20on%20Human%20Error.pdf ",
-        "title": "",
-        "summary": "",
-        "tags": [
-            "human",
-            "failure",
-            "systems"
         ],
         "date": "2020-12-27"
     },
@@ -10470,9 +10424,7 @@
         "url": "https://curtiseinsmann.medium.com/ive-code-reviewed-over-750-pull-requests-at-amazon-here-s-my-exact-thought-process-cec7c942a3a4 ",
         "title": "I’ve code reviewed over 750 pull requests at Amazon. Here’s my exact thought process. | by Curtis Einsmann | Medium",
         "summary": "",
-        "tags": [
-            ""
-        ],
+        "tags": [],
         "date": "2021-08-21"
     },
     {
@@ -10502,9 +10454,7 @@
         "url": "https://www.google.com/",
         "title": "Google",
         "summary": "",
-        "tags": [
-            ""
-        ],
+        "tags": [],
         "date": "2021-08-30"
     },
     {
@@ -11214,17 +11164,6 @@
         "date": "2022-05-28"
     },
     {
-        "created": "2022-05-28T16:16:18.085Z",
-        "url": "https://s3.documentcloud.org/documents/22036831/adaptingtoenduremay2022.pdf ",
-        "title": "",
-        "summary": "",
-        "tags": [
-            "endure",
-            "adapt"
-        ],
-        "date": "2022-05-28"
-    },
-    {
         "created": "2022-05-28T19:56:20.864Z",
         "url": "http://linter.structured-data.org/?url=http:%2F%2Fsimonmcmanus.com",
         "title": "Structured Data Linter",
@@ -11437,20 +11376,6 @@
         "date": "2022-06-12"
     },
     {
-        "created": "2022-06-13T20:31:34.203Z",
-        "url": "https://arxiv.org/pdf/2111.04302.pdf ",
-        "title": "",
-        "summary": "",
-        "tags": [
-            "lead",
-            "efficiency",
-            "developer",
-            "developers",
-            "developer-experience"
-        ],
-        "date": "2022-06-13"
-    },
-    {
         "created": "2022-06-15T17:38:20.000Z",
         "url": "https://www.netlify.com/blog/fun-parallax-scrolling-css-for-matterday/ ",
         "title": "Fun Parallax Scrolling CSS for Matterday",
@@ -11561,9 +11486,7 @@
         "url": "https://xsgames.co/animatiss/ ",
         "title": "AnimatiSS - A nice, colorful collection of CSS animations for your projects",
         "summary": "",
-        "tags": [
-            ""
-        ],
+        "tags": [],
         "date": "2022-06-25"
     },
     {
@@ -11831,9 +11754,7 @@
         "url": "https://sre.google/sre-book/eliminating-toil/ ",
         "title": "Google - Site Reliability Engineering",
         "summary": "",
-        "tags": [
-            ""
-        ],
+        "tags": [],
         "date": "2022-07-28"
     },
     {
@@ -12224,18 +12145,6 @@
         "date": "2022-09-27"
     },
     {
-        "created": "2022-09-28T20:29:07.744Z",
-        "url": "http://pdfs.findtheneedle.co.uk/20233..pdf ",
-        "title": "",
-        "summary": "",
-        "tags": [
-            "john-deere",
-            "ride-on",
-            "mower"
-        ],
-        "date": "2022-09-28"
-    },
-    {
         "created": "2022-09-30T06:16:43.857Z",
         "url": "https://www.nomensa.com/blog/writing-an-accessibility-statement ",
         "title": "How to write an accessibility statement | Nomensa",
@@ -12435,17 +12344,6 @@
             "accessibility"
         ],
         "date": "2022-11-15"
-    },
-    {
-        "created": "2022-11-21T15:31:13.489Z",
-        "url": " ",
-        "title": "",
-        "summary": "",
-        "tags": [
-            "expenses",
-            "freeagent"
-        ],
-        "date": "2022-11-21"
     },
     {
         "created": "2022-11-24T16:40:38.687Z",
@@ -13221,5 +13119,1342 @@
             "plumbers"
         ],
         "date": "2023-12-29"
+    },
+    {
+        "created": "2023-12-31T08:22:37.791Z",
+        "url": "https://www.mayank.co/blog/react-server-components/ ",
+        "title": "React Server Components: the Good, the Bad, and the Ugly",
+        "summary": "React Server Components bring server-exclusive capabilities to React. I’ve been using this new paradigm within Next.js 13 and 14, and what follows is my honest assessment of it1.",
+        "tags": [
+            "ssr",
+            "react"
+        ],
+        "date": "2023-12-31"
+    },
+    {
+        "created": "2024-01-23T09:30:42.953Z",
+        "url": "https://slackmojis.com/",
+        "title": "Slackmojis - The Best Custom Slack Emojis",
+        "summary": "an unofficial* directory of the best custom Slack emojis",
+        "tags": [
+            "slack",
+            " emojis"
+        ],
+        "date": "2024-01-23"
+    },
+    {
+        "created": "2024-01-28T15:29:05.368Z",
+        "url": "https://azure.microsoft.com/en-us/blog/quantifying-the-impact-of-developer-experience/?utm_source=brevo&utm_campaign=Level%20Up%20-%20Issue%20233&utm_medium=email ",
+        "title": "Quantifying the impact of developer experience | Microsoft Azure Blog",
+        "summary": "",
+        "tags": [
+            "devex"
+        ],
+        "date": "2024-01-28"
+    },
+    {
+        "created": "2024-02-06T09:35:46.657Z",
+        "url": "https://explainshell.com/explain?cmd=set+-x",
+        "title": "explainshell.com - set -x",
+        "summary": "",
+        "tags": [
+            "shell"
+        ],
+        "date": "2024-02-06"
+    },
+    {
+        "created": "2024-02-25T07:52:27.742Z",
+        "url": "https://ishadeed.com/article/css-has-guide ",
+        "title": "CSS :has() Interactive Guide",
+        "summary": "",
+        "tags": [
+            "css",
+            "has"
+        ],
+        "date": "2024-02-25"
+    },
+    {
+        "created": "2024-03-07T09:42:24.781Z",
+        "url": "https://machalliance.org/ ",
+        "title": "Enterprise MACHified | MACH Alliance",
+        "summary": "\nWe advocate for future-proof, open and best-of-breed enterprise technology ecosystems",
+        "tags": [
+            "architecture",
+            "mach"
+        ],
+        "date": "2024-03-07"
+    },
+    {
+        "created": "2024-03-23T13:29:49.618Z",
+        "url": "https://www.woodlandtrust.org.uk/blog/2021/10/bracket-fungi-identification/ ",
+        "title": "Bracket Fungi ID: Common UK Species - Woodland Trust",
+        "summary": "Bracket fungi, also known as shelf or polypore fungi, grow on the trunks and branches of both dead and living trees. They're generally tough and durable, making them possible to spot year round.",
+        "tags": [
+            "garden",
+            "fungi",
+            "trees"
+        ],
+        "date": "2024-03-23"
+    },
+    {
+        "created": "2024-04-25T05:15:22.637Z",
+        "url": "https://www.msn.com/en-us/news/technology/it-s-the-end-of-the-web-as-we-know-it/ar-AA1nt2as ",
+        "title": "It’s the End of the Web as We Know It",
+        "summary": "",
+        "tags": [
+            "llm",
+            "web"
+        ],
+        "date": "2024-04-25"
+    },
+    {
+        "created": "2024-05-19T19:02:49.667Z",
+        "url": "https://dev.to/emmadawsondev/the-european-accessibility-act-en-301-549-16o1 ",
+        "title": "The European Accessibility Act != EN 301 549 - DEV Community",
+        "summary": "",
+        "tags": [
+            "europeanaccessibilityact"
+        ],
+        "date": "2024-05-19"
+    },
+    {
+        "created": "2024-08-09T17:56:13.956Z",
+        "url": "https://www.linkedin.com/events/7223682623703822337/ ",
+        "title": "How A Remote-First Culture Attracts Top Talent | LinkedIn",
+        "summary": "",
+        "tags": [
+            "remote"
+        ],
+        "date": "2024-08-09"
+    },
+    {
+        "created": "2024-08-27T06:14:48.209Z",
+        "url": "https://utilitybend.com/blog/animations-and-transitions-from-and-to-display-none-with-at-starting-style ",
+        "title": "https://utilitybend.com/blog/animations-and-transitions-from-and-to-display-none-with-at-starting-st\nAnimations and transitions from and to display none with @starting-style | utilitybend",
+        "summary": "",
+        "tags": [
+            "display-none",
+            "animation",
+            "css-animation",
+            "animations"
+        ],
+        "date": "2024-08-27"
+    },
+    {
+        "created": "2024-08-28T07:57:44.069Z",
+        "url": "https://wiki.csswg.org/ideas/mistakes ",
+        "title": "https://wiki.csswg.org/ideas/mistakes\nIncomplete List of Mistakes in the Design of CSS [CSS Working Group Wiki]",
+        "summary": "",
+        "tags": [
+            "searches.map is not a function"
+        ],
+        "date": "2024-08-28"
+    },
+    {
+        "created": "2024-09-07T07:28:05.639Z",
+        "url": "https://uxplanet.org/alternatives-to-using-pure-black-000000-for-text-and-backgrounds-54ef0e733cdb ",
+        "title": "Alternatives to Using Pure Black (#000000) for Text and Backgrounds | by Dmitry Sergushkin | Aug, 2024 | UX Planet",
+        "summary": "",
+        "tags": [
+            "design",
+            "colour",
+            "black"
+        ],
+        "date": "2024-09-07"
+    },
+    {
+        "created": "2024-09-25T19:49:22.386Z",
+        "url": "https://sound-effects.bbcrewind.co.uk/search?cat=Machines ",
+        "title": "Search Results | BBC Sound Effects",
+        "summary": "",
+        "tags": [
+            "sounds"
+        ],
+        "date": "2024-09-25"
+    },
+    {
+        "created": "2024-10-04T05:33:18.876Z",
+        "url": "https://www.sharesmagazine.co.uk/news/market/1683018094154492600/trainline-agrees-on-lower-commission-rates-with-rail-delivery-group ",
+        "title": "Trainline agrees on lower commission rates with Rail Delivery Group | Shares Magazine",
+        "summary": "Trainline confirmed the terms of the deal include a 0.5% reduction in its base business-to-consumer online sales to 4.5% from 5.0%",
+        "tags": [
+            "trains"
+        ],
+        "date": "2024-10-04"
+    },
+    {
+        "created": "2024-11-17T16:08:11.773Z",
+        "url": "https://chromewebstore.google.com/detail/sky-follower-bridge/behhbpbpmailcnfbjagknjngnfdojpko?hl=en&pli=1 ",
+        "title": "Sky Follower Bridge - Chrome Web Store",
+        "summary": "",
+        "tags": [
+            "twitter",
+            "bluesky"
+        ],
+        "date": "2024-11-17"
+    },
+    {
+        "created": "2024-12-29T07:36:48.145Z",
+        "url": "https://www.nplusonemag.com/issue-49/essays/casual-viewing/ ",
+        "title": "Casual Viewing | Issue 49 | n+1 | Will Tavlin",
+        "summary": "",
+        "tags": [
+            "netflix"
+        ],
+        "date": "2024-12-29"
+    },
+    {
+        "created": "2024-12-29T12:25:03.055Z",
+        "url": "https://calendar.perfplanet.com/2024/wait-what-web-performance-optimization-is-being-studied-in-universities/ ",
+        "title": "Web Performance Calendar » Wait? What? Web Performance Optimization is being studied in universities?",
+        "summary": "The article discusses the current state of web performance optimisation being studied in universities, highlighting research efforts and educational approaches to enhance web performance.",
+        "tags": [
+            "web-performance",
+            "optimisation",
+            "universities",
+            "research",
+            "education"
+        ],
+        "date": "2024-12-29"
+    },
+    {
+        "created": "2024-12-29T17:24:56.632Z",
+        "url": "https://arxiv.org/pdf/2406.06608 ",
+        "title": "The Prompt Report: A Systematic Survey of Prompting Techniques",
+        "summary": "This paper explores innovative methodologies in machine learning, focusing on advancements in deep learning techniques and their applications in data analysis. It highlights the potential of neural networks to enhance algorithm development in various fields.",
+        "tags": [
+            "machine-learning",
+            "deep-learning",
+            "artificial-intelligence",
+            "neural-networks",
+            "data-analysis",
+            "algorithm-development"
+        ],
+        "date": "2024-12-29"
+    },
+    {
+        "created": "2024-12-29T18:38:46.973Z",
+        "url": "https://stateofopencon.com/ ",
+        "title": "- State of Open Conference 25",
+        "summary": "The State of Open Con is a conference focused on open-source software, highlighting community-driven innovation and collaboration within the technology sector. It aims to foster networking and training opportunities for participants.",
+        "tags": [
+            "open-source",
+            "software",
+            "conferences",
+            "community",
+            "innovation",
+            "collaboration",
+            "technology",
+            "training"
+        ],
+        "date": "2024-12-29"
+    },
+    {
+        "created": "2024-12-29T19:35:21.698Z",
+        "url": "https://arstechnica.com/gadgets/2022/03/the-ars-technica-guide-to-mechanical-keyboards/ ",
+        "title": "The Ars Technica guide to mechanical keyboards - Ars Technica",
+        "notify": {
+            "bluesky": "done"
+        },
+        "summary": "This guide provides an in-depth look at mechanical keyboards, including their benefits, different types of switches, and recommendations for various uses such as gaming and typing. It serves as a comprehensive resource for anyone looking to enhance their typing experience.",
+        "tags": [
+            "mechanical-keyboards",
+            "gadget-reviews",
+            "tech-guides",
+            "typing-experience",
+            "keyboard-switches",
+            "gaming-keyboards",
+            "customisation-options"
+        ],
+        "date": "2024-12-29"
+    },
+    {
+        "created": "2024-12-31T17:58:21.861Z",
+        "url": "https://www.apple.com/tv-pr/news/2024/12/get-a-free-all-access-pass-to-apple-tv-the-first-weekend-of-2025/ ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "Enjoy Apple TV+ for free the first weekend of 2025 - Apple TV+ Press",
+        "summary": "Celebrate the start of 2025 with a free all-access pass to Apple TV. Enjoy a weekend of complimentary streaming from Apple’s extensive library.",
+        "tags": [
+            "apple-tv",
+            "free-pass",
+            "2025-launch",
+            "streaming-service",
+            "new-year-offer"
+        ],
+        "date": "2024-12-31"
+    },
+    {
+        "created": "2024-12-31T19:42:25.617Z",
+        "url": "https://chriscoyier.net/2024/01/24/what-happened-with-the-web-monetization-api/ ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "What happened with the Web Monetization API? – Chris Coyier",
+        "summary": "The article explores the challenges and developments surrounding the Web Monetisation API, highlighting its potential benefits for creators and the evolving landscape of digital content monetisation.",
+        "tags": [
+            "web-monetisation",
+            "api",
+            "digital-content",
+            "web-development",
+            "online-entrepreneurship"
+        ],
+        "date": "2024-12-31"
+    },
+    {
+        "created": "2025-01-01T09:23:48.839Z",
+        "url": "https://www.ianvisits.co.uk/articles/signalling-chaos-inside-the-elizabeth-lines-two-day-breakdown-78097/ ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "Signalling chaos: Inside the Elizabeth line’s two-day breakdown – News Articles",
+        "summary": "",
+        "tags": [
+            "transport",
+            "elizabeth-line",
+            "signalling",
+            "london",
+            "disruption"
+        ],
+        "date": "2025-01-01"
+    },
+    {
+        "created": "2025-01-01T22:05:37.166Z",
+        "url": "https://thisrobot.life/ ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "Robot - a fast functional library for creating Finite State Machines and Statecharts",
+        "summary": "Robot is a fast, functional library designed by Matthew P. to create Finite State Machines and Statecharts in a simple and flexible manner, enabling easier state management in web development.",
+        "tags": [
+            "state-machines",
+            "finite-state-machines",
+            "robot-library",
+            "functional-programming",
+            "web-development",
+            "javascript"
+        ],
+        "date": "2025-01-01"
+    },
+    {
+        "created": "2025-01-01T23:29:32.393Z",
+        "url": "https://easingwizard.com/ ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "Easing Wizard - CSS Easing Editor",
+        "summary": "Easing Wizard is a tool created by Matthias Martin that allows users to generate and customize CSS easing functions with ease. It provides a user-friendly interface to create beautiful animations for web applications, making the design experience more intuitive and engaging.",
+        "tags": [
+            "css-easing",
+            "animation-editor",
+            "css-animation",
+            "web-design",
+            "ux-design",
+            "frontend-development"
+        ],
+        "date": "2025-01-01"
+    },
+    {
+        "created": "2025-01-02T07:14:16.626Z",
+        "url": "https://www.kvin.me/css-springs ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "CSS Spring Easing Generator",
+        "summary": "The CSS Spring Easing Generator is a tool by Kevin Grajeda designed to intuitively create spring animations for CSS. It provides presets and customizable options for perceptual duration and bounce, enhancing user interface designs and animations.",
+        "tags": [
+            "css-animation",
+            "spring-easing",
+            "animation-generator",
+            "user-interface",
+            "responsive-design",
+            "performance"
+        ],
+        "date": "2025-01-02"
+    },
+    {
+        "created": "2025-01-02T07:15:44.508Z",
+        "url": "https://yaak.app/ ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "Yaak – The API client for modern developers",
+        "summary": "Yaak is an offline-first API client designed for modern developers, allowing them to easily call REST, GraphQL, SSE, and gRPC APIs from a user-friendly interface. The app emphasizes simplicity and efficiency, making it a preferred choice over traditional tools like Postman or Insomnia. Developed by Gregory Schier.",
+        "tags": [
+            "api-client",
+            "developer-tools",
+            "graphql",
+            "offline-first"
+        ],
+        "date": "2025-01-02"
+    },
+    {
+        "created": "2025-01-02T07:17:44.635Z",
+        "url": "https://motion.dev/ ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "Motion - A modern animation library for JavaScript and React",
+        "summary": "",
+        "tags": [
+            "animation",
+            "react"
+        ],
+        "date": "2025-01-02"
+    },
+    {
+        "created": "2025-01-02T07:20:49.561Z",
+        "url": "https://www.svg-animations.how/ ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "Interactive SVG Animations",
+        "summary": "This interactive mini-course, created by Nanda Syahrasyad, covers the fundamentals and techniques of creating SVG animations. It guides learners through various modules including SVG foundations, animation methods, and advanced SVG details.",
+        "tags": [
+            "svg-animations",
+            "interactive-course",
+            "web-design",
+            "frontend-development",
+            "animation-techniques",
+            "svg-foundations"
+        ],
+        "date": "2025-01-02"
+    },
+    {
+        "created": "2025-01-05T16:52:46.734Z",
+        "url": "https://newsletter.pragmaticengineer.com/p/how-ai-will-change-software-engineering ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "How AI-assisted coding will change software engineering: hard truths",
+        "summary": "The article discusses the implications of AI-assisted coding in software engineering, examining its impact on productivity, code quality, and the evolving role of developers. Authored by Gergely Orosz, it highlights the balance between leveraging AI tools and maintaining engineering discipline to build better software.",
+        "tags": [
+            "ai",
+            " tech"
+        ],
+        "date": "2025-01-05"
+    },
+    {
+        "created": "2025-01-06T19:44:30.396Z",
+        "url": "https://leaddev.submittable.com/submit/312728/talk-submissions-for-ldx3-2025 ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "LeadDev Submission Manager - Talk submissions for LDX3 2025",
+        "summary": "The LeadDev Submission Manager invites proposals for talks at LDX3 2025, focusing on challenges faced by engineering leaders, covering topics like organisational leadership, ways of working, and technical strategy. The event celebrates LeadDev's 10th anniversary and offers speakers opportunities for professional development and support. This initiative is authored by Submittable.",
+        "tags": [
+            "conferences",
+            "ldx3-2025",
+            "talk-submissions",
+            "leaddev",
+            "engineering-leaders",
+            "organisational-leadership"
+        ],
+        "date": "2025-01-06"
+    },
+    {
+        "created": "2025-01-09T08:19:57.525Z",
+        "url": "https://github.com/Heydon/principles-of-web-accessibility ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "Heydon/principles-of-web-accessibility: How to approach accessible web interface design",
+        "summary": "This repository, created by Heydon, outlines high-level guiding principles for approaching web accessibility, emphasizing that accessibility should be a fundamental part of interface design.",
+        "tags": [
+            "web-accessibility",
+            "inclusive-design",
+            "user-experience",
+            "best-practice",
+            "design-principles",
+            "guidelines"
+        ],
+        "date": "2025-01-09"
+    },
+    {
+        "created": "2025-01-12T08:07:45.292Z",
+        "url": "https://addyo.substack.com/p/ai-driven-prototyping-v0-bolt-and ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "AI-Driven Prototyping: v0, Bolt, and Lovable Compared",
+        "summary": "In this article, Addy Osmani explores three prominent AI-assisted prototyping tools: v0 by Vercel, Bolt by StackBlitz, and Lovable. The post discusses their unique features, practical applications for MVPs, and the trade-offs from an engineering perspective, ultimately guiding developers towards the most appropriate tool based on their requirements.",
+        "tags": [
+            "ai-driven-prototyping",
+            "full-stack-development",
+            "frontend-development",
+            "ui-design",
+            "conferences",
+            "tool-comparison"
+        ],
+        "date": "2025-01-12"
+    },
+    {
+        "created": "2025-01-15T20:32:28.178Z",
+        "url": "https://adobe.design/stories/design-for-scale/designing-design-systems-a-framework-for-names-terms-and-definitions ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "Designing design systems: A framework for names, terms, and definitions",
+        "summary": "In her article, Jess Sattell discusses the importance of establishing a standardized lexicon within design systems to ensure clarity of communication and intention. She presents a framework for creating meaningful names, terms, and definitions within design teams, emphasizing the need for observation, discussion, and collaboration in the design process.",
+        "tags": [
+            "design-systems",
+            "framework",
+            "ux-design",
+            "communication",
+            "typography",
+            "collaboration"
+        ],
+        "date": "2025-01-15"
+    },
+    {
+        "created": "2025-01-15T20:47:41.943Z",
+        "url": "https://www.eatingwell.com/recipe/8070441/apple-pie-overnight-oats/ ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "Apple Pie-Inspired Overnight Oats",
+        "summary": "This recipe for Apple Pie-Inspired Overnight Oats offers a delightful way to start the morning, combining the flavors of apple pie in a nutritious and easy-to-make breakfast. Created by Amanda Stanfield, it allows for preparation ahead of busy mornings.",
+        "tags": [],
+        "date": "2025-01-15"
+    },
+    {
+        "created": "2025-01-23T12:45:02.072Z",
+        "url": "https://creativecommons.org/2025/01/22/cc-launches-its-2025-2028-strategic-plan/ ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "CC Launches its 2025-2028 Strategic Plan - Creative Commons",
+        "summary": "The Creative Commons has launched its 2025-2028 strategic plan, focusing on strengthening open infrastructure and enhancing community engagement to ensure accessible knowledge sharing. This plan, articulated by author Anna Tumadóttir, aims to tackle the concentration of power in the digital space.",
+        "tags": [
+            "strategic-plan",
+            "creative-commons",
+            "open-infrastructure",
+            "community-engagement",
+            "digital-accessibility",
+            "knowledge-sharing"
+        ],
+        "date": "2025-01-23"
+    },
+    {
+        "created": "2025-01-25T08:55:10.042Z",
+        "url": "https://www.gov.uk/government/publications/state-of-digital-government-review/state-of-digital-government-review#conclusion ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "State of digital government review - GOV.UK",
+        "summary": "The conclusion of the 'State of Digital Government Review', authored by the Department for Science, Innovation and Technology, emphasizes the powerful potential of digital as a tool for public service reform. Despite existing successes in digital government, challenges related to leadership, structure, measurement, talent, and funding remain. A transformative approach is needed to fully harness digital advancements for improving public services.",
+        "tags": [
+            "digital-government",
+            "public-sector-reform",
+            "user-experience",
+            "technology-infrastructure",
+            "funding-models",
+            "leadership"
+        ],
+        "date": "2025-01-25"
+    },
+    {
+        "created": "2025-01-25T11:19:32.691Z",
+        "url": "https://www.victorianplumbing.co.uk/turin-matt-black-900-x-900mm-pivot-door-shower-enclosure-without-tray ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "Toreno Matt Black 900 x 900mm Pivot Door Shower Enclosure without Tray | Victorian Plumbing UK",
+        "summary": "This page presents the Turin Matt Black 900 x 900mm pivot door shower enclosure without a tray, highlighting its stylish design and practical features, authored by Victorian Plumbing.",
+        "tags": [
+            "shower-enclosure",
+            "pivot-door",
+            "900x900mm",
+            "turin-black",
+            "bathroom-design",
+            "uk-plumbing"
+        ],
+        "date": "2025-01-25"
+    },
+    {
+        "created": "2025-01-30T21:55:50.091Z",
+        "url": "https://medium.com/@junshan0/medallion-architecture-what-why-and-how-ce07421ef06f ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "Medallion Architecture: What, Why and How | by Jun Shan | Medium",
+        "summary": "Jun Shan introduces Medallion Architecture, a framework designed to enhance enterprise data management. This architecture, which includes Bronze, Silver, and Gold layers, addresses data organization challenges in data lakes and lakehouses, emphasizing the importance of structured data processes for analytics and machine learning.",
+        "tags": [
+            "medallion-architecture",
+            "data-lakehouse",
+            "data-management",
+            "analytics",
+            "transformations",
+            "cloud-computing"
+        ],
+        "date": "2025-01-30"
+    },
+    {
+        "created": "2025-02-07T06:39:43.636Z",
+        "url": "https://abeljansma.nl/2025/01/28/mereoPhysics.html ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "Complex Systems and Quantitative Mereology | Abel Jansma",
+        "summary": "In this blog post, Abel Jansma explores the concept of mereology and its implications for understanding complex systems and higher-order interactions. He discusses the importance of recognizing the relationships between parts and wholes, using examples like Borromean rings and mathematical formulations to illustrate key ideas.",
+        "tags": [],
+        "date": "2025-02-07"
+    },
+    {
+        "created": "2025-02-08T08:00:04.493Z",
+        "url": "https://svelte0.dev/ ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "Generate svelte UI with AI | svelte0",
+        "summary": "The page showcases 'svelte0', a platform that allows users to generate beautiful Svelte UI using AI and Tailwind CSS from simple text prompts. It offers a variety of starter templates for different UI components.",
+        "tags": [
+            "svelte-ui",
+            "ai-generated",
+            "tailwind-css",
+            "templates",
+            "user-interface",
+            "web-development"
+        ],
+        "date": "2025-02-08"
+    },
+    {
+        "created": "2025-02-09T08:34:19.378Z",
+        "url": "https://pinokio.computer/ ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "pinokio",
+        "summary": "Pinokio, created by CocktailPeanut, is an innovative AI browser that enables users to install, run, and manage any server application locally with just one click. It offers access to a variety of verified scripts from the community, ensuring a user-friendly experience.",
+        "tags": [],
+        "date": "2025-02-09"
+    },
+    {
+        "created": "2025-02-09T17:22:37.707Z",
+        "url": "https://www.hiredintech.com/algorithms/algorithm-design-canvas/ ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "Algorithm Design Canvas | HiredInTech",
+        "summary": "The Algorithm Design Canvas, developed by HiredInTech, provides a systematic approach for effectively tackling algorithm design questions commonly encountered during coding interviews. The framework is engineered to enhance candidates' theoretical knowledge and practical skills required for success in technical interviews.",
+        "tags": [],
+        "date": "2025-02-09"
+    },
+    {
+        "created": "2025-02-13T05:59:25.297Z",
+        "url": "https://lovable.dev/ ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "Lovable",
+        "summary": "Lovable, created by Anton Osika, is a platform that empowers users to build software applications quickly and intuitively using a chat interface, allowing for rapid prototyping and deployment without traditional coding skills.",
+        "tags": [
+            "no-code",
+            "software-development",
+            "ai-engineering",
+            "web-development",
+            "product-design",
+            "automation"
+        ],
+        "date": "2025-02-13"
+    },
+    {
+        "created": "2025-02-16T16:09:38.663Z",
+        "url": "https://workband.substack.com/p/team-productivity-health-assessment?utm_source=brevo&utm_campaign=Level%20Up%20-%20Issue%20288&utm_medium=email ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "Team Productivity Health Assessment - by Tobi Tonner",
+        "summary": "Tobi Tonner discusses the Team Productivity Health Assessment as a tool for promoting healthy, productive teams. The assessment focuses on customer understanding, team interactions, and individual needs, emphasizing their foundational importance to productivity. Tonner offers a coaching session to discuss assessment results and planning for improvement.",
+        "tags": [
+            "team-productivity",
+            "productivity-health",
+            "leadership",
+            "assessment",
+            "team-performance",
+            "coaching"
+        ],
+        "date": "2025-02-16"
+    },
+    {
+        "created": "2025-02-18T05:56:31.775Z",
+        "url": "https://tessneedham.com/2025/02/16/17-tips-for-a-creative-conference-talk/ ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "17 Tips for a Creative Conference Talk – Tess Needham",
+        "summary": "In the blog post '17 Tips for a Creative Conference Talk,' Tess Needham shares her insights on how to turn the experience of speaking at events into a creatively fulfilling project. The author emphasizes the importance of preparation, personal storytelling, and audience engagement to make presentations memorable.",
+        "tags": [
+            "creative-conference-talk",
+            "presentation-tips",
+            "public-speaking",
+            "audience-engagement",
+            "visual-aids",
+            "storytelling"
+        ],
+        "date": "2025-02-18"
+    },
+    {
+        "created": "2025-02-18T06:19:25.036Z",
+        "url": "https://a16z.com/ai-web-app-builders/ ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "From Prompt to Product: The Rise of AI-Powered Web App Builders | Andreessen Horowitz",
+        "summary": "The article discusses the rise of AI-powered web app builders, highlighting how tools like Bolt and Lovable enable both technical and non-technical users to create dynamic applications without coding. Authors Justine Moore, Yoko Li, Gabriel Vasquez, Marco Mascorro, and Bryan Kim delve into market trends, product functionality, and user demographics, while also addressing limitations and future developments in this rapidly evolving space.",
+        "tags": [
+            "ai-powered-web-apps",
+            "no-code-development",
+            "text-to-web-generators",
+            "automation-tools",
+            "user-experience",
+            "ethical-considerations"
+        ],
+        "date": "2025-02-18"
+    },
+    {
+        "created": "2025-02-22T07:47:36.911Z",
+        "url": "https://zanuh.com/ ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "Zanuh - Create and Remix Viral Social Media Content",
+        "summary": "Zanuh empowers creators to design and remix viral social media posts using AI-powered tools. The platform enhances creativity and refines messaging for maximum audience engagement. Authored by the Zanuh Team.",
+        "tags": [
+            "social-media",
+            "content-creation",
+            "AI-tools",
+            "viral-posts",
+            "creativity",
+            "engagement"
+        ],
+        "date": "2025-02-22"
+    },
+    {
+        "created": "2025-02-22T09:01:26.758Z",
+        "url": "https://resources.github.com/developer-productivity/engineering-team-focus/ ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "The art of engineering team focus: less is more - GitHub Resources",
+        "summary": "In 'The art of engineering team focus: less is more', authors Jakub Oleksy and Matt Nigh discuss the importance of prioritising visibility and limiting work in progress to enhance productivity within engineering teams. They emphasize that doing less at once can result in shipping more valuable outputs.",
+        "tags": [
+            "engineering-team-focus",
+            "productivity",
+            "agile",
+            "teamwork",
+            "leadership"
+        ],
+        "date": "2025-02-22"
+    },
+    {
+        "created": "2025-03-03T18:32:26.226Z",
+        "url": "https://savethe.ai/ ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "AI Needs Your Help - Save the AI",
+        "summary": "The article discusses the urgent need to reduce resource consumption to support artificial intelligence systems. It highlights the significant water and electricity footprints of AI technologies and encourages readers to raise awareness about these issues. The insights are attributed to the authors Sellman and Vaughan.",
+        "tags": [
+            "ai-crisis",
+            "resource-consumption",
+            "sustainability",
+            "raising-awareness",
+            "water-footprint",
+            "electricity-footprint"
+        ],
+        "date": "2025-03-03"
+    },
+    {
+        "created": "2025-03-09T15:50:20.362Z",
+        "url": "https://brianguthrie.com/p/the-move-faster-manifesto/?utm_source=brevo&utm_campaign=Level%20Up%20-%20Issue%20291&utm_medium=email ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "The Move Faster Manifesto",
+        "summary": "In 'The Move Faster Manifesto', Brian Guthrie shares insights gained from over twenty years in the software industry, emphasizing the importance of speed and efficiency in software development. He presents key principles for moving faster while maintaining quality, encouraging a collective responsibility among teams to embrace change and act swiftly.",
+        "tags": [
+            "fast-movement",
+            "software-development",
+            "team-collaboration",
+            "efficiency",
+            "agile-methodologies",
+            "leadership"
+        ],
+        "date": "2025-03-09"
+    },
+    {
+        "created": "2025-03-21T06:06:23.405Z",
+        "url": "https://www.mckinsey.com/about-us/new-at-mckinsey-blog/mckinseys-legacyx-rejuvenating-legacy-infrastructure-with-agentic-ai ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "McKinsey’s LegacyX: Rejuvenating legacy infrastructure with agentic AI",
+        "summary": "In this blog post, Dan Collins discusses McKinsey's LegacyX platform which uses agentic AI to significantly accelerate the modernization of legacy infrastructures, reducing costs and resource intensity while also re-engineering business processes for improved efficiency.",
+        "tags": [
+            "legacy-infrastructure",
+            "agentic-ai",
+            "quantumblack",
+            "cost-reduction",
+            "business-transformation",
+            "software-modernisation"
+        ],
+        "date": "2025-03-21"
+    },
+    {
+        "created": "2025-04-04T16:10:52.009Z",
+        "url": "https://manuel.kiessling.net/2025/03/31/how-seasoned-developers-can-achieve-great-results-with-ai-coding-agents/ ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "Senior Developer Skills in the AI Age: Leveraging Experience for Better Results • Manuel Kießling",
+        "summary": "In his article, Manuel Kießling discusses how seasoned developers can leverage their experience to achieve better results with AI-powered coding tools. He emphasizes the importance of well-structured requirements, tool-based guard rails, and file-based keyframing in utilizing these technologies effectively, while contrasting his positive experiences with the feedback from some developers who struggle with AI tools.",
+        "tags": [
+            "ai-coding",
+            "developer-skills",
+            "software-development",
+            "best-practices",
+            "productivity",
+            "agile-methodologies"
+        ],
+        "date": "2025-04-04"
+    },
+    {
+        "created": "2025-04-07T18:10:06.192Z",
+        "url": "https://arc42.org/ ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "arc42 - arc42",
+        "summary": "arc42 is a comprehensive framework for constructing, communicating, and documenting software architecture, designed to alleviate the challenges of documentation. It is developed by Dr. Gernot Starke and is open-source, offering practical training and resources for both seasoned and novice architects.",
+        "tags": [
+            "software-architecture",
+            "documentation",
+            "open-source",
+            "agile-development",
+            "training",
+            "arc42-template"
+        ],
+        "date": "2025-04-07"
+    },
+    {
+        "created": "2025-04-08T07:31:39.780Z",
+        "url": "https://www.nhs.uk/conditions/antibiotics/ ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "Antibiotics - NHS",
+        "summary": "This page from the NHS website provides an overview of antibiotics, their uses, potential side effects, and the importance of responsible usage to combat antibiotic resistance. The author of the content is the NHS website.",
+        "tags": [
+            "antibiotics",
+            "bacterial-infection",
+            "healthcare",
+            "antibiotic-resistance",
+            "side-effects",
+            "nhs"
+        ],
+        "date": "2025-04-08"
+    },
+    {
+        "created": "2025-04-08T08:46:03.026Z",
+        "url": "https://www.ideo.com/journal/is-gen-z-ready-to-embrace-ai-its-complicated ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "Is Gen Z ready to embrace AI? It’s complicated. - IDEO",
+        "summary": "In the article 'Is Gen Z ready to embrace AI? It’s complicated,' authors Wendy Wang, Michelle Lee, and Lauren Lin explore the ambivalence of Gen Z towards AI as a tool for productivity and creativity. They uncover insights through interviews and research, highlighting the need for AI to align with the values and experiences of young people.",
+        "tags": [
+            "gen-z",
+            "ai-embrace",
+            "technology-impact",
+            "creative-expression",
+            "human-relationships",
+            "mental-wellbeing"
+        ],
+        "date": "2025-04-08"
+    },
+    {
+        "created": "2025-04-08T16:26:57.934Z",
+        "url": "https://huggingface.co/ ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "Hugging Face – The AI community building the future.",
+        "summary": "Hugging Face, founded by Clément Delangue, is dedicated to advancing and democratizing artificial intelligence through an open-source platform, fostering collaboration in the machine learning community around models, datasets, and applications.",
+        "tags": [
+            "artificial-intelligence",
+            "machine-learning",
+            "open-source",
+            "community",
+            "collaboration",
+            "models"
+        ],
+        "date": "2025-04-08"
+    },
+    {
+        "created": "2025-04-09T13:53:34.083Z",
+        "url": "https://www.corporate-rebels.com/blog/advice-process ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "Rebellious Practices: Make Better Decisions with… | Corporate Rebels",
+        "summary": "In this blog post, authored by Joost Minnaar, the advice process is introduced as an effective alternative to traditional decision-making methods. Unlike top-down or consensus-based approaches, this method distributes authority, allowing individuals to make decisions while considering collective input. The post highlights its benefits for enhancing organizational culture and creating more engaged workplaces.",
+        "tags": [
+            "decision-making",
+            "advice-process",
+            "organizational-culture",
+            "distributed-authority",
+            "leadership",
+            "agile-practices"
+        ],
+        "date": "2025-04-09"
+    },
+    {
+        "created": "2025-04-09T15:35:18.109Z",
+        "url": "https://github.com/awslabs/frontend-discovery ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "GitHub - awslabs/frontend-discovery: The aim of this project is to define and drive adoption of a frontend discovery pattern, with a primary focus on client-side rendered (CSR), server-side rendered (SSR) and edge-side rendered (ESR) micro-frontends",
+        "summary": "The 'frontend-discovery' project, authored by awslabs, aims to define and promote a discoverability pattern for frontend applications, focusing on client-side and server-side rendered micro-frontends.",
+        "tags": [
+            "frontend-discovery",
+            "micro-frontends",
+            "dev-ops",
+            "client-side-rendering",
+            "discovery-pattern",
+            "javascript"
+        ],
+        "date": "2025-04-09"
+    },
+    {
+        "created": "2025-04-13T16:13:46.183Z",
+        "url": "https://endler.dev/2025/best-programmers/ ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "The Best Programmers I Know | Matthias Endler",
+        "summary": "In 'The Best Programmers I Know', Matthias Endler explores the key traits that differentiate exceptional software developers, emphasizing the importance of continuous learning, understanding tools deeply, and maintaining a problem-solving mindset.",
+        "tags": [
+            "best-programmers",
+            "software-development",
+            "career-advice",
+            "continuous-learning",
+            "problem-solving",
+            "open-source"
+        ],
+        "date": "2025-04-13"
+    },
+    {
+        "created": "2025-05-09T04:25:20.419Z",
+        "url": "https://newsletter.techworld-with-milan.com/p/how-google-measures-and-manages-tech ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "How Google Measures and Manages Tech Debt",
+        "summary": "In this article, Dr Milan Milanović explores how Google measures and manages technical debt, providing insights from their research on the challenges faced by engineering teams. The piece discusses the importance of defining, measuring, and proactively addressing technical debt to enhance productivity and maintain code quality within development teams.",
+        "tags": [
+            "technical-debt",
+            "engineering-management",
+            "google-research",
+            "software-development",
+            "productivity",
+            "tech-strategy"
+        ],
+        "date": "2025-05-09"
+    },
+    {
+        "created": "2025-05-27T08:11:03.776Z",
+        "url": "https://dust.tt/ ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "Accelerate your entire organization with custom AI agents",
+        "summary": "The page discusses how Dust provides a platform for creating customizable AI agents that enhance team performance and streamline organizational operations. It highlights the platform's benefits, including data security, efficient information retrieval, and seamless integration with company knowledge. This innovative solution aims to transform how work gets done by leveraging the best AI models. Author: Everett Berry.",
+        "tags": [
+            "custom-ai-agents",
+            "team-performance",
+            "data-security",
+            "organization-transformation",
+            "business-automation",
+            "machine-learning"
+        ],
+        "date": "2025-05-27"
+    },
+    {
+        "created": "2025-06-16T16:05:55.820Z",
+        "url": "https://docs.google.com/document/u/0/d/1TKrg8Udz2C4Mslm4Pm42NtfwrYSeWay6QjQy40fqWCs/mobilebasic ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "LDX3 2025 - Talk Materials",
+        "summary": "The document discusses transitioning successfully into a manager of managers role, featuring insights and articles from Gisela Rossi and others on effective management practices, skip-level meetings, and relevant resources.",
+        "tags": [
+            "leadership-development",
+            "management-training",
+            "career-transition",
+            "articles",
+            "resources",
+            "templates"
+        ],
+        "date": "2025-06-16"
+    },
+    {
+        "created": "2025-07-03T07:59:59.783Z",
+        "url": "https://www.ted.com/talks?sort=newest&duration=0-6 ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "TED: Ideas change everything",
+        "summary": "This page features the latest TED Talks, showcasing influential speakers like Hany Farid and Al Gore, discussing topics ranging from artificial intelligence and creativity to social change and environmental issues.",
+        "tags": [],
+        "date": "2025-07-03"
+    },
+    {
+        "created": "2025-07-03T20:30:57.977Z",
+        "url": "https://www.airbnb.co.uk/rooms/1229535327987452905?location=Cwm-yr-Eglwys%2C%20United%20Kingdom&search_mode=regular_search&adults=1&check_in=2026-06-11&source_impression_id=p3_1751574460_P30gx_ScHFh6ZQsz&previous_page_section_name=1001&federated_search_id=66303942-aad0-472f-9431-15a539eb0906&guests=1&check_out=2026-06-18 ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "Swm Y Mor - Houses for Rent in Cwm-yr-Eglwys, Wales, United Kingdom - Airbnb",
+        "summary": "Swm Y Mor is an idyllic seaside cottage located on the Pembrokeshire coastline, offering rustic charm with beautiful views and access to nearby beaches. The listing accommodates up to 6 guests and features essential amenities like a private hot tub and proximity to various local attractions. Author: Airbnb.",
+        "tags": [
+            "seaside-cottage",
+            "wales-holiday-rentals",
+            "pembrokeshire-coast",
+            "family-friendly-accommodation",
+            "private-hot-tub",
+            "beachfront-access"
+        ],
+        "date": "2025-07-03"
+    },
+    {
+        "created": "2025-09-26T14:14:55.855Z",
+        "url": "https://github.com/charlax/engineering-management ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "GitHub - charlax/engineering-management: A collection of inspiring resources related to engineering management and tech leadership",
+        "summary": "",
+        "tags": [],
+        "date": "2025-09-26"
+    },
+    {
+        "created": "2025-11-01T07:23:55.509Z",
+        "url": "https://www.anthropic.com/engineering/building-effective-agents ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "https://www.anthropic.com/engineering/building-effective-agents\nBuilding Effective AI Agents \\ Anthropic",
+        "summary": "The article discusses effective patterns for building AI agents using large language models (LLMs). It emphasizes the importance of simplicity and composability over complex frameworks, providing insights from the authors, Erik Schluntz and Barry Zhang, on developing reliable and flexible agentic systems.",
+        "tags": [
+            "ai-agents",
+            "build-patterns",
+            "agentic-systems",
+            "workflow-design",
+            "llm-capabilities",
+            "practical-advice"
+        ],
+        "date": "2025-11-01"
+    },
+    {
+        "created": "2025-11-01T09:07:04.154Z",
+        "url": "https://www.staplesroad.essex.sch.uk/ ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "https://www.staplesroad.essex.sch.uk/\nStaples Road Primary School - Home",
+        "summary": "Staples Road Primary School in Essex focuses on creating a welcoming and inclusive environment for students and families, highlighting their commitment to education and community values. The content features recent achievements and information pertinent to parents, celebrating the school's culture of kindness and learning. Author: Staples Road Primary School.",
+        "tags": [
+            "primary-school",
+            "education",
+            "essex",
+            "community",
+            "parents",
+            "news"
+        ],
+        "date": "2025-11-01"
+    },
+    {
+        "created": "2025-11-01T09:44:43.779Z",
+        "url": "https://www.herewardprimary.co.uk/ ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "Home | Hereward Primary School\nHome | Hereward Primary School",
+        "summary": "Hereward Primary School offers a welcoming and supportive environment for students, emphasizing the importance of collaboration among the school community. The website features information about school life, educational resources, and recent updates, showcasing the school's commitment to providing an excellent education for all children. The content is authored by Hereward Primary School.",
+        "tags": [
+            "primary-school",
+            "education",
+            "wellbeing",
+            "community",
+            "news",
+            "events"
+        ],
+        "date": "2025-11-01"
+    },
+    {
+        "created": "2025-11-04T05:58:38.099Z",
+        "url": "https://www.anthropic.com/engineering/writing-tools-for-agents ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "Writing effective tools for AI agents—using AI agents \\ Anthropic",
+        "summary": "In the article, Ken Aizawa discusses effective techniques for writing high-quality tools for AI agents, including how to evaluate and optimize their performance. The guide covers building prototypes, conducting evaluations, and collaborating with agents to enhance tool efficiency.",
+        "tags": [
+            "writing-tools",
+            "ai-agents",
+            "performance-evaluation",
+            "tool-optimization",
+            "collaboration-automation",
+            "engineering-principles"
+        ],
+        "date": "2025-11-04"
+    },
+    {
+        "created": "2025-11-04T05:59:54.792Z",
+        "url": "https://developers.openai.com/apps-sdk/concepts/mcp-server ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "MCP",
+        "summary": "The Model Context Protocol (MCP) is an open specification designed to connect large language model clients to external tools and resources, ensuring seamless integration within applications. It allows for the standardized handling of tool metadata and facilitates effective communication between ChatGPT and external interfaces, as explained by OpenAI.",
+        "tags": [
+            "model-context-protocol",
+            "apps-sdk",
+            "mcp-server",
+            "integration",
+            "tool-metadata",
+            "user-interface"
+        ],
+        "date": "2025-11-04"
+    },
+    {
+        "created": "2025-11-04T06:00:25.877Z",
+        "url": "https://modelcontextprotocol.io/specification/2025-06-18/basic/transports ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "Transports - Model Context Protocol",
+        "summary": "The page outlines the transport mechanisms defined by the Model Context Protocol (MCP) as of June 18, 2025, detailing standard methods for client-server communication through JSON-RPC. It emphasizes the importance of security measures and the possibility of implementing custom transport methods. The content is authored by the Model Context Protocol team.",
+        "tags": [
+            "json-rpc",
+            "client-server-communication",
+            "streamable-http",
+            "stdio-transport",
+            "security-guidelines",
+            "custom-transports"
+        ],
+        "date": "2025-11-04"
+    },
+    {
+        "created": "2025-11-06T15:09:14.063Z",
+        "url": "https://zeroheight.com/blog/design-systems-dont-kill-creativity-our-biases-do/ ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "Design systems don’t kill creativity – our biases do - zeroheight",
+        "summary": "In the blog post, Donnie D'Amato explores cognitive biases that hinder creativity within design systems. He discusses how biases like Functional Fixedness and the Bandwagon Effect can restrict innovative thinking and offers strategies to challenge these mental barriers to enhance user experience and promote creative solutions.",
+        "tags": [
+            "design-systems",
+            "cognitive-biases",
+            "creativity",
+            "innovation",
+            "functional-fixedness",
+            "user-experience"
+        ],
+        "date": "2025-11-06"
+    },
+    {
+        "created": "2025-11-07T14:18:05.494Z",
+        "url": "https://developers.openai.com/apps-sdk/build/custom-ux ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "Build a custom UX",
+        "summary": "This guide by OpenAI details how to build custom user experience (UX) components using the Apps SDK, emphasizing the integration of structured tool results into React components, interaction via the window.openai API, and managing widget states. It provides insights into best practices in component scaffolding and deployment for improved user engagement.",
+        "tags": [
+            "custom-ux",
+            "react-components",
+            "window-openai-api",
+            "widget-state",
+            "user-interaction",
+            "mcp-server"
+        ],
+        "date": "2025-11-07"
+    },
+    {
+        "created": "2025-11-10T14:45:35.639Z",
+        "url": "https://www.usertesting.com/qxscore-experience-measurement ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "QXscore™ Experience Measurement & Benchmarking | UserTesting",
+        "summary": "The QXscore is a comprehensive metric developed by UserTesting that enables businesses to measure and understand the quality of customer experiences across various touchpoints. This score, which combines both quantitative and qualitative insights, helps organizations drive actionable improvements in customer satisfaction and overall performance. Author: UserTesting.",
+        "tags": [
+            "customer-experience",
+            "qxscore",
+            "user-testing",
+            "performance-metrics",
+            "business-insights",
+            "data-driven"
+        ],
+        "date": "2025-11-10"
+    },
+    {
+        "created": "2025-11-12T19:22:53.787Z",
+        "url": "https://startingreception.co.uk/ ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "Home - Starting Reception\nHome - Starting Reception",
+        "summary": "Starting Reception is a resource that guides parents in preparing their children for school, emphasizing the importance of emotional and practical readiness. It includes tips on fostering independence and shared experiences in learning. The content is designed to support parents like Lucy in navigating their child's transition to school with valuable insights and resources.",
+        "tags": [
+            "child-development",
+            "school-readiness",
+            "parenting-support",
+            "emotional-preparation",
+            "early-years-education",
+            "independence-skills"
+        ],
+        "date": "2025-11-12"
+    },
+    {
+        "created": "2025-11-13T18:36:40.383Z",
+        "url": "https://deckheadz.co.uk/product-category/parts_accessories/page/3/ ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "Parts & Accessories – Page 3 – Deck Headz",
+        "summary": "This page features a variety of DJ equipment replacement parts and accessories for turntables and mixers, including faders, knobs, and styluses, catering to audio enthusiasts and professionals. The content is authored by Deck Headz.",
+        "tags": [],
+        "date": "2025-11-13"
+    },
+    {
+        "created": "2025-11-13T18:37:17.372Z",
+        "url": "https://deckheadz.co.uk/ ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "Deck Headz",
+        "summary": "The Deck Headz website, authored by John Doe, showcases a range of DJ products including decks, mixers, parts, accessories, faceplates, and vinyl records. The site emphasizes new arrivals and categories for easy navigation.",
+        "tags": [
+            "dj-decks-turntables",
+            "dj-mixers",
+            "parts-accessories",
+            "faceplates",
+            "vinyl",
+            "new-arrivals"
+        ],
+        "date": "2025-11-13"
+    },
+    {
+        "created": "2025-11-14T13:44:13.487Z",
+        "url": "https://www.confabevents.com/program-recap ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "Program recap",
+        "summary": "The Confab program recap outlines the highlights of the last-ever Confab event, showcasing essential content strategy talks and activities led by renowned speakers like Natalie Dunbar, Eileen Webb, and Kristina Halvorson. Attendees were engaged in vital discussions about content strategy trends, tools, and best practices.",
+        "tags": [
+            "content-strategy",
+            "confab-2023",
+            "keynote-talks",
+            "best-practices",
+            "program-recap",
+            "brain-traffic"
+        ],
+        "date": "2025-11-14"
+    },
+    {
+        "created": "2026-01-04T17:29:55.996Z",
+        "url": "https://brianguthrie.com/p/the-move-faster-manifesto/?utm_source=brevo&utm_campaign=Level%20Up%20-%20Issue%20333&utm_medium=email ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "The Move Faster Manifesto\nThe Move Faster Manifesto",
+        "summary": "In 'The Move Faster Manifesto', author Brian Guthrie shares insights from over twenty years in the software industry, highlighting the principles and practices that enable teams to ship software quickly while maintaining quality. He emphasizes the importance of courage, responsibility, and managing expectations in fostering a fast-moving environment.",
+        "tags": [
+            "move-faster",
+            "software-development",
+            "agile-methodologies",
+            "team-collaboration",
+            "leadership",
+            "productivity"
+        ],
+        "date": "2026-01-04"
+    },
+    {
+        "created": "2026-01-04T18:01:48.858Z",
+        "url": "https://www.seangoedecke.com/good-times-are-over/?utm_source=brevo&utm_campaign=Level%20Up%20-%20Issue%20333&utm_medium=email ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "The good times in tech are over\nThe good times in tech are over",
+        "summary": "In his article, Sean Goedecke discusses the shift in the tech industry where the past decade's job security for software engineers has been jeopardized due to rising interest rates and increased layoffs. He highlights the implications for engineers who have been accustomed to a lavish work environment and suggests strategies to navigate this new reality.",
+        "tags": [
+            "tech-companies",
+            "layoffs",
+            "software-engineering",
+            "economic-changes",
+            "job-security",
+            "AI-impact"
+        ],
+        "date": "2026-01-04"
+    },
+    {
+        "created": "2026-01-04T18:16:07.421Z",
+        "url": "https://cloud.google.com/blog/products/ai-machine-learning/announcing-the-2025-dora-report?utm_source=brevo&utm_campaign=Level%20Up%20-%20Issue%20333&utm_medium=email ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "Announcing the 2025 DORA Report | Google Cloud Blog\nAnnouncing the 2025 DORA Report | Google Cloud Blog",
+        "summary": "The 2025 DORA Report, authored by Nathen Harvey and Derek DeBellis, emphasizes how AI enhances team efficiencies but also exposes weaknesses in software development processes. It highlights insights from nearly 5,000 technology professionals worldwide and suggests a strategic approach to AI integration for optimal outcomes.",
+        "tags": [
+            "ai-machine-learning",
+            "devops",
+            "dora-report",
+            "software-development",
+            "team-performance",
+            "productivity"
+        ],
+        "date": "2026-01-04"
+    },
+    {
+        "created": "2026-01-04T19:46:14.130Z",
+        "url": "https://kimmalonescott.medium.com/why-people-really-quit-and-how-great-managers-make-them-want-to-stay-d332dbf0d7b3 ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "Why People Really Quit — And How Great Managers Make Them Want to Stay | by Kim Scott | Medium\nWhy People Really Quit — And How Great Managers Make Them Want to Stay | by Kim Scott | Medium",
+        "summary": "In her article, Kim Scott explores the core reasons why employees leave their jobs and how effective management can create an environment where they want to stay. She emphasizes the importance of clear communication, recognition, and building strong relationships to enhance job satisfaction and retention.",
+        "tags": [
+            "employee-retention",
+            "great-management",
+            "workplace-culture",
+            "staff-engagement",
+            "leadership-skills",
+            "job-satisfaction"
+        ],
+        "date": "2026-01-04"
+    },
+    {
+        "created": "2026-01-04T19:52:43.232Z",
+        "url": "https://bjorg.bjornroche.com/management/engineering-management-artifacts/?utm_source=brevo&utm_campaign=Level%20Up%20-%20Issue%20331&utm_medium=email ",
+        "notify": {
+            "bluesky": "done"
+        },
+        "title": "Useful engineering management artifacts | Bjorg\nUseful engineering management artifacts | Bjorg",
+        "summary": "In this article, author Bjorn Roche provides a collection of useful document templates for managing a growing organization, such as career development plans and team charters, along with insights on their effective use.",
+        "tags": [
+            "management-artifacts",
+            "document-templates",
+            "engineering-leadership",
+            "team-charter",
+            "career-development",
+            "engineering-strategy"
+        ],
+        "date": "2026-01-04"
     }
 ]
