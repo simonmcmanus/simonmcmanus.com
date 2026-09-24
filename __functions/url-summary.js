@@ -6,14 +6,39 @@ const client = new OpenAI({
     apiKey: process.env['OPENAI_API_KEY'],
 });
 
+const MAX_MARKUP_CHARS = 40000;
+
+const stripHtml = (html) => {
+    return html
+        .replace(/<script[\s\S]*?<\/script>/gi, ' ')
+        .replace(/<style[\s\S]*?<\/style>/gi, ' ')
+        .replace(/<!--[\s\S]*?-->/g, ' ')
+        .replace(/<[^>]+>/g, ' ')
+        .replace(/&nbsp;/g, ' ')
+        .replace(/&amp;/g, '&')
+        .replace(/&lt;/g, '<')
+        .replace(/&gt;/g, '>')
+        .replace(/&quot;/g, '"')
+        .replace(/&#39;/g, "'")
+        .replace(/\s+/g, ' ')
+        .trim();
+};
+
 export const getMeta = async(url, markup, tags) => {
     try {
         const content = await request.get(url);
         markup = content.text
     } catch (e) {
         console.log('could not fetch url content, using markup', e);
-    }   
-    
+    }
+
+    if (markup) {
+        markup = stripHtml(markup);
+        if (markup.length > MAX_MARKUP_CHARS) {
+            markup = markup.slice(0, MAX_MARKUP_CHARS);
+        }
+    }
+
     const messages = {
         messages: [
             {
